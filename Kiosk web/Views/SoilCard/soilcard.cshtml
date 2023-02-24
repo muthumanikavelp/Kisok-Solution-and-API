@@ -1,0 +1,1794 @@
+﻿
+@{
+    Layout = "~/Views/Shared/FormViewLayout1.cshtml";
+}
+<link href="~/css/common.css" rel="stylesheet" />
+
+
+<style>
+    .comment {
+        resize: none;
+    }
+
+    span.k-widget.k-datepicker.k-header.form-control.k-input {
+        width: 115% !important;
+    }
+
+    .k-window-titlebar {
+        background-color: snow;
+    }
+
+    .k-grid tr td {
+        border-bottom: 1px solid #c5c5c5;
+    }
+
+    .k-grid td {
+        padding: 1px 1px 1px 1px !important;
+        font-size: 11px !important;
+    }
+
+    hr {
+        margin-top: 1px;
+    }
+</style>
+<script src="~/CommonScripts/HelpFile.js"></script>
+<link href="~/css/common.css" rel="stylesheet" />
+<div class="box-header text-center with-border">
+    @*<h3 class="box-title" style="text-align:center;color:red;font-weight: 600;font:bold">Sample Collection</h3>*@
+    <h3 class="box-title" style="text-align:center;color:red;font-weight: 600;font:bold">Soil Health Card</h3>
+</div>
+<form id="soil_form1" class="form-horizontal" data-role="validator" novalidate="novalidate">
+    <div class="row">
+        <div class="col-sm-3" style="padding-right:7px;padding-bottom:16px">
+            <label class="title" style="padding-right:15px">Soil Status</label>
+            <input id="cmb_soilsts" name="in_orgn_level" data-role="filtercombo" style="width:70%;height:20px" class="form-control">
+        </div>
+        <div class="col-sm-12">
+            <div id="grid_soil">
+            </div>
+        </div>
+    </div>
+</form>
+<div id="dialog" style="background-color:white;" @*style="background: #e0dbdb !important;"*@>
+    <form id="soil_form" class="form-horizontal" data-role="validator" novalidate="novalidate">
+        <div class="row">
+            <div class="col-sm-3">
+            </div>
+            <div class="col-sm-4">
+                <h5 style="text-align:center;color:red;font-size:19px;font:bold">Soil Health Card</h5>
+            </div>
+            <div class="col-sm-3" id="soilmenu" style="float: right; margin-right: -85px;">
+                <img title="Save" class="shade" style="cursor:pointer;" src="~/images/save-finals.jpg" id="soilsave" onclick="save()" />&nbsp;
+                <img title="Attachments" class="shade" style="cursor:pointer;" src="~/images/attach-finals.jpg" id="attach" onclick="attachment()" />&nbsp;
+                <img title="Notes" class="shade" style="cursor:pointer;" src="~/images/notes-finals.jpg" id="notes" onclick="notes_data()" />&nbsp;
+                @*<button type="button" id="soilprint" onclick="Print()">PRINT PDF</button>*@
+                <img title="Print" class="shade" style="cursor:pointer;" src="~/images/printing.png" id="soilprint" onclick="Print()" />
+            </div>
+        </div>
+        <hr />
+        <div class=" row" style="padding-left:66px;padding-bottom:7px">
+            <div class="col-sm-2">
+                <label class="title">Farmer Code</label>
+                <input type="text" name="In_farmer_code" id="txtfarmercode" class="form-control" style="width: 100%;height: 20px" readonly>
+            </div>
+            <div class="col-sm-1" style="padding-top:31px;width:3%">
+                <label class="title"></label>
+                <a class="HelpWindow fa fa-search fa-lg" role="button" id="pay_help1" data-toggle="modal" href="/HelpFilter/HelpFilter" hdrtitle="Member" searchid="S01" data-target="#HelpModal" onclick=transfer(this,"form","","form_control"); title="Search" style="font-size: 19px; "></a>
+            </div>
+            <div class="col-sm-2">
+                <label class="title">Farmer Name</label>
+                <input type="text" name="In_farmer_name" id="txtfarmername" class="form-control" style="width:100%;height:20px" readonly>
+                <input type="hidden" id="txtfarmer_gid" name="In_farmer_gid" />
+                <input type="hidden" id="txtMode" name="In_mode_flag" />
+                <input type="hidden" id="txtsoilgid" name="In_soil_gid" />
+            </div>
+            <div class="col-sm-2" style="padding-left: 44px;">
+                <label class="title">Tran ID</label>
+                <input type="text" name="In_Tran_Id" id="txttranid" class="form-control" style="width:100%;height:20px" readonly>
+            </div>
+            <div class="col-sm-2" style="padding-left: 44px;">
+                @*<label class="title">Soil Sample Collection</label>*@
+                <label class="title">Soil Health Card Issued On </label>
+                <input class=".cusDate form-control" data-role='datepicker' id="txtValidity1" style="width:100%;height:20px" data-checkdate-msg="Enter Valid Date" name="In_collection_date" onkeypress="return date_validate(event)" />
+                <span data-for='valid' class='k-invalid-msg'></span>
+            </div>
+        </div>
+        <div class=" row" style="padding-left:66px;padding-bottom:7px">
+            <div class="col-sm-2">
+                <label class="title">Sample Status</label>
+                <input id="cmb_samplests" name="In_sample_status" data-role="filtercombo" style="width:114%; height: 20px" class="form-control" readonly >
+            </div>
+            <div class="col-sm-1" style="padding-top:31px;width:3%">
+
+            </div>
+            <div class="col-sm-2">
+                <label class="title">Reject Reason</label>
+                <input id="cmb_rejreason" name="In_reject_reason" data-role="filtercombo" style="width: 114%; height: 20px" class="form-control">
+            </div>
+            <div class="col-sm-2" style="padding-left: 44px;">
+                <label class="title">Sample ID</label>
+                <input type="text" name="In_sample_Id" id="txtsampleid" class="form-control" style="width:100%;height:20px" MaxLength="100">
+            </div>
+            <div class="col-sm-2" style="padding-left: 44px;">
+                <label class="title">Sample Drawn By</label>
+                <input id="cmb_sampleby" name="In_sample_drawnby" data-role="filtercombo" style="width:115%; height: 20px" class="form-control">
+            </div>
+        </div>
+        <div class=" row" style="padding-left:66px;padding-bottom:7px">
+            <div class="col-sm-2">
+                <label class="title">Customer Reference</label>
+                <input type="text" id="txtcusref" name="In_customer_ref" class="form-control" style="width:100%;height:20px">
+            </div>
+            <div class="col-sm-1" style="padding-top:31px;width:3%">
+
+            </div>
+            <div class="col-sm-2">
+                <label class="title">Lab Report No.</label>
+                <input type="text" id="txtlab_rep" name="In_Lab_reportno" class="form-control" style="width:100%;height:20px" MaxLength="20">
+            </div>
+            <div class="col-sm-2" style="padding-left: 44px;">
+                <label class="title">Lab ID</label>
+                <input type="text" name="In_Lab_Id" id="txtlabid" class="form-control" style="width:100%;height:20px" MaxLength="100">
+            </div>
+            <div class="col-sm-2" style="padding-left: 44px;">
+                <label class="title">Sample Received On</label>
+                <input class=".cusDate form-control" data-role='datepicker' id="txtValidity2" style="width:100%;height:20px" data-checkdate-msg="Enter Valid Date" name="In_sample_receiveon" onkeypress="return date_validate(event)" />
+                <span data-for='valid' class='k-invalid-msg'></span>
+            </div>
+        </div>
+        <div class="row" style="padding-left: 66px;padding-bottom: 15px ">
+            <div class="col-sm-2">
+                <label class="title">Analysis Started On</label>
+                <input class="form-control" data-role='datepicker' id="txtValidity3" style="width:114% !important; height: 20px" data-checkdate-msg="Enter Valid Date" name="In_Analysis_starton" onkeypress="return date_validate(event)" />
+                <span data-for='valid' class='k-invalid-msg'></span>
+            </div>
+            <div class="col-sm-1" style="padding-top:31px;width:3%">
+
+            </div>
+            <div class="col-sm-2">
+                <label class="title">Analysis Completed On</label>
+                <input class=".cusDate form-control" data-role='datepicker' id="txtValidity4" style="width:114% !important; height: 20px" data-checkdate-msg="Enter Valid Date" name="In_Analysis_completeon" onkeypress="return date_validate(event)" />
+                <span data-for='valid' class='k-invalid-msg'></span>
+            </div>
+            <div class="col-sm-2" style="padding-left: 44px;">
+                <label class="title">Test Method</label>
+                <input id="txttestmethod" name="In_test_method" data-role="filtercombo" style="width:248%;height:20px" class="form-control">
+            </div>
+        </div>
+        <div class="row" style="padding-left: 66px;padding-bottom: 15px ">
+            <div class="col-sm-2">
+                <input type="radio" id="rbnabl" name="In_nablnonnabl_param" value="nabl" onclick="getsoilparameters()" /> NABL
+                <input type="radio" id="rbnonnabl" name="In_nablnonnabl_param" onclick="getnonnablsoilparameters()" value="nonnabl" /> NON-NABL
+            </div>
+        </div>
+        <div class="row">
+            @*<h5 style="text-align:center;color:red;font-size:19px;">Soil Parameters</h5>*@
+            <div class="col-xs-11" style="margin-left: 6%;width: 84%;">
+                <div id="grid_soil_parameter">
+                </div>
+                <div id="grid_nonsoil_parameter">
+                </div>
+
+            </div>
+        </div>
+        <div class="row" style="margin-top:10px;margin-left: 5%;">
+            <div class="col-sm-6" id="croprec">
+                <label class="title">Crop Recommendation</label>
+                <textarea class="comment" id="comment" name="In_crop_recommendation" style="height: 82px; width: 693px;"></textarea>
+            </div>
+            <div class="col-sm-3" style=" margin-left: 18%;margin-top: 2%;">
+                @*<input type="checkbox" class="form-check-input" value="">&nbsp; <span style="font-size:13px;">Confirm Report Completion</span>*@
+                <input type="checkbox" id="cropcheckbox" name="In_crop_confirm" class="form-check-input" value="0" disabled="disabled">&nbsp; <span style="font-size:13px;">Confirm Report Completion</span>
+                <input type="hidden" id="cropcheckbox" name="In_crop_confirm" value="0" />
+
+            </div>
+        </div>
+        <div class="modal fade" id="HelpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+            <div class="modal-dialog" style="width:75%;height:500px;">
+                <div class="modal-content">
+                </div>
+            </div>
+        </div>
+        <div id="attachModal" @*style="background: #e0dbdb !important;"*@ style="background-color:white;">
+            <div class="row" style="padding-top:20px;padding-bottom:20px;padding-left:10px">
+                <div class="col-sm-3">
+                    <label for="txtcode" style="font-weight: normal;">Browse File</label>
+                    <input type="file" id="attachfile" name="in_parent_code" class="form-control" style="width:96%;height:20px">
+                </div>
+                <div class="col-sm-3">
+                    <label for="txtcode" style="font-weight: normal;">Description</label>
+                    <input type="text" id="txtdes" name="in_des_code" class="form-control" style="width:96%;height:20px">
+                </div>
+                <div class="col-sm-3">
+                    <label for="txtcode" style="font-weight: normal;">Document</label>
+                    <input id="txtdoc" name="in_doc_code" class="form-control" data-role="filtercombo" style="width:90%;height:20px" value="SOILCARD" readonly>
+                </div>
+                <div class="col-sm-1">
+                    <label></label>
+                    <button title="Upload" type="submit" id="button_Attachment" value="Upload" onclick="save_Image()" class="btn btn-primary" style="height:1%;margin-top:31%;cursor:pointer;"> <span class="fa fa-upload"></span></button>
+                    <a id="download_exl_template" download href=""></a>
+                </div>
+            </div>
+            <div class="row" style="padding-left: 10px">
+                <div class="col-lg-11">
+                    <div id="grid_attachment">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="notesmodel" @*style="background: #e0dbdb !important;"*@ style="background-color:white;">
+            <div class="row">
+                <div class="col-sm-3">
+                </div>
+                <div class="col-sm-4">
+                    <h5 style="text-align:center;color:red;font-size:14px;">Notes</h5>
+                </div>
+                <div class="col-sm-3" id="notesmenu">
+                    @*<i class="fa fa-floppy-o fa-3x" style="color:red;font-size: 20px;cursor:pointer" onclick="notesave()" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;*@
+                    <img title="Save" src="~/images/save-finals.jpg" onclick="notesave()" style="margin-left: 70%;cursor:pointer;" />
+                </div>
+            </div>
+            <div class="col-sm-6" style="margin-left:25px;">
+                <label for="remark" class="title">Notes</label>
+                <textarea class="form-control" rows="3" id="notesdata" name="" style="margin: 0px -210.609px 0px 0px; width: 462px; height: 61px;"></textarea>
+            </div>
+        </div>
+
+    </form>
+</div>
+
+<div id="dialogprint" style="background-color:white;">
+    <form id="soil_print" class="form-horizontal" data-role="validator" novalidate="novalidate">
+        <div class="row">
+            <div class="col-sm-4">
+                <h5 style="text-align: center; color: red; font-size: 20px; margin-left: 64%;">Print PDF</h5>
+            </div>
+            <div class="col-sm-3" id="soilprintmenu" style="float: right;margin-right: -90px;">
+                <img title="Print" class="shade" style="cursor:pointer;" src="~/images/printing.png" id="soilprintchk" onclick="Submit()" />
+                <a id="downloadpath" download href=""></a>
+            </div>
+        </div>
+        <hr style="margin-top:0px !important;margin-bottom:0px !important;">
+        <div class="row" id="NABL_radio" style="margin-left: 30px;margin-top: 4%;">
+            @*<label class=" col-sm-3 control-label" style="font-weight: bold; padding-left: 5%;">Header Part</label>*@
+            <input type="radio" id="headwith" name="headerwith" value="Yes" style="font-weight: bold;" /> With Header
+            <input type="radio" id="headwith" name="headerwith" value="No" style="margin-left: 65px;font-weight: bold;" /> Without Header
+        </div>
+        <div class="row" id="NABL_radio" style="margin-left: 30px;margin-top: 4%;">
+            @*<label class=" col-sm-3 control-label" style="font-weight: bold; padding-left: 5%;">Header Part</label>*@
+            <input type="radio" id="notewith" name="notewith" value="Yes" style="font-weight: bold;" /> With Note
+            <input type="radio" id="notewith" name="notewith" value="No" style="margin-left: 65px;font-weight: bold;" /> Without Note
+        </div>
+        <div class="row" style="margin-left: -5px;margin-top: 5%;">
+            <label class=" col-sm-3 control-label" style="font-weight: bold; padding-left: 5%;">Signature Name</label>
+            <input id="cmb_signload" data-role="filtercombo" class="form-control">
+        </div>
+
+
+    </form>
+</div>
+<script>
+    $(document).ready(function () {
+        debugger;
+        $("#dialog").hide();
+        $("#dialogprint").hide();
+        kendodate_format();
+        Form_validate_Name = $('form.form-horizontal').attr('id');
+        var container = $("#soil_form");
+        kendo.init(container);
+        container.kendoValidator({
+            rules: {
+                checkdate: function (input) {
+                    if (input.attr("data-role") == "datepicker") {
+                        var res = isDate(input.val());
+                        return res;
+                    }
+                    else {
+                        return true;
+                    }
+                }
+            }
+        });
+
+
+        var presentDate = new Date();
+        $(function () {
+            var datepicker = $('#txtValidity4').kendoDatePicker({
+                value: presentDate,
+                min: presentDate,
+                format: "dd/MM/yyyy",
+            }).data('kendoDatePicker');
+        });
+        // $("#txtlab_rep").val("98765432flexi@cod!");
+        $("#txtValidity1").kendoDatePicker({
+            max: new Date(),// sets max date
+            format: "dd/MM/yyyy"
+        });
+        $("#txtValidity2").kendoDatePicker({
+            max: new Date(),// sets max date
+            format: "dd/MM/yyyy"
+        });
+        $("#txtValidity3").kendoDatePicker({
+            max: new Date(),// sets max date
+            format: "dd/MM/yyyy"
+        });
+       
+        load_master_code();
+        var list_in = "";
+        $("#cmb_soilsts").empty();
+        list_in = grid_comboScreen_mastercodes("QCD_Soil_Status");
+        filter_combobox("cmb_soilsts", list_in);
+        $('#cmb_soilsts').data("kendoComboBox").value(982);
+
+        var list_in1 = "";
+        $("#cmb_samplests").empty();
+        list_in1 = grid_comboScreen_mastercodes("QCD_Soil_Status");
+        filter_combobox("cmb_samplests", list_in1);
+        $('#cmb_samplests').data("kendoComboBox").value(982);
+      
+
+        var list_in2 = "";
+        $("#cmb_rejreason").empty();
+        list_in2 = grid_comboScreen_mastercodes("QCD_SOIL_RejMas");
+        filter_combobox("cmb_rejreason", list_in2);
+
+        var list_in3 = "";
+        $("#cmb_sampleby").empty();
+        list_in3 = grid_comboScreen_mastercodes("QCD_SOIL_SampleBY");
+        filter_combobox("cmb_sampleby", list_in3);
+        $('#cmb_sampleby').data("kendoComboBox").value(1152);
+
+
+        var list_in4 = "";
+        $("#txttestmethod").empty();
+        list_in4 = grid_comboScreen_mastercodes("QCD_SOIL_TestMethod");
+        filter_combobox("txttestmethod", list_in4);
+        var list_sign = "";
+        $("#cmb_signload").empty();
+        list_sign = grid_comboScreen_mastercodes("SIGNATURE");
+        console.log(list_sign);
+        filter_combobox("cmb_signload", list_sign);
+        grid_soil([]);
+
+
+        list();
+        Screen_Id = "SOILCARDMaker";
+        permission = sec_Master_Permission(Screen_Id);
+        grid_soil_parameter([]);
+        $('#HelpModal').on('hide.bs.modal', function (e) {
+            if ($("#txtfarmer_gid").val() != undefined && $("#txtfarmer_gid").val() != "") {
+
+            }
+        });
+        $("#cmb_soilsts").change(function () {
+            list();
+        });
+        grid_attachment([]);
+    });
+</script>
+<script>
+
+    function closerole() {
+        $("#dialog").data("kendoWindow").close();
+        list();
+    }
+    function onview() {
+        debugger;
+        //        var grid = $("#grid_soil").data("kendoGrid");
+        //var selectedItem = grid.dataItem(grid.select());
+        //var SoilStatus = selectedItem.soil_status;
+        onChangeSelection();
+        debugger;
+       // $("#soilmenu").hide();
+        $("#soilsave").hide();
+        $("#attach").show();
+        $("#notes").show();
+        $("#pay_help1").hide();
+
+
+       // $("#grid_attachment").hide();
+       // $("#attachModal").hide();
+        $("#notesmodel").hide();
+        $("#soilprint").show();
+        //var grid = $("#grid_soil").data("kendoGrid");
+        //var selectedItem = grid.dataItem(grid.select());
+        //var formval = form_Serialize("soil_form1");
+        //var obj_val = JSON.parse(formval);
+
+        //var SoilStatus=  $('#cmb_samplests').data("kendoComboBox").text();
+        ////cmb_samplests
+        ////var SoilStatus = selectedItem.soil_status;
+        //if (SoilStatus == "Approved") {
+        //    debugger;
+        //    // $("#soilmenu").hide();
+        //    $("#soilsave").hide();
+        //    $("#attach").hide();
+        //    $("#notes").hide();
+        //    $("#pay_help1").hide();
+
+        //    $("#soilprint").show();
+        //}
+        //else if (SoilStatus == "Waiting for approval") {
+        //    debugger;
+        //    $("#soilmenu").hide();
+        //    $("#pay_help1").hide();
+        //    $("#attach").hide();
+        //    $("#notes").hide();
+        //}
+        //else {
+        //    $("#soilmenu").hide();
+        //    $("#pay_help1").hide();
+        //    $("#attach").hide();
+        //    $("#notes").hide();
+        //}
+
+        //popup double click expand to avoid
+        $(document).on('dblclick', '.k-window-titlebar', function (e) {
+            debugger;
+            // Restore old size
+            dialog.toggleMaximization();
+
+
+        });
+    }
+    function ondelete() {
+        debugger;
+        var kendoWindow = $("<div />").kendoWindow({
+            title: "Confirm",
+            width: "350px",
+            height: "130px",
+            resizable: false,
+            modal: true
+        });
+        kendoWindow.data("kendoWindow")
+            .content($("#grid_delete-confirmation").html())
+            .center().open();
+        kendoWindow
+            .find(".grid_delete-confirm,.grid_delete-cancel")
+            .click(function () {
+                if ($(this).hasClass("grid_delete-confirm")) {
+                    var grid = $("#grid_soil").data("kendoGrid");
+                    var selectedItem = grid.dataItem(grid.select());
+                    var formval = form_Serialize("rolescreen_form1");
+                    var obj_val = JSON.parse(formval);
+                    obj_val.In_soil_gid = selectedItem.In_soil_gid;
+                    obj_val.In_mode_flag = "D";
+                    var data = {};
+                    data.context = getContext();
+                    data.context.Header = obj_val;
+                    data.context.Detail = [];
+                    var Context = data.context;
+                    $.ajax({
+                        type: "POST",
+                        data: JSON.stringify({
+                            userId: Context.userId, orgnId: Context.orgnId, locnId: Context.locnId, localeId: Context.localeId,
+                            In_farmer_gid: Context.Header.In_farmer_gid, In_soil_gid: Context.Header.In_soil_gid, In_Tran_Id: Context.Header.In_Tran_Id, In_collection_date: Context.Header.In_collection_date,
+                            In_sample_status: Context.Header.In_sample_status, In_reject_reason: Context.Header.In_reject_reason, In_sample_Id: Context.Header.In_sample_Id,
+                            In_sample_drawnby: Context.Header.In_sample_drawnby, In_customer_ref: Context.Header.In_customer_ref, In_Lab_reportno: Context.Header.In_Lab_reportno,
+                            In_Lab_Id: Context.Header.In_Lab_Id, In_sample_receiveon: Context.Header.In_sample_receiveon, In_Analysis_starton: Context.Header.In_Analysis_starton,
+                            In_Analysis_completeon: Context.Header.In_Analysis_completeon, In_test_method: Context.Header.In_test_method, In_crop_recommendation: Context.Header.In_crop_recommendation,
+                            In_soil_status: Context.Header.In_soil_status, In_mode_flag: Context.Header.In_mode_flag, Detail: Context.Detail
+                        }),
+                        url: "/SoilCard/Soilcardsave",
+                        dataType: "json",
+                        contentType: 'application/json; charset=utf-8',
+                        success: function (response) {
+                            var Res = JSON.parse(response);
+                            if (Res.out_result == "true") {
+                                kendoAlert("SoilCard Details inactivate successfully");
+                                clear_val();
+                                list();
+                            }
+                        },
+                        error: function (er) {
+                            alert(er)
+                            console.log(er)
+                        }
+
+                    });
+                }
+                kendoWindow.data("kendoWindow").close();
+            });
+    }
+
+    function list() {
+        debugger;
+        var soilcardstatus = $("#cmb_soilsts").val();
+        var data = {};
+        data.context = getContext();
+        var Context = data.context;
+        $.ajax({
+            type: "POST",
+            data: JSON.stringify({ orgnId: Context.orgnId, locnId: Context.locnId, localeId: Context.localeId, soil_status: soilcardstatus }),
+            //url: "/SoilCard/SoilcardList",
+            url: '@Url.Action("SoilcardList","SoilCard")',
+            dataType: "json",
+            contentType: 'application/json; charset=utf-8',
+            success: function (response) {
+                debugger;
+                if (response != null) {
+                    generate_soil_list(response.List);
+                    if (soilcardstatus == "983") {
+                        debugger;
+                        $("#grid_soil .k-grid-Delete1").hide();
+                        $("#grid_soil .k-grid-Edit").hide();
+                    }
+                }
+                else {
+                    grid_soil([]);
+                }
+            },
+            error: function (er) {
+                alert(er)
+                console.log(er)
+            }
+        });
+    }
+
+
+    //SELVA
+    function getlastinserid() {
+        debugger;
+        var soilcardstatus = $("#cmb_soilsts").val();
+        var data = {};
+        data.context = getContext();
+        var Context = data.context;
+                $.ajax({
+                    type: "POST",
+            data: JSON.stringify({ orgnId: Context.orgnId, locnId: Context.locnId, localeId: Context.localeId, soil_status: soilcardstatus }),
+            url: '@Url.Action("SoilcardLastInsertid", "SoilCard")',
+            dataType: "json",
+            contentType: 'application/json; charset=utf-8',
+            success: function (response) {
+                debugger;
+                if (response != null) {
+              
+                    var Res = JSON.parse(response);
+                    var Lastinserid = Res.out_msg;
+                    var increment = 1;
+                    var rndc = "TC8349";
+                    var year = "21000000";
+                    var z = rndc + year;
+                    var a = parseInt(Lastinserid);
+                    var b = increment;
+                    var y = a + b;
+                    var x = z + '' + y+'F';
+                    $("#txtlab_rep").val(x);
+
+                }
+                else {
+                   // grid_soil([]);
+                }
+            },
+            error: function (er) {
+                alert(er)
+                console.log(er)
+            }
+        });
+    }
+
+
+    function serialno() {
+        debugger;
+        $("#dialog").kendoWindow();
+        var dialog = $("#dialog").data("kendoWindow");
+        dialog.open().element.closest(".k-window").css({
+            top: 18,
+            left: 180, height: 698, width: 1084
+
+        });
+        dialog.title("Soil Health Card");
+        dialog.bind("open", serialno);
+       // load_master_code();
+        //add pop up close
+        dialog.unbind("close");
+        dialog.bind("close", onWindowEditClose);
+        list();
+        getlastinserid();
+
+
+      // console.log("Venkat Test - " + x);
+
+        $("#attach").hide();
+        $("#notes").hide();
+        $("#attachModal").hide();
+        $("#notesmodel").hide();
+        $('#cmb_samplests').data("kendoComboBox").value(982);
+
+        $("#soilprint").hide();
+        $("#soilsave").show();
+       // $("#soilmenu").show();
+        clear_val();
+       // $("#txtlab_rep").val("98765432flexi@cod!");
+
+        var list_in1 = "";
+        $("#cmb_samplests").empty();
+        list_in1 = grid_comboScreen_mastercodes("QCD_Soil_Status");
+        filter_combobox("cmb_samplests", list_in1);
+        $('#cmb_samplests').data("kendoComboBox").value(982);
+        var list_in3 = "";
+        $("#cmb_sampleby").empty();
+        list_in3 = grid_comboScreen_mastercodes("QCD_SOIL_SampleBY");
+        filter_combobox("cmb_sampleby", list_in3);
+        $('#cmb_sampleby').data("kendoComboBox").value(1013);
+        //popup double click expand to avoid
+        $(document).on('dblclick', '.k-window-titlebar', function (e) {
+            debugger;
+            // Restore old size
+            dialog.toggleMaximization();
+
+
+        });
+        //getsoilparameters();
+
+
+
+        //var rndc = "TC8349";
+        //var year = "21";
+        //var z = rndc + year;
+        //var x = z + "000000" + Math.floor((Math.random() + 969)) + "F";
+
+         //var x = Math.floor((Math.random() * 00000010) + 00000010);
+        // $("#txtlab_rep").val(x);
+    }
+
+    //Code introduced by venkat New button click soilparameters grid value bind 2021-04-21 [emp-10151]
+
+    //NABL Soil Parameter
+    function getsoilparameters() {
+        debugger;
+        $("#grid_soil_parameter").show();
+        var soilcardstatus = $("#cmb_soilsts").val();
+        var data = {};
+        data.context = getContext();
+        var Context = data.context;
+        $.ajax({
+            type: "POST",
+            data: JSON.stringify({ orgnId: Context.orgnId, locnId: Context.locnId, localeId: Context.localeId, soil_status: soilcardstatus }),
+            url: "/SoilCard/getsoliparameters",
+            dataType: "json",
+            contentType: 'application/json; charset=utf-8',
+            success: function (response) {
+                debugger;
+                if (response.ParametersDetailItems != null) {
+                    debugger;
+                    $("#grid_nonsoil_parameter").hide();
+                    var data = changedataType(response.ParametersDetailItems);
+                    grid_soil_parameter(data);
+                }
+                else {
+                    grid_soil_parameter([]);
+                }
+            },
+            error: function (er) {
+                debugger;
+                console.log(er);
+            }
+        });
+
+    }
+
+
+    //NON-NABL Soil Parameter
+    function getnonnablsoilparameters() {
+        debugger;
+        $("#grid_nonsoil_parameter").show();
+        var soilcardstatus = $("#cmb_soilsts").val();
+        var data = {};
+        data.context = getContext();
+        var Context = data.context;
+        $.ajax({
+            type: "POST",
+            data: JSON.stringify({ orgnId: Context.orgnId, locnId: Context.locnId, localeId: Context.localeId, soil_status: soilcardstatus }),
+            url: "/SoilCard/getNONNABLsoliparameters",
+            dataType: "json",
+            contentType: 'application/json; charset=utf-8',
+            success: function (response) {
+                debugger;
+                if (response.ParametersDetailItems != null) {
+                    debugger;
+                    $("#grid_soil_parameter").hide();
+                    var data = changedataType(response.ParametersDetailItems);
+                    gridnonnabl_soil_parameter(data);
+
+                }
+                else {
+                    gridnonnabl_soil_parameter([]);
+                }
+            },
+            error: function (er) {
+                debugger;
+                console.log(er);
+            }
+        });
+       
+    }
+    //End
+    //pop up close refresh
+    var onWindowEditClose = function (e) {
+        debugger;
+        list();
+    };
+    function generate_soil_list(res) {
+        var data = changedataType(res);
+        grid_soil(data);
+    }
+    function load_master_code() {
+        debugger;
+        try {
+            var data = {};
+            data.screen_Id = "SOILCARDMaker";
+            var tab_values = ajaxcall_param("/Home/screenId_mastercodelist", JSON.stringify(data));
+        }
+        catch (err) {
+            javascript_log4j_root(arguments.callee.name, err);
+        }
+    }
+    function grid_soil(data) {
+        $("#grid_soil").kendoGrid({
+            dataSource: {
+                data: data, //  pageSize: 20
+            },
+            height: 450,
+            sortable: true,
+            selectable: true,
+            filterable: true,
+            //change: onChangeSelection,
+            selectable: "singl",   //  Grid Row Selection
+            navigatable: true,
+            toolbar: "<a class='k-grid-add' id='Assign_sevices' onClick='serialno()'><span class='fa fa-plus' style='color:Black'></span></a>",
+            columns: [
+                {
+                    field: "In_soil_gid",
+                    title: "In_soil_gid",
+                    hidden: true,
+                    width: 30
+                },
+                {
+                    field: "Collection_date",
+                    title: "Collection Date",
+                    width: 30
+                },
+                {
+                    field: "tran_id",
+                    title: "Transaction Id",
+                    width: 30
+                },
+                {
+                    field: "In_farmer_code",
+                    title: "Farmer Code",
+                    width: 30
+                },
+                {
+                    field: "In_farmer_name",
+                    title: "Farmer Name",
+                    width: 30
+                },
+                {
+                    field: "soil_status",
+                    title: "Status",
+                    width: 30
+                },
+                {
+                    field: "farmer_soil_CropRecom",
+                    title: "Farmer Soil CropRecom",
+                    width: 30
+                },
+                {
+                    command: [
+                        {
+                            name: "View",
+                            text: "<span class='fa fa-eye' style ='color:#357ab8;'onClick='onview()'></span>"
+                        },
+                        {
+                            name: "Edit",
+                            text: "<span  id='editid' class='fa fa-pencil' style='color:#357ab8;' onClick='onChangeSelection()'></span>"
+                        },
+                      
+                        {
+                            name: "Delete1",
+                            text: "<span class='fa fa-times' id='deleteid' style='color:#357ab8;padding-left:2px;' onClick='ondelete()'></span>"
+                        },
+                    ], title: "View/Edit", width: "25px",
+                },
+            ]
+        });
+    }
+    function grid_soil_parameter(data) {
+        $("#grid_soil_parameter").kendoGrid({
+            dataSource: {
+                data: data,
+            },
+            height: 174,
+
+            groupable: false,
+            dataBinding: setDefaultValues,
+            sortable: true,
+            selectable: true,
+            navigatable: true,
+            
+            toolbar: "<a class='' id='soil_sevices' ><span class='' style=''></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><span style='color:red;font-weight:bold;'>NABL Soil Parameters</span>",
+            dataBinding: setDefaultValues,
+
+            dataBound: function (e) {
+                resultData = e.sender._data;
+                var rows = $('#grid_soil_parameter').data('kendoGrid').tbody.children();
+                setColor(rows, resultData);
+            },
+
+            columns: [
+                {
+                    field: "in_soilparam_rowid",
+                    title: "Soil out_soilparam_rowid",
+                    hidden: true,
+                    width: 30
+                },
+                {
+                    field: "out_soil_Id",
+                    title: "Sl",
+                    width: 30
+                },
+                {
+                    field: "In_soil_Parameter",
+                    title: "In_soil_Parameter",
+                    hidden: true,
+                    width: 30
+                },
+                {
+                    field: "In_soil_Parameter_desc",
+                    title: "NABL Soil Parameter",
+                    width: 100
+                },
+                {
+                    field: "In_soil_uom",
+                    title: "In_soil_uom",
+                    hidden: true,
+                    width: 30
+                },
+                {
+                    field: "In_soil_uom_desc",
+                    title: "UoM",
+
+                    width: 100
+                },
+                {
+                    field: "In_soil_results",
+                    title: "Result",
+                    width: 100
+                },
+                {
+                    field: "In_mode_flag",
+                    title: "In_mode_flag",
+                    hidden: true,
+                    width: 30
+                },
+
+            ],
+            editable: true,
+        });
+
+    }
+    //NON -NABL
+    function gridnonnabl_soil_parameter(data) {
+        $("#grid_nonsoil_parameter").kendoGrid({
+            dataSource: {
+                data: data,
+            },
+            height: 174,
+
+            groupable: false,
+            dataBinding: setDefaultValues,
+            sortable: true,
+            selectable: true,
+            navigatable: true,
+
+            toolbar: "<a class='' id='soil_sevices' ><span class='' style=''></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><span style='color:red;font-weight:bold;'>NON-NABL Soil Parameters</span>",
+            dataBinding: setDefaultValues,
+
+            dataBound: function (e) {
+                resultData = e.sender._data;
+                var rows = $('#grid_nonsoil_parameter').data('kendoGrid').tbody.children();
+                setColor(rows, resultData);
+            },
+
+            columns: [
+                {
+                    field: "in_soilparam_rowid",
+                    title: "Soil out_soilparam_rowid",
+                    hidden: true,
+                    width: 30
+                },
+                {
+                    field: "out_soil_Id",
+                    title: "Sl",
+                    width: 30
+                },
+                {
+                    field: "In_soil_Parameter",
+                    title: "In_soil_Parameter",
+                    hidden: true,
+                    width: 30
+                },
+                {
+                    field: "In_soil_Parameter_desc",
+                    title: "NON-NABL Soil Parameter",
+                    width: 100
+                },
+                {
+                    field: "In_soil_uom",
+                    title: "In_soil_uom",
+                    hidden: true,
+                    width: 30
+                },
+                {
+                    field: "In_soil_uom_desc",
+                    title: "UoM",
+                    width: 100
+                },
+                {
+                    field: "In_soil_results",
+                    title: "Result",
+                    width: 100
+                },
+                {
+                    field: "In_mode_flag",
+                    title: "In_mode_flag",
+                    hidden: true,
+                    width: 30
+                },
+
+            ],
+            editable: true,
+        });
+    }
+      function onChangeSelection() {
+        debugger;
+        $("#soilmenu").show();
+        $("#attachModal").show();
+        $("#notesmodel").show();
+        $("#soilsave").show();
+        $("#attach").show();
+        $("#notes").show();
+        $("#attachModal").hide();
+        $("#notesmodel").hide();
+        $("#soilprint").hide();
+        $("#dialog").kendoWindow();
+        var dialog = $("#dialog").data("kendoWindow");
+        dialog.open().element.closest(".k-window").css({
+            top: 18,
+            left: 180, height: 698, width: 1077
+        });
+        dialog.title("Soil Health Card");
+        dialog.bind("open", serialno);
+        // clear_val();
+
+        //popup double click expand to avoid
+        $(document).on('dblclick', '.k-window-titlebar', function (e) {
+            debugger;
+            // Restore old size
+            dialog.toggleMaximization();
+
+
+        });
+
+        $("#cropcheckbox").prop('enabled', true);
+        $("#cropcheckbox").prop('checked', false);
+          debugger;
+        var grid = $("#grid_soil").data("kendoGrid");
+        var selectedItem = grid.dataItem(grid.select());
+        var formval = form_Serialize("soil_form1");
+        var obj_val = JSON.parse(formval);
+        obj_val.soil_gid = selectedItem.In_soil_gid;
+        $("#txtUserId").val(selectedItem.user_code);
+        var data = {};
+        data.context = getContext();
+        data.context.Header = obj_val;
+          var Context = data.context;
+          debugger;
+        $.ajax({
+            type: "POST",
+            data: JSON.stringify({ userId: Context.userId, orgnId: Context.orgnId, locnId: Context.locnId, localeId: Context.localeId, soil_gid: Context.Header.soil_gid }),
+            url: "/SoilCard/Soilcardfetch",
+            dataType: "json",
+            contentType: 'application/json; charset=utf-8',
+            success: function (response) {
+                debugger;
+
+                if (response != null) {
+                    debugger;
+                    if (response.header.out_sample_status != "Waiting for approval") {
+                        debugger;
+                        generate_soil_header(response.header);
+                        generate_soilparameter_list(response.detail);
+                        if (response.header.out_crop_confirm == "1" && response.header.out_soil_confirm == "C") {
+                            debugger;
+                            $("#cropcheckbox").prop('enabled', true);
+                            $("#cropcheckbox").prop('checked', true);
+                        }
+                        if ($("#grid_soil_parameter").show()) {
+                            $("input[name='headerwith']:checked").val("Yes");
+                        }
+                        else {
+                            $("input[name='headerwith']:checked").val("No");
+                        }
+                    }
+                    else {
+                        debugger;
+
+                        generate_soil_header(response.header);
+                       // var x = Math.floor((Math.random() * 10000000000000000) + 100000000000000000);
+                      //  $("#txtlab_rep").val(x);
+                        getlastinserid();
+                       // getsoilparameters();
+                        if (response.header.out_crop_confirm == "1" && response.header.out_soil_confirm == "C") {
+                            debugger;
+                            $("#cropcheckbox").prop('enabled', true);
+                            $("#cropcheckbox").prop('checked', true);
+                        }
+                        
+                    }
+                }
+                else {
+
+                }
+            },
+            error: function (er) {
+                alert(er)
+                console.log(er)
+            }
+
+        });
+    }
+    function getfetch(res) {
+        var soil_gid = res.out_msg;
+        var data = {};
+        data.context = getContext();
+        var Context = data.context;
+        $.ajax({
+            type: "POST",
+            data: JSON.stringify({ userId: Context.userId, orgnId: Context.orgnId, locnId: Context.locnId, localeId: Context.localeId, soil_gid:soil_gid }),
+            url: "/SoilCard/Soilcardfetch",
+            dataType: "json",
+            contentType: 'application/json; charset=utf-8',
+            success: function (response) {
+                debugger;
+                if (response != null) {
+                    generate_soil_header(response.header);
+                    generate_soilparameter_list(response.detail)
+                }
+                else {
+
+                }
+            },
+            error: function (er) {
+                alert(er)
+                console.log(er)
+            }
+
+        });
+    }
+    function generate_soil_header(res) {
+
+        if (res.out_sample_status == "Approved") {
+            $("#soilprint").show();
+        }
+        else if(res.out_sample_status == "Rejected")
+        {
+            $("#soilprint").hide();
+        }
+
+        else {
+            $("#soilprint").hide();
+        }
+
+        $("#txtfarmercode").val(res.out_farmer_code);
+        $("#txtValidity1").val(res.out_collection_date);
+        $('#cmb_samplests').data("kendoComboBox").value(res.out_sample_status);
+        $('#cmb_rejreason').data("kendoComboBox").value(res.out_reject_reason);
+        $('#cmb_sampleby').data("kendoComboBox").value(res.out_sample_drawnby);
+        $("#txtfarmername").val(res.out_farmer_name);
+        $("#txttranid").val(res.out_Tran_Id);
+        $("#txtsampleid").val(res.out_sample_Id);
+        $("#txtcusref").val(res.out_customer_ref);
+        $("#txtlab_rep").val(res.out_Lab_reportno);
+        $("#txtMode").val(res.in_mode_flag);
+        $("#txtlabid").val(res.out_Lab_Id);
+        $("#txtValidity2").val(res.out_sample_receiveon);
+        $("#txtValidity3").val(res.out_Analysis_starton);
+        $("#txtValidity4").val(res.out_Analysis_completeon);
+        $("#txttestmethod").data("kendoComboBox").value(res.out_test_method);
+        $("#comment").val(res.out_crop_recommendation);
+        $("#txtsoilgid").val(res.out_soil_gid);
+        $("#txtfarmer_gid").val(res.out_farmer_gid);
+        $("#notesdata").val(res.out_soil_notes);
+        var NABL = res.out_nablnonnabl_param;
+        if (NABL == "nabl") {
+
+            $("#rbnabl").prop('checked', true);
+        }
+        else if (NABL == "nonnabl") {
+            $('#rbnonnabl').prop('checked', true);
+        }
+        else if (NABL == "") {
+            $("#rbnabl").prop('checked', false);
+            $('#rbnonnabl').prop('checked', false);
+        }
+    }
+    function generate_soilparameter_list(res) {
+        if (res != null) {
+            var data = changedataType(res);
+            grid_soil_parameter(data);
+        }
+        else {
+            grid_soil_parameter([]);
+        }
+    }
+    function grid_control() {
+        var control_Name = [
+
+        ];
+        return control_Name;
+    }
+    function form_control() {
+        var control_Name = [
+            { "dataCol": "farmer_code", "controlId": "txtfarmercode", "type": "Text" },
+            { "dataCol": "farmer_name", "controlId": "txtfarmername", "type": "Text" },
+            { "dataCol": "farmer_rowid", "controlId": "txtfarmer_gid", "type": "Text" },
+        ];
+        return control_Name;
+
+    }
+    function trans_input_data() {
+        var trans_coll = [
+            { "trasfer": "Yes", "dataCol": "farmer_code", "controlId": "txtfarmercode", "grid_id": "", "grid_row_col": "" },
+            { "trasfer": "Yes", "dataCol": "farmer_name", "controlId": "txtfarmername", "grid_id": "", "grid_row_col": "" }
+        ];
+        return trans_coll;
+    }
+    function save() {
+        debugger;
+        if ($("#txtMode").val() == "") {
+            $("#txtMode").val('I');
+        }
+        if ($("#txtMode").val() == "S") {
+            $("#txtMode").val('U');
+        }
+
+        var formval = form_Serialize("soil_form");
+        var obj_val = JSON.parse(formval);
+        if (obj_val.hasOwnProperty('In_collection_date')) {
+            if (obj_val.In_collection_date != '')
+                obj_val.In_collection_date = getFormated_StringDate(obj_val.In_collection_date); //getFormated_StringDate(obj_val.finyear_start_date);
+        }
+        if (obj_val.hasOwnProperty('In_sample_receiveon')) {
+            if (obj_val.In_sample_receiveon != '')
+                obj_val.In_sample_receiveon = getFormated_StringDate(obj_val.In_sample_receiveon); //getFormated_StringDate(obj_val.finyear_start_date);
+        }
+        if (obj_val.hasOwnProperty('In_Analysis_starton')) {
+            if (obj_val.In_Analysis_starton != '')
+                obj_val.In_Analysis_starton = getFormated_StringDate(obj_val.In_Analysis_starton); //getFormated_StringDate(obj_val.finyear_start_date);
+        }
+        if (obj_val.hasOwnProperty('In_Analysis_completeon')) {
+            if (obj_val.In_Analysis_completeon != '')
+                obj_val.In_Analysis_completeon = getFormated_StringDate(obj_val.In_Analysis_completeon); //getFormated_StringDate(obj_val.finyear_start_date);
+        }
+        if (obj_val.In_farmer_code == "") {
+            kendoAlert("Soil Farmer Code Cannot be Empty");
+            return false;
+
+        }
+
+        if (obj_val.In_collection_date == "") {
+            kendoAlert("Soil Collection  Date Cannot be Empty");
+            return false;
+
+        }
+        if (obj_val.In_sample_status == "") {
+            kendoAlert("Soil Status   Cannot be Empty");
+            return false;
+
+        }
+        if (obj_val.In_sample_drawnby == "") {
+            kendoAlert("Soil Sample DrawnBy Cannot be Empty");
+            return false;
+
+        }
+   
+        if (obj_val.In_sample_receiveon == "") {
+            kendoAlert("Soil Sample Received on  Date Cannot be Empty");
+            return false;
+
+        } if (obj_val.In_Analysis_starton == "") {
+            kendoAlert("Soil Analysis  Start on Cannot be Empty");
+            return false;
+        }
+
+        if (obj_val.In_Analysis_completeon == "") {
+            kendoAlert("Soil Analysis Completed on  Cannot be Empty");
+            return false;
+
+        }
+        obj_val.In_farmer_gid = parseInt(obj_val.In_farmer_gid);
+        var soildata = obj_val.In_soil_gid;
+        if (soildata == "") {
+            obj_val.In_soil_gid = 0;
+        }
+        else {
+            obj_val.In_soil_gid = parseInt(obj_val.In_soil_gid);
+        }
+
+        var Parameternabl = $('#rbnabl').is(':checked');
+        var Parameternonnabl = $('#rbnonnabl').is(':checked');
+        if (Parameternabl == false && Parameternonnabl == false)
+        {
+            kendoAlert("Please fill the NABL or NON-NABL Parameter");
+            return false;
+        }
+      
+        if (Parameternabl == true && Parameternonnabl == false) {
+            var grid_val = JSON.stringify($("#grid_soil_parameter").data().kendoGrid._data);
+            var Bind = {};
+            Bind = grid_val;
+            var result = JSON.parse(Bind);
+            $.each(result, function (index, value) {
+                var row_id = value.In_soilparam_rowid;
+                if (row_id == undefined) {
+                    result[index].In_soilparam_rowid = "0";
+                }
+                var mmode = result[index].In_mode_flag;
+                if (mmode == "S") {
+                    result[index].In_mode_flag = "U";
+                } else {
+                    result[index].In_mode_flag = "I";
+                }
+            });
+            var obj_grid_val = result;
+            var data = {};
+            data.context = getContext();
+            data.context.Header = obj_val;
+            data.context.Detail = obj_grid_val;
+            var Context = data.context;
+            $.ajax({
+                type: "POST",
+                data: JSON.stringify({
+                    userId: Context.userId, orgnId: Context.orgnId, locnId: Context.locnId, localeId: Context.localeId,
+                    In_farmer_gid: Context.Header.In_farmer_gid, In_soil_gid: Context.Header.In_soil_gid, In_Tran_Id: Context.Header.In_Tran_Id, In_collection_date: Context.Header.In_collection_date,
+                    In_sample_status: Context.Header.In_sample_status, In_reject_reason: Context.Header.In_reject_reason, In_sample_Id: Context.Header.In_sample_Id,
+                    In_sample_drawnby: Context.Header.In_sample_drawnby, In_customer_ref: Context.Header.In_customer_ref, In_Lab_reportno: Context.Header.In_Lab_reportno,
+                    In_Lab_Id: Context.Header.In_Lab_Id, In_sample_receiveon: Context.Header.In_sample_receiveon, In_Analysis_starton: Context.Header.In_Analysis_starton,
+                    In_Analysis_completeon: Context.Header.In_Analysis_completeon, In_test_method: Context.Header.In_test_method, In_crop_recommendation: Context.Header.In_crop_recommendation,
+                    In_soil_status: Context.Header.In_soil_status, In_mode_flag: Context.Header.In_mode_flag,
+                    In_crop_confirm: Context.Header.In_crop_confirm, In_nablnonnabl_param: Context.Header.In_nablnonnabl_param, Detail: Context.Detail
+                }),
+                url: "/SoilCard/Soilcardsave",
+                dataType: "json",
+                contentType: 'application/json; charset=utf-8',
+                success: function (response) {
+                    var Res = JSON.parse(response);
+                    var mode = $("#txtMode").val();
+                    if (Res.out_result == "true") {
+                        if (mode == "I") {
+                            debugger;
+                            kendoAlert("SoilCard Details saved successfully");
+                            getfetch(Res);
+                            $("#attach").show();
+                            $("#notes").show();
+                            list();
+                        }
+                        else if (mode == "U") {
+                            kendoAlert("SoilCard Details Updated successfully");
+                            getfetch(Res);
+                            list();
+                        }
+                        else if (mode == "D") {
+                            kendoAlert("SoilCard Details inactivate successfully");
+                            list();
+                        }
+                        else {
+                            kendoAlert(Res.out_result);
+                        }
+                    } else {
+
+                    }
+                },
+                error: function (er) {
+                    alert(er)
+                    console.log(er)
+                }
+
+            });
+        }
+        else if (Parameternabl == false && Parameternonnabl == true) {
+            var grid_val = JSON.stringify($("#grid_nonsoil_parameter").data().kendoGrid._data);
+            var Bind = {};
+            Bind = grid_val;
+            var result = JSON.parse(Bind);
+            $.each(result, function (index, value) {
+                var row_id = value.In_soilparam_rowid;
+                if (row_id == undefined) {
+                    result[index].In_soilparam_rowid = "0";
+                }
+                var mmode = result[index].In_mode_flag;
+                if (mmode == "S") {
+                    result[index].In_mode_flag = "U";
+                } else {
+                    result[index].In_mode_flag = "I";
+                }
+            });
+            var obj_grid_val = result;
+            var data = {};
+            data.context = getContext();
+            data.context.Header = obj_val;
+            data.context.Detail = obj_grid_val;
+            var Context = data.context;
+            $.ajax({
+                type: "POST",
+                data: JSON.stringify({
+                    userId: Context.userId, orgnId: Context.orgnId, locnId: Context.locnId, localeId: Context.localeId,
+                    In_farmer_gid: Context.Header.In_farmer_gid, In_soil_gid: Context.Header.In_soil_gid, In_Tran_Id: Context.Header.In_Tran_Id, In_collection_date: Context.Header.In_collection_date,
+                    In_sample_status: Context.Header.In_sample_status, In_reject_reason: Context.Header.In_reject_reason, In_sample_Id: Context.Header.In_sample_Id,
+                    In_sample_drawnby: Context.Header.In_sample_drawnby, In_customer_ref: Context.Header.In_customer_ref, In_Lab_reportno: Context.Header.In_Lab_reportno,
+                    In_Lab_Id: Context.Header.In_Lab_Id, In_sample_receiveon: Context.Header.In_sample_receiveon, In_Analysis_starton: Context.Header.In_Analysis_starton,
+                    In_Analysis_completeon: Context.Header.In_Analysis_completeon, In_test_method: Context.Header.In_test_method, In_crop_recommendation: Context.Header.In_crop_recommendation,
+                    In_soil_status: Context.Header.In_soil_status, In_mode_flag: Context.Header.In_mode_flag, In_crop_confirm: Context.Header.In_crop_confirm, In_nablnonnabl_param: Context.Header.In_nablnonnabl_param,Detail: Context.Detail
+                }),
+                url: "/SoilCard/Soilcardsave",
+                dataType: "json",
+                contentType: 'application/json; charset=utf-8',
+                success: function (response) {
+                    var Res = JSON.parse(response);
+                    var mode = $("#txtMode").val();
+                    if (Res.out_result == "true") {
+                        if (mode == "I") {
+                            debugger;
+                            kendoAlert("SoilCard Details saved successfully");
+                            getfetch(Res);
+                            $("#attach").show();
+                            $("#notes").show();
+                            list();
+                        }
+                        else if (mode == "U") {
+                            kendoAlert("SoilCard Details Updated successfully");
+                            getfetch(Res);
+                            list();
+                        }
+                        else if (mode == "D") {
+                            kendoAlert("SoilCard Details inactivate successfully");
+                            list();
+                        }
+                        else {
+                            kendoAlert(Res.out_result);
+                        }
+                    } else {
+
+                    }
+                },
+                error: function (er) {
+                    alert(er)
+                    console.log(er)
+                }
+
+            });
+        }
+      
+    }
+    function clear_val() {
+        $("#txtfarmercode").val("");
+        $("#txtValidity1").val("");
+        $('#cmb_samplests').data("kendoComboBox").value("");
+        $('#cmb_rejreason').data("kendoComboBox").value("");
+        $('#cmb_sampleby').data("kendoComboBox").value("");
+        $("#txtfarmername").val("");
+        $("#txttranid").val("");
+        $("#txtsampleid").val("");
+        $("#txtcusref").val("");
+        $("#txtlab_rep").val("");
+        $("#txtMode").val("");
+        $("#txtlabid").val("");
+        $("#txtValidity2").val("");
+        $("#txtValidity3").val("");
+        $("#txtValidity4").val("");
+        $("#txttestmethod").val("");
+        $("#comment").val("");
+        grid_soil_parameter([]);
+    }
+
+   </script>
+<script>
+    //atachment
+    function attachment() {
+        debugger;
+        $("#attachModal").kendoWindow();
+        var attachModal = $("#attachModal").data("kendoWindow");
+        attachModal.open().element.closest(".k-window").css({
+            top: 80,
+            left: 350, height: 420, width: 775
+        });
+        attachModal.title("Attachment");
+        attachModal.bind("open", attachModal);
+        attachlist();
+    }
+    function attachlist() {
+        debugger;
+        $("#attachModal").show();
+        var soilid = $("#txtsoilgid").val();
+        var soilstatus = $("#cmb_soilsts").val();
+        var doc_type = "soilcard";
+        var data = {};
+        data.context = getContext();
+        var Context = data.context;
+        $.ajax({
+            type: "POST",
+            data: JSON.stringify({ orgnId: Context.orgnId, locnId: Context.locnId, localeId: Context.localeId, id: soilid, doc_type: doc_type }),
+            url: "/Attacment/attachmentList/",
+            dataType: "json",
+            contentType: 'application/json; charset=utf-8',
+            success: function (response) {
+                debugger;
+                if (response != null) {
+                    debugger;
+                    //if (soilstatus == "983") {
+                    //    debugger;
+                    //    $("#button_Attachment").hide();
+                    generate_attach_list(response.attach);
+
+
+                    //    $("#grid_attachment .k-grid-Delete").hide();
+                    //    $("#grid_attachment .k-grid-Download").hide();
+
+                    //}
+                    //else {
+                    //    generate_attach_list(response.attach);
+                    //}
+
+                }
+                else {
+                    grid_attachment([]);
+                }
+            },
+            error: function (er) {
+                alert(er)
+                console.log(er)
+            }
+
+        });
+    }
+    function generate_attach_list(res) {
+        debugger;
+        var data = changedataType(res);
+        grid_attachment(data);
+    }
+    function save_Image() {
+        debugger;
+        try {
+            var xhr = new XMLHttpRequest();
+            var fd = new FormData();
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    kendoAlert("Attachment Details saved successfully");
+                    attachlist()
+                    attachclear_val();
+                }
+            };
+
+            var data = getContext()
+            var descripname = $("#txtdes").val();
+            var documentid = $("#txtdoc").val();
+            fd.append("file", document.getElementById('attachfile').files[0]);
+            fd.append("userID", data.userId);
+            fd.append("description", descripname);
+            fd.append("document", documentid);
+            fd.append("locid", data.locnId);
+            fd.append("gid", $("#txtsoilgid").val());
+            fd.append("model_flag", "I");
+
+            xhr.open("POST", "/Attacment/attachment_save/", true);
+            xhr.send(fd);
+            xhr.addEventListener("load", function (event) {
+            }, false);
+            attachlist();
+        }
+        catch (err) {
+            javascript_log4j_root(arguments.callee.name, err);
+        }
+    }
+    function grid_attachment(data) {
+        $("#grid_attachment").kendoGrid({
+            dataSource: {
+                data: data, //  pageSize: 20
+            },
+            height: 270,
+            sortable: true,
+            selectable: true,
+            navigatable: true,
+            columns: [
+                {
+                    field: "attach_gid",
+                    title: "attach Id",
+                    hidden: true,
+                    width: 30
+                },
+                {
+                    field: "filepath",
+                    title: "File",
+                    width: 30
+                },
+                {
+                    field: "filename",
+                    title: "File name",
+                    width: 30
+                },
+                {
+                    field: "document",
+                    title: "Document",
+                    width: 30
+                },
+                {
+                    field: "description",
+                    title: "descrition",
+                    width: 30
+                },
+                {
+                    field: "userId",
+                    title: "Attached By",
+                    width: 30
+                },
+                {
+                    command: [
+                        {
+                            name: "Delete",
+                            text: "<span class='fa fa-close' style='color:#357ab8' onClick='onattachdelete()'></span>"
+                        },
+                        {
+                            name: "Download",
+                            text: "<span title = 'Download' class='fa fa-download' style='color:#357ab8,cursor:pointer' onClick='ondownload()'></span>"
+                        },
+                    ], title: "Action", width: "25px",
+                },],
+        });
+    }
+    function onattachdelete() {
+        var kendoWindow = $("<div />").kendoWindow({
+            title: "Confirm",
+            width: "350px",
+            height: "130px",
+            resizable: false,
+            modal: true
+        });
+        kendoWindow.data("kendoWindow")
+            .content($("#grid_delete-confirmation-attach").html())
+            .center().open();
+        kendoWindow
+            .find(".grid_delete-confirm,.grid_delete-cancel")
+            .click(function () {
+                if ($(this).hasClass("grid_delete-confirm")) {
+                    var grid = $("#grid_attachment").data("kendoGrid");
+                    var selectedItem = grid.dataItem(grid.select());
+                    var formval = form_Serialize("grid_attachment");
+                    var obj_val = JSON.parse(formval);
+                    obj_val.attach_gid = selectedItem.attach_gid;
+                    obj_val.In_mode_flag = "D";
+                    var data = {};
+                    data.context = getContext();
+                    data.context.Header = obj_val;
+                    var Context = data.context;
+                    $.ajax({
+                        type: "POST",
+                        data: JSON.stringify({
+                            userId: Context.userId, locId: Context.locnId,
+                            gid: Context.Header.attach_gid, model_flag: Context.Header.In_mode_flag
+                        }),
+                        url: "/Attacment/attachmentdelete/",
+                        dataType: "json",
+                        contentType: 'application/json; charset=utf-8',
+                        success: function (response) {
+                            var Res = JSON.parse(response);
+                            if (Res.out_result == "true") {
+                                kendoAlert("Attachment Details Deleted successfully");
+                                attachclear_val();
+                                attachlist();
+                            }
+                        },
+                        error: function (er) {
+                            alert(er)
+                            console.log(er)
+                        }
+
+                    });
+                }
+                kendoWindow.data("kendoWindow").close();
+            });
+    }
+    function ondownload() {
+        debugger;
+        var grid = $("#grid_attachment").data("kendoGrid");
+        var selectedItem = grid.dataItem(grid.select());
+        var formval = form_Serialize("grid_attachment");
+        var obj_val = JSON.parse(formval);
+        obj_val.attach_gid = selectedItem.filepath;
+        var filedata = selectedItem.filepath
+        $("#download_exl_template").attr("href", filedata);
+        document.getElementById("download_exl_template").click();
+    }
+    function attachclear_val() {
+        debugger;
+        $("#txtdes").val("");
+        $("#attachfile").val("");
+    }
+</script>
+<script>
+    //atachment
+    function notes_data() {
+        debugger;
+        $("#notesmodel").kendoWindow();
+        var notesmodel = $("#notesmodel").data("kendoWindow");
+        notesmodel.open().element.closest(".k-window").css({
+            top: 80,
+            left: 350, height: 150, width: 575
+        });
+        notesmodel.title("Notes");
+        notesmodel.bind("open", notesmodel);
+        $("#notesmodel").show();
+        var soilstatus = $("#cmb_soilsts").val();
+        if (soilstatus == "983") {
+            $("#notesmenu").hide();
+        }
+
+    }
+    function notesave() {
+        var formval = form_Serialize("grid_attachment");
+        var obj_val = JSON.parse(formval);
+        obj_val.screenname = "Soilcard";
+        obj_val.mode_flag = "I";
+        obj_val.notesdata = $("#notesdata").val();
+        obj_val.attach_gid = $("#txtsoilgid").val();
+        var data = {};
+        data.context = getContext();
+        data.context.Header = obj_val;
+        var Context = data.context;
+        $.ajax({
+            type: "POST",
+            data: JSON.stringify({
+                userId: Context.userId, locnId: Context.locnId,
+                id: Context.Header.attach_gid, model_flag: Context.Header.mode_flag, notesdata: Context.Header.notesdata,
+                screenname: Context.Header.screenname
+            }),
+            url: "/Attacment/notes/",
+            dataType: "json",
+            contentType: 'application/json; charset=utf-8',
+            success: function (response) {
+                var Res = JSON.parse(response);
+                if (Res.out_result == "true") {
+                    kendoAlert("Notes Details Saved successfully");
+                    // clear_val();
+                    $("#notesmodel").data("kendoWindow").close();
+                }
+            },
+            error: function (er) {
+                alert(er)
+                console.log(er)
+            }
+
+        });
+    }
+
+</script>
+
+<script>
+    //print
+
+
+    function Print() {
+        debugger;
+        printpopup();
+
+    }
+    function printpopup() {
+        $("#dialogprint").kendoWindow();
+        var dialog = $("#dialogprint").data("kendoWindow");
+        dialog.open().element.closest(".k-window").css({
+            top: 171,
+            left: 293, height: 250, width: 640
+        });
+        dialog.title("Print");
+        dialog.bind("open", printpopup);
+
+        //add pop up close
+        dialog.unbind("close");
+        dialog.bind("close", onWindowEditClose);
+
+
+
+        //popup double click expand to avoid
+        $(document).on('dblclick', '.k-window-titlebar', function (e) {
+            debugger;
+            // Restore old size
+            dialog.toggleMaximization();
+
+
+        });
+    }
+    //pop up close refresh
+    var onWindowEditClose = function (e) {
+        debugger;
+        list();
+    };
+    function getsoilwithheader(Signature_Name, Signature_ImPath, Signature_Desgn)
+    {
+        debugger;
+        var withchecked = $('#headwith').is(':checked');
+        var signature_name = Signature_Name;
+        var signature_path = Signature_ImPath;
+        var signature_desgn = Signature_Desgn;
+
+        var Notewith = $("input[name='notewith']:checked").val();
+        $.ajax({
+            type: "POST",
+            url: '@Url.Action("downloadpdf", "SoilCard")',
+            data: { 'Signature_NameP': signature_name, 'Signature_ImPathP': signature_path, 'Headerpart': withchecked, 'Signature_Desgnp': signature_desgn, 'notewith': Notewith},
+            success: function (response) {
+                debugger;
+                if (response != null) {
+                    debugger;
+                    var url_path = (response);
+                    $("#downloadpath").attr("href", url_path);
+                    document.getElementById("downloadpath").click();
+
+                }
+
+            },
+            error: function (er) {
+                alert(er)
+                console.log(er)
+            }
+
+
+        });
+
+    }
+    function Submit() {
+        debugger;
+        var signdropdown = $('#cmb_signload').data("kendoComboBox").value();
+        var Headerpart = $("input[name='headerwith']:checked").val();
+        if (Headerpart != undefined) {
+            if (signdropdown != "") {
+                var data = {};
+                data.context = getContext();
+                var Context = data.context;
+                $.ajax({
+                    type: "POST",
+                    data: JSON.stringify({ userId: Context.userId, orgnId: Context.orgnId, locnId: Context.locnId, localeId: Context.localeId, In_signature_rowid: signdropdown }),
+                    url: "/UploadSignature/uploadsignfetch",
+                    dataType: "json",
+                    contentType: 'application/json; charset=utf-8',
+                    success: function (response) {
+                        debugger;
+                        if (response != null) {
+                            var Signature_Name = response.UploadSign.signature_name;
+                            var Signature_ImPath = response.UploadSign.signature_image;
+                            var Signature_Desgn = response.UploadSign.signature_desgn;
+                            getsoilwithheader(Signature_Name, Signature_ImPath, Signature_Desgn);
+                        }
+                        else {
+
+                        }
+                    },
+                    error: function (er) {
+                        alert(er)
+                        console.log(er)
+                    }
+
+                });
+            }
+            else {
+                kendoAlert("Please select the name for signature!!!");
+            }
+        }
+        else {
+            kendoAlert("Please select the Header part!!!");
+        }
+
+    }
+
+</script>
+

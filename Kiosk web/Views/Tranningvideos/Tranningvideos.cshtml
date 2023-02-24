@@ -1,0 +1,906 @@
+﻿
+@{
+    Layout = "~/Views/Shared/FormViewLayout1.cshtml";
+}
+    <link href="~/css/common.css" rel="stylesheet" />
+
+<style>
+    .popup-overlay {
+        visibility: hidden;
+    }
+
+    .popup-content {
+        visibility: hidden;
+    }
+    </style>
+
+<style>
+    .k-window-titlebar {
+        background-color: snow;
+    }
+
+    .k-grid tr td {
+        border-bottom: 1px solid #c5c5c5;
+    }
+</style>
+<div class="box-header text-center with-border">
+    <h3 class="box-title" style="text-align:center;color:red;font-weight: 600;">Training videos</h3>
+</div>
+<form id="tranvideo_form1" class="form-horizontal" data-role="validator" novalidate="novalidate">
+    <div class="row">
+        <div class="col-sm-12">
+            <div id="grid_tran_videolist">
+            </div>
+        </div>
+    </div>
+</form>
+<div id="dialog"  style="background-color:white;"@*style="background: #e0dbdb !important;"*@>
+    <form id="tranvideo_form" class="form-horizontal" data-role="validator" novalidate="novalidate">
+        <div class="row">
+            <div class="col-sm-3">
+            </div>
+            <div class="col-sm-4">
+                <h5 style="text-align:center;color:red;font-size:19px;"> Upload Video </h5>
+            </div>
+            <div class="col-sm-3" id="videomenu">
+                <div style="float:right;">
+                
+                    <img title="Save" class="shade"  style="cursor:pointer;" src="~/images/save-finals.jpg" onclick="save()" />&nbsp;
+
+                    <img title="Notes" class="shade"  style="cursor:pointer;" src="~/images/notes-finals.jpg" id="notes" onclick="notes_data()" />
+
+                </div>
+            </div>
+        </div>
+        <hr style="margin-top:0px !important;margin-bottom:0px !important;">
+        <div class="row" style="padding-left: 13px;">
+            <div class="col-sm-4" style="padding-bottom:10px">
+                <label for="txtcode"></label>
+                <input type="file" id="attachfile" name="In_video_filename" class="form-control" style="width:96%;height:20px;margin-left: 6px;">
+                <input type="hidden" id="txtvideo_gid" name="In_video_gid" />
+                <input type="hidden" id="txtMode" name="In_mode_flag" />
+                <input type="hidden" id="txtfilepath" name="" />
+                <input type="hidden" id="txtfilename" name="" />
+                <input type="hidden" id="txtattribute" name="" />
+            </div>
+            <div class="col-sm-3" style="padding-top:28px;width:18%">
+                <label class="title" id="filename"></label>
+            </div>
+            <div class="col-sm-3" style="padding-top:28px;width:32%" id="uploadviewmenu">
+                <label class="title"></label>
+                <i class="fa fa-eye fa-3x" title="View" style="color:red;font-size: 15px;cursor:pointer" onclick="viewvideo()" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;
+                <i class="fa fa-times" id="traindelete" title="Delete" style="color:black;font-size: 15px;cursor:pointer;" onclick="deletevideo()" data-dismiss="modal" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-11">
+                <table class="table table-bordered table-sm" id="attributelist" style="width:100%;margin-left: 2.5%;">
+                    <thead>
+                        <tr>
+                            <th style="font-weight:normal;">Attributes</th>
+                            <th style="font-weight:normal;">Attribute Values</th>
+                            <th style="font-weight:normal;">  </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Category</td>
+                            <td>
+                                <input id="cmb_category" name="In_video_category" data-role="filtercombo" style="width:100%; height: 20px" onchange="GenerateTable()" class="form-control">
+                            </td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td>Title</td>
+                            <td><input type="text" name="In_video_title" id="title" style="width:98%"></td>
+                            <td><input type="text" name="In_video_titleII" id="title_II" style="width:98%"></td>
+                        </tr>
+                        <tr style="width:100%">
+                            <td>Source</td>
+                            <td><input type="text" name="In_video_source" id="source" style="width:98%"></td> 
+                            <td><input type="text" name="In_video_sourceII" id="source_II" style="width:98%"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col-sm-11" id="dvTable"></div>
+        <div class="row" style="margin-top:5px;margin-left: 8px;">
+            <div class="col-sm-5">
+                <label class="title">Key Words</label>
+                <input type="text" name="In_video_keywords" id="key" class="form-control" style="width: 99%;height:72px">
+            </div>
+            <div class="col-sm-5" style="padding-top:21px;padding-left:61px">
+                <input type="text" name="In_video_keywordsII" id="key_II" class="form-control" style="width: 99%;height:72px">
+                @*<textarea class="form-control" rows="3" id="key_II" name="" style="margin-top:6px;"></textarea>*@
+            </div>
+        </div>
+        <div id="notesmodel" @*style="background: #e0dbdb !important;"*@ style="background-color:white;">
+            <div class="row">
+                <div class="col-sm-3">
+                </div>
+                <div class="col-sm-4">
+                    <h5 style="text-align:center;color:red;font-size:14px;">Notes</h5>
+                </div>
+                <div class="col-sm-3" id="notesmenu">
+                  
+                    <img title="Save" src="~/images/save-finals.jpg"  onclick="notesave()" style="margin-left: 70%;cursor:pointer;"/>
+                </div>
+            </div>
+            <div class="col-sm-6" style="margin-left:25px;">
+                <label for="remark" class="title">Notes</label>
+                <textarea class="form-control" rows="3" id="notesdata" name="" style="margin: 0px -210.609px 0px 0px; width: 462px; height: 61px;"></textarea>
+            </div>
+        </div>
+        <div id="viewvideofile">
+            <video width="320" height="240" controls id="tranvideo">
+                <source src="" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </form>
+</div>
+<script>
+    $(document).ready(function () {
+        $("#dialog").hide();
+        $("#notesmodel").hide();
+        $("#viewvideofile").hide();
+        $("#uploadviewmenu").hide();
+        grid_tran_videolist([]);
+        list();
+        load_master_code();
+        Screen_Id = "KIOSKTRANVIDEO";
+        permission = sec_Master_Permission(Screen_Id);
+        langTranslate('title', 'title_II');
+        $("#title_II").on("keypress", function (e) {
+            convertThis(e);
+        });
+        langTranslate('source', 'source_II');
+        $("#source_II").on("keypress", function (e) {
+            convertThis(e);
+        });
+        langTranslate('key', 'key_II'); 
+        $("#key_II").on("keypress", function (e) {
+            convertThis(e);
+        });
+        var list_in1 = "";
+        $("#cmb_category").empty();
+        //list_in1 = grid_comboScreen_mastercodes("QCD_FAQS_CAT");
+        list_in1 = grid_comboScreen_mastercodes("QCD_TRAINING_VIDEOS");
+       
+        filter_combobox("cmb_category", list_in1);
+    });
+    $('#attachfile').bind('change', function () {
+
+        debugger;
+        var fp = $("#attachfile");
+        var lg = fp[0].files.length; // get length
+        var items = fp[0].files;
+        var fileSize = 0;
+
+        var ext = $('#attachfile').val().split('.').pop().toLowerCase();
+        //Allowed file types
+        if ($.inArray(ext, ['mov', 'mp4', 'wmv', 'flv', 'avi', 'avchd', 'webm', 'mkv']) == -1) {
+            kendoAlert("The Video File is invalid.!");
+            $('#attachfile').val("");
+            //  $('#upload-file-info').html("");
+        }
+
+        if (lg > 0) {
+            for (var i = 0; i < lg; i++) {
+                fileSize = fileSize + items[i].size; // get file size
+            }
+            if (fileSize > 314572800) {
+                kendoAlert("File size must not be more than 300 MB.!");
+                $('#attachfile').val('');
+                return false;
+            }
+
+        }
+    });
+    function closerole() {
+        $("#dialog").data("kendoWindow").close();
+        list();
+    }
+    function load_master_code() {
+        debugger;
+        try {
+            var data = {};
+            data.screen_Id = "KIOSKTRANVIDEO";
+            var tab_values = ajaxcall_param("/Home/screenId_mastercodelist", JSON.stringify(data));
+        }
+        catch (err) {
+            javascript_log4j_root(arguments.callee.name, err);
+        }
+    }
+    function grid_tran_videolist(data) {
+        $("#grid_tran_videolist").kendoGrid({
+            dataSource: {
+                data: data, //  pageSize: 20
+            },
+            height: 450,
+            sortable: true,
+            selectable: true,
+            filterable: true,
+            //change: onChangeSelection,
+            selectable: "singl",   //  Grid Row Selection
+            navigatable: true,
+            toolbar: "<a class='k-grid-add' id='Assign_sevices' onClick='serialno()'><span class='fa fa-plus' style='color:Black'></span></a>",
+            columns: [
+                {
+                    field: "video_gid",
+                    title: "In_video_gid",
+                    hidden: true,
+                    width: 30
+                },
+                {
+                    field: "videodate",
+                    title: "Date",
+                    width: 30
+                },
+                {
+                    field: "title",
+                    title: "Title",
+                    width: 30
+                },
+                {
+                    field: "category",
+                    title: "Category",
+                    width: 30
+                },
+                {
+                    field: "filename",
+                    title: "File Name",
+                    width: 30
+                },
+                {
+                    command: [
+                        {
+                            name: "View",
+                            text: "<span class='fa fa-eye' style ='color:#357ab8;'onClick='onview()'></span>"
+                        },
+                        {
+                            name: "Edit",
+                            text: "<span class='fa fa-pencil' style='color:#357ab8' onClick='onChangeSelection()'></span>"
+                        },
+                        {
+                            name: "Delete1",
+                            text: "<span class='fa fa-times' style='color:#357ab8;padding-left:2px' onClick='onDelete()'></span>"
+                        },
+                    ], title: "Action", width: "25px",
+                },
+            ]
+        });
+    }
+    function list() {
+        var data = {};
+        data.context = getContext();
+        var Context = data.context;
+        $.ajax({
+            type: "POST",
+            data: JSON.stringify({ orgnId: Context.orgnId, locnId: Context.locnId, localeId: Context.localeId, userId: Context.userId }),
+            url: "/Tranningvideos/tranvideoList",
+            dataType: "json",
+            contentType: 'application/json; charset=utf-8',
+            success: function (response) {
+                debugger;
+                if (response != null) {
+                    generate_tranvideo_list(response.List);
+                }
+                else {
+                    grid_tran_videolist([]);
+                }
+            },
+            error: function (er) {
+                alert(er)
+                console.log(er)
+            }
+
+        });
+    }
+    function generate_tranvideo_list(res) {
+        var data = changedataType(res);
+        grid_tran_videolist(data);
+    }
+</script>
+<script>
+    function serialno() {
+        $("#dialog").kendoWindow();
+        var dialog = $("#dialog").data("kendoWindow");
+        dialog.open().element.closest(".k-window").css({
+            top: 70,
+            left: 150, height: 585, width: 1008
+        });
+        dialog.title("Upload Video");
+        dialog.bind("open", serialno);
+
+
+        //add pop up close
+        dialog.unbind("close");
+        dialog.bind("close", onWindowEditClose);
+
+
+
+        $("#videomenu").show();
+        $("#uploadviewmenu").hide();
+        $("#notes").hide();
+        clear_val();
+
+        //popup double click expand to avoid
+        $(document).on('dblclick', '.k-window-titlebar', function (e) {
+            debugger;
+            // Restore old size
+            dialog.toggleMaximization();
+
+
+        });
+    }
+
+
+
+    //pop up close refresh
+    var onWindowEditClose = function (e) {
+        debugger;
+        list();
+    };
+
+
+    function GenerateTable() {
+        var category = $("#cmb_category").val();
+        var data = {};
+        data.context = getContext();
+        var Context = data.context;
+        $.ajax({
+            type: "POST",
+            data: JSON.stringify({ orgnId: Context.orgnId, locnId: Context.locnId, localeId: Context.localeId, depend_code: category }),
+            url: "/Tranningvideos/categoryattribute",
+            dataType: "json",
+            contentType: 'application/json; charset=utf-8',
+            success: function (response) {
+                debugger;
+                if (response != null) {
+                    tablecreate(response.list);
+                }
+
+            },
+            error: function (er) {
+                alert(er)
+                console.log(er)
+            }
+
+        });
+    }
+    function tablecreate(res) {
+        var table1 = res.length;
+        if (table1 > 0) {
+            var table = document.getElementById('attributelist');
+            var rowCount = table.rows.length;
+            for (var i = 4; i < rowCount;) {
+                document.getElementById("attributelist").deleteRow(i);
+            }
+            for (var i = 0; i < table1; i++) {
+                var tablenew = document.getElementById('attributelist');
+                var rowCount1 = tablenew.rows.length;
+                var row = tablenew.insertRow(rowCount1);
+                var cell1 = row.insertCell(0);
+                cell1.append(res[i].master_name);
+                var cell2 = row.insertCell(1);
+                var element2 = document.createElement("input");
+                element2.type = "text";
+                element2.name = "In_video_atttribute";
+                element2.id = "txtattribute" + [i];
+                element2.style.width = "100%";
+                cell2.appendChild(element2);
+            }
+        }
+        else {
+            var table1 = document.getElementById("attributelist");
+            var rowCount = table1.rows.length;
+
+            if (rowCount > 4) {
+                for (var i = 4; i < table1.rows.length;) {
+                    document.getElementById("attributelist").deleteRow(i);
+                }
+            }
+        }
+    }
+    function save() {
+        //bharathy
+        debugger;
+        if ($("#txtMode").val() == "") {
+            $("#txtMode").val('I');
+        }
+        if ($("#txtMode").val() == "S") {
+            $("#txtMode").val('U');
+        }
+         
+
+        var In_video_atttribute = '';
+        var table = document.getElementById('attributelist');
+        var rowCount = table.rows.length;
+        var rowCount1 = rowCount - 4;
+        for (var i = 0; i < rowCount1; i++) {
+            var id = "#txtattribute" + [i];
+            idvalue = $(id).val();
+            In_video_atttribute += idvalue + '#';
+        }
+
+
+        var formval = form_Serialize("tranvideo_form");
+        var obj_val = JSON.parse(formval);
+        var soildata = obj_val.In_video_gid;
+        if (obj_val.In_video_category == "") {
+            kendoAlert("Category Cannot Be Blank");
+            return false;
+        }
+        if (obj_val.In_video_title =="") {
+            kendoAlert("Title Cannot Be Blank");
+            return false;
+        }
+        if (obj_val.In_video_source == "") {
+            kendoAlert("Source Cannot Be Blank");
+            return false;
+        }
+
+        
+        if (soildata == "") {
+            obj_val.In_video_gid = 0;
+        }
+        else {
+            obj_val.In_video_gid = parseInt(obj_val.In_video_gid);
+        }
+
+        var xhr = new XMLHttpRequest();
+        var fd = new FormData();
+        xhr.onreadystatechange = function () {
+            debugger;
+            if (xhr.readyState == 4 && xhr.status == 200) {
+                if (xhr.response.length > 48) {
+                    debugger;
+                    kendoAlert("Duplicate Training Videos!");
+                }
+                else {
+
+                    debugger;
+                    kendoAlert("Training Videos Saved Successfully");
+                    list();
+                }
+            }
+            
+        };
+
+        var data = getContext()
+        data.context = getContext();
+        data.context.Header = obj_val;
+        var Context = data.context;
+        var In_video_gid = Context.Header.In_video_gid;
+        var In_video_category = Context.Header.In_video_category;
+        var In_video_title = Context.Header.In_video_title;
+        var In_video_source = Context.Header.In_video_source;
+        var In_video_keywords = Context.Header.In_video_keywords;
+         
+        var In_video_titleII = Context.Header.In_video_titleII;
+        var In_video_sourceII = Context.Header.In_video_sourceII;
+        //var  video_keywordsII = Context.Header.In_video_keywordsII;
+        var video_keywordsII = $("#key_II").val(); 
+        var In_mode_flag = Context.Header.In_mode_flag;
+        var userId = Context.userId;
+        var orgnId = Context.orgnId;
+        var locnId = Context.locnId;
+        var localeId = Context.localeId;
+        fd.append("file", document.getElementById('attachfile').files[0]);
+        fd.append("userId", userId);
+        fd.append("orgnId", orgnId);
+        fd.append("locnId", locnId);
+        fd.append("localeId", localeId);
+        fd.append("In_video_gid", In_video_gid);
+        fd.append("In_video_category", In_video_category);
+        fd.append("In_video_title", In_video_title);
+        fd.append("In_video_source", In_video_source);
+        fd.append("In_video_keywords", In_video_keywords);  
+        fd.append("In_video_atttribute", In_video_atttribute);
+        fd.append("In_mode_flag", In_mode_flag);
+        fd.append("In_video_titleII", In_video_titleII);
+        fd.append("In_video_sourceII", In_video_sourceII);
+        fd.append("In_video_keywordsII", video_keywordsII); 
+
+        xhr.open("POST", "/Tranningvideos/tranvideosave", true);
+        xhr.send(fd);
+        xhr.addEventListener("load", function (event) {
+        }, false);
+    }
+
+</script>
+<script>
+    function onDelete() {
+        var kendoWindow = $("<div />").kendoWindow({
+            title: "Confirm",
+            width: "350px",
+            height: "130px",
+            resizable: false,
+            modal: true
+        });
+        kendoWindow.data("kendoWindow")
+            .content($("#grid_delete-confirmation").html())
+            .center().open();
+        kendoWindow
+            .find(".grid_delete-confirm,.grid_delete-cancel")
+            .click(function () {
+                if ($(this).hasClass("grid_delete-confirm")) {
+                    var grid = $("#grid_tran_videolist").data("kendoGrid");
+                    var selectedItem = grid.dataItem(grid.select());
+                    var formval = form_Serialize("tranvideo_form");
+                    var obj_val = JSON.parse(formval);
+                    obj_val.video_gid = selectedItem.video_gid;
+                    obj_val.In_mode_flag = "D";
+                    var data = {};
+                    data.context = getContext();
+                    data.context.Header = obj_val;
+                    var Context = data.context;
+                    $.ajax({
+                        type: "POST",
+                        data: JSON.stringify({
+                            userId: Context.userId, orgnId: Context.orgnId, locnId: Context.locnId, localeId: Context.localeId,
+                            In_video_gid: Context.Header.video_gid, In_mode_flag: Context.Header.In_mode_flag
+                        }),
+                        url: "/Tranningvideos/tranvideodelete",
+                        dataType: "json",
+                        contentType: 'application/json; charset=utf-8',
+                        success: function (response) {
+                            var Res = JSON.parse(response);
+                            if (Res.out_result == "true") {
+                                kendoAlert("Training Details Deleted Successfully");
+                                list();
+                            }
+                        },
+                        error: function (er) {
+                            alert(er)
+                            console.log(er)
+                        }
+
+                    });
+                }
+                kendoWindow.data("kendoWindow").close();
+            });
+    }
+    //edit-bharathy1
+    function onChangeSelection() {
+        $("#videomenu").show();
+        $("#attachModal").hide();
+        $("#traindelete").show();
+       // $("#notesmodel").show();
+      $("#notes").show();
+        $("#dialog").kendoWindow();
+        var dialog = $("#dialog").data("kendoWindow");
+        dialog.open().element.closest(".k-window").css({
+            top: 70,
+            left: 293, height: 585, width: 1008
+        });
+        dialog.title("Upload Video");
+        dialog.bind("open", serialno);
+        clear_val();
+        //popup double click expand to avoid
+        $(document).on('dblclick', '.k-window-titlebar', function (e) {
+            debugger;
+            // Restore old size
+            dialog.toggleMaximization();
+
+
+        });
+
+
+        var grid = $("#grid_tran_videolist").data("kendoGrid");
+        var selectedItem = grid.dataItem(grid.select());
+        var formval = form_Serialize("tranvideo_form");
+        var obj_val = JSON.parse(formval);
+        obj_val.video_gid = selectedItem.video_gid;
+        var data = {};
+        data.context = getContext();
+        data.context.Header = obj_val;
+        var Context = data.context;
+        $.ajax({
+            type: "POST",
+            data: JSON.stringify({ userId: Context.userId, orgnId: Context.orgnId, locnId: Context.locnId, localeId: Context.localeId, In_video_gid: Context.Header.video_gid }),
+            url: "/Tranningvideos/tranvideofetch",
+            dataType: "json",
+            contentType: 'application/json; charset=utf-8',
+            success: function (response) {
+                debugger;
+                if (response != null) {
+                    generate_video_fetch(response.Vfetch);
+                }
+                else {
+
+                }
+            },
+            error: function (er) {
+                alert(er)
+                console.log(er)
+            }
+
+        });
+
+
+    }
+    function generate_video_fetch(res) {
+        debugger;
+        $("#txtvideo_gid").val(res.In_video_gid);
+        $("#txtMode").val(res.In_mode_flag);
+        $('#cmb_category').data("kendoComboBox").value(res.In_video_category);
+        $("#title").val(res.In_video_title);
+        $("#source").val(res.In_video_source);
+        $("#key").val(res.In_video_keywords);
+        $("#title_II").val(res.In_video_titleII);
+        $("#source_II").val(res.In_video_sourceII);
+        $("#key_II").val(res.In_video_keywordsII);
+
+        $("#txtattribute").val(res.In_video_atttribute);
+        $("#txtfilepath").val(res.In_video_filepath);
+        $("#txtfilename").val(res.In_video_filename);
+        $('#filename').text(res.In_video_filename);
+        if (res.In_video_filename != "") {
+            $("#uploadviewmenu").show();
+        } else {
+            $("#uploadviewmenu").hide();
+        }
+        var category = $("#cmb_category").val();
+        var data = {};
+        data.context = getContext();
+        var Context = data.context;
+        $.ajax({
+            type: "POST",
+            data: JSON.stringify({ orgnId: Context.orgnId, locnId: Context.locnId, localeId: Context.localeId, depend_code: category }),
+            url: "/Tranningvideos/categoryattribute",
+            dataType: "json",
+            contentType: 'application/json; charset=utf-8',
+            success: function (response) {
+                debugger;
+                if (response != null) {
+                    tablecreate(response.list);
+                    attributefetch(res.In_video_atttribute);
+                }
+
+            },
+            error: function (er) {
+                alert(er)
+                console.log(er)
+            }
+
+        });
+
+    }
+
+    function attributefetch(res) {
+        if (res != "" ) {
+            var attibute = res;
+            var attributedata = [];
+            attributedata = attibute.split("#");
+            var rowcount = attributedata.length - 1
+            for (var i = 0; i < rowcount; i++) {
+                var id = "#txtattribute" + [i];
+                $(id).val(attributedata[i]);
+            }
+        }
+    }
+    function clear_val() {
+        $("#txtvideo_gid").val(0);
+        $("#txtMode").val("");
+        $('#cmb_category').data("kendoComboBox").value("");
+        $("#title").val("");
+        $("#source").val("");
+        $("#key").val("");
+        $("#txtattribute").val("");
+        $("#txtfilepath").val("");
+        $("#txtfilename").val("");
+        $('#filename').text("");
+    }
+    //view
+    function onview() {
+
+        onChangeSelection();
+        $("#videomenu").hide();
+        $("#notes").hide();
+
+        //popup double click expand to avoid
+        $(document).on('dblclick', '.k-window-titlebar', function (e) {
+            debugger;
+            // Restore old size
+            dialog.toggleMaximization();
+
+
+        });
+        $("#traindelete").hide();
+        }
+
+    function notes_data() {
+        $("#notesmodel").kendoWindow();
+        var notesmodel = $("#notesmodel").data("kendoWindow");
+        notesmodel.open().element.closest(".k-window").css({
+            top: 80,
+            left: 350, height: 150, width: 575
+        });
+        notesmodel.title("Notes");
+        notesmodel.bind("open", notesmodel);
+        $("#notesmodel").show();
+    }
+    function notesave() {
+        var formval = form_Serialize("grid_attachment");
+        var obj_val = JSON.parse(formval);
+        obj_val.screenname = "video";
+        obj_val.mode_flag = "I";
+        obj_val.notesdata = $("#notesdata").val();
+        obj_val.attach_gid = $("#txtvideo_gid").val();
+        var data = {};
+        data.context = getContext();
+        data.context.Header = obj_val;
+        var Context = data.context;
+        $.ajax({
+            type: "POST",
+            data: JSON.stringify({
+                userId: Context.userId, locnId: Context.locnId,
+                id: Context.Header.attach_gid, model_flag: Context.Header.mode_flag, notesdata: Context.Header.notesdata,
+                screenname: Context.Header.screenname
+            }),
+            url: "/Attacment/notes/",
+            dataType: "json",
+            contentType: 'application/json; charset=utf-8',
+            success: function (response) {
+                var Res = JSON.parse(response);
+                if (Res.out_result == "true") {
+                    kendoAlert("Notes Details Saved successfully");
+                    $("#notesmodel").data("kendoWindow").close();
+                }
+            },
+            error: function (er) {
+                alert(er)
+                console.log(er)
+            }
+
+        });
+    }
+    function deletevideo() {
+        debugger;
+       // var filepath = $("#txtfilepath").val();
+        var filepath = $("#txtfilename").val();
+
+
+        if (filepath != "") {
+            var data = {};
+            data.context = getContext();
+            var Context = data.context;
+            $.ajax({
+                type: "POST",
+                data: JSON.stringify({
+                    filepath: filepath
+                }),
+                url: "/Tranningvideos/deletevideo",
+                dataType: "json",
+                contentType: 'application/json; charset=utf-8',
+                success: function (response) {
+                    debugger;
+                    //if (response == "sucess") {
+                    //    filedelete();
+                    //}
+                    filedelete();
+                },
+                error: function (er) {
+                    alert(er)
+                    console.log(er)
+                }
+
+            });
+
+        }
+    }
+
+
+    function filedelete() {
+
+        debugger;
+        var title = $("#title").val();
+        var source = $("#source").val();
+        var keyvalue = $("#key").val();
+
+        var file = $("#attachfile").val();
+        var cat = $('#cmb_category').data("kendoComboBox").value();
+
+        var formval = form_Serialize("tranvideo_form");//add new popup id
+        var obj_val = JSON.parse(formval);
+
+
+        var tvgid = obj_val.In_video_gid;
+
+        In_mode_flag = "Filedelete"
+
+        var data = {};
+
+
+        data.context = getContext();
+        data.context.Header = obj_val;
+        var Context = data.context;
+        $.ajax({
+            type: "POST",
+            //data: JSON.stringify({
+            //    userId: Context.userId, orgnId: Context.orgnId, locnId: Context.locnId, localeId: Context.localeId,
+            //    In_AD_gid: Context.Header.adver_gid, In_mode_flag: Context.Header.In_mode_flag
+            //}),
+
+            data: JSON.stringify({
+                userId: Context.userId, orgnId: Context.orgnId, locnId: Context.locnId, localeId: Context.localeId,
+                In_mode_flag: In_mode_flag,
+                In_video_gid: tvgid
+
+            }),
+            url: "/Tranningvideos/tranvideodelete",
+            dataType: "json",
+
+            contentType: 'application/json; charset=utf-8',
+            success: function (response) {
+                debugger;
+                // var Res = JSON.parse(response);
+                list();
+
+
+            }
+        });
+
+
+    }
+
+    function viewvideo() {
+        debugger;
+        // var filename = "http://169.38.82.131:751/videos/tranningcat/" + $("#txtfilename").val();
+        var filename = $("#txtfilename").val();
+        var catagoryId = $("#cmb_category").val();
+        var path = "/" + catagoryId + "/" + filename;
+        var vid = document.getElementById("tranvideo");
+        vid.src = path;
+       // vid.src = filename;
+        $("#viewvideofile").kendoWindow();
+        var viewvideofile = $("#viewvideofile").data("kendoWindow");
+        viewvideofile.open().element.closest(".k-window").css({
+            top: 125,
+            left: 409, height: 300, width: 468
+        });
+        viewvideofile.title(filename);
+        viewvideofile.bind("open", viewvideofile);
+    }
+
+
+    function decodeEntities(input) {
+        var y = document.createElement('textarea');
+        y.innerHTML = input;
+        return y.value;
+    }
+
+    //Transulate
+     function langTranslate(src, dest) {
+        debugger;
+        $("#" + src).focusout(function () {
+            var id = $('#' + src).val();
+           // $("#HelpDiv").hide();
+            if (id != "") {
+
+                $.ajax({
+                    url: '@Url.Action("Language_Translate", "KioskFAQS")',
+                    type: 'GET',
+                    dataType: 'json',
+                    cache: false,
+                    data: { 'id': id },
+                    success: function (result) {
+                        $('#' + dest).val(decodeEntities(result));
+                    },
+                    error: function () {
+                        alert('Error occured');
+                    }
+                });
+            }
+
+        })
+
+
+
+    }
+     
+
+</script>

@@ -1,0 +1,73 @@
+F:\bala\test\Kiosk web\nafdatamodel\obj\Debug\netstandard2.0\nafdatamodel.csprojAssemblyReference.cache
+F:\bala\test\Kiosk web\nafdatamodel\obj\Debug\netstandard2.0\nafdatamodel.AssemblyInfoInputs.cache
+F:\bala\test\Kiosk web\nafdatamodel\obj\Debug\netstandard2.0\nafdatamodel.AssemblyInfo.cs
+F:\bala\test\Kiosk web\nafdatamodel\obj\Debug\netstandard2.0\nafdatamodel.csproj.CoreCompileInputs.cache
+F:\bala\test\Kiosk web\nafdatamodel\bin\Debug\netstandard2.0\nafmodel.dll
+F:\bala\test\Kiosk web\nafdatamodel\bin\Debug\netstandard2.0\nafdatamodel.deps.json
+F:\bala\test\Kiosk web\nafdatamodel\bin\Debug\netstandard2.0\nafdatamodel.dll
+F:\bala\test\Kiosk web\nafdatamodel\bin\Debug\netstandard2.0\nafdatamodel.pdb
+F:\bala\test\Kiosk web\nafdatamodel\bin\Debug\netstandard2.0\nafmodel.pdb
+F:\bala\test\Kiosk web\nafdatamodel\obj\Debug\netstandard2.0\nafdatamodel.csproj.CopyComplete
+F:\bala\test\Kiosk web\nafdatamodel\obj\Debug\netstandard2.0\nafdatamodel.dll
+F:\bala\test\Kiosk web\nafdatamodel\obj\Debug\netstandard2.0\nafdatamodel.pdb
+F:\bala\single solution\Kiosk web\nafdatamodel\bin\Debug\netstandard2.0\nafdatamodel.deps.json
+F:\bala\single solution\Kiosk web\nafdatamodel\bin\Debug\netstandard2.0\nafdatamodel.dll
+F:\bala\single solution\Kiosk web\nafdatamodel\bin\Debug\netstandard2.0\nafdatamodel.pdb
+F:\bala\single solution\Kiosk web\nafdatamodel\bin\Debug\netstandard2.0\nafmodel.dll
+F:\bala\single solution\Kiosk web\nafdatamodel\bin\Debug\netstandard2.0\nafmodel.pdb
+F:\bala\single solution\Kiosk web\nafdatamodel\obj\Debug\netstandard2.0\nafdatamodel.csprojAssemblyReference.cache
+F:\bala\single solution\Kiosk web\nafdatamodel\obj\Debug\netstandard2.0\nafdatamodel.AssemblyInfoInputs.cache
+F:\bala\single solution\Kiosk web\nafdatamodel\obj\Debug\netstandard2.0\nafdatamodel.AssemblyInfo.cs
+F:\bala\single solution\Kiosk web\nafdatamodel\obj\Debug\netstandard2.0\nafdatamodel.csproj.CoreCompileInputs.cache
+F:\bala\single solution\Kiosk web\nafdatamodel\obj\Debug\netstandard2.0\nafdatamodel.csproj.CopyComplete
+F:\bala\single solution\Kiosk web\nafdatamodel\obj\Debug\netstandard2.0\nafdatamodel.dll
+F:\bala\single solution\Kiosk web\nafdatamodel\obj\Debug\netstandard2.0\nafdatamodel.pdb
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\nafdatamodel\bin\Debug\netstandard2.0\nafdatamodel.deps.json
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\nafdatamodel\bin\Debug\netstandard2.0\nafdatamodel.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\nafdatamodel\bin\Debug\netstandard2.0\nafdatamodel.pdb
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\nafdatamodel\bin\Debug\netstandard2.0\nafmodel.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\nafdatamodel\bin\Debug\netstandard2.0\nafmodel.pdb
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\nafdatamodel\obj\Debug\netstandard2.0\nafdatamodel.csprojAssemblyReference.cache
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\nafdatamodel\obj\Debug\netstandard2.0\nafdatamodel.AssemblyInfoInputs.cache
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\nafdatamodel\obj\Debug\netstandard2.0\nafdatamodel.AssemblyInfo.cs
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\nafdatamodel\obj\Debug\netstandard2.0\nafdatamodel.csproj.CoreCompileInputs.cache
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\nafdatamodel\obj\Debug\netstandard2.0\nafdatamodel.csproj.CopyComplete
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\nafdatamodel\obj\Debug\netstandard2.0\nafdatamodel.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\nafdatamodel\obj\Debug\netstandard2.0\nafdatamodel.pdb
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\nafdatamodel\bin\Debug\netstandard2.0\nafdatamodel.deps.json
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\nafdatamodel\bin\Debug\netstandard2.0\nafdatamodel.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\nafdatamodel\bin\Debug\netstandard2.0\nafdatamodel.pdb
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\nafdatamodel\bin\Debug\netstandard2.0\nafmodel.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\nafdatamodel\bin\Debug\netstandard2.0\nafmodel.pdb
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\nafdatamodel\obj\Debug\netstandard2.0\nafdatamodel.csprojAssemblyReference.cache
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\nafdatamodel\obj\Debug\netstandard2.0\nafdatamodel.AssemblyInfoInputs.cache
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\nafdatamodel\obj\Debug\netstandard2.0\nafdatamodel.AssemblyInfo.cs
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\nafdatamodel\obj\Debug\netstandard2.0\nafdatamodel.csproj.CoreCompileInputs.cache
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\nafdatamodel\obj\Debug\netstandard2.0\nafdatamodel.csproj.CopyComplete
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\nafdatamodel\obj\Debug\netstandard2.0\nafdatamodel.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\nafdatamodel\obj\Debug\netstandard2.0\nafdatamodel.pdb
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\nafdatamodel\bin\Debug\netstandard2.0\nafdatamodel.deps.json
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\nafdatamodel\bin\Debug\netstandard2.0\nafdatamodel.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\nafdatamodel\bin\Debug\netstandard2.0\nafdatamodel.pdb
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\nafdatamodel\bin\Debug\netstandard2.0\nafmodel.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\nafdatamodel\bin\Debug\netstandard2.0\nafmodel.pdb
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\nafdatamodel\obj\Debug\netstandard2.0\nafdatamodel.csprojAssemblyReference.cache
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\nafdatamodel\obj\Debug\netstandard2.0\nafdatamodel.AssemblyInfoInputs.cache
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\nafdatamodel\obj\Debug\netstandard2.0\nafdatamodel.AssemblyInfo.cs
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\nafdatamodel\obj\Debug\netstandard2.0\nafdatamodel.csproj.CoreCompileInputs.cache
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\nafdatamodel\obj\Debug\netstandard2.0\nafdatamodel.csproj.CopyComplete
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\nafdatamodel\obj\Debug\netstandard2.0\nafdatamodel.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\nafdatamodel\obj\Debug\netstandard2.0\nafdatamodel.pdb
+D:\Ramya\Projects\Naf_Kiosk_Solution\nafdatamodel\bin\Debug\netstandard2.0\nafdatamodel.deps.json
+D:\Ramya\Projects\Naf_Kiosk_Solution\nafdatamodel\bin\Debug\netstandard2.0\nafdatamodel.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\nafdatamodel\bin\Debug\netstandard2.0\nafdatamodel.pdb
+D:\Ramya\Projects\Naf_Kiosk_Solution\nafdatamodel\bin\Debug\netstandard2.0\nafmodel.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\nafdatamodel\bin\Debug\netstandard2.0\nafmodel.pdb
+D:\Ramya\Projects\Naf_Kiosk_Solution\nafdatamodel\obj\Debug\netstandard2.0\nafdatamodel.csproj.AssemblyReference.cache
+D:\Ramya\Projects\Naf_Kiosk_Solution\nafdatamodel\obj\Debug\netstandard2.0\nafdatamodel.GeneratedMSBuildEditorConfig.editorconfig
+D:\Ramya\Projects\Naf_Kiosk_Solution\nafdatamodel\obj\Debug\netstandard2.0\nafdatamodel.AssemblyInfoInputs.cache
+D:\Ramya\Projects\Naf_Kiosk_Solution\nafdatamodel\obj\Debug\netstandard2.0\nafdatamodel.AssemblyInfo.cs
+D:\Ramya\Projects\Naf_Kiosk_Solution\nafdatamodel\obj\Debug\netstandard2.0\nafdatamodel.csproj.CoreCompileInputs.cache
+D:\Ramya\Projects\Naf_Kiosk_Solution\nafdatamodel\obj\Debug\netstandard2.0\nafdatamodel.csproj.CopyComplete
+D:\Ramya\Projects\Naf_Kiosk_Solution\nafdatamodel\obj\Debug\netstandard2.0\nafdatamodel.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\nafdatamodel\obj\Debug\netstandard2.0\nafdatamodel.pdb

@@ -1,0 +1,27 @@
+GIT LAB  to Download file:
+Git bash to open after 
+cd
+then 
+$ cd D(path)
+$ cd Vadivu_Kiosk(folder name)
+$ git config --global user.name "Vadivu"(user name)
+$ git config --global user.email "vadivukarasi.a@flexicodeindia.com"(mail id)
+$ git clone -b NAFKiosk-SubBr-Vadivu https://gitlab.com/flexicode2/nafkiosk.git (branch,link)
+============== ======================= ==================== ======================= ========================== ====================================
+mail subject: to instruction of GIt lab
+GIT Project Sub-branch name and source link
+Fwd: GitLab Instruction
+
+========================== ================================ ========================== ======================= =================================================
+soure r.clk gui here
+ 
+
+
+folder left corner clk =>after commit messsage then commit,push
+
+git lab login:merge request=>new request,left side:vadivu branch ,right side:nafkioskbranch
+delete button untick
+after changes clk to verify
+after commit 
+
+

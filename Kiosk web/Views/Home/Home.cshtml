@@ -1,0 +1,498 @@
+﻿@{
+    ViewBag.Title = "Home";
+    Layout = "~/Views/Shared/MainLayout.cshtml";
+}
+<link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+<style>
+    .carousel-inner > .item > img,
+    .carousel-inner > .item > a > img {
+        margin: auto;
+    }
+
+    .txt_align {
+        text-align: right;
+    }
+    body {
+        overflow-y:hidden;
+    }
+    .main-footer {
+        background: #cccccc;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        /* background-color: red; */
+        color: white;
+        text-align: center;
+    }
+
+    .progress-description, .info-box-text {
+        font-size: 12px;
+    }
+
+    .small-box > .inner {
+        padding: 50px;
+    }
+
+
+    .small-box {
+        height: 230px;
+    }
+    .flexilogo {
+        margin-top: -17px;
+        margin-right: 36px !important;
+        height: 35px;
+    }
+    .dblabel-caption {
+        font-size: 18px;
+        height: 150px;
+    }
+
+
+    .small-box:hover {
+        text-decoration: none;
+        color: rgb(18, 33, 212) !important;
+    }
+    
+</style>
+<div class="container">
+    <div class="row" style="margin-top:60px;">
+        <div class="col-sm-4" id="soil">
+            <a href="/SoilCard/SoilCard"><center><img src="~/images/soilhealthcard.png" class="img-responsive"></center></a>
+        </div>
+        <div class="col-sm-4" id="advtment">
+            <a href="/Advertisement/Advertisement"><center><img src="~/images/weather.png" class="img-responsive"></center></a>
+        </div>
+        <div class="col-sm-4" id="videos">
+            <a href="/Tranningvideos/Tranningvideos"><center><img src="~/images/videos.png" class="img-responsive"></center></a>
+</div>
+    </div>
+    <div class="row" style="margin-top:70px;">
+        <div class="col-sm-4" id="faqs">
+            <a href="/KioskFAQS/KioskFAQS"><center><img src="~/images/faq.png" class="img-responsive"></center></a>
+</div>
+        <div class="col-sm-4" id="schemes">
+            <a href="/GovtSchemes/GovtSchemesForm"><center><img src="~/images/govt.png" class="img-responsive"></center></a>
+</div>
+        <div class="col-sm-4" id="irreg">
+            <a href="/IrrigationWaterTest/IrrigationWaterTest"> <center><img src="~/images/irrigation.png" class="img-responsive"></center></a>
+</div>
+    </div>
+</div>
+<!--<div class="row">
+    <div id="div_set1" class="col-lg-3 col-xs-6" style="width: 34%">
+        <div class="small-box" id="div_dashboard1" style="height: 310px !important">
+            <div class="row">
+                <div class="col-md-12">
+                    <p><label id="dbcaption_set1" class="dblabel-caption"><br />FDR</label></p>
+                </div>
+                <div class="col-md-12 div-table" style="width:84%; border-spacing:0px; margin-left:30px;">
+                    <div class="row text-bold div-table-row" style="margin-left: -5px; border-bottom:1px solid #666666;">
+                        <div class="col-md-6 form-inline" style="border-right:0px solid #666666;">FDR</div>
+                        <div class="col-md-3 form-inline" id="dbcount_set_1" style="border-right:1px solid #666666;border-left:1px solid #666666;">Cur.Month</div>
+                        <div class="col-md-3 form-inline" id="dbcount_set_2" style="border-right:0px solid #666666;">Till Date</div>
+                    </div>
+                    <div class="row text-bold div-table-row" style="margin-left: -5px; border-bottom:1px solid #666666;">
+                        <div class="col-md-6 form-inline" style="border-right:0px solid #666666;">FPO #</div>
+                        <div class="col-md-3 form-inline txt_align" id="dbcountcm_set0" style="border-right:1px solid #666666;border-left:1px solid #666666;">0</div>
+                        <div class="col-md-3 form-inline txt_align" id="dbcount_set1" style="border-right:0px solid #666666;">16</div>
+                    </div>
+                    <div class="row text-bold div-table-row" style="margin-left: -5px;border-bottom:1px solid #666666;">
+                        <div class="col-md-6 form-inline" style="border-right:0px solid #666666;">Farmers #</div>
+                        <div class="col-md-3 form-inline txt_align" id="dbcountcm_set1" style="border-right:1px solid #666666;border-left:1px solid #666666;">3</div>
+                        <div class="col-md-3 form-inline txt_align" id="dbcount_set2" style="border-right:0px solid #666666;">13941</div>
+                    </div>
+                    <div class="row text-bold div-table-row" style="margin-left: -5px;border-bottom:1px solid #666666;">
+                        <div class="col-md-6 form-inline" style="border-right:0px solid #666666;">Male #</div>
+                        <div class="col-md-3 form-inline txt_align" id="dbcountcm_set2" style="border-right:1px solid #666666;border-left:1px solid #666666;">1</div>
+                        <div class="col-md-3 form-inline txt_align" id="dbcount_set3" style="border-right:0px solid #666666;">8899</div>
+                    </div>
+                    <div class="row text-bold div-table-row" style="margin-left: -5px;border-bottom:0px solid #666666;">
+                        <div class="col-md-6 form-inline" style="border-right:0px solid #666666;">Female #</div>
+                        <div class="col-md-3 form-inline txt_align" id="dbcountcm_set3" style="border-right:1px solid #666666;border-left:1px solid #666666;">2</div>
+                        <div class="col-md-3 form-inline txt_align" id="dbcount_set4" style="border-right:0px solid #666666;">5042</div>
+                    </div>
+                </div>
+            </div>
+            <div class="icon">
+                <i><img id="dbimg_set1" src="~/images/FDR.jpg" alt="LOGO" style="width: 108px;height: 96px;"></i>
+            </div>
+        </div>
+    </div>
+    <div id="div_set2" class="col-lg-3 col-xs-6" style="width: 34%">
+        <div class="small-box" id="div_dashboard2" style="height: 310px !important">
+            <div class="row">
+                <div class="col-md-12">
+                    <p><label id="dbcaption_set2" class="dblabel-caption"><br />FIS</label></p>
+                </div>
+                <div class="col-md-12 div-table" style="width:93%; border-spacing:0px; margin-left:16px;">
+                    <div class="row text-bold div-table-row" style="margin-left: -5px; border-bottom:1px solid #666666;">
+                        <div class="col-md-6 form-inline" style="border-right:0px solid #666666;">FIS</div>
+                        <div class="col-md-3 form-inline" id="dbcount_set_3" style="border-right:1px solid #666666; border-left:1px solid #666666;">Cur.Month</div>
+                        <div class="col-md-3 form-inline" id="dbcount_set_4" style="border-right:0px solid #666666;">Till Date</div>
+                    </div>
+                    <div class="row text-bold div-table-row" style="margin-left: -5px; border-bottom:1px solid #666666;">
+                        <div class="col-md-6 form-inline" style="border-right:0px solid #666666;">Share Holders #</div>
+                        <div class="col-md-3 form-inline txt_align" id="dbcountcm_set4" style="border-right:1px solid #666666;border-left:1px solid #666666;">0</div>
+                        <div class="col-md-3 form-inline txt_align" id="dbcount_set5" style="border-right:0px solid #666666;">10012</div>
+                    </div>
+                    <div class="row text-bold div-table-row" style="margin-left: -5px; border-bottom:1px solid #666666;">
+                        <div class="col-md-6 form-inline" style="border-right:1px solid #666666;">Shares Issued</div>
+                        <div class="col-md-3 form-inline txt_align" id="dbcountcm_set5" style="border-right:1px solid #666666;border-left:1px solid #666666;">0</div>
+                        <div class="col-md-3 form-inline txt_align" id="dbcount_set6" style="border-right:0px solid #666666;">1001200</div>
+                    </div>
+                    <div class="row text-bold div-table-row" style="margin-left: -5px; border-bottom:0px solid #666666;">
+                        <div class="col-md-6 form-inline" style="border-right:0px solid #666666;">Share Amt(in Lakhs)</div>
+                        <div class="col-md-3 form-inline txt_align" id="dbcountcm_set6" style="border-right:1px solid #666666;border-left:1px solid #666666;">0</div>
+                        <div class="col-md-3 form-inline txt_align" id="dbcount_set7" style="border-right:0px solid #666666;">100.12</div>
+                    </div>
+                </div>
+            </div>
+            <div class="icon">
+                <i><img id="dbimg_set2" src="~/images/FIS_NEW.png" alt="LOGO" style="width: 134px;height: 112px;"></i>
+            </div>
+        </div>
+    </div>
+    <div id="div_set3" class="col-lg-3 col-xs-6" style="width: 32%;margin-left:-5px;">
+        <div class="small-box" id="div_dashboard3" style="height: 310px !important">
+            <div class="row">
+                <div class="col-md-12">
+                    <p><label id="dbcaption_set3" class="dblabel-caption"><br />MAP</label></p>
+                </div>
+                <div class="col-md-12 div-table" style="width:89%; border-spacing:0px; margin-left:25px;">
+                    <div class="row text-bold div-table-row" style="margin-left: -5px; border-bottom:1px solid #666666;">
+                        <div class="col-md-6 form-inline" style="border-right:0px solid #666666;">iMAP</div>
+                        <div class="col-md-3 form-inline" id="dbcount_set_5" style="border-right:1px solid #666666; border-left:1px solid #666666;">Cur.Month</div>
+                        <div class="col-md-3 form-inline" id="dbcount_set_6" style="border-right:0px solid #666666;">Till Date</div>
+                    </div>
+                    <div class="row text-bold div-table-row" style="margin-left: -5px; border-bottom:1px solid #666666;">
+                        <div class="col-md-6 form-inline" style="border-right:0px solid #666666;">CC # </div>
+                        <div class="col-md-3 form-inline txt_align" id="dbcountcm_set7" style="border-right:1px solid #666666;border-left:1px solid #666666;">0</div>
+                        <div class="col-md-3 form-inline txt_align" id="dbcount_set8" style="border-right:0px solid #666666;">15</div>
+                    </div>
+                    <div class="row text-bold div-table-row" style="margin-left: -5px; border-bottom:1px solid #666666;">
+                        <div class="col-md-6 form-inline" style="border-right:0px solid #666666;">Milkmen # </div>
+                        <div class="col-md-3 form-inline txt_align" id="dbcountcm_set8" style="border-right:1px solid #666666;border-left:1px solid #666666;">2</div>
+                        <div class="col-md-3 form-inline txt_align" id="dbcount_set9" style="border-right:0px solid #666666;">2095</div>
+                    </div>
+                    <div class="row text-bold div-table-row" style="margin-left: -5px; border-bottom:1px solid #666666;">
+                        <div class="col-md-6 form-inline" style="border-right:0px solid #666666;">Collected(ltr in lakhs) </div>
+                        <div class="col-md-3 form-inline txt_align" id="dbcountcm_set9" style="border-right:1px solid #666666;border-left:1px solid #666666;">0.47</div>
+                        <div class="col-md-3 form-inline txt_align" id="dbcount_set10" style="border-right:0px solid #666666;">30.11</div>
+                    </div>
+                    <div class="row text-bold div-table-row" style="margin-left: -5px; border-bottom:0px solid #666666;">
+                        <div class="col-md-6 form-inline" style="border-right:0px solid #666666;">Amount Paid(lakhs)</div>
+                        <div class="col-md-3 form-inline txt_align" id="dbcountcm_set10" style="border-right:1px solid #666666;border-left:1px solid #666666;">0</div>
+                        <div class="col-md-3 form-inline txt_align" id="dbcount_set11" style="border-right:0px solid #666666;">646.13</div>
+                    </div>
+                </div>
+            </div>
+            <div class="icon">
+                <i> <img id="dbimg_set3" src="~/images/MAPMILK.png" alt="LOGO" style="width: 114px;height: 100px;">   </i>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="row">
+    <div class="col-sm-12">
+        <div id="div_set4" class="col-lg-3 col-xs-6" style="width: 35%; margin-left: -14px;">
+            <div class="small-box" id="div_dashboard4" style="height: 310px !important">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p><label id="dbcaption_set4" class="dblabel-caption"><br />LRS</label></p>
+                    </div>
+                    <div class="col-md-12 div-table" style="width:89%; border-spacing:0px; margin-left:21px;">
+                        <div class="row text-bold div-table-row" style="margin-left: -5px; border-bottom:1px solid #666666;">
+                            <div class="col-md-6 form-inline" style="border-right:1px solid #666666;">LRS</div>
+                            <div class="col-md-3 form-inline" id="dbcount_set_7" style="border-right:1px solid #666666; border-left:1px solid #666666;">Cur.Month</div>
+                            <div class="col-md-3 form-inline" id="dbcount_set_8" style="border-right:0px solid #666666;">Till Date</div>
+                        </div>
+                        <div class="row text-bold div-table-row" style="margin-left: -5px; border-bottom:1px solid #666666;">
+                            <div class="col-md-6 form-inline" style="border-right:0px solid #666666;">Total borrowers</div>
+                            <div class="col-md-3 form-inline txt_align" id="dbcountcm_set11" style="border-right:1px solid #666666;border-left:1px solid #666666;">0</div>
+                            <div class="col-md-3 form-inline txt_align" id="dbcount_set12" style="border-right:0px solid #666666;">210</div>
+                        </div>
+                        <div class="row text-bold div-table-row" style="margin-left: -5px; border-bottom:1px solid #666666;">
+                            <div class="col-md-6 form-inline" style="border-right:0px solid #666666;">Active borrowers</div>
+                            <div class="col-md-3 form-inline txt_align" id="dbcountcm_set12" style="border-right:1px solid #666666;border-left:1px solid #666666;">0</div>
+                            <div class="col-md-3 form-inline txt_align" id="dbcount_set13" style="border-right:0px solid #666666;">206</div>
+                        </div>
+                        <div class="row text-bold div-table-row" style="margin-left: -5px; border-bottom:1px solid #666666;">
+                            <div class="col-md-6 form-inline" style="border-right:0px solid #666666;">Disbursed(in lakhs)</div>
+                            <div class="col-md-3 form-inline txt_align" id="dbcountcm_set13" style="border-right:1px solid #666666;border-left:1px solid #666666;">0</div>
+                            <div class="col-md-3 form-inline txt_align" id="dbcount_set14" style="border-right:0px solid #666666;">75.13</div>
+                        </div>
+                        <div class="row text-bold div-table-row" style="margin-left: -5px; border-bottom:0px solid #666666;">
+                            <div class="col-md-6 form-inline" style="border-right:0px solid #666666;">Repayment(in lakhs)</div>
+                            <div class="col-md-3 form-inline txt_align" id="dbcountcm_set14" style="border-right:1px solid #666666;border-left:1px solid #666666;">0</div>
+                            <div class="col-md-3 form-inline txt_align" id="dbcount_set15" style="border-right:0px solid #666666;">67.05</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="icon">
+                    <i> <img id="dbimg_set4" src="~/images/LRS_NEW.png" alt="LOGO" style="width: 134px;height: 126px;">   </i>
+                </div>
+            </div>
+        </div>
+        <div id="div_set5" class="col-lg-3 col-xs-6" style="width: 35%;margin-left:-6px;">
+            <div class="small-box" id="div_dashboard5" style="height: 310px !important">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p><label id="dbcaption_set5" class="dblabel-caption"><br />ICD</label></p>
+                    </div>
+                    <div class="col-md-12 div-table" style="width:95%; border-spacing:0px; margin-left:11px;">
+                        <div class="row text-bold div-table-row" style="margin-left: -5px; border-bottom:1px solid #666666;">
+                            <div class="col-md-6 form-inline" style="border-right:1px solid #666666;">ICD</div>
+                            <div class="col-md-3 form-inline" id="dbcount_set_9" style="border-right:1px solid #666666; border-left:1px solid #666666;">Cur.Month</div>
+                            <div class="col-md-3 form-inline" id="dbcount_set_10" style="border-right:0px solid #666666;">Till Date</div>
+                        </div>
+                        <div class="row text-bold div-table-row" style="margin-left: -5px; border-bottom:1px solid #666666;">
+                            <div class="col-md-6 form-inline" style="border-right:0px solid #666666;">IC #</div>
+                            <div class="col-md-3 form-inline txt_align" id="dbcountcm_set15" style="border-right:1px solid #666666;border-left:1px solid #666666;">0</div>
+                            <div class="col-md-3 form-inline txt_align" id="dbcount_set16" style="border-right:0px solid #666666;">12</div>
+                        </div>
+                        <div class="row text-bold div-table-row" style="margin-left: -5px; border-bottom:1px solid #666666;">
+                            <div class="col-md-6 form-inline" style="border-right:0px solid #666666;">Trans # </div>
+                            <div class="col-md-3 form-inline txt_align" id="dbcountcm_set16" style="border-right:1px solid #666666;border-left:1px solid #666666;">0</div>
+                            <div class="col-md-3 form-inline txt_align" id="dbcount_set17" style="border-right:0px solid #666666;">10098</div>
+                        </div>
+                        <div class="row text-bold div-table-row" style="margin-left: -5px; border-bottom:1px solid #666666;">
+                            <div class="col-md-6 form-inline" style="border-right:0px solid #666666;">Trans Amt(in lakhs)</div>
+                            <div class="col-md-3 form-inline txt_align" id="dbcountcm_set17" style="border-right:1px solid #666666;border-left:1px solid #666666;">0</div>
+                            <div class="col-md-3 form-inline txt_align" id="dbcount_set18" style="border-right:0px solid #666666;">200.3</div>
+                        </div>
+                        <div class="row text-bold div-table-row" style="margin-left: -5px; border-bottom:0px solid #666666;">
+                            <div class="col-md-6 form-inline" style="border-right:0px solid #666666;">Cashless(in lakhs)</div>
+                            <div class="col-md-3 form-inline txt_align" id="dbcount_set18" style="border-right:1px solid #666666;border-left:1px solid #666666;">0</div>
+                            <div class="col-md-3 form-inline txt_align" id="dbcount_set19" style="border-right:0px solid #666666;">0</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="icon">
+                    <i> <img id="dbimg_set4" src="~/images/ICD.png" alt="LOGO" style="width: 108px;height: 100px;"></i>
+                </div>
+            </div>
+        </div>
+        <div id="div_set6" class="col-lg-3 col-xs-6" style="width: 32%;margin-left:-7px;">
+            <div class="small-box" id="div_dashboard6"style="height: 310px !important">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p><label id="dbcaption_set6" class="dblabel-caption"><br />Farm Lease</label></p>
+                    </div>
+                    <div class="col-md-12 div-table" style="width:97%; border-spacing:0px; margin-left:16px;">
+                        <div class="row text-bold div-table-row" style="margin-left: -5px; border-bottom:1px solid #666666;">
+                            <div class="col-md-5 form-inline" style="border-right:1px solid #666666;">FL</div>
+                            <div class="col-md-3 form-inline" id="dbcount_set_11" style="border-right:1px solid #666666; border-left:1px solid #666666;">Cur.Month</div>
+                            <div class="col-md-3 form-inline" id="dbcount_set_12" style="border-right:0px solid #666666;">Till Date</div>
+                        </div>
+                        <div class="row text-bold div-table-row" style="margin-left: -5px; border-bottom:1px solid #666666;">
+                            <div class="col-md-5 form-inline" style="border-right:0px solid #666666;">ESP #</div>
+                            <div class="col-md-3 form-inline txt_align" id="dbcountcm_set19" style="border-right:1px solid #666666;border-left:1px solid #666666;">0</div>
+                            <div class="col-md-3 form-inline txt_align" id="dbcount_set20" style="border-right:0px solid #666666;margin-left:28px">11</div>
+                        </div>
+                        <div class="row text-bold div-table-row" style="margin-left: -5px; border-bottom:1px solid #666666;">
+                            <div class="col-md-5 form-inline" style="border-right:0px solid #666666;">Equipment #</div>
+                            <div class="col-md-3 form-inline txt_align" id="dbcountcm_set20" style="border-right:1px solid #666666;border-left:1px solid #666666;">0</div>
+                            <div class="col-md-3 form-inline txt_align" id="dbcount_set21" style="border-right:0px solid #666666;margin-left:28px">16</div>
+                        </div>
+                        <div class="row text-bold div-table-row" style="margin-left: -5px; border-bottom:1px solid #666666;">
+                            <div class="col-md-5 form-inline" style="border-right:0px solid #666666;">Trans Amt(in lakhs)</div>
+                            <div class="col-md-3 form-inline txt_align" id="dbcountcm_set21" style="border-right:1px solid #666666;border-left:1px solid #666666;">0</div>
+                            <div class="col-md-3 form-inline txt_align" id="dbcount_set22" style="border-right:0px solid #666666;margin-left:28px">3.94</div>
+                        </div>
+                        <div class="row text-bold div-table-row" style="margin-left: -5px; border-bottom:0px solid #666666;">
+                            <div class="col-md-5 form-inline" style="border-right:0px solid #666666;">Cashless(in lakhs)</div>
+                            <div class="col-md-3 form-inline txt_align" id="dbcountcm_set22" style="border-right:1px solid #666666;border-left:1px solid #666666;">0</div>
+                            <div class="col-md-3 form-inline txt_align" id="dbcount_set23" style="border-right:0px solid #666666;margin-left:28px">0</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="icon">
+                    <i> <img id="dbimg_set4" src="~/images/FARM_LEASE_NEW.png" alt=" LOGO" style="width: 134px;height: 126px;">   </i>
+                </div>
+            </div>
+        </div>
+        </div>
+</div>-->
+@*<div class="row">*@
+@*<div class="col-sm-12">*@
+@*<div id="colorstrip">
+        <label style="font-weight: 600; font-size :17px">Action Items</label>
+    </div>*@
+@*<div id="alert_grid"></div>
+    <div id="colorstrip1">*@
+@*<div>
+        <button class="btn bg-maroon btn-sm  pull-left" id="btn_inactivate" style="margin-left:6px;margin-top:1px" onclick="assign(cus_Code, unit_id, mach_id, ticket_no)">Assign Now</button>
+        <button class="btn bg-maroon btn-sm pull-right" id="btn_activate" style="margin-right:6px;margin-top:1px" onclick="view_eng()">View Engineer Workload</button>
+    </div>*@
+@*</div>*@
+
+@*</div>*@
+@*</div>*@
+<style type="text/css">
+    .div-table {
+        display: inline-grid;
+        width: auto;
+        background-color: #eee;
+        border: 1px solid #666666;
+        border-spacing: 5px; /* cellspacing:poor IE support for  this */
+    }
+
+    .div-table-row {
+        /*display: table-row;*/
+        width: auto;
+        clear: both;
+    }
+
+    .div-table-col {
+        float: left; /* fix for  buggy browsers */
+        display: table-column;
+        width: 200px;
+        background-color: #ccc;
+    }
+</style>
+
+<script src="~/API_Scripts/UmoldITWebAPIProxy.js"></script>
+<script>
+
+    $(document).ready(function () {
+
+        dashbord_view();
+        @*//FDR
+        $("#div_dashboard1").click(function () {
+            window.open('@Url.Content("~/ListViewMaker/ListViewMakerList")', 'Farmer Registration', 'width=1600,height=900,scrollbars=yes');
+        });
+        //FPO Members
+        $("#div_dashboard2").click(function () {
+            window.open('@Url.Content("~/Apply/Applylist")', 'Farmer Registration', 'width=1600,height=900,scrollbars=yes');
+        });
+        //Milkman
+        $("#div_dashboard4").click(function () {
+            alert("Total Milkman")
+        });
+        //LRS
+        $("#div_dashboard3").click(function () {
+            window.open('@Url.Content("~/DisbursementStatusUpdate/DisbursementStatusUpdate")', 'Farmer Loan', 'width=1600,height=900,scrollbars=yes');
+        });*@
+        $("#div_dashboard1").mouseenter(function () {
+            $(this).css("color", "rgb(18, 33, 212)");
+        });
+        $("#div_dashboard1").mouseleave(function () {
+            $(this).css("color", "#333");
+        });
+        $("#div_dashboard2").mouseenter(function () {
+            $(this).css("color", "rgb(18, 33, 212)");
+        });
+        $("#div_dashboard2").mouseleave(function () {
+            $(this).css("color", "#333");
+        });
+        $("#div_dashboard3").mouseenter(function () {
+            $(this).css("color", "rgb(18, 33, 212)");
+        });
+        $("#div_dashboard3").mouseleave(function () {
+            $(this).css("color", "#333");
+        });
+        $("#div_dashboard4").mouseenter(function () {
+            $(this).css("color", "rgb(18, 33, 212)");
+        });
+        $("#div_dashboard4").mouseleave(function () {
+            $(this).css("color", "#333");
+        });
+        $("#div_dashboard5").mouseenter(function () {
+            $(this).css("color", "rgb(18, 33, 212)");
+        });
+        $("#div_dashboard5").mouseleave(function () {
+            $(this).css("color", "#333");
+        });
+        $("#div_dashboard6").mouseenter(function () {
+            $(this).css("color", "rgb(18, 33, 212)");
+        });
+        $("#div_dashboard6").mouseleave(function () {
+            $(this).css("color", "#333");
+        });
+    });
+
+    function dashbord_view() {
+        //var data = {};
+        //var context = getContext();
+        //data.orgnid = context.orgnId;
+        //data.locnid = context.locnId;
+        //data.userid = context.userId;
+        //data.localeid = context.localeId;
+        //data.role_code = getlocalStorage('role_code');
+        //var dashboard_values = ajaxcall_param_new("/Home/fetch_dashbaord_details", data);
+        //if (dashboard_values != undefined) {
+        //    var dashboard_data = JSON.parse(dashboard_values);
+        //    if (dashboard_data.success == true) {
+        //        var result = JSON.parse(dashboard_data.set1)
+        //        $.each(result, function (index, value) {
+        //            if (result[index].dashboard_caption == "Share Amt"
+        //                || result[index].dashboard_caption == "Payment Made"
+        //                || result[index].dashboard_caption == "Disbursed Amt" || result[index].dashboard_caption == "Amount")
+        //            {
+
+        //                $('#dbcountcm_set' + (index + 0)).text("  " + result[index].month_count);
+        //                $('#dbcount_set' + (index + 1)).text("  " + result[index].dashboard_count);
+        //            }
+        //        else{
+
+        //                $('#dbcountcm_set' + (index + 0)).text("  " + result[index].month_count);
+        //                $('#dbcount_set' + (index + 1)).text(" " + result[index].dashboard_count);
+        //            }
+                  
+        //        });
+
+        //    }
+        //}
+        if (getlocalStorage('role_code') == 'Maker' || getlocalStorage('role_code')=='Checker')
+        {
+            $('#advtment').hide();
+            $('#videos').hide();
+            $('#faqs').hide();
+            $('#schemes').hide();
+            $('#soil').show();
+            $('#irreg').show();
+        }
+    }
+    function alert_service_grid(err_data) {
+        $("#alert_grid").kendoGrid({
+            dataSource: {
+                data: err_data,
+            },
+            height: 275,
+            ////dataBound: onDataBound,
+            selectable: true,
+            scrollable: true,
+            // change: selection,
+
+            columns: [
+
+                 {
+                     field: "alrt_desc",
+                     title: "Description",
+                     width: 150
+                 },
+            ]
+        });
+    }
+    function lakhsformat(number) {
+        var x = number;
+        x = x.toString();
+        var afterPoint = '';
+        if (x.indexOf('.') > 0)
+            afterPoint = x.substring(x.indexOf('.'), x.length);
+        x = Math.floor(x);
+        x = x.toString();
+        var lastThree = x.substring(x.length - 3);
+        var otherNumbers = x.substring(0, x.length - 3);
+        if (otherNumbers != '')
+            lastThree = ',' + lastThree;
+        var res = otherNumbers.replace(/\B(?=(\d{2})+(?!\d))/g, ",") + lastThree + afterPoint;
+
+        return res;
+    }
+</script>

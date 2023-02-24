@@ -1,0 +1,987 @@
+@{
+    Layout = "~/Views/Shared/FormViewLayout1.cshtml";
+}
+ 
+<div class="box-header text-center with-border">
+        <h3 class="box-title" style="text-align:center;color:red;font-weight: 600;">Kiosk List</h3>
+    </div>
+
+
+<form id="rolescreen_form1" class="form-horizontal" data-role="validator" novalidate="novalidate">
+    <div class="panel panel-default">
+        @*<input type="hidden" name="alert_msg" id="alert_msg" value="" /  onkeypress="return tamil(event);">*@
+        <div class="row">
+            <!-- Left col -->
+            <div class="col-lg-12">
+                <!-- Custom tabs (Charts with tabs)-->
+                <div id="grid_role">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</form>
+
+
+<div id="dialog" style="background: #e0dbdb !important;">
+    <form id="rolescreen_form" class="form-horizontal" data-role="validator" novalidate="novalidate">
+
+        <div class="row">
+            <div class="col-sm-3">
+            </div>
+            <div class="col-sm-4">
+                <h5 style="text-align:center;color:red;font-size:20px;">Kiosk Set up</h5>
+            </div>
+            <div class="col-sm-3" id="rolemenu">
+                <div style="float:right;">
+                    <i class="fa fa-floppy-o fa-3x" style="color:red;font-size: 30px;cursor:pointer;" aria-hidden="true" onClick="save()"></i>&nbsp;&nbsp;&nbsp;
+
+
+                    <i class="fa fa-sticky-note-o" aria-hidden="true" style="color:green;font-size: 30px;cursor:pointer;"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <i class="fa fa-paperclip" aria-hidden="true" style="color:brown;font-size: 30px;cursor:pointer;">
+                    </i>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <i class="fa fa-times fa-3x" style="color:black;font-size: 30px;cursor:pointer;" data-dismiss="modal" aria-hidden="true" onClick="closerole()"></i>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-left: 10px;">
+            @*<div class="col-sm-3"  style="display:none;">
+                <label class="title">Kiosk Id</label>
+                <input  id="txt_Id" name="in_Kiosk_gid"   >
+
+            </div>*@
+            <div class="col-sm-3">
+                <label class="title">Kiosk code</label>
+                <input type="text" id="txt_KioskId" name="in_Kiosk_code" class="form-control" style="height:5%">
+                <input type="hidden" id="txt_Id" name="in_Kiosk_gid" />
+            </div>
+            <div class="col-sm-4">
+                <label class="title">Kiosk Name</label>
+                <input type="text" name="in_Kiosk_name" id="txt_KioskName" class="form-control" placeholder="Input"  style="height:5%">
+            </div>
+            <div class="col-sm-3">
+                <label class="title">Status</label><br/>
+                <input type="text" name="in_status_name" id="txt_status" data-role="filtercombo" class="form-control" placeholder="Select">
+            </div>
+        </div>
+        <div class="row" style="margin-left: 10px;">
+            <div class="col-sm-7" style="margin-right:32px;">
+                <label class="title">FPO Name</label>
+                <input type="text" name="in_fpo_name" id="txt_FPOName" class="form-control" placeholder="Input" style="width: 106%;">
+            </div>
+            <div class="col-sm-3">
+                <label class="title">Bilingual Language</label><br />
+                <input id="txt_Bilingual" name="in_Bilingual_code" data-role="filtercombo" class="form-control" placeholder="Select">
+            </div>
+        </div>
+
+        <div class="row" style="margin-left: 10px;">
+            <div class="col-sm-4">
+                <label class="title">Address</label>
+                <input id="txt_Address" name="in_Address"   class="form-control">
+            </div>
+            <div class="col-sm-3">
+                <label class="title">Pincode</label>
+                <input id="txt_Pincode" name="in_Pincode"   class="form-control"  style="height:5%">
+            </div>
+            <div class="col-sm-3">
+                <label class="title">Village</label><br />
+                <input id="txt_Village" name="in_Village"  data-role="filtercombo" class="form-control" placeholder="Select" onchange="getonchange(this.value)">
+
+                @*<input id="txt_Village" name="in_Village" data-role="filtercombo" class="form-control">*@
+
+            </div>
+        </div>
+
+        <div class="row" style="margin-left: 10px;">
+            <div class="col-sm-3">
+                <label class="title">Taluk</label><br />
+                <input id="cmb_Taluk" name="in_Taluk" data-role="filtercombo" class="form-control">
+            </div>
+            <div class="col-sm-4" >
+                <label class="title">District / City</label><br />
+                <input id="cmb_District" name="in_District" data-role="filtercombo" class="form-control">
+            </div>
+            <div class="col-sm-3" style="margin-left: 1%;">
+                <label class="title">State</label><br />
+                <input id="cmb_State" name="in_State" data-role="filtercombo" class="form-control">
+            </div>
+
+        </div>
+
+         
+      
+        <div class="row">
+            <div class="col-sm-3" style=" display:none">
+                <div class="form-group" style=" display:none">
+                    <label for="txtMode" class="col-sm-5 control-label">Mode Flag</label>
+                    <div class="col-sm-7">
+                        <input type="text" id="txtMode" name="in_mode_flag" class="form-control">
+                        <input type="hidden" id="txt_Role_rowid" name="inout_role_rowid">
+                        <input type="hidden" id="txt_timestamp" name="in_row_timestamp">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-left:9px;">
+            <div class="col-sm-11" style="padding:20px 0px 0px 20px">
+                <div class="tab-content">
+                    <div class="tab-pane fade active in" id="permission">
+                        <div id="permission">
+                            <div id="grid_role_list">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div id="dialogContact" style="background: #e0dbdb !important;"  >
+    <form id="rolescreen" class="form-horizontal" data-role="validator" novalidate="novalidate">
+        <div class="row">
+            <div class="col-sm-3">
+            </div>
+            <div class="col-sm-4">
+                <h5 style="text-align:center;color:red;font-size:20px;">Contact Details</h5>
+            </div>
+            <div class="col-sm-3" id="rolemenucontact">
+                <div style="float:right;">
+                    <i class="fa fa-floppy-o fa-3x" style="color:red;font-size: 30px;cursor:pointer;" aria-hidden="true" onClick="ContactDetailssave()"></i>&nbsp;&nbsp;&nbsp;
+                    <i class="fa fa-times fa-3x" style="color:black;font-size: 30px;cursor:pointer;" data-dismiss="modal" aria-hidden="true" onClick="closerole()"></i>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-left: 10px;">
+            <div class="col-sm-4">
+                <label class="title">Name</label>
+                <input type="text" id="txt_Name" name="in_Name" class="form-control" style="height:5%;">
+            </div>
+            <div class="col-sm-3">
+                <label class="title">Designation</label>
+                <input type="text" name="in_Designation" id="txt_Designation" class="form-control" placeholder="Input" style="height:5%;">
+            </div>
+            <div class="col-sm-3" style=" ">
+                <label class="title">Mobile</label>
+                <input id="txt_Mobile" name="in_Mobile" data-role="filtercombo" class="form-control" style="width: 81%;height: 5%;">
+            </div>
+        </div>
+        <div class="row" style="margin-left: 10px;margin-left:-67px;">
+
+           
+
+            <div class="col-sm-5" style=" margin-left: 8%;width: 38%;">
+                <label class="title">Landline</label>
+                <input id="txt_Landline" name="in_Landline" data-role="filtercombo" class="form-control" style="height:5%;">
+            </div>
+
+            <div class="col-sm-5">
+                <label class="title">eMail</label>
+                <input type="text" name="in_eMail" id="txt_eMail" class="form-control" placeholder="Input" style="height:5%;width:90%;">
+            </div>
+
+        </div>
+
+
+    </form>
+</div>
+<script>
+    $(document).ready(function () {
+        debugger;
+        $("#dialog").hide();
+        $("#dialogContact").hide();
+        Form_validate_Name = $('form.form-horizontal').attr('id');
+        var container = $("#rolescreen_form");
+        kendo.init(container);
+        container.kendoValidator({
+        });
+
+        load_master_code();
+        //Status
+        var list_in = "";
+        $("#txt_status").empty();
+        list_in = grid_comboScreen_mastercodes("STATUS");
+        filter_combobox("txt_status", list_in);
+        //Language
+        var list_in1= "";
+     $("#txt_Bilingual").empty();
+        list_in1 = grid_comboScreen_mastercodes("QCD_BILANG");
+        filter_combobox("txt_Bilingual", list_in1);
+        //village
+        var list_in2 = "";
+        $("#txt_Village").empty();
+         list_in2 = grid_comboScreen_mastercodes("QCD_UN_VILLAGE");
+        filter_combobox("txt_Village", list_in2);
+        //Taluk
+        var list_in3 = "";
+        $("#cmb_Taluk").empty();
+        list_in3 = grid_comboScreen_mastercodes("QCD_UN_TALUK");
+        filter_combobox("cmb_Taluk", list_in3);
+
+        //District
+        var list_in4 = "";
+        $("#cmb_District").empty();
+        list_in4 = grid_comboScreen_mastercodes("QCD_UN_DIST");
+        filter_combobox("cmb_District", list_in4);
+
+        //state
+        var list_in5 = "";
+        $("#cmb_State").empty();
+        list_in5 = grid_comboScreen_mastercodes("QCD_UN_STATE");
+        filter_combobox("cmb_State", list_in5);
+        grid_role([]);
+        grid_permission([]);
+
+        var data = {};
+        data.context = getContext();
+        var Context = data.context;
+        $.ajax({
+            type: "POST",
+            data: JSON.stringify({ userId: Context.userId, orgnId: Context.orgnId, locnId: Context.locnId, localeId: Context.localeId }),
+            url: "/KioskSetup/KioskSetupList",
+            dataType: "json",
+            contentType: 'application/json; charset=utf-8',
+            success: function (response) {
+                debugger;
+                if (response.context != null) {
+                    generate_roleactivity_list(response.context.List);
+                    //SetPager(response.context.Filter.out_record_count)
+                }
+                else {
+                    grid_role([]);
+                }
+            },
+            error: function (er) {
+                alert(er)
+                console.log(er)
+            }
+
+        });
+        Screen_Id = "KioskSetup";
+        permission = sec_Master_Permission(Screen_Id);
+    });
+    function load_master_code() {
+        debugger;
+        try {
+            var data = {};
+            data.screen_Id = "KioskSetup";
+            var tab_values = ajaxcall_param("/Home/screenId_mastercodelist", JSON.stringify(data));
+        }
+        catch (err) {
+            javascript_log4j_root(arguments.callee.name, err);
+        }
+    }
+    function list() {
+        debugger;
+        var data = {};
+        data.context = getContext();
+        var Context = data.context;
+        $.ajax({
+            type: "POST",
+            data: JSON.stringify({ userId: Context.userId, orgnId: Context.orgnId, locnId: Context.locnId, localeId: Context.localeId }),
+            url: "/KioskSetup/GetKioskList",
+            dataType: "json",
+            contentType: 'application/json; charset=utf-8',
+            success: function (response) {
+                debugger;
+                if (response.context != null) {
+                    generate_roleactivity_list(response.context.List);
+                    //SetPager(response.context.Filter.out_record_count)
+                }
+                else {
+                    grid_role([]);
+                }
+            },
+            error: function (er) {
+                alert(er)
+                console.log(er)
+            }
+
+        });
+    }
+
+
+     
+
+
+    function getonchange() {
+        debugger;
+        var dependcode = $("#txt_Village").val();
+        var data = {};
+        data.context = getContext();
+        var Context = data.context;
+        if (dependcode == "" || dependcode == null || dependcode == "undefined" || dependcode == 0) {
+            return false;
+        }
+
+        else {
+           
+            $.ajax({
+                type: "POST",
+
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                url: '@Url.Action("KioskSetuponchange", "KioskSetup")',
+                data: JSON.stringify({
+                    userId: Context.userId, orgnId: Context.orgnId, locnId: Context.locnId, localeId: Context.localeId, dependcode: dependcode }),
+
+                //data: { 'Depend_Code': variable_Depend_Code },
+                success: function (data) {
+                    debugger;
+                     var values = data.context.List;
+                   
+                    $('#cmb_Taluk').data("kendoComboBox").value(values[0].tk_name);
+                    $('#cmb_District').data("kendoComboBox").value(values[0].dt_name);
+                    $('#cmb_State').data("kendoComboBox").value(values[0].st_name);
+
+                    
+                     
+
+                }
+            });
+        }
+    }
+
+
+</script>
+
+<script>
+    function closerole() {
+      //  $("#dialog").data("kendoWindow").close();
+        $("#dialogContact").data("kendoWindow").close();
+    }
+
+    function serialno() {
+        debugger
+        $("#dialog").kendoWindow();
+        var dialog = $("#dialog").data("kendoWindow");
+        dialog.open().element.closest(".k-window").css({
+            top: 121,
+            left: 300, height: 420, width: 900
+        });
+        dialog.title("Kiosk Set Up");
+        dialog.bind("open", serialno);
+        create_new();
+    }
+    function grid_role(data) {
+        debugger;
+        $("#grid_role").kendoGrid({
+            dataSource: {
+                data: data, //  pageSize: 20
+            },
+            height: 400,
+            sortable: true,
+            selectable: true,
+            //change: onChangeSelection,
+            selectable: "singl",   //  Grid Row Selection
+            navigatable: true,
+            toolbar: "<a class='k-grid-add' id='Assign_sevices' onClick='serialno()'><span class='fa fa-plus' style='color:Black'></span></a>",
+            columns: [
+
+                {
+                    field: "Kiosk_id",
+                    title: "Kiosk Id",
+                    hidden: true,
+                    width: 30
+                },
+                {
+                    field: "KioskCode",
+                    title: "Kiosk code",
+                    width: 30
+                },
+                {
+                    field: "kiosk_Name",
+                    title: "Kiosk name",
+                    width: 30
+                },
+                {
+                    field: "Bilingual",
+                    title: "Bilingual",
+                    width: 30
+                },
+
+
+                {
+                    field: "Village",
+                    title: "Village",
+                    width: 30
+                },
+                {
+                    field: "Taluk",
+                    title: "Taluk",
+
+                    width: 30
+                },
+                {
+                    field: "District",
+                    title: "District",
+
+                    width: 30
+                },
+                {
+                    field: "State",
+                    title: "State",
+                    width: 30
+                }, {
+                    command: [
+                        {
+                            name: "View",
+                            text: "<span class='fa fa-eye' style ='color:#357ab8;'onClick='onview()'></span>"
+                        },
+                        {
+                            name: "Edit" ,
+                            text: "<span class='fa fa-pencil' style='color:#357ab8' onClick='onChangeSelection()'></span>"
+                        },
+                        {
+                            name: "Delete",
+                            text: "<span class='fa fa-close' style='color:#357ab8' onClick='ondelete()'></span>"
+                        },
+                    ], title: "Action", width: "25px",
+                },
+                ]
+        });
+        load_master_code();
+    }
+
+
+    function serialnoContact() {
+        debugger
+        $("#dialogContact").kendoWindow();
+        var dialog = $("#dialogContact").data("kendoWindow");
+        dialog.open().element.closest(".k-window").css({
+            top: 121,
+            left: 300, height: 420, width: 900
+        });
+        dialog.title("Kiosk Set Up");
+        dialog.bind("open", serialno);
+        create_new();
+    }
+
+    function grid_permission(role_data) {
+        debugger;
+        $("#grid_role_list").kendoGrid({
+            dataSource: {
+                data: role_data,
+
+            },
+            height: 276,
+            
+            sortable: true,
+            toolbar: "<a class='k-grid-add' id='Assign_sevices' onClick='serialnoContact()'><span class='fa fa-plus' style='color:Black'></span></a>",
+
+            columns: [
+                {
+                    field: "Kiosk_Contactgid",
+                    title: "Row Id",
+                    width: 10,
+                    hidden: true,
+                },
+                {
+                    field: "Kiosk_id",
+                    title: "Row Id",
+                    width: 10,
+                    hidden: true,
+                },
+                
+                {
+                    field: "in_Name",
+                    title: "Name",
+                    width: 100,
+                },
+                {
+                    field: "in_Designation",
+                    title: "Designation",
+
+                    width: 50
+                },
+                {
+                    field: "in_Mobile",
+                    title: "Mobile",
+
+                    width: 50
+                },
+
+                {
+                    field: "in_Landline",
+                    title: "Landline",
+
+                    width: 50,
+                },
+                {
+                    field: "in_eMail",
+                    title: "eMail",
+                  width: 50
+                },
+                {
+                    command: [
+                        {
+                            name: "View",
+                            text: "<span class='fa fa-eye' style ='color:#357ab8;'onClick='onviewContactdetails()'></span>"
+                        },
+                        {
+                            name: "Edit",
+                            text: "<span class='fa fa-pencil' style='color:#357ab8' onClick='ConttactDetailsEdit()'></span>"
+                        },
+                        {
+                            name: "Delete",
+                            text: "<span class='fa fa-close' style='color:#357ab8' onClick='ondeleteContactdetails()'></span>"
+                        },
+                    ], title: "Action", width: "25px",
+                },
+
+                 ],
+
+        });
+    }
+
+    function onview() {
+        debugger;
+        $("#rolemenu").hide();
+
+        onChangeSelection();
+    }
+
+
+
+
+    function save() {
+        debugger;
+
+
+        var formval = form_Serialize("rolescreen_form");
+        var obj_val = JSON.parse(formval);
+
+        if (obj_val.in_Kiosk_gid == "") {
+            obj_val.in_Kiosk_gid = 0;
+           obj_val.In_mode_flag = "I"
+        }
+        else {
+            obj_val.In_mode_flag = "U"
+        }
+        if (obj_val.in_Address == "") {
+            kendoAlert("Address Cannot Be Blank");
+            return false;
+        }
+        if (obj_val.in_Bilingual_code == "") {
+            kendoAlert("Billing Language Cannot Be Blank");
+            return false;
+        }
+        if (obj_val.in_District == "") {
+            kendoAlert("District Cannot Be Blank");
+            return false;
+        }
+        if (obj_val.in_Pincode == "" || in_Pincode == "0") {
+            kendoAlert("Pincode Cannot Be Blank");
+            return false;
+        }
+        if (obj_val.in_State == "") {
+            kendoAlert("State Cannot Be Blank");
+            return false;
+        }
+        if (obj_val.in_Taluk == "") {
+            kendoAlert("TalukCannot Be Blank");
+            return false;
+        }
+        if (obj_val.in_Village == "") {
+            kendoAlert("Village Cannot Be Blank");
+            return false;
+        }
+
+        if (obj_val.in_fpo_name == "") {
+            kendoAlert("FPO Cannot Be Blank");
+            return false;
+        }
+
+        if (in_Village == "") {
+            kendoAlert("Village Cannot Be Blank");
+        }
+
+        
+
+
+        
+
+        var data = {};
+        data.context = getContext();
+        data.context.Header = obj_val;
+        //data.context.In_mode_flag = "I"
+        data.context.Detail = obj_grid_val;
+        var Context = data.context;
+
+
+        $.ajax({
+            type: "POST",
+            data: JSON.stringify({ userId: Context.userId, orgnId: Context.orgnId, locnId: Context.locnId, localeId: Context.localeId, Header: Context.Header, Detail: Context.Detail, In_mode_flag: Context.In_mode_flag }),
+            url: "/KioskSetup/SaveKiosk",
+            dataType: "json",
+            contentType: 'application/json; charset=utf-8',
+            success: function (response) {
+                console.log(response)
+                var Res = JSON.parse(response);
+                if (Res.applicationException.errorDescription == null) {
+                    console.log(Res);
+                    kendoAlert("Saved Succedfully");
+
+                    get_role_details(Res.context.header.inout_role_rowid);
+                    $("#dialog").data("kendoWindow").close();
+                    list();
+                    // generate_farmer_registration_header(Res.context.header)Detail: Context.Detail;
+                }
+                else {
+                    kendoAlert(Res.applicationException.errorDescription);
+                }
+            },
+            error: function (er) {
+                alert(er)
+                console.log(er)
+            }
+
+        });
+    }
+    function ondelete() {
+        debugger;
+        var kendoWindow = $("<div />").kendoWindow({
+            title: "Confirm",
+            width: "350px",
+            height: "130px",
+            resizable: false,
+            modal: true
+        });
+        kendoWindow.data("kendoWindow")
+            .content($("#grid_delete-confirmation").html())
+            .center().open();
+        kendoWindow
+            .find(".grid_delete-confirm,.grid_delete-cancel")
+            .click(function () {
+                debugger;
+                if ($(this).hasClass("grid_delete-confirm")) {
+                    debugger;
+                    var grid = $("#grid_role").data("kendoGrid");
+                    var selectedItem = grid.dataItem(grid.select());
+                    var formval = form_Serialize("rolescreen_form1");
+                   var obj_val = JSON.parse(formval);
+                   
+                  obj_val.in_Kiosk_gid = selectedItem.Kiosk_id;
+                   
+                  
+                    obj_val.in_mode_flag = "D";
+                    var data = {};
+                    data.context = getContext();
+                    data.context.Header = obj_val;
+                    data.context.Detail = [];
+                    data.context.In_mode_flag = "D"
+                    var Context = data.context;
+                    $.ajax({
+                        type: "POST",
+                        data: JSON.stringify({ userId: Context.userId, orgnId: Context.orgnId, locnId: Context.locnId, localeId: Context.localeId, Header: Context.Header, Detail: Context.Detail, In_mode_flag: Context.In_mode_flag }),
+                        url: "/KioskSetup/SaveKiosk",
+                        dataType: "json",
+                        contentType: 'application/json; charset=utf-8',
+                        success: function (response) {
+                            debugger;
+                            console.log(response)
+                            var Res = JSON.parse(response);
+                            if (Res.applicationException.errorDescription ==null) {
+                                debugger;
+                                console.log(Res);
+                                kendoAlert("Deleted Succedfully");
+                                list();
+
+                            }
+                            else {
+                                kendoAlert(Res.applicationException.errorDescription);
+                            }
+                        },
+                        error: function (er) {
+                            alert(er)
+                            console.log(er)
+                        }
+
+                    });
+                }
+                kendoWindow.data("kendoWindow").close();
+            });
+    }
+
+
+
+
+
+
+    function DeleteDetails() {
+        $("#txtMode").val('D');
+        save();
+    }
+
+    function onChangeSelection() {
+        debugger;
+        $("#rolemenu").show();
+        debugger;
+        $("#dialog").kendoWindow();
+        var dialog = $("#dialog").data("kendoWindow");
+        dialog.open().element.closest(".k-window").css({
+            top: 121,
+            left: 300, height: 420, width: 900
+        });
+        dialog.title("Kiosk Set up");
+        dialog.bind("open", serialno);
+        var grid = $("#grid_role").data("kendoGrid");
+        var selectedItem = grid.dataItem(grid.select());
+        var formval = form_Serialize("rolescreen_form");
+        var obj_val = JSON.parse(formval);
+        obj_val.in_Kiosk_gid = selectedItem.Kiosk_id;
+       // obj_val.in_Kiosk_gid = selectedItem.Kiosk_id;
+
+         
+        var data1 = {};
+        data1.context = getContext();
+        data1.context.In_mode_flag = "U";
+        data1.context.Header = obj_val;
+        var Context = data1.context;
+        var Kiosk_id = obj_val.in_Kiosk_gid;
+       // var data = { userId: Context.userId, orgnId: Context.orgnId, locnId: Context.locnId, localeId: Context.localeId, Kiosk_id: obj_val.in_Kiosk_gid};
+
+       
+
+            $.ajax({
+                type: "POST",
+               // data: JSON.stringify({ userId: Context.userId, orgnId: Context.orgnId, locnId: Context.locnId, localeId: Context.localeId, farmer_code: Context.Header.farmer_code }) Kiosk_id: obj_val.in_Kiosk_gid ,
+                data: JSON.stringify({ userId: Context.userId, orgnId: Context.orgnId, locnId: Context.locnId, localeId: Context.localeId, Kiosk_gid: obj_val.in_Kiosk_gid }),
+                 url: "/KioskSetup/Kioskfetch",
+                dataType: "json",
+                contentType: 'application/json; charset=utf-8',
+                success: function (response) {
+                    debugger;
+                    var Res = JSON.parse(response);
+                    if (Res != null) {
+                        generate_Kiosk_header(Res.header);
+                        generate_kioskdetail_list(Res.detail)
+                    }
+                    else {
+
+                    }
+                },
+                error: function (er) {
+                    alert(er)
+                    console.log(er)
+                }
+
+            });
+        }
+    //header, detail  edit
+    function generate_Kiosk_header(res) {
+        debugger;
+        $("#txt_Id").val(res.in_Kiosk_gid);
+        $("#txt_KioskId").val(res.in_Kiosk_code);
+        $("#in_Kiosk_name").val(res.in_Kiosk_name);
+      
+        //$('#cmb_rejreason').data("kendoComboBox").value(res.in_status_name);
+        //$('#cmb_sampleby').data("kendoComboBox").value(res.out_sample_drawnby);
+        $("#txt_FPOName").val(res.in_fpo_name);
+        $("#txt_Bilingual").data("kendoComboBox").value(res.in_Bilingual_code);
+        $("#txt_Address").val(res.in_Address);
+        $("#txt_Pincode").val(res.in_Pincode);
+        $('#txt_Village').data("kendoComboBox").value(res.in_Village);
+        $('#cmb_Taluk').data("kendoComboBox").value(res.in_Taluk);
+        $('#cmb_District').data("kendoComboBox").value(res.in_District);
+        $('#cmb_State').data("kendoComboBox").value(res.in_State);
+        $('#in_status_name').data("kendoComboBox").value(res.in_status_name);
+        //$("#txtlab_rep").val(res.out_Lab_reportno);
+        //$("#txtMode").val(res.out_mode_flag);
+        //$("#txtlabid").val(res.out_Lab_Id);
+        //$("#txtValidity2").val(res.out_sample_receiveon);
+        //$("#txtValidity3").val(res.out_Analysis_starton);
+        //$("#txtValidity4").val(res.out_Analysis_completeon);
+        //$("#txttestmethod").val(res.out_test_method);
+        //$("#comment").val(res.out_crop_recommendation);
+    }
+    function generate_kioskdetail_list(res) {
+        if (res != null) {
+            var data = changedataType(res);
+            grid_role_list(data);
+        }
+        else {
+            grid_role_list([]);
+        }
+    }
+
+
+
+
+    
+    function get_role_details(id) {
+        debugger;
+        var formval = form_Serialize("rolescreen_form");
+        var obj_val = JSON.parse(formval);
+        obj_val.role_rowid = id;
+        obj_val.orgn_level = ".";
+
+        var data1 = {};
+        data1.context = getContext();
+        data1.context.Header = obj_val;
+        var Context = data1.context;
+        var data = { userId: Context.userId, orgnId: Context.orgnId, locnId: Context.locnId, localeId: Context.localeId, role_rowid: obj_val.role_rowid, orgn_level: obj_val.orgn_level };
+
+        $.ajax({
+
+          url: '@Url.Action(" ", "RoleDefinition")',
+     type: "post",
+     contentType: 'application/x-www-form-urlencoded',
+            data: data,
+            success: function (response1) {
+                debugger;
+                if (response1 != null) {
+                    generate_roleactivity_header(response1.context.header);
+                    generate_roleactivity_detail(response1.context.detail);
+                }
+                else {
+                    grid_role([]);
+                }
+            },
+            error: function (er) {
+                alert(er)
+                console.log(er)
+            }
+        });
+        $("#txt_Role_rowid").val(id);
+    }
+
+</script>
+
+ 
+
+
+<script>
+   //Contact Details:save
+
+    
+
+    function ContactDetailssave() {
+        debugger;
+
+
+        var formval = form_Serialize("grid_role_list");
+        var obj_val = JSON.parse(formval);
+
+        if (obj_val == "") {
+            obj_val.Kiosk_Contactgid = 0;
+            obj_val.In_mode_flag = "I"
+        }
+        else {
+            obj_val.In_mode_flag = "U"
+        }
+
+        var Name = $("#txt_Name").val();
+        var designation = $("#txt_Designation").val();
+        var mobileno = $("#txt_Mobile").val();
+        var landlineno = $("#txt_Landline").val();
+        var eMail = $("#txt_eMail").val();
+
+        //validation
+        if (Name == "") {
+            kendoAlert("Contact Name Cannot Be Blank");
+            return false;
+        }
+        if (designation== "") {
+            kendoAlert("Designation Language Cannot Be Blank");
+            return false;
+        }
+        if (mobileno== "") {
+            kendoAlert("Mobile No Cannot Be Blank");
+            return false;
+        }
+        if (landlineno == "" || landlineno=="0") {
+            kendoAlert("Land Line no Cannot Be Blank");
+            return false;
+        }
+        if (eMail == "") {
+            kendoAlert("eMail Cannot Be Blank");
+            return false;
+        }
+       
+       
+
+      
+
+         
+      
+         
+
+         
+
+        var data = {};
+        data.context = getContext();
+        data.context.Header = obj_val;
+        //data.context.In_mode_flag = "I"
+        data.context.detail = obj_grid_val;
+        var Context = data.context;
+
+
+        $.ajax({
+            type: "POST",
+            data: JSON.stringify({ userId: Context.userId, orgnId: Context.orgnId, locnId: Context.locnId, localeId: Context.localeId, Header: Context.Header, Detail: Context.Detail, In_mode_flag: Context.In_mode_flag }),
+            url: "/KioskSetup/KioskContactDetails",
+            dataType: "json",
+            contentType: 'application/json; charset=utf-8',
+            success: function (response) {
+                console.log(response)
+                var Res = JSON.parse(response);
+                if (Res.applicationException.errorDescription == null) {
+                    console.log(Res);
+                    kendoAlert("Saved Succedfully");
+
+                    get_role_details(Res.context.header.inout_role_rowid);
+                    $("#dialog").data("kendoWindow").close();
+                    list();
+                    // generate_farmer_registration_header(Res.context.header)Detail: Context.Detail;
+                }
+                else {
+                    kendoAlert(Res.applicationException.errorDescription);
+                }
+            },
+            error: function (er) {
+                alert(er)
+                console.log(er)
+            }
+
+        });
+    }
+
+     
+
+ 
+
+
+
+
+ 
+
+    function clear_val() {
+        $("#txt_RoleId").val('');
+        $("#txt_RoleName").val('');
+       // $('#cmb_Village').data("kendoComboBox").value('');
+        grid_permission([]);
+    }
+
+</script>
+
+
+<style>
+    #grid_role_list input[type=checkbox] {
+        margin: 4px 37px 0;
+    }
+
+    .k-widget.k-tooltip {
+        background-color: #ffe79e;
+        color: #6b5100;
+    }
+
+    span.k-tooltip {
+        white-space: pre-line;
+    }
+</style>

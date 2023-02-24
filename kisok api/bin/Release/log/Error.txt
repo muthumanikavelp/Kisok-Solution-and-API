@@ -1,0 +1,629 @@
+ [06/03/2021 01:02:00.982 PM]- USERNAME :admin   ERROR  : System.IO.DirectoryNotFoundException: Could not find a part of the path 'G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf'.
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at kisok_api.Controllers.PrintController.exportpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code, String path) in G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 115
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 67
+ [06/03/2021 01:12:12.413 PM]- USERNAME :admin   ERROR  : System.IO.DirectoryNotFoundException: Could not find a part of the path 'G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf'.
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at kisok_api.Controllers.PrintController.exportpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code, String path) in G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 115
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 67
+ [06/03/2021 01:13:30.954 PM]- USERNAME :admin   ERROR  : System.IO.DirectoryNotFoundException: Could not find a part of the path 'G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf'.
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at kisok_api.Controllers.PrintController.exportpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code, String path) in G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 115
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 67
+ [06/03/2021 01:26:10.709 PM]- USERNAME :admin   ERROR  : System.IO.DirectoryNotFoundException: Could not find a part of the path 'G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf'.
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at kisok_api.Controllers.PrintController.exportpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code, String path) in G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 115
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 67
+ [06/03/2021 01:27:32.299 PM]- USERNAME :admin   ERROR  : System.IO.DirectoryNotFoundException: Could not find a part of the path 'G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf'.
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at kisok_api.Controllers.PrintController.exportpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code, String path) in G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 115
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 67
+ [06/03/2021 02:40:46.508 PM]- USERNAME :admin   ERROR  : System.IO.DirectoryNotFoundException: Could not find a part of the path 'G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf'.
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at kisok_api.Controllers.PrintController.exportpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code, String path) in G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 115
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 67
+ [08/03/2021 11:12:10.646 AM]- USERNAME :admin   ERROR  : System.InvalidOperationException: Session has not been configured for this application or request.
+   at Microsoft.AspNetCore.Http.DefaultHttpContext.get_Session()
+   at kisok_api.Controllers.PrintController.exportpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code, String path) in G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 248
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 82
+ [08/03/2021 11:12:55.670 AM]- USERNAME :admin   ERROR  : System.IO.IOException: The process cannot access the file 'G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 82
+ [08/03/2021 11:20:48.318 AM]- USERNAME :admin   ERROR  : System.InvalidOperationException: Session has not been configured for this application or request.
+   at Microsoft.AspNetCore.Http.DefaultHttpContext.get_Session()
+   at kisok_api.Controllers.PrintController.exportpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code, String path) in G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 252
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 82
+ [08/03/2021 11:26:43.085 AM]- USERNAME :admin   ERROR  : System.InvalidOperationException: Session has not been configured for this application or request.
+   at Microsoft.AspNetCore.Http.DefaultHttpContext.get_Session()
+   at kisok_api.Controllers.PrintController.exportpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code, String path) in G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 252
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 82
+ [08/03/2021 11:28:21.157 AM]- USERNAME :admin   ERROR  : System.IO.IOException: The process cannot access the file 'G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 82
+ [08/03/2021 11:55:45.376 AM]- USERNAME :admin   ERROR  : System.InvalidOperationException: Session has not been configured for this application or request.
+   at Microsoft.AspNetCore.Http.DefaultHttpContext.get_Session()
+   at kisok_api.Controllers.PrintController.exportpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code, String path) in G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 252
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 82
+ [08/03/2021 12:07:30.446 PM]- USERNAME :admin   ERROR  : System.InvalidOperationException: Session has not been configured for this application or request.
+   at Microsoft.AspNetCore.Http.DefaultHttpContext.get_Session()
+   at kisok_api.Controllers.PrintController.exportpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code, String path) in G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 252
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 82
+ [08/03/2021 12:17:27.884 PM]- USERNAME :admin   ERROR  : System.InvalidOperationException: Session has not been configured for this application or request.
+   at Microsoft.AspNetCore.Http.DefaultHttpContext.get_Session()
+   at kisok_api.Controllers.PrintController.exportpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code, String path) in G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 251
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 82
+ [08/03/2021 12:47:46.651 PM]- USERNAME :admin   ERROR  : System.InvalidOperationException: Session has not been configured for this application or request.
+   at Microsoft.AspNetCore.Http.DefaultHttpContext.get_Session()
+   at kisok_api.Controllers.PrintController.exportpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code, String path) in G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 245
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 81
+ [08/03/2021 12:50:13.173 PM]- USERNAME :admin   ERROR  : System.IO.IOException: The process cannot access the file 'G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 81
+ [08/03/2021 12:53:54.790 PM]- USERNAME :admin   ERROR  : System.InvalidOperationException: Session has not been configured for this application or request.
+   at Microsoft.AspNetCore.Http.DefaultHttpContext.get_Session()
+   at kisok_api.Controllers.PrintController.exportpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code, String path) in G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 246
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 81
+ [08/03/2021 12:58:53.624 PM]- USERNAME :admin   ERROR  : System.InvalidOperationException: Session has not been configured for this application or request.
+   at Microsoft.AspNetCore.Http.DefaultHttpContext.get_Session()
+   at kisok_api.Controllers.PrintController.exportpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code, String path) in G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 247
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 82
+ [08/03/2021 01:00:14.317 PM]- USERNAME :admin   ERROR  : System.IO.IOException: The process cannot access the file 'G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 82
+ [08/03/2021 01:02:02.836 PM]- USERNAME :admin   ERROR  : System.IO.IOException: The process cannot access the file 'G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 82
+ [08/03/2021 01:09:35.909 PM]- USERNAME :admin   ERROR  : System.InvalidOperationException: Session has not been configured for this application or request.
+   at Microsoft.AspNetCore.Http.DefaultHttpContext.get_Session()
+   at kisok_api.Controllers.PrintController.exportpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code, String path) in G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 249
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 84
+ [08/03/2021 01:10:00.512 PM]- USERNAME :admin   ERROR  : System.IO.IOException: The process cannot access the file 'G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 84
+ [08/03/2021 01:13:35.529 PM]- USERNAME :admin   ERROR  : System.IO.IOException: The process cannot access the file 'G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 84
+ [08/03/2021 01:13:43.712 PM]- USERNAME :admin   ERROR  : System.IO.IOException: The process cannot access the file 'G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 84
+ [08/03/2021 01:15:46.098 PM]- USERNAME :admin   ERROR  : System.IO.IOException: The process cannot access the file 'G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 84
+ [08/03/2021 01:15:55.490 PM]- USERNAME :admin   ERROR  : System.IO.IOException: The process cannot access the file 'G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 84
+ [08/03/2021 01:20:56.112 PM]- USERNAME :admin   ERROR  : System.InvalidOperationException: Session has not been configured for this application or request.
+   at Microsoft.AspNetCore.Http.DefaultHttpContext.get_Session()
+   at kisok_api.Controllers.PrintController.exportpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code, String path) in G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 249
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 84
+ [08/03/2021 01:27:24.529 PM]- USERNAME :admin   ERROR  : System.IO.IOException: The process cannot access the file 'G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 84
+ [08/03/2021 01:37:31.172 PM]- USERNAME :admin   ERROR  : System.InvalidOperationException: Session has not been configured for this application or request.
+   at Microsoft.AspNetCore.Http.DefaultHttpContext.get_Session()
+   at kisok_api.Controllers.PrintController.exportpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code, String path) in G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 249
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 84
+ [08/03/2021 01:47:21.200 PM]- USERNAME :admin   ERROR  : System.InvalidOperationException: Session has not been configured for this application or request.
+   at Microsoft.AspNetCore.Http.DefaultHttpContext.get_Session()
+   at kisok_api.Controllers.PrintController.exportpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code, String path) in G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 250
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 85
+ [08/03/2021 01:49:27.680 PM]- USERNAME :admin   ERROR  : System.IO.IOException: The process cannot access the file 'G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 85
+ [08/03/2021 01:55:20.443 PM]- USERNAME :admin   ERROR  : System.InvalidOperationException: Session has not been configured for this application or request.
+   at Microsoft.AspNetCore.Http.DefaultHttpContext.get_Session()
+   at kisok_api.Controllers.PrintController.exportpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code, String path) in G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 253
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 89
+ [08/03/2021 02:45:13.731 PM]- USERNAME :admin   ERROR  : System.InvalidOperationException: Session has not been configured for this application or request.
+   at Microsoft.AspNetCore.Http.DefaultHttpContext.get_Session()
+   at kisok_api.Controllers.PrintController.exportpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code, String path) in G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 253
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 89
+ [08/03/2021 02:45:55.773 PM]- USERNAME :admin   ERROR  : System.IO.IOException: The process cannot access the file 'G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 89
+ [08/03/2021 02:50:21.527 PM]- USERNAME :admin   ERROR  : System.InvalidOperationException: Session has not been configured for this application or request.
+   at Microsoft.AspNetCore.Http.DefaultHttpContext.get_Session()
+   at kisok_api.Controllers.PrintController.exportpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code, String path) in G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 253
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 89
+ [08/03/2021 02:51:58.223 PM]- USERNAME :admin   ERROR  : System.IO.IOException: The process cannot access the file 'G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 89
+ [08/03/2021 02:56:01.659 PM]- USERNAME :admin   ERROR  : System.InvalidOperationException: Session has not been configured for this application or request.
+   at Microsoft.AspNetCore.Http.DefaultHttpContext.get_Session()
+   at kisok_api.Controllers.PrintController.exportpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code, String path) in G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 253
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 89
+ [08/03/2021 03:07:26.410 PM]- USERNAME :admin   ERROR  : System.InvalidOperationException: Session has not been configured for this application or request.
+   at Microsoft.AspNetCore.Http.DefaultHttpContext.get_Session()
+   at kisok_api.Controllers.PrintController.exportpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code, String path) in G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 253
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 89
+ [08/03/2021 03:14:13.924 PM]- USERNAME :admin   ERROR  : System.InvalidOperationException: Session has not been configured for this application or request.
+   at Microsoft.AspNetCore.Http.DefaultHttpContext.get_Session()
+   at kisok_api.Controllers.PrintController.exportpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code, String path) in G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 253
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 89
+ [08/03/2021 03:33:05.796 PM]- USERNAME :admin   ERROR  : System.UnauthorizedAccessException: Access to the path 'G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf' is denied.
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at kisok_api.Controllers.PrintController.exportpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code, String path) in G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 125
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 88
+ [08/03/2021 04:00:40.226 PM]- USERNAME :admin   ERROR  : System.UnauthorizedAccessException: Access to the path 'G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf' is denied.
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at kisok_api.Controllers.PrintController.exportpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code, String path) in G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 125
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 88
+ [08/03/2021 04:01:22.784 PM]- USERNAME :admin   ERROR  : System.UnauthorizedAccessException: Access to the path 'G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf' is denied.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 88
+ [08/03/2021 04:03:33.977 PM]- USERNAME :admin   ERROR  : System.InvalidOperationException: Session has not been configured for this application or request.
+   at Microsoft.AspNetCore.Http.DefaultHttpContext.get_Session()
+   at kisok_api.Controllers.PrintController.exportpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code, String path) in G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 255
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 88
+ [12/03/2021 11:19:13.898 AM]- USERNAME :admin   ERROR  : System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at kisok_api.Controllers.PrintController.exportpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code, String path) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 95
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 79
+ [12/03/2021 11:20:22.761 AM]- USERNAME :admin   ERROR  : System.IO.IOException: The process cannot access the file 'D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 79
+ [12/03/2021 11:20:23.514 AM]- USERNAME :admin   ERROR  : System.IO.IOException: The process cannot access the file 'D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 79
+ [12/03/2021 11:20:36.691 AM]- USERNAME :admin   ERROR  : System.IO.IOException: The process cannot access the file 'D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 79
+ [12/03/2021 11:21:56.915 AM]- USERNAME :admin   ERROR  : System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at kisok_api.Controllers.PrintController.exportpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code, String path) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 95
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 79
+ [12/03/2021 12:00:20.407 PM]- USERNAME :admin   ERROR  : System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at kisok_api.Controllers.PrintController.exportpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code, String path) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 95
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 79
+ [12/03/2021 12:00:22.867 PM]- USERNAME :admin   ERROR  : System.IO.IOException: The process cannot access the file 'D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 79
+ [12/03/2021 12:00:23.599 PM]- USERNAME :admin   ERROR  : System.IO.IOException: The process cannot access the file 'D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 79
+ [12/03/2021 12:01:38.164 PM]- USERNAME :admin   ERROR  : System.IO.IOException: The process cannot access the file 'D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 79
+ [12/03/2021 12:01:38.975 PM]- USERNAME :admin   ERROR  : System.IO.IOException: The process cannot access the file 'D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 79
+ [12/03/2021 12:06:07.131 PM]- USERNAME :admin   ERROR  : System.IO.IOException: The process cannot access the file 'D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 79
+ [12/03/2021 12:06:08.333 PM]- USERNAME :admin   ERROR  : System.IO.IOException: The process cannot access the file 'D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 79
+ [12/03/2021 12:06:52.280 PM]- USERNAME :admin   ERROR  : System.IO.IOException: The process cannot access the file 'D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 79
+ [12/03/2021 12:06:52.927 PM]- USERNAME :admin   ERROR  : System.IO.IOException: The process cannot access the file 'D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 79
+ [12/03/2021 12:06:53.126 PM]- USERNAME :admin   ERROR  : System.IO.IOException: The process cannot access the file 'D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 79
+ [12/03/2021 12:10:24.230 PM]- USERNAME :admin   ERROR  : System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at kisok_api.Controllers.PrintController.exportpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code, String path) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 95
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 79
+ [12/03/2021 12:11:24.852 PM]- USERNAME :admin   ERROR  : System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at kisok_api.Controllers.PrintController.exportpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code, String path) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 95
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 79
+ [12/03/2021 12:11:26.194 PM]- USERNAME :admin   ERROR  : System.IO.IOException: The process cannot access the file 'D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 79
+ [12/03/2021 12:11:48.186 PM]- USERNAME :admin   ERROR  : System.IO.IOException: The process cannot access the file 'D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 79
+ [12/03/2021 12:11:48.906 PM]- USERNAME :admin   ERROR  : System.IO.IOException: The process cannot access the file 'D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 79
+ [12/03/2021 12:11:49.046 PM]- USERNAME :admin   ERROR  : System.IO.IOException: The process cannot access the file 'D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 79
+ [12/03/2021 12:12:10.962 PM]- USERNAME :admin   ERROR  : System.IO.IOException: The process cannot access the file 'D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 79
+ [12/03/2021 12:18:10.616 PM]- USERNAME :admin   ERROR  : System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at kisok_api.Controllers.PrintController.exportpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code, String path) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 95
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 79
+ [12/03/2021 12:18:57.688 PM]- USERNAME :admin   ERROR  : System.IO.IOException: The process cannot access the file 'D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 79
+ [12/03/2021 12:18:58.376 PM]- USERNAME :admin   ERROR  : System.IO.IOException: The process cannot access the file 'D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 79
+ [12/03/2021 12:18:58.648 PM]- USERNAME :admin   ERROR  : System.IO.IOException: The process cannot access the file 'D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 79
+ [12/03/2021 12:18:58.828 PM]- USERNAME :admin   ERROR  : System.IO.IOException: The process cannot access the file 'D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 79
+ [12/03/2021 12:18:59.106 PM]- USERNAME :admin   ERROR  : System.IO.IOException: The process cannot access the file 'D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 79
+ [12/03/2021 12:18:59.644 PM]- USERNAME :admin   ERROR  : System.IO.IOException: The process cannot access the file 'D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 79
+ [12/03/2021 12:19:00.645 PM]- USERNAME :admin   ERROR  : System.IO.IOException: The process cannot access the file 'D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 79
+ [12/03/2021 12:21:20.302 PM]- USERNAME :admin   ERROR  : System.IO.IOException: The process cannot access the file 'D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 79
+ [12/03/2021 12:21:21.573 PM]- USERNAME :admin   ERROR  : System.IO.IOException: The process cannot access the file 'D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 79
+ [12/03/2021 12:21:22.930 PM]- USERNAME :admin   ERROR  : System.IO.IOException: The process cannot access the file 'D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 79
+ [12/03/2021 12:21:23.132 PM]- USERNAME :admin   ERROR  : System.IO.IOException: The process cannot access the file 'D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 79
+ [12/03/2021 12:35:08.576 PM]- USERNAME :admin   ERROR  : System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at kisok_api.Controllers.PrintController.exportpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code, String path) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 95
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 79
+ [12/03/2021 12:35:25.576 PM]- USERNAME :admin   ERROR  : System.IO.IOException: The process cannot access the file 'D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 79
+ [12/03/2021 12:35:26.438 PM]- USERNAME :admin   ERROR  : System.IO.IOException: The process cannot access the file 'D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 79
+ [12/03/2021 12:35:26.603 PM]- USERNAME :admin   ERROR  : System.IO.IOException: The process cannot access the file 'D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 79
+ [12/03/2021 12:35:53.539 PM]- USERNAME :admin   ERROR  : System.IO.IOException: The process cannot access the file 'D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 79
+ [12/03/2021 12:35:54.079 PM]- USERNAME :admin   ERROR  : System.IO.IOException: The process cannot access the file 'D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 79
+ [12/03/2021 12:35:54.253 PM]- USERNAME :admin   ERROR  : System.IO.IOException: The process cannot access the file 'D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 79
+ [12/03/2021 12:35:54.414 PM]- USERNAME :admin   ERROR  : System.IO.IOException: The process cannot access the file 'D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 79
+ [12/03/2021 12:35:54.571 PM]- USERNAME :admin   ERROR  : System.IO.IOException: The process cannot access the file 'D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 79
+ [12/03/2021 12:35:54.755 PM]- USERNAME :admin   ERROR  : System.IO.IOException: The process cannot access the file 'D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 79
+ [12/03/2021 12:35:55.603 PM]- USERNAME :admin   ERROR  : System.IO.IOException: The process cannot access the file 'D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 79
+ [12/03/2021 12:35:55.794 PM]- USERNAME :admin   ERROR  : System.IO.IOException: The process cannot access the file 'D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 79
+ [12/03/2021 12:35:55.963 PM]- USERNAME :admin   ERROR  : System.IO.IOException: The process cannot access the file 'D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 79
+ [12/03/2021 12:35:56.161 PM]- USERNAME :admin   ERROR  : System.IO.IOException: The process cannot access the file 'D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 79
+ [12/03/2021 12:35:57.006 PM]- USERNAME :admin   ERROR  : System.IO.IOException: The process cannot access the file 'D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 79
+ [12/03/2021 12:35:57.744 PM]- USERNAME :admin   ERROR  : System.IO.IOException: The process cannot access the file 'D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 79
+ [12/03/2021 12:38:48.195 PM]- USERNAME :admin   ERROR  : System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at kisok_api.Controllers.PrintController.exportpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code, String path) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 95
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 79
+ [12/03/2021 12:38:49.150 PM]- USERNAME :admin   ERROR  : System.IO.IOException: The process cannot access the file 'D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 79
+ [12/03/2021 12:38:50.050 PM]- USERNAME :admin   ERROR  : System.IO.IOException: The process cannot access the file 'D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 79
+ [12/03/2021 12:40:18.383 PM]- USERNAME :admin   ERROR  : System.IO.IOException: The process cannot access the file 'D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 79
+ [12/03/2021 12:40:18.590 PM]- USERNAME :admin   ERROR  : System.IO.IOException: The process cannot access the file 'D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 79
+ [12/03/2021 12:40:18.987 PM]- USERNAME :admin   ERROR  : System.IO.IOException: The process cannot access the file 'D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 79
+ [12/03/2021 12:44:59.271 PM]- USERNAME :admin   ERROR  : System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at kisok_api.Controllers.PrintController.exportpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code, String path) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 181
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 79
+ [12/03/2021 12:46:33.786 PM]- USERNAME :admin   ERROR  : System.IO.IOException: The process cannot access the file 'D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 76
+ [12/03/2021 12:47:13.811 PM]- USERNAME :admin   ERROR  : System.IO.IOException: The process cannot access the file 'D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 76
+ [12/03/2021 12:48:47.697 PM]- USERNAME :admin   ERROR  : System.IO.IOException: The process cannot access the file 'D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 76
+ [12/03/2021 12:57:41.328 PM]- USERNAME :admin   ERROR  : System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at kisok_api.Controllers.PrintController.exportpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code, String path) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 181
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 79
+ [12/03/2021 01:02:07.828 PM]- USERNAME :admin   ERROR  : System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at kisok_api.Controllers.PrintController.exportpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code, String path) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 181
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 79
+ [12/03/2021 02:17:18.192 PM]- USERNAME :admin   ERROR  : System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at kisok_api.Controllers.PrintController.exportpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code, String path) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 181
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 79
+ [12/03/2021 02:20:42.037 PM]- USERNAME :admin   ERROR  : System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at kisok_api.Controllers.PrintController.exportpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code, String path) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 181
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 79
+ [12/03/2021 02:23:04.646 PM]- USERNAME :admin   ERROR  : System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at kisok_api.Controllers.PrintController.exportpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code, String path) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 181
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 79
+ [12/03/2021 02:27:56.873 PM]- USERNAME :admin   ERROR  : MySql.Data.MySqlClient.MySqlException (0x80004005): Invalid attempt to access a field before calling Read()
+   at nafservice.Kiosk_Soil_Card_Service.apisoilviewPrintList(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code, String ConString) in D:\Vadivu-naf\nafkiosk\nafkiosk\nafservice\Kiosk_Soil_Card_Service.cs:line 121
+   at kisok_api.Controllers.PrintController.exportpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code, String path) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 104
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 79
+ [12/03/2021 02:29:35.321 PM]- USERNAME :admin   ERROR  : MySql.Data.MySqlClient.MySqlException (0x80004005): Invalid attempt to access a field before calling Read()
+   at nafservice.Kiosk_Soil_Card_Service.apisoilviewPrintList(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code, String ConString) in D:\Vadivu-naf\nafkiosk\nafkiosk\nafservice\Kiosk_Soil_Card_Service.cs:line 121
+   at kisok_api.Controllers.PrintController.exportpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code, String path) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 104
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 79
+ [12/03/2021 03:07:09.550 PM]- USERNAME :admin   ERROR  : System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at kisok_api.Controllers.PrintController.exportpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code, String path) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 181
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 79
+ [12/03/2021 03:37:31.914 PM]- USERNAME :admin   ERROR  : System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at kisok_api.Controllers.PrintController.exportpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code, String path) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 181
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 79
+ [12/03/2021 03:47:42.745 PM]- USERNAME :admin   ERROR  : System.IO.IOException: The process cannot access the file 'D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 76
+ [12/03/2021 04:09:37.190 PM]- USERNAME :admin   ERROR  : System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at kisok_api.Controllers.PrintController.exportpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code, String path) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 181
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 79
+ [12/03/2021 04:20:04.595 PM]- USERNAME :admin   ERROR  : System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at kisok_api.Controllers.PrintController.exportpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code, String path) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 181
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 79
+ [12/03/2021 04:20:14.562 PM]- USERNAME :admin   ERROR  : System.IO.IOException: The process cannot access the file 'D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 76
+ [12/03/2021 04:25:02.573 PM]- USERNAME :admin   ERROR  : System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at kisok_api.Controllers.PrintController.exportpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code, String path) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 181
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in D:\Vadivu-naf\nafkiosk\nafkiosk\kisok api\Controllers\PrintController.cs:line 79
+ [31/03/2021 12:25:55.475 PM]- exportpdf -System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at kisok_api.Controllers.PrintController.exportpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code, String path) in E:\Vadivu\Latest Source\nafkiosk\kisok api\Controllers\PrintController.cs:line 157
+ [31/03/2021 12:30:27.838 PM]- exportpdf -System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at kisok_api.Controllers.PrintController.exportpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code, String path) in E:\Vadivu\Latest Source\nafkiosk\kisok api\Controllers\PrintController.cs:line 157
+ [31/03/2021 12:30:34.049 PM]- USERNAME :admin   ERROR  : System.IO.IOException: The process cannot access the file 'E:\Vadivu\Latest Source\nafkiosk\kisok api\videos\Soil_Card_Print.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.PrintController.downloadpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code) in E:\Vadivu\Latest Source\nafkiosk\kisok api\Controllers\PrintController.cs:line 76
+ [21/04/2021 04:25:18.316 PM]- System.IO.FileNotFoundException: Could not find file 'E:\Vadivu\kiosk -15-04-2021\nafkiosk\Kiosk web\wwwroot\advert\KANCHI-FDR & FIS & LRS.mp4'.
+File name: 'E:\Vadivu\kiosk -15-04-2021\nafkiosk\Kiosk web\wwwroot\advert\KANCHI-FDR & FIS & LRS.mp4'
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at nafdatamodel.OfflineVideoList_Datamodel.GetAllKioskVideo_Srv(KioskVideoContext objinvoice, String mysqlcon, String advtfilepath, String videofilepath, String faqfilepath, String schemesfilepath) in E:\Vadivu\20-04-2021- modified solution\nafkiosk\nafdatamodel\OfflineVideoList_Datamodel.cs:line 110
+ [21/04/2021 04:32:23.103 PM]- System.IO.DirectoryNotFoundException: Could not find a part of the path 'D:\bala kisok\web host New\web-pub\wwwroot\uploadedFiles\Kiosk Project.xlsx'.
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at nafdatamodel.OfflineVideoList_Datamodel.GetAllKioskVideo_Srv(KioskVideoContext objinvoice, String mysqlcon, String advtfilepath, String videofilepath, String faqfilepath, String schemesfilepath) in E:\Vadivu\20-04-2021- modified solution\nafkiosk\nafdatamodel\OfflineVideoList_Datamodel.cs:line 167
+ [21/04/2021 04:39:04.252 PM]- System.IO.DirectoryNotFoundException: Could not find a part of the path 'D:\bala kisok\web host New\web-pub\wwwroot\uploadedFiles\Kiosk Project.xlsx'.
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at nafdatamodel.OfflineVideoList_Datamodel.GetAllKioskVideo_Srv(KioskVideoContext objinvoice, String mysqlcon, String advtfilepath, String videofilepath, String faqfilepath, String schemesfilepath) in E:\Vadivu\20-04-2021- modified solution\nafkiosk\nafdatamodel\OfflineVideoList_Datamodel.cs:line 167
+ [21/04/2021 04:48:22.537 PM]- System.IO.DirectoryNotFoundException: Could not find a part of the path 'D:\bala kisok\web host New\web-pub\wwwroot\uploadedFiles\Kiosk Project.xlsx'.
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at nafdatamodel.OfflineVideoList_Datamodel.GetAllKioskVideo_Srv(KioskVideoContext objinvoice, String mysqlcon, String advtfilepath, String videofilepath, String faqfilepath, String schemesfilepath) in E:\Vadivu\20-04-2021- modified solution\nafkiosk\nafdatamodel\OfflineVideoList_Datamodel.cs:line 169
+ [04/05/2021 11:54:03.879 AM]- exportpdf -System.NullReferenceException: Object reference not set to an instance of an object.
+   at kisok_api.Controllers.PrintController.exportpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code, String path)
+ [21/05/2021 01:20:07.244 PM]- Exception - System.Net.WebException: The remote server returned an error: (404) Not Found.
+   at System.Net.HttpWebRequest.GetResponse()
+   at iTextSharp.text.Image.GetInstance(Uri url, Boolean recoverFromImageError)
+   at iTextSharp.text.Image.GetInstance(Uri url)
+   at iTextSharp.text.Image.GetInstance(String filename)
+   at kisok_api.Controllers.Kiosk_Soil_CardController.exportpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code, String path) in D:\Kiosk\nafkiosk-vadivu\kisok api\Controllers\Kiosk_Soil_CardController.cs:line 319
+   at kisok_api.Controllers.Kiosk_Soil_CardController.kioskresetpass(String org, String locn, String user, String lang, String email, String In_farmer_code, Int32 soil_gid, String In_Tran_Id, String In_user_code) in D:\Kiosk\nafkiosk-vadivu\kisok api\Controllers\Kiosk_Soil_CardController.cs:line 220
+ [21/05/2021 01:32:42.306 PM]- Exception - MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts.
+ ---> System.AggregateException: One or more errors occurred. (A socket operation was attempted to an unreachable network. 169.38.82.134:3307)
+ ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10051): A socket operation was attempted to an unreachable network. 169.38.82.134:3307
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.TcpClient.<>c.<ConnectAsync>b__28_1(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout)
+   at MySql.Data.Common.StreamCreator.GetTcpStream(MySqlConnectionStringBuilder settings)
+   at MySql.Data.Common.StreamCreator.GetStream(MySqlConnectionStringBuilder settings)
+   at MySql.Data.MySqlClient.NativeDriver.Open()
+   at nafservice.Kiosk_Soil_Card_Service.apisoilviewPrintList(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code, String ConString) in D:\Kiosk\nafkiosk-vadivu\nafservice\Kiosk_Soil_Card_Service.cs:line 137
+   at kisok_api.Controllers.Kiosk_Soil_CardController.exportpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code, String path) in D:\Kiosk\nafkiosk-vadivu\kisok api\Controllers\Kiosk_Soil_CardController.cs:line 289
+   at kisok_api.Controllers.Kiosk_Soil_CardController.kioskresetpass(String org, String locn, String user, String lang, String email, String In_farmer_code, Int32 soil_gid, String In_Tran_Id, String In_user_code) in D:\Kiosk\nafkiosk-vadivu\kisok api\Controllers\Kiosk_Soil_CardController.cs:line 220
+ [21/05/2021 01:53:02.427 PM]- Exception - System.Net.WebException: The remote server returned an error: (404) Not Found.
+   at System.Net.HttpWebRequest.GetResponse()
+   at iTextSharp.text.Image.GetInstance(Uri url, Boolean recoverFromImageError)
+   at iTextSharp.text.Image.GetInstance(Uri url)
+   at iTextSharp.text.Image.GetInstance(String filename)
+   at kisok_api.Controllers.Kiosk_Soil_CardController.exportpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code, String path) in D:\Kiosk\nafkiosk-vadivu\kisok api\Controllers\Kiosk_Soil_CardController.cs:line 319
+   at kisok_api.Controllers.Kiosk_Soil_CardController.kioskresetpass(String org, String locn, String user, String lang, String email, String In_farmer_code, Int32 soil_gid, String In_Tran_Id, String In_user_code) in D:\Kiosk\nafkiosk-vadivu\kisok api\Controllers\Kiosk_Soil_CardController.cs:line 220
+ [21/05/2021 01:58:09.341 PM]- Exception - System.Net.WebException: The remote server returned an error: (404) Not Found.
+   at System.Net.HttpWebRequest.GetResponse()
+   at iTextSharp.text.Image.GetInstance(Uri url, Boolean recoverFromImageError)
+   at iTextSharp.text.Image.GetInstance(Uri url)
+   at iTextSharp.text.Image.GetInstance(String filename)
+   at kisok_api.Controllers.Kiosk_Soil_CardController.exportpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code, String path) in D:\Kiosk\nafkiosk-vadivu\kisok api\Controllers\Kiosk_Soil_CardController.cs:line 319
+   at kisok_api.Controllers.Kiosk_Soil_CardController.kioskresetpass(String org, String locn, String user, String lang, String email, String In_farmer_code, Int32 soil_gid, String In_Tran_Id, String In_user_code) in D:\Kiosk\nafkiosk-vadivu\kisok api\Controllers\Kiosk_Soil_CardController.cs:line 220
+ [21/05/2021 02:05:39.577 PM]- Exception - System.Net.WebException: The remote server returned an error: (404) Not Found.
+   at System.Net.HttpWebRequest.GetResponse()
+   at iTextSharp.text.Image.GetInstance(Uri url, Boolean recoverFromImageError)
+   at iTextSharp.text.Image.GetInstance(Uri url)
+   at iTextSharp.text.Image.GetInstance(String filename)
+   at kisok_api.Controllers.Kiosk_Soil_CardController.exportpdf(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code, String path) in D:\Kiosk\nafkiosk-vadivu\kisok api\Controllers\Kiosk_Soil_CardController.cs:line 397
+   at kisok_api.Controllers.Kiosk_Soil_CardController.kioskresetpass(String org, String locn, String user, String lang, String email, String In_farmer_code, Int32 soil_gid, String In_Tran_Id, String In_user_code) in D:\Kiosk\nafkiosk-vadivu\kisok api\Controllers\Kiosk_Soil_CardController.cs:line 220
+ [21/05/2021 02:05:49.263 PM]- Exception - System.IO.IOException: The process cannot access the file 'D:\Kiosk\nafkiosk-vadivu\kisok api\videos\Soil_Card_Print.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.Kiosk_Soil_CardController.kioskresetpass(String org, String locn, String user, String lang, String email, String In_farmer_code, Int32 soil_gid, String In_Tran_Id, String In_user_code) in D:\Kiosk\nafkiosk-vadivu\kisok api\Controllers\Kiosk_Soil_CardController.cs:line 217
+ [21/05/2021 02:06:03.346 PM]- Exception - System.IO.IOException: The process cannot access the file 'D:\Kiosk\nafkiosk-vadivu\kisok api\videos\Soil_Card_Print.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.Kiosk_Soil_CardController.kioskresetpass(String org, String locn, String user, String lang, String email, String In_farmer_code, Int32 soil_gid, String In_Tran_Id, String In_user_code) in D:\Kiosk\nafkiosk-vadivu\kisok api\Controllers\Kiosk_Soil_CardController.cs:line 217
+ [21/05/2021 02:06:14.006 PM]- Exception - System.IO.IOException: The process cannot access the file 'D:\Kiosk\nafkiosk-vadivu\kisok api\videos\Soil_Card_Print.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.Kiosk_Soil_CardController.kioskresetpass(String org, String locn, String user, String lang, String email, String In_farmer_code, Int32 soil_gid, String In_Tran_Id, String In_user_code) in D:\Kiosk\nafkiosk-vadivu\kisok api\Controllers\Kiosk_Soil_CardController.cs:line 217
+ [21/05/2021 02:06:26.112 PM]- Exception - System.IO.IOException: The process cannot access the file 'D:\Kiosk\nafkiosk-vadivu\kisok api\videos\Soil_Card_Print.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.Kiosk_Soil_CardController.kioskresetpass(String org, String locn, String user, String lang, String email, String In_farmer_code, Int32 soil_gid, String In_Tran_Id, String In_user_code) in D:\Kiosk\nafkiosk-vadivu\kisok api\Controllers\Kiosk_Soil_CardController.cs:line 217
+ [21/05/2021 02:06:43.998 PM]- Exception - System.IO.IOException: The process cannot access the file 'D:\Kiosk\nafkiosk-vadivu\kisok api\videos\Soil_Card_Print.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.Kiosk_Soil_CardController.kioskresetpass(String org, String locn, String user, String lang, String email, String In_farmer_code, Int32 soil_gid, String In_Tran_Id, String In_user_code) in D:\Kiosk\nafkiosk-vadivu\kisok api\Controllers\Kiosk_Soil_CardController.cs:line 217
+ [21/05/2021 02:11:19.769 PM]- Exception - System.IO.DirectoryNotFoundException: Could not find a part of the path 'D:\Kiosk\nafkiosk-vadivu\Api-pub\videos\advert\Soil_Card_Print.pdf'.
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.Net.Mail.AttachmentBase.SetContentFromFile(String fileName, String mediaType)
+   at System.Net.Mail.AttachmentBase..ctor(String fileName)
+   at System.Net.Mail.Attachment..ctor(String fileName)
+   at kisok_api.Controllers.Kiosk_Soil_CardController.kioskresetpass(String org, String locn, String user, String lang, String email, String In_farmer_code, Int32 soil_gid, String In_Tran_Id, String In_user_code) in D:\Kiosk\nafkiosk-vadivu\kisok api\Controllers\Kiosk_Soil_CardController.cs:line 255
+ [21/05/2021 04:04:21.711 PM]- Exception - System.IO.DirectoryNotFoundException: Could not find a part of the path 'D:\Kiosk\nafkiosk-vadivu\kisok api\Kiosk\nafkiosk - vadivu\videos\Soil_Card_Print.pdf'.
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.Net.Mail.AttachmentBase.SetContentFromFile(String fileName, String mediaType)
+   at System.Net.Mail.AttachmentBase..ctor(String fileName)
+   at System.Net.Mail.Attachment..ctor(String fileName)
+   at kisok_api.Controllers.Kiosk_Soil_CardController.kioskresetpass(String org, String locn, String user, String lang, String email, String In_farmer_code, Int32 soil_gid, String In_Tran_Id, String In_user_code) in D:\Kiosk\nafkiosk-vadivu\kisok api\Controllers\Kiosk_Soil_CardController.cs:line 256
+ [21/05/2021 05:00:10.645 PM]- Exception - System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at kisok_api.Controllers.Kiosk_IrrigationWaterTestController.exportpdfIrrigation(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code, String path) in D:\Kiosk\nafkiosk-vadivu\kisok api\Controllers\Kiosk_IrrigationWaterTestController.cs:line 338
+   at kisok_api.Controllers.Kiosk_IrrigationWaterTestController.kioskresetpass(String org, String locn, String user, String lang, String email, String In_farmer_code, Int32 soil_gid, String In_Tran_Id, String In_user_code) in D:\Kiosk\nafkiosk-vadivu\kisok api\Controllers\Kiosk_IrrigationWaterTestController.cs:line 219
+ [21/05/2021 05:01:15.147 PM]- Exception - System.IO.IOException: The process cannot access the file 'D:\Kiosk\nafkiosk-vadivu\kisok api\videos\Soil_Card_Print.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.Kiosk_IrrigationWaterTestController.kioskresetpass(String org, String locn, String user, String lang, String email, String In_farmer_code, Int32 soil_gid, String In_Tran_Id, String In_user_code) in D:\Kiosk\nafkiosk-vadivu\kisok api\Controllers\Kiosk_IrrigationWaterTestController.cs:line 216
+ [21/05/2021 05:06:45.623 PM]- Exception - System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at kisok_api.Controllers.Kiosk_IrrigationWaterTestController.exportpdfIrrigation(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code, String path) in D:\Kiosk\nafkiosk-vadivu\kisok api\Controllers\Kiosk_IrrigationWaterTestController.cs:line 338
+   at kisok_api.Controllers.Kiosk_IrrigationWaterTestController.kioskresetpass(String org, String locn, String user, String lang, String email, String In_farmer_code, Int32 soil_gid, String In_Tran_Id, String In_user_code) in D:\Kiosk\nafkiosk-vadivu\kisok api\Controllers\Kiosk_IrrigationWaterTestController.cs:line 219
+ [21/05/2021 05:07:28.854 PM]- Exception - System.IO.IOException: The process cannot access the file 'D:\Kiosk\nafkiosk-vadivu\kisok api\videos\Soil_Card_Print.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.Kiosk_IrrigationWaterTestController.kioskresetpass(String org, String locn, String user, String lang, String email, String In_farmer_code, Int32 soil_gid, String In_Tran_Id, String In_user_code) in D:\Kiosk\nafkiosk-vadivu\kisok api\Controllers\Kiosk_IrrigationWaterTestController.cs:line 216
+ [21/05/2021 05:10:35.381 PM]- Exception - System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at kisok_api.Controllers.Kiosk_IrrigationWaterTestController.exportpdfIrrigation(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code, String path) in D:\Kiosk\nafkiosk-vadivu\kisok api\Controllers\Kiosk_IrrigationWaterTestController.cs:line 338
+   at kisok_api.Controllers.Kiosk_IrrigationWaterTestController.kioskresetpass(String org, String locn, String user, String lang, String email, String In_farmer_code, Int32 soil_gid, String In_Tran_Id, String In_user_code) in D:\Kiosk\nafkiosk-vadivu\kisok api\Controllers\Kiosk_IrrigationWaterTestController.cs:line 219
+ [21/05/2021 05:25:29.983 PM]- Exception - System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at kisok_api.Controllers.Kiosk_IrrigationWaterTestController.exportpdfIrrigation(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code, String path) in D:\Kiosk\nafkiosk-vadivu\kisok api\Controllers\Kiosk_IrrigationWaterTestController.cs:line 338
+   at kisok_api.Controllers.Kiosk_IrrigationWaterTestController.kioskresetpass(String org, String locn, String user, String lang, String email, String In_farmer_code, Int32 soil_gid, String In_Tran_Id, String In_user_code) in D:\Kiosk\nafkiosk-vadivu\kisok api\Controllers\Kiosk_IrrigationWaterTestController.cs:line 219
+ [21/05/2021 05:26:14.478 PM]- Exception - System.IO.IOException: The process cannot access the file 'D:\Kiosk\nafkiosk-vadivu\kisok api\videos\Soil_Card_Print.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at System.IO.File.Delete(String path)
+   at kisok_api.Controllers.Kiosk_IrrigationWaterTestController.kioskresetpass(String org, String locn, String user, String lang, String email, String In_farmer_code, Int32 soil_gid, String In_Tran_Id, String In_user_code) in D:\Kiosk\nafkiosk-vadivu\kisok api\Controllers\Kiosk_IrrigationWaterTestController.cs:line 216
+ [21/05/2021 05:27:19.645 PM]- Exception - System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at kisok_api.Controllers.Kiosk_IrrigationWaterTestController.exportpdfIrrigation(String org, String locn, String user, String lang, Int32 soil_gid, String In_Tran_Id, String In_farmer_code, String path) in D:\Kiosk\nafkiosk-vadivu\kisok api\Controllers\Kiosk_IrrigationWaterTestController.cs:line 338
+   at kisok_api.Controllers.Kiosk_IrrigationWaterTestController.kioskresetpass(String org, String locn, String user, String lang, String email, String In_farmer_code, Int32 soil_gid, String In_Tran_Id, String In_user_code) in D:\Kiosk\nafkiosk-vadivu\kisok api\Controllers\Kiosk_IrrigationWaterTestController.cs:line 219

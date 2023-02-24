@@ -1,0 +1,330 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>kiosk | Log in</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!--Style Sheet-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="~/CSS/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/CSS/AdminLTE.min.css" rel="stylesheet" />
+    <link href="~/CSS/kendo.common-material.min.css" rel="stylesheet" />
+    <link href="~/CSS/kendo.material.min.css" rel="stylesheet" />
+    <style>
+        .btn-primary {
+            background-color: #30749c;
+            border-color: #30749c;
+        }
+
+            .btn-primary:hover,
+            .btn-primary:active,
+            .btn-primary.hover {
+                background-color: #30749c;
+            }
+
+        input:required:invalid, input:focus:invalid {
+            border: 1px solid #ff9980;
+        }
+
+        input:required:valid {
+            border: 1px solid #99bbff;
+        }
+
+        select:required:invalid, select:focus:invalid {
+            border: 1px solid #ff9980;
+        }
+
+        select:required:valid {
+            border: 1px solid #99bbff;
+        }
+
+        span.k-tooltip {
+            padding: 4px 17px !important;
+            width: 190px !important;
+        }
+
+        .k-tooltip-validation .k-warning {
+            margin-left: -17px;
+        }
+    </style>
+    <!--Scripts-->
+    <script src="~/Scripts/jQuery-2.1.4.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/CommonScripts/Common_func.js"></script>
+    <script src="~/CommonScripts/AjaxScript.js"></script>
+    <script src="~/Scripts/kendo.all.min.js"></script>
+    <script type="text/x-kendo-template" id="ok-confirmation">
+        <div id="div">
+            <div class="col-sm-3">
+            </div>
+            <div class="col-sm-6">
+                <button class="ok k-button" onclick="con_close()">OK</button>
+            </div>
+            <div class="col-sm-3">
+            </div>
+        </div>
+    </script>
+
+    <script>
+        window.kendoAlert = function (msg) {
+            var win = $("<div />").kendoWindow({
+                title: "Message",
+                width: "350px",
+                height: "130px",
+                modal: true,
+                draggable: false,
+                resizable: false
+            }).getKendoWindow();
+            win.center().open();
+            win.content(msg + "<br><br>" + $("#ok-confirmation").html()).center().open();
+        };
+        function con_close() {
+            //  $(".k-i-close").click();
+            $('.k-window').css('display', 'none');
+            $('.k-overlay').css('display', 'none');
+        }
+    </script>
+</head>
+<body class="hold-transition login-page" style="background:url('/images/Login_BG2.jpg');background-repeat:no-repeat">
+
+    <form id="login_form">
+         <!-- <footer class="main-footer" style="margin-left: 0px; border-top: 0px; background-color: #3c8dbc">
+         <div class="pull-right hidden-xs">
+             <img src="~/images/naf.png.jpg" alt="LOGO" style="margin-top:-10px">
+         </div>
+         <img id="scsLogo" src="~/images/logo-small_left.png" style="margin-top:-5px" />
+     </footer>-->
+            @*<im <div class="wrapper">
+          g style="width:100%" class="img-responsive" src="~/images/Odhisha_Banner.jpg">*@
+
+
+            <img style="width:100%;height:360px" class="img-responsive" src="~/images/login-banners.jpg" >
+
+             
+            <div class="container-fluid">
+                <div class="row" style="margin-top:15px;">
+                    <div class="col-sm-4">
+                        @*<img style="width:100%" class="img-responsive" src="~/images/kanchi-login-logo.jpg" />*@
+                        <img style="width:100%;border-radius:5px;" class="img-responsive" src="~/images/login-box.jpg" />
+                    </div>
+                    <div class="col-sm-4">
+                        <p style="text-align:justify;margin-top: 18px;font-size: 15px;line-height: 24px;">
+                            This Knowledge Management Kiosk is the initiative of National Agro Foundation to address the requirements of the farming community
+                            in terms of technical and other related information for Sustainable Agriculture. Technical Information, market information,
+                            weather advisory, details about various schemes of state and central governments for farmers welfare, stories of successful farmers,
+                            visual farm sector skill development modules, details on environment protection, soil health management, natural resource management
+                            and other relevant details is provided to the farmers
+                        </p>
+                    </div>
+                    <div class="col-sm-4" style="border:1px solid #e2e2e2;padding:15px;border-radius:5px;width:32% !important;">
+                        @using (Html.BeginForm())
+                        {
+                            <div class="form-group input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                <input id="txtUserId" class="form-control" type="text" name='username' placeholder="username" />
+                            </div>
+
+                            <div class="form-group input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                <input id="txtPassword" class="form-control" type="password" name='password' placeholder="password" minlength="6" maxlength="10" />
+                            </div>
+
+                            @*<div class="checkbox">
+                            <label>
+                                <input type="checkbox">
+                                Remember me
+                            </label>
+                        </div>*@
+                            <div class="form-group">
+                                <center><button id="btnLogin" onclick="login()" type="button" style="background-color:#7d7d7d;color:white;" class="btn btn-def btn-block"> Login </button></center>
+                            </div>
+                            <div class="form-group text-center">
+                                <a href="#" style="color:#0fadfd" onclick="fogetpws()">Forgot Password</a><br>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+
+            <footer class="main-footer" style="margin-left: 0px; border-top:0px;margin-top:4px; background:#ebebeb">
+                <div class="pull-right hidden-xs">
+                    <img src="~/images/flexi-logo.png" alt="LOGO" style="margin-top:0px">
+                </div>
+                <p style="text-align:left;font-size:15px;margin-top:4px">Powered By Flexicode Ver1.0.7</p>
+                @*<p style="text-align:center;font-size:15px;">© Copyright FFI. All Rights Reserved. Ver1.0.2</p>*@
+            </footer>
+        </div>
+    </form>
+
+    <script>
+        function open_terms() {
+            var url = "../Terms-Conditions.html";
+            window.open(url, "_blank", "toolbar=yes, scrollbars=yes, resizable=yes, top=100, bottom = 300, left=400, width=850, height=600");
+        }
+
+        //-Regarding for forget password--//
+        $(document).ready(function () {
+            var profile_name = sessionStorage.getItem('UserID');
+            if (profile_name != "") {
+                $("#txtUserId").val(profile_name);
+            }
+
+            //captcha();
+        });
+
+
+        $('#login_form').keydown(function (e) {
+            var key = e.which;
+            if (key == 13) {
+                // As ASCII code for ENTER key is "13"
+                $('button[type=button]').click();
+                return false;
+            } else {
+                return true;
+            }
+        });
+
+        function login() {
+            debugger;
+            var mandatory_check = true;
+            if ($("#txtUserId").val() == "" && $("#txtPassword").val() == "") {
+                kendoAlert("Enter User name and Password");
+                mandatory_check = false;
+            } else {
+            if ($("#txtUserId").val() == "" || $("#txtUserId").val() == undefined) {
+                kendoAlert("Enter User name");
+                mandatory_check = false;
+            }
+            if ($("#txtPassword").val() == "") {
+                kendoAlert("Enter Password");
+                mandatory_check = false;
+                }
+            }
+            if (mandatory_check == true) {
+                generate_guival();
+                debugger;
+                console.log(txtuser_id);
+                console.log($("#txtPassword").val());
+                var txtuser_id = getlocalStorage('us_id');
+                var validatable = $("#login_form").kendoValidator().data("kendoValidator");
+                if (validatable.validate()) {
+                    var data = {};
+                    var loginvalue = "";
+                    data.userId = $("#txtUserId").val().trim();
+                    data.password = $("#txtPassword").val();
+                    loginvalue = ajaxcall_param_login('/Login/Login', JSON.stringify(data));
+                    loginvalue = JSON.parse(loginvalue);
+                    if (loginvalue.sec_ques == "") {
+                        debugger;
+                        sessionStorage.setItem('User_name', txtuser_id);
+                        sessionStorage.setItem('Sec_question', loginvalue.sec_ques);
+                        setlocalStorage('User_Id_Value', txtuser_id);
+                        setlocalStorage('org_id', "global");
+                        setlocalStorage('loc_id', "all");
+                        setlocalStorage('localeId', "en_US");
+                        setlocalStorage('Db_type', loginvalue.instance)
+                        window.location.href = "@Url.Action("ForgotPassword", "ForgotPassword")";
+                        return false;
+                    }
+                    else {
+                        var str = loginvalue.msg;
+                        if (str == "sucess") {                           
+                            crtloginTime();
+                            setlocalStorage('User_Id_Value', txtuser_id);
+                            setlocalStorage('role', loginvalue.role);
+                            setlocalStorage('role_code', loginvalue.role_code);
+                            var sec_permission = JSON.parse(loginvalue.sec_permission);
+                            setlocalStorage('sec_permission', sec_permission);
+                            setlocalStorage('org_code', loginvalue.org_code);
+                            setlocalStorage('user_log_rowno', loginvalue.user_log_rowno);
+                            setlocalStorage('Db_type', loginvalue.instance)
+                            location.href = "../Home/Home";
+                        }
+                        else {
+                            kendoAlert(loginvalue.msg);
+                            return false;
+
+                        }
+                    }
+                }
+            }
+        }
+
+        function generate_guival() {
+            var data = {};
+            var gui_val = "";
+            data.userId = $("#txtUserId").val().trim();
+            gui_val = ajaxcall_param_login('/Login/generate_guivalue', JSON.stringify(data));
+            @*$.ajax({
+                type: "POST",
+                url:'@Url.Action("generate_guivalue","Login")',
+                data: '{userId:"' + $("#txtUserId").val()+'"}',
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (response) {
+                    if (response != null) {
+                        alert("Name : " + response.Name + ", Designation : " + response.Designation + ", Location :" + response.Location);
+
+                    } else {
+                        alert("Something went wrong");
+                    }
+                },
+            });*@
+            creatlocalStorage(gui_val);
+            setlocalStorage('us_id', data.userId);
+        }
+
+        function fogetpws() {
+            generate_guival();
+            if ($("#txtUserId").val() != "") {
+                var f_data = {};
+                var f_loginvalue = "";
+                var User_data = "";
+                f_data.userId = $("#txtUserId").val().trim();
+                var val = $("input[name='DbType']:checked").val();
+                f_data.Dbtype = val;
+                f_loginvalue = ajaxcall_param_login('/Login/getSecurityqus', JSON.stringify(f_data));
+                User_data = JSON.parse(f_loginvalue);
+                if (User_data.success == true) {
+                    sessionStorage.setItem('Sec_question', User_data.result);
+                    sessionStorage.setItem('User_name', f_data.userId);
+                    setlocalStorage('User_Id_Value', f_data.userId);
+                    setlocalStorage('org_id', "global");
+                    setlocalStorage('loc_id', "all");
+                    setlocalStorage('localeId', "en_US");
+
+                    var url = '../ForgotPassword/ForgotPassword';
+                    window.history.replaceState("", "", url);
+                    $(location).attr('href', url);
+                }
+                else {
+                    kendoAlert(User_data.result);
+                }
+            }
+            else {
+                kendoAlert("Please Enter your User Id");
+            }
+            // location.href = "../ForgotPassword/ForgotPassword";
+        }
+
+        function crtloginTime() {
+            var date = new Date();
+            var day = (date.getDate() + 1) > 9 ? (date.getDate() + 0) : "0" + (date.getDate() + 1);
+            var month = (date.getMonth() + 1) > 9 ? (date.getMonth() + 1) : "0" + (date.getMonth() + 1);
+            var hours = (date.getHours()) > 9 ? (date.getHours()) : "0" + (date.getHours());
+            var minutes = (date.getMinutes()) > 9 ? (date.getMinutes()) : "0" + (date.getMinutes());
+            var seconds = (date.getSeconds()) > 9 ? (date.getSeconds()) : "0" + (date.getSeconds());
+            var dateString =
+            day + "/" +
+            month + "/" +
+            date.getFullYear() + " " +
+            hours + ":" +
+            minutes + ":" +
+            seconds;
+            setlocalStorage('crtloginTime', dateString);
+        }
+
+    </script>
+</body>
+</html>

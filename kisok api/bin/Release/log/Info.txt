@@ -1,0 +1,307 @@
+ [05/03/2021 01:39:29.497 PM]- contentpathG:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api
+ [05/03/2021 01:39:29.527 PM]- downloadpdfG:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\DownloadXLFiles\Soil Card Print.pdf
+ [05/03/2021 03:29:32.611 PM]- contentpath G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api
+ [05/03/2021 03:29:32.636 PM]- downloadpdf G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\DownloadXLFiles\Soil Card Print.pdf
+ [05/03/2021 03:30:07.059 PM]- exportpdfG:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\DownloadXLFiles\Soil Card Print.pdf
+ [05/03/2021 03:30:14.712 PM]- doc open
+ [05/03/2021 03:30:22.517 PM]- doc close
+ [05/03/2021 03:30:22.519 PM]- filecontent1G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\DownloadXLFiles\Soil Card Print.pdf
+ [05/03/2021 04:01:29.434 PM]- contentpath G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api
+ [05/03/2021 04:01:29.458 PM]- downloadpdf G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\DownloadXLFiles\Soil Card Print.pdf
+ [05/03/2021 04:02:14.062 PM]- exportpdfG:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\DownloadXLFiles\Soil Card Print.pdf
+ [05/03/2021 04:02:20.314 PM]- doc open
+ [05/03/2021 04:02:29.951 PM]- doc close
+ [05/03/2021 05:02:28.656 PM]- contentpath G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api
+ [05/03/2021 05:02:28.738 PM]- downloadpdf G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\DownloadXLFiles\Soil Card Print.pdf
+ [05/03/2021 05:02:28.741 PM]- download123 G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\DownloadXLFiles\Soil Card Print.pdf
+ [05/03/2021 05:02:28.742 PM]- downloadpdf1 G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\DownloadXLFiles\Soil Card Print.pdf
+ [05/03/2021 05:03:15.037 PM]- downloadpdf2 G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\DownloadXLFiles\Soil Card Print.pdf
+ [05/03/2021 05:03:15.066 PM]- downloadpdf3 G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\DownloadXLFiles\Soil Card Print.pdf
+ [05/03/2021 05:03:15.237 PM]- exportpdfG:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\DownloadXLFiles\Soil Card Print.pdf
+ [05/03/2021 05:03:21.577 PM]- doc open
+ [05/03/2021 05:03:34.980 PM]- doc close
+ [06/03/2021 01:01:49.974 PM]- contentpath G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api
+ [06/03/2021 01:01:59.930 PM]- exportpdfG:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf
+ [06/03/2021 01:11:42.107 PM]- contentpath G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api
+ [06/03/2021 01:11:48.430 PM]- exportpdfG:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf
+ [06/03/2021 01:12:25.149 PM]- contentpath G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api
+ [06/03/2021 01:13:15.819 PM]- exportpdfG:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf
+ [06/03/2021 01:15:34.642 PM]- contentpath G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api
+ [06/03/2021 01:15:53.667 PM]- exportpdfG:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf
+ [06/03/2021 01:19:30.530 PM]- contentpath G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api
+ [06/03/2021 01:19:51.066 PM]- exportpdfG:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\videos\Soil_Card_Print.pdf
+ [17/03/2021 11:41:24.899 AM]- File_path -http://169.38.82.131:751/videos/Soil_Card_Print.pdf
+ [17/03/2021 11:41:29.259 AM]- portno -587
+ [17/03/2021 11:41:29.705 AM]- FromEmailId -balamurugan@flexicodeindia.com
+ [17/03/2021 11:41:30.083 AM]- Password -Flexi@bala!@
+ [17/03/2021 11:41:30.465 AM]- hos -smtp.gmail.com
+ [17/03/2021 11:41:30.838 AM]- userhost -venkatachalam.s@flexicodeindia.com
+ [17/03/2021 11:41:31.228 AM]- sub -SolidCardPdf Mail
+ [17/03/2021 11:41:31.726 AM]- body -Please find the attachement
+ [17/03/2021 01:03:32.499 PM]- File_path -http://169.38.82.131:751/videos/Soil_Card_Print.pdf
+ [17/03/2021 01:03:32.558 PM]- portno -587
+ [17/03/2021 01:03:32.558 PM]- FromEmailId -balamurugan@flexicodeindia.com
+ [17/03/2021 01:03:32.558 PM]- Password -Flexi@bala!@
+ [17/03/2021 01:03:32.558 PM]- hos -smtp.gmail.com
+ [17/03/2021 01:03:32.558 PM]- userhost -venkatachalam.s@flexicodeindia.com
+ [17/03/2021 01:03:32.558 PM]- sub -SolidCardPdf Mail
+ [17/03/2021 01:03:32.558 PM]- body -Please find the attachement
+ [17/03/2021 01:03:32.972 PM]- smtp - System.Net.Mail.SmtpClient
+ [17/03/2021 01:03:32.974 PM]- mess - System.Net.Mail.MailMessage
+ [17/03/2021 01:03:32.982 PM]- File_path - ../kisok api/videos/Soil_Card_Print.Pdf
+ [17/03/2021 01:03:32.982 PM]- mess.Subject - SolidCardPdf Mail
+ [17/03/2021 01:03:32.983 PM]- send -
+ [31/03/2021 12:25:53.551 PM]- Header Image - Rectangle: 517x144 (rot: 0 degrees)
+ [31/03/2021 12:30:27.628 PM]- Header Image - Rectangle: 517x144 (rot: 0 degrees)
+ [31/03/2021 12:31:21.849 PM]- Header Image - Rectangle: 517x144 (rot: 0 degrees)
+ [31/03/2021 12:31:22.224 PM]- Pdf Header - iTextSharp.text.pdf.PdfPTable
+ [31/03/2021 12:31:22.297 PM]- Pdf Details  - iTextSharp.text.pdf.PdfPTable
+ [31/03/2021 12:31:22.397 PM]- Footer Image - Rectangle: 517x144 (rot: 0 degrees)
+ [21/04/2021 04:25:16.208 PM]- video 
+ [21/04/2021 04:25:16.769 PM]- video2 
+ [21/04/2021 04:25:16.993 PM]- video2 
+ [21/04/2021 04:25:17.074 PM]- video2 
+ [21/04/2021 04:25:17.147 PM]- video2 
+ [21/04/2021 04:25:17.148 PM]- advt 
+ [21/04/2021 04:25:17.208 PM]- advert1 
+ [21/04/2021 04:25:17.208 PM]- advt 
+ [21/04/2021 04:25:17.311 PM]- advert1 
+ [21/04/2021 04:25:17.311 PM]- advt 
+ [21/04/2021 04:25:17.355 PM]- advert1 
+ [21/04/2021 04:25:17.355 PM]- advt 
+ [21/04/2021 04:25:17.395 PM]- advert1 
+ [21/04/2021 04:25:17.396 PM]- advt 
+ [21/04/2021 04:25:17.399 PM]- advert1 
+ [21/04/2021 04:25:17.399 PM]- advt 
+ [21/04/2021 04:25:17.402 PM]- advert1 
+ [21/04/2021 04:25:17.402 PM]- advt 
+ [21/04/2021 04:25:17.405 PM]- advert1 
+ [21/04/2021 04:25:17.405 PM]- advt 
+ [21/04/2021 04:25:17.492 PM]- advert1 
+ [21/04/2021 04:25:17.492 PM]- advt 
+ [21/04/2021 04:25:18.074 PM]- advert1 
+ [21/04/2021 04:25:18.074 PM]- advt 
+ [21/04/2021 04:25:18.695 PM]- listnafmodel.OfflineVideoList_Model+KioskVideoApplication
+ [21/04/2021 04:32:12.658 PM]- video 
+ [21/04/2021 04:32:14.745 PM]- video2 
+ [21/04/2021 04:32:15.429 PM]- video2 
+ [21/04/2021 04:32:15.489 PM]- video2 
+ [21/04/2021 04:32:16.045 PM]- video2 
+ [21/04/2021 04:32:16.045 PM]- advt 
+ [21/04/2021 04:32:18.222 PM]- advert1 
+ [21/04/2021 04:32:18.222 PM]- advt 
+ [21/04/2021 04:32:22.010 PM]- advert1 
+ [21/04/2021 04:32:22.010 PM]- advt 
+ [21/04/2021 04:32:22.154 PM]- advert1 
+ [21/04/2021 04:32:22.154 PM]- advt 
+ [21/04/2021 04:32:22.234 PM]- advert1 
+ [21/04/2021 04:32:22.234 PM]- advt 
+ [21/04/2021 04:32:22.328 PM]- advert1 
+ [21/04/2021 04:32:22.328 PM]- advt 
+ [21/04/2021 04:32:22.328 PM]- advert1 
+ [21/04/2021 04:32:22.328 PM]- advt 
+ [21/04/2021 04:32:22.329 PM]- advert1 
+ [21/04/2021 04:32:22.329 PM]- advt 
+ [21/04/2021 04:32:22.356 PM]- advert1 
+ [21/04/2021 04:32:22.356 PM]- advt 
+ [21/04/2021 04:32:22.899 PM]- advert1 
+ [21/04/2021 04:32:22.899 PM]- faq1
+ [21/04/2021 04:32:22.963 PM]- faq2 
+ [21/04/2021 04:32:22.963 PM]- faq1
+ [21/04/2021 04:32:22.966 PM]- faq2 
+ [21/04/2021 04:32:22.966 PM]- faq1
+ [21/04/2021 04:32:22.967 PM]- faq2 
+ [21/04/2021 04:32:22.967 PM]- schems1 
+ [21/04/2021 04:32:23.131 PM]- listnafmodel.OfflineVideoList_Model+KioskVideoApplication
+ [21/04/2021 04:48:21.411 PM]- video2 Table1
+ [21/04/2021 04:48:21.417 PM]- video2 System.Byte[]
+ [21/04/2021 04:48:21.615 PM]- video2 Table1
+ [21/04/2021 04:48:21.615 PM]- video2 System.Byte[]
+ [21/04/2021 04:48:21.681 PM]- video2 Table1
+ [21/04/2021 04:48:21.681 PM]- video2 System.Byte[]
+ [21/04/2021 04:48:21.764 PM]- video2 Table1
+ [21/04/2021 04:48:21.765 PM]- video2 System.Byte[]
+ [21/04/2021 04:48:21.814 PM]- advert1 Table
+ [21/04/2021 04:48:21.815 PM]- advert1 System.Byte[]
+ [21/04/2021 04:48:21.844 PM]- advert1 Table
+ [21/04/2021 04:48:21.844 PM]- advert1 System.Byte[]
+ [21/04/2021 04:48:21.863 PM]- advert1 Table
+ [21/04/2021 04:48:21.863 PM]- advert1 System.Byte[]
+ [21/04/2021 04:48:21.876 PM]- advert1 Table
+ [21/04/2021 04:48:21.877 PM]- advert1 System.Byte[]
+ [21/04/2021 04:48:21.877 PM]- advert1 Table
+ [21/04/2021 04:48:21.878 PM]- advert1 System.Byte[]
+ [21/04/2021 04:48:21.878 PM]- advert1 Table
+ [21/04/2021 04:48:21.878 PM]- advert1 System.Byte[]
+ [21/04/2021 04:48:21.879 PM]- advert1 Table
+ [21/04/2021 04:48:21.879 PM]- advert1 System.Byte[]
+ [21/04/2021 04:48:21.899 PM]- advert1 Table
+ [21/04/2021 04:48:21.899 PM]- advert1 System.Byte[]
+ [21/04/2021 04:48:22.441 PM]- advert1 Table
+ [21/04/2021 04:48:22.441 PM]- advert1 System.Byte[]
+ [21/04/2021 04:48:22.497 PM]- faq2 Table2
+ [21/04/2021 04:48:22.498 PM]- faq2 System.Byte[]
+ [21/04/2021 04:48:22.500 PM]- faq2 Table2
+ [21/04/2021 04:48:22.500 PM]- faq2 System.Byte[]
+ [21/04/2021 04:48:22.500 PM]- faq2 Table2
+ [21/04/2021 04:48:22.500 PM]- faq2 System.Byte[]
+ [21/04/2021 05:17:18.883 PM]- video2 Table1
+ [21/04/2021 05:17:18.889 PM]- video2 System.Byte[]
+ [21/04/2021 05:17:19.097 PM]- video2 Table1
+ [21/04/2021 05:17:19.097 PM]- video2 System.Byte[]
+ [21/04/2021 05:17:19.156 PM]- video2 Table1
+ [21/04/2021 05:17:19.156 PM]- video2 System.Byte[]
+ [21/04/2021 05:17:19.213 PM]- video2 Table1
+ [21/04/2021 05:17:19.213 PM]- video2 System.Byte[]
+ [21/04/2021 05:17:19.240 PM]- advert1 Table
+ [21/04/2021 05:17:19.240 PM]- advert1 System.Byte[]
+ [21/04/2021 05:17:19.269 PM]- advert1 Table
+ [21/04/2021 05:17:19.269 PM]- advert1 System.Byte[]
+ [21/04/2021 05:17:19.288 PM]- advert1 Table
+ [21/04/2021 05:17:19.288 PM]- advert1 System.Byte[]
+ [21/04/2021 05:17:19.302 PM]- advert1 Table
+ [21/04/2021 05:17:19.302 PM]- advert1 System.Byte[]
+ [21/04/2021 05:17:19.303 PM]- advert1 Table
+ [21/04/2021 05:17:19.303 PM]- advert1 System.Byte[]
+ [21/04/2021 05:17:19.303 PM]- advert1 Table
+ [21/04/2021 05:17:19.303 PM]- advert1 System.Byte[]
+ [21/04/2021 05:17:19.304 PM]- advert1 Table
+ [21/04/2021 05:17:19.304 PM]- advert1 System.Byte[]
+ [21/04/2021 05:17:19.324 PM]- advert1 Table
+ [21/04/2021 05:17:19.324 PM]- advert1 System.Byte[]
+ [21/04/2021 05:17:19.885 PM]- advert1 Table
+ [21/04/2021 05:17:19.885 PM]- advert1 System.Byte[]
+ [21/04/2021 05:17:24.184 PM]- faq2 Table2
+ [21/04/2021 05:17:24.184 PM]- faq2 System.Byte[]
+ [21/04/2021 05:17:29.892 PM]- faq2 Table2
+ [21/04/2021 05:17:29.892 PM]- faq2 System.Byte[]
+ [21/04/2021 05:17:30.862 PM]- faq2 Table2
+ [21/04/2021 05:17:30.862 PM]- faq2 System.Byte[]
+ [21/04/2021 05:41:03.204 PM]- video2 Table1
+ [21/04/2021 05:41:03.209 PM]- video2 System.Byte[]
+ [21/04/2021 05:41:03.229 PM]- video2 Table1
+ [21/04/2021 05:41:03.229 PM]- video2 System.Byte[]
+ [21/04/2021 05:41:03.232 PM]- video2 Table1
+ [21/04/2021 05:41:03.232 PM]- video2 System.Byte[]
+ [21/04/2021 05:41:03.236 PM]- video2 Table1
+ [21/04/2021 05:41:03.236 PM]- video2 System.Byte[]
+ [21/04/2021 05:41:03.241 PM]- advert1 Table
+ [21/04/2021 05:41:03.241 PM]- advert1 System.Byte[]
+ [21/04/2021 05:41:03.250 PM]- advert1 Table
+ [21/04/2021 05:41:03.250 PM]- advert1 System.Byte[]
+ [21/04/2021 05:41:03.251 PM]- advert1 Table
+ [21/04/2021 05:41:03.251 PM]- advert1 System.Byte[]
+ [21/04/2021 05:41:03.251 PM]- advert1 Table
+ [21/04/2021 05:41:03.251 PM]- advert1 System.Byte[]
+ [21/04/2021 05:41:03.252 PM]- advert1 Table
+ [21/04/2021 05:41:03.252 PM]- advert1 System.Byte[]
+ [21/04/2021 05:41:03.252 PM]- advert1 Table
+ [21/04/2021 05:41:03.252 PM]- advert1 System.Byte[]
+ [21/04/2021 05:41:03.253 PM]- advert1 Table
+ [21/04/2021 05:41:03.253 PM]- advert1 System.Byte[]
+ [21/04/2021 05:41:03.254 PM]- advert1 Table
+ [21/04/2021 05:41:03.254 PM]- advert1 System.Byte[]
+ [21/04/2021 05:41:03.292 PM]- advert1 Table
+ [21/04/2021 05:41:03.292 PM]- advert1 System.Byte[]
+ [21/04/2021 05:41:03.295 PM]- faq2 Table2
+ [21/04/2021 05:41:03.295 PM]- faq2 System.Byte[]
+ [21/04/2021 05:41:03.295 PM]- faq2 Table2
+ [21/04/2021 05:41:03.295 PM]- faq2 System.Byte[]
+ [21/04/2021 05:41:03.295 PM]- faq2 Table2
+ [21/04/2021 05:41:03.295 PM]- faq2 System.Byte[]
+ [21/04/2021 05:41:06.127 PM]- schems2 Table3
+ [21/04/2021 05:41:06.127 PM]- schems3 System.Byte[]
+ [21/04/2021 05:42:10.322 PM]- schems2 Table3
+ [21/04/2021 05:42:10.757 PM]- schems3 System.Byte[]
+ [04/05/2021 11:54:04.422 AM]- Pdf Header - iTextSharp.text.pdf.PdfPTable
+ [04/05/2021 11:54:04.482 AM]- Pdf Details  - iTextSharp.text.pdf.PdfPTable
+ [04/05/2021 12:02:22.625 PM]- Pdf Header - iTextSharp.text.pdf.PdfPTable
+ [04/05/2021 12:02:22.637 PM]- Pdf Details  - iTextSharp.text.pdf.PdfPTable
+ [18/05/2021 12:52:19.252 PM]- contentpath D:\Kiosk\nafkiosk-vadivu\kisok api
+ [18/05/2021 12:52:20.361 PM]- filenamepath:Soil_Card_Printa7cae928-91b4-4769-b5b1-5f65db6679fd_.pdf
+ [18/05/2021 12:52:20.740 PM]- Clientpath:/DownloadXLFiles/Soil_Card_Printa7cae928-91b4-4769-b5b1-5f65db6679fd_.pdf
+ [18/05/2021 12:52:21.164 PM]- path:D:\Kiosk\nafkiosk-vadivu\kisok api\videos\Soil_Card_Printa7cae928-91b4-4769-b5b1-5f65db6679fd_.pdf
+ [18/05/2021 12:55:25.064 PM]- File_path:http://169.38.82.131:752/DownloadXLFiles/advert/Soil_Card_Print.pdf
+ [18/05/2021 12:55:25.686 PM]- concatFile_path:http://169.38.82.131:752/DownloadXLFiles/advert/Soil_Card_Print.pdf/Soil_Card_Printa7cae928-91b4-4769-b5b1-5f65db6679fd_.pdf
+ [18/05/2021 03:44:18.460 PM]- contentpath D:\Kiosk\nafkiosk-vadivu\kisok api
+ [18/05/2021 03:44:52.853 PM]- filenamepath:Soil_Card_Printcf1b08f6-b0dc-4282-a72b-2770a1151252_.pdf
+ [18/05/2021 03:45:01.901 PM]- Clientpath:/DownloadXLFiles/Soil_Card_Printcf1b08f6-b0dc-4282-a72b-2770a1151252_.pdf
+ [18/05/2021 03:47:30.882 PM]- path:D:\Kiosk\nafkiosk-vadivu\kisok api\videos\Soil_Card_Printcf1b08f6-b0dc-4282-a72b-2770a1151252_.pdf
+ [18/05/2021 03:47:33.957 PM]- File_path:http://169.38.82.131:752/DownloadXLFiles/advert/Soil_Card_Print.pdf
+ [18/05/2021 03:47:33.958 PM]- concatFile_path:http://169.38.82.131:752/DownloadXLFiles/advert/Soil_Card_Print.pdf/Soil_Card_Printcf1b08f6-b0dc-4282-a72b-2770a1151252_.pdf
+ [21/05/2021 02:11:00.160 PM]- File_path -../Api-pub/videos/advert/Soil_Card_Print.pdf
+ [21/05/2021 02:11:00.660 PM]- portno -25
+ [21/05/2021 02:11:01.069 PM]- FromEmailId -balamurugan@flexicodeindia.com
+ [21/05/2021 02:11:19.243 PM]- Password -Flexi@bala!@
+ [21/05/2021 02:11:19.244 PM]- hos -smtp.gmail.com
+ [21/05/2021 02:11:19.244 PM]- userhost -vadivukarasi.a@flexicodeindia.com
+ [21/05/2021 02:11:19.244 PM]- sub -SolidCardPdf Mail
+ [21/05/2021 02:11:19.244 PM]- body -Please find the attachement
+ [21/05/2021 02:11:19.631 PM]- smtp - System.Net.Mail.SmtpClient
+ [21/05/2021 02:11:19.633 PM]- mess - System.Net.Mail.MailMessage
+ [21/05/2021 03:53:29.083 PM]- File_path -../Api-pub/videos/advert/Soil_Card_Print.pdf
+ [21/05/2021 03:53:31.036 PM]- portno -25
+ [21/05/2021 03:53:35.912 PM]- FromEmailId -balamurugan@flexicodeindia.com
+ [21/05/2021 03:53:37.689 PM]- Password -Flexi@bala!@
+ [21/05/2021 03:53:38.826 PM]- hos -smtp.gmail.com
+ [21/05/2021 03:53:39.735 PM]- userhost -vadivukarasi.a@flexicodeindia.com
+ [21/05/2021 03:53:40.564 PM]- sub -SolidCardPdf Mail
+ [21/05/2021 03:53:41.601 PM]- body -Please find the attachement
+ [21/05/2021 03:53:45.308 PM]- smtp - System.Net.Mail.SmtpClient
+ [21/05/2021 03:53:46.416 PM]- mess - System.Net.Mail.MailMessage
+ [21/05/2021 04:04:21.473 PM]- File_path -../Api-pub/videos/advert/Soil_Card_Print.pdf
+ [21/05/2021 04:04:21.485 PM]- portno -25
+ [21/05/2021 04:04:21.485 PM]- FromEmailId -balamurugan@flexicodeindia.com
+ [21/05/2021 04:04:21.485 PM]- Password -Flexi@bala!@
+ [21/05/2021 04:04:21.485 PM]- hos -smtp.gmail.com
+ [21/05/2021 04:04:21.485 PM]- userhost -vadivukarasi.a@flexicodeindia.com
+ [21/05/2021 04:04:21.485 PM]- sub -SolidCardPdf Mail
+ [21/05/2021 04:04:21.485 PM]- body -Please find the attachement
+ [21/05/2021 04:04:21.511 PM]- smtp - System.Net.Mail.SmtpClient
+ [21/05/2021 04:04:21.513 PM]- mess - System.Net.Mail.MailMessage
+ [21/05/2021 04:04:41.461 PM]- File_path -../Api-pub/videos/advert/Soil_Card_Print.pdf
+ [21/05/2021 04:04:41.462 PM]- portno -25
+ [21/05/2021 04:04:41.462 PM]- FromEmailId -balamurugan@flexicodeindia.com
+ [21/05/2021 04:04:41.463 PM]- Password -Flexi@bala!@
+ [21/05/2021 04:04:41.463 PM]- hos -smtp.gmail.com
+ [21/05/2021 04:04:41.463 PM]- userhost -vadivukarasi.a@flexicodeindia.com
+ [21/05/2021 04:04:41.463 PM]- sub -SolidCardPdf Mail
+ [21/05/2021 04:04:41.463 PM]- body -Please find the attachement
+ [21/05/2021 04:04:41.478 PM]- smtp - System.Net.Mail.SmtpClient
+ [21/05/2021 04:04:41.479 PM]- mess - System.Net.Mail.MailMessage
+ [21/05/2021 04:39:05.777 PM]- File_path -../Api-pub/videos/advert/Soil_Card_Print.pdf
+ [21/05/2021 04:39:05.814 PM]- portno -25
+ [21/05/2021 04:39:05.814 PM]- FromEmailId -balamurugan@flexicodeindia.com
+ [21/05/2021 04:39:05.814 PM]- Password -Flexi@bala!@
+ [21/05/2021 04:39:05.814 PM]- hos -smtp.gmail.com
+ [21/05/2021 04:39:05.814 PM]- userhost -vadivukarasi.a@flexicodeindia.com
+ [21/05/2021 04:39:05.814 PM]- sub -SolidCardPdf Mail
+ [21/05/2021 04:39:05.814 PM]- body -Please find the attachement
+ [21/05/2021 04:39:05.877 PM]- smtp - System.Net.Mail.SmtpClient
+ [21/05/2021 04:39:05.881 PM]- mess - System.Net.Mail.MailMessage
+ [21/05/2021 04:39:10.049 PM]- File_path - ../Api-pub/videos/advert/Soil_Card_Print.pdf
+ [21/05/2021 04:39:11.492 PM]- mess.Subject - SolidCardPdf Mail
+ [21/05/2021 04:39:14.248 PM]- send -
+ [21/05/2021 05:36:00.110 PM]- File_path -../Api-pub/videos/advert/Soil_Card_Print.pdf
+ [21/05/2021 05:36:00.521 PM]- portno -25
+ [21/05/2021 05:36:01.040 PM]- FromEmailId -balamurugan@flexicodeindia.com
+ [21/05/2021 05:36:01.418 PM]- Password -Flexi@bala!@
+ [21/05/2021 05:36:01.816 PM]- hos -smtp.gmail.com
+ [21/05/2021 05:36:02.179 PM]- userhost -vadivukarasi.a@flexicodeindia.com
+ [21/05/2021 05:36:02.646 PM]- sub -SolidCardPdf Mail
+ [21/05/2021 05:36:03.082 PM]- body -Please find the attachement
+ [21/05/2021 05:36:03.619 PM]- smtp - System.Net.Mail.SmtpClient
+ [21/05/2021 05:36:04.173 PM]- mess - System.Net.Mail.MailMessage
+ [21/05/2021 05:40:15.984 PM]- File_path -../Api-pub/videos/advert/Soil_Card_Print.pdf
+ [21/05/2021 05:40:16.402 PM]- portno -25
+ [21/05/2021 05:40:16.824 PM]- FromEmailId -balamurugan@flexicodeindia.com
+ [21/05/2021 05:40:17.225 PM]- Password -Flexi@bala!@
+ [21/05/2021 05:40:17.672 PM]- hos -smtp.gmail.com
+ [21/05/2021 05:40:18.050 PM]- userhost -vadivukarasi.a@flexicodeindia.com
+ [21/05/2021 05:40:18.929 PM]- sub -SolidCardPdf Mail
+ [21/05/2021 05:40:19.505 PM]- body -Please find the attachement
+ [21/05/2021 05:40:20.104 PM]- smtp - System.Net.Mail.SmtpClient
+ [21/05/2021 05:40:20.786 PM]- mess - System.Net.Mail.MailMessage
+ [21/05/2021 05:40:21.917 PM]- File_path - ../Api-pub/videos/advert/Soil_Card_Print.pdf
+ [21/05/2021 05:40:22.623 PM]- mess.Subject - SolidCardPdf Mail
+ [21/05/2021 05:40:23.409 PM]- send -

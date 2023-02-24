@@ -1,0 +1,28 @@
+step 1:  Open GIT Bash
+step 2: Move to respective Folde
+step 3: Add a credintials in GIT Bassh 
+		git config --global user.name "Mohanraja29"
+		git config --global user.email "mohanraja.s@flexicodeindia.com"
+step 4: git init
+step 5:	clone the repository
+			git clone https://gitlab.com/Flexi_Code/kanchi-single-singon-frontendcode-feb-2021.git
+step 6:  move to branch
+			git checkout -b <name-of-branch>	
+step 7:  pull the latest code from branch
+				git pull <REMOTE> <name-of-branch>
+				(ex) git pull origin feb-release-mohan
+
+step 8:   Chnages the some files , based on your work
+step 9:   Add the files to commit to remote repository ( slash should be forward slash )
+					git add <File Path>
+				(ex) git add D:/Gitsourcecode0802/kanchi-single-singon-frontendcode-feb-2021/KANCHI_Single_SignOn_Odisha/FFI/Views/launch
+setp 10: Once you have added all the files, you need to commit the changes in to GitLab
+			git commit -m "COMMENT TO DESCRIBE THE INTENTION OF THE COMMIT"
+			(ex) git commit -m "Fixed issue no 342"
+step 11:  Once you complete the commit , you have to push to code to remote GitLab
+			git push remote <name of the branch>
+			(ex) git push origin feb-release-mohan
+step 12: 	Check the pull request in your GitLab webportal and add the reviewer
+
+		
+			

@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>kisok_api</RootNamespace>
+    <UserSecretsId>5e200b47-b641-4ef8-bcdb-cdd3f5b4d7a3</UserSecretsId>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <Optimize>false</Optimize>
+    <DefineConstants></DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="iTextSharp" Version="5.5.13.3" />
+    <PackageReference Include="log4net" Version="2.0.12" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="QRCoder" Version="1.4.1" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.8.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\nafdatamodel\nafdatamodel.csproj" />
+    <ProjectReference Include="..\nafmodel\nafmodel.csproj" />
+    <ProjectReference Include="..\nafservice\nafservice.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="videos\" />
+    <Folder Include="Translators\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="itextsharp">
+      <HintPath>bin\Debug\netcoreapp3.1\itextsharp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+
+</Project>

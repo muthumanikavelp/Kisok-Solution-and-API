@@ -1,0 +1,64 @@
+KIOSK PROJECT:
+1Reguirement:
+select * from core_mst_tmenu;
+select * from core_mst_tmaster;
+select * from core_mst_tmastertranslate where parent_code='activity';
+select * from core_mst_tmodule;
+select * from core_mst_tmodulemenu;
+select * from  core_mst_trole
+ -- mater
+insert into core_mst_tmaster (master_rowid,master_code,parent_code,depend_code,locallang_flag,row_slno,
+status_code,created_datetime,created_by)
+values(975,'KIOSKSETUP','ACTIVITY','','Y',0,'A',now(),'ADMIN');
+-- master tran
+insert into core_mst_tmastertranslate (master_code,parent_code,lang_code,master_name)
+values( 'KIOSKSETUP','ACTIVITY','en_US','Kiosk Set up');
+
+-- menu
+insert into core_mst_tmenu (menu_rowid,OrgnId,LocnId,Menu_Id,Menu_Name,Controller,Action)values
+(5,'Kiosk','CHENNAI','KIOSKSETUP','Kiosk Set up','KioskSetup','KioskSetup');
+
+-- core_mst_tmodulemenu
+
+insert into core_mst_tmodulemenu (modulemenu_rowid,
+orgnId,locnId,module_rowid,module_menu_seq_no,module_menu_code,created_datetime,created_by)
+values(5,'Kiosk','CHENNAI',1,4,'KIOSKSETUP',now(),'sa');
+
+
+ -- mater
+insert into core_mst_tmaster (master_rowid,master_code,parent_code,depend_code,locallang_flag,row_slno,
+status_code,created_datetime,created_by)
+values(975,'KIOSKSETUP','ACTIVITY','','Y',0,'A',now(),'ADMIN');
+-- master tran
+insert into core_mst_tmastertranslate (master_code,parent_code,lang_code,master_name)
+values( 'KIOSKSETUP','ACTIVITY','en_US','Kiosk Set up');
+
+-- menu
+insert into core_mst_tmenu (menu_rowid,OrgnId,LocnId,Menu_Id,Menu_Name,Controller,Action)values
+(5,'Kiosk','CHENNAI','KIOSKSETUP','Kiosk Set up','KioskSetup','KioskSetup');
+
+-- core_mst_tmodulemenu
+
+insert into core_mst_tmodulemenu (modulemenu_rowid,
+orgnId,locnId,module_rowid,module_menu_seq_no,module_menu_code,created_datetime,created_by)
+values(5,'Kiosk','CHENNAI',1,4,'KIOSKSETUP',now(),'sa');
+
+
+select  * from core_mst_tmaster where parent_code ='QCD_UN_VILLAGE';
+select * from core_mst_tmaster where parent_code ='QCD_UN_TALUK'; -- and depend_code='QCD_UNG_NALLUR';
+select * from core_mst_tmaster where parent_code ='QCD_UN_DIST';
+select * from core_mst_tmaster where parent_code ='QCD_UN_STATE';
+
+-- select qcd
+ select depend_code from core_mst_tmaster where master_code='QCD_UNV_ALISOOR'; -- and parent_code='QCD_UN_VILLAGE'
+                                     select depend_code from core_mst_tmaster where master_code='QCD_UNG_ALISOOR';
+                                           select depend_code from core_mst_tmaster where master_code='QCD_UNT_UTHIR';
+                                                 select depend_code from core_mst_tmaster where master_code='QCD_UND_KANCHI';
+                                                       select depend_code from core_mst_tmaster where master_code='QCD_UNS_TAMIL'
+
+
+
+
+kiosk set up :
+call Kiosk_insupd_kiosksetup('admin','Kiosk','Ta','en_US',0,1,'test','A','testing','QCD_UNV_POONTHANDALAM','hj','67','QCD_TAMIL','5708-Uthiramerur'
+,'KANCHIPURAM','Tamil Nadu','','I',@out ,@out ,'0')

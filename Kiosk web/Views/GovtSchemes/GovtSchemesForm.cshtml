@@ -1,0 +1,899 @@
+﻿
+@{
+
+    Layout = "~/Views/Shared/FormViewLayout1.cshtml";
+}
+<link href="~/css/common.css" rel="stylesheet" />
+
+ 
+<style>
+    #grid {
+        width: 300px;
+    }
+
+    .k-tooltip.k-popup {
+        visibility: hidden;
+    }
+</style>
+
+<style>
+    .k-window-titlebar {
+        background-color: snow;
+    }
+    .k-grid tr td {
+        border-bottom: 1px solid #c5c5c5;
+    }
+</style>
+<div class="box-header text-center with-border">
+    <h3 class="box-title" style="text-align:center;color:red;font-weight: 600;">Government Schemes</h3>
+</div>
+<form id="govt_Schemes" class="form-horizontal" data-role="validator" novalidate="novalidate">
+
+    <div class="row">
+        <div class="col-sm-12">
+            <div id="grid_govt_schemeslist">
+            </div>
+        </div>
+    </div>
+</form>
+<div id="dialog" style="background-color:white;" @*style="background: #e0dbdb !important;"*@>
+    <form id="govtschemes_form" class="form-horizontal" data-role="validator" novalidate="novalidate">
+        <div class="row">
+            <div class="col-sm-3">
+            </div>
+            <div class="col-sm-4">
+                <h5 style="text-align:center;color:red;font-size:19px;">Govt Schemes</h5>
+            </div>
+            <div class="col-sm-3" id="schemesmenu">
+
+                @*<i class="fa fa-sticky-note-o" style="color: green;font-size: 20px;cursor:pointer" id="notes" onclick="notesdata()" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;
+                    <i class="fa fa-floppy-o fa-3x" style="color:red;font-size: 20px;cursor:pointer" onclick="save_Schems()" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;
+
+                    <i class="fa fa-times" style="color:black;font-size: 20px;cursor:pointer;" data-dismiss="modal" onclick="closerole()" aria-hidden="true"></i>*@
+
+                <img title="Save"   src="~/images/save-finals.jpg" onclick="save_Schems()" style="margin-left: 108%;cursor:pointer;" />&nbsp;
+
+                <img title="Notes"    src="~/images/notes-finals.jpg" id="notes" onclick="notes_data()" style="margin-left: 119%;margin-top: -28%;cursor:pointer;" />
+            </div>
+        </div>
+        <hr/>
+        <div class=" row" style="padding-left: 2%; padding-bottom: 2%;">
+            <div class="col-sm-4">
+                <label class="title">Category</label><br />
+                <input id="cmb_category" name="In_scheme_category" data-role="filtercombo" class="form-control" style="width:100%;">
+                <input type="hidden" id="txtMode" name="In_mode_flag" />
+                <input type="hidden" id="txtschemsgid" name="In_scheme_gid" />
+                <input type="hidden" id="txtschemsstatus" name="In_scheme_status" />
+
+            </div>
+
+            <div class="col-sm-3">
+                <label class="title">Date</label><br />
+                <input class=".cusDate form-control" data-role='datepicker' id="txtValidity1" style="width:100%;" data-checkdate-msg="Enter Valid Date" name="In_scheme_date" onkeypress="return date_validate(event)" />
+                <span data-for='valid' class='k-invalid-msg'></span>
+            </div>
+
+            <div class="col-sm-3">
+                <label class="title">State</label><br />
+                <input id="cmb_states" name="In_scheme_state" data-role="filtercombo" class="form-control" style="width:120%;">
+            </div>
+        </div>
+        <div class=" row" style="padding-left: 2%; padding-bottom: 2%;">
+            <div class="col-sm-1" style="margin-top:5px;">
+                <label class="title" style=" margin-top: 14%;">Scheme</label>
+            </div>
+            <div class="col-sm-5">
+                <label class="title">&nbsp;</label><br />
+                @*<input type="text" id="txtschemename" name="In_scheme_schname" class="form-control " style="width: 92%;height:60px;">*@
+                <textarea class="form-control" rows="3" id="txtschemename" name="In_scheme_schname" style="width:95%;"></textarea>
+
+
+            </div>
+            <div class="col-sm-4">
+                <label class="title">Transliteration</label><br />
+                @*<input type="text" id="txtschemenameT" name="In_scheme_schname_locallang" class="form-control" style="width: 110%; height: 60px;">*@
+                <textarea class="form-control" rows="3" id="txtschemenameT" name="In_scheme_schname_locallang" style="width:109%;"></textarea>
+
+
+            </div>
+
+        </div>
+
+
+        <div class=" row" style="padding-left: 2%; padding-bottom: 2%;">
+            <div class="col-sm-1" style="margin-top:17px;">
+                <label class="title">Description</label>
+            </div>
+            <div class="col-sm-5">
+                <label class="title">&nbsp;</label><br />
+                @*<input type="text" id="txtschemedesc" name="In_scheme_description" class="form-control" style="width: 92%; height: 60px;">*@
+                <textarea class="form-control" rows="3" id="txtschemedesc" name="In_scheme_description" style="width:95%;"></textarea>
+
+            </div>
+            <div class="col-sm-4">
+                <label class="title">&nbsp;</label><br />
+                @*<input type="text" id="txtschemedescT" name="In_schema_des_locallang" class="form-control" style="width: 110%; height: 60px;">*@
+                <textarea class="form-control" rows="3" id="txtschemedescT" name="In_schema_des_locallang" style="width:109%;"></textarea>
+
+            </div>
+
+        </div>
+
+        <div class="row" style="padding-left: 2%; padding-bottom: 2%;">
+            <div class="col-sm-1" style="margin-top:20px;">
+                <label class="title">Key Word</label>
+            </div>
+            <div class="col-sm-5">
+                <label class="title">&nbsp;</label><br />
+                @*<input type="text" id="txtschemekeywds" name="In_scheme_keyword" class="form-control" style="width: 92%; height:60px;">*@
+                <textarea class="form-control" rows="3" id="txtschemekeywds" name="In_scheme_keyword" style="width:95%;"></textarea>
+
+            </div>
+            <div class="col-sm-4">
+                <label class="title">&nbsp;</label><br />
+                @*<input type="text" id="txtschemekeywdsT" name="In_scheme_keyword_locallang" class="form-control" style="width: 110%; height: 60px;">*@
+                <textarea class="form-control" rows="3" id="txtschemekeywdsT" name="In_scheme_keyword_locallang" style="width:109%;"></textarea>
+
+            </div>
+        </div>
+
+        <div class="row" style="padding-left: 2%; padding-bottom: 2%;">
+            <div class="col-sm-1">
+                <label class="title" style="margin-top: 2%;">Upload / URL</label>
+            </div>
+
+            <div class="col-sm-5">
+                <input type="text" class="form-control" rows="1" id="urltypr" name="In_scheme_url" style="width: 95%;height: 10px;">
+            </div>
+            <div class="col-sm-2">
+                <input type="file" name="In_scheme_upload" id="File" style="height: 29px;margin-left: 1%;">
+                <input type="hidden" id="txtfilepath" name="" />
+                <label class="title" style="width:100%" id="filename"></label>
+            </div>
+            <div class="col-sm-1">
+                <i class="fa fa-download" title="Download" aria-hidden="true" style="color:darkslateblue;font-size: 25px;cursor: pointer" id="dowload" onclick="DownloadFile()"></i>&nbsp;&nbsp;&nbsp;
+                <a id="download_exl_template" download href=""></a>
+            </div>
+
+
+        </div>
+        <div id="notesmodel" @*style="background: #e0dbdb !important;"*@ style="background-color:white;">
+            <div class="row">
+                <div class="col-sm-3">
+                </div>
+                <div class="col-sm-4">
+                    <h5 style="text-align:center;color:red;font-size:14px;">Notes</h5>
+                </div>
+                <div class="col-sm-3" id="notesmenu">
+                    @*<i class="fa fa-floppy-o fa-3x" style="color:red;font-size: 20px;cursor:pointer" onclick="notesave()" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;*@
+                    <img  title="Save "src="~/images/save-finals.jpg" onclick="notesave()" style="margin-left: 67%;cursor:pointer;" />&nbsp;
+                </div>
+            </div>
+            <div class="col-sm-6" style="margin-left:25px;">
+                <label for="remark" class="title">Notes</label>
+                <textarea class="form-control" rows="3" id="notesdata" name="" style="margin: 0px -210.609px 0px 0px; width: 462px; height: 61px;"></textarea>
+            </div>
+        </div>
+    </form>
+</div>
+<script>
+    $(document).ready(function () {
+        debugger;
+        grid_govt_schemeslist([]);
+        $("#dialog").hide();
+        $("#dowload").hide();
+        kendodate_format();
+        Form_validate_Name = $('form.form-horizontal').attr('id');
+        var container = $("#govtschemes_form");
+        kendo.init(container);
+        container.kendoValidator({
+            rules: {
+                checkdate: function (input) {
+                    if (input.attr("data-role") == "datepicker") {
+                        var res = isDate(input.val());
+                        return res;
+                    }
+                    else {
+                        return true;
+                    }
+                }
+            }
+        });
+        $("#txtValidity1").kendoDatePicker({
+            max: new Date(),// sets max date
+            format: "dd/MM/yyyy"
+        });
+        //translate
+        langTranslate('txtschemename', 'txtschemenameT');
+        $("#txtschemenameT").on("keypress", function (e) {
+            convertThis(e);
+        });
+        langTranslate('txtschemedesc', 'txtschemedescT');
+        $("#txtschemedescT").on("keypress", function (e) {
+            convertThis(e);
+        });
+        langTranslate('txtschemekeywds', 'txtschemekeywdsT');
+        $("#txtschemekeywdsT").on("keypress", function (e) {
+            convertThis(e);
+        });
+        load_master_code();
+        var SCategory = "";
+        $("#cmb_category").empty();
+        SCategory = grid_comboScreen_mastercodes("QCD_SCHEME_CAT");
+        filter_combobox("cmb_category", SCategory);
+        $('#cmb_category').data("kendoComboBox").value("");
+        var State = "";
+        $("#cmb_states").empty();
+        State = grid_comboScreen_mastercodes("QCD_UN_STATE");
+        filter_combobox("cmb_states", State);
+        $('#cmb_states').data("kendoComboBox").value("");
+        list();
+        Screen_Id = "GOVTSCHEMES";
+        permission = sec_Master_Permission(Screen_Id);
+    });
+    //filesize and valid file to check  validation
+    $('#File').bind('change', function () {
+
+        debugger;
+        var fp = $("#File");
+        var lg = fp[0].files.length; // get length
+        var items = fp[0].files;
+        var fileSize = 0;
+
+        var ext = $('#File').val().split('.').pop().toLowerCase();
+        //Allowed file types
+        if ($.inArray(ext, ['xlsx', 'xls', 'gif', 'png', 'jpg', 'jpeg', 'docx', 'doc', 'pdf', 'rtf', 'ppt', 'txt', 'odt', 'msg']) == -1) {
+            kendoAlert("The file type is invalid.!");
+            $('#File').val("");
+            $('#upload-file-info').html("");
+        }
+
+        if (lg > 0) {
+            for (var i = 0; i < lg; i++) {
+                fileSize = fileSize + items[i].size; // get file size
+            }
+            if (fileSize > 314572800) {
+                kendoAlert("File size must not be more than 300 MB.!");
+                $('#File').val('');
+                return false;
+            }
+
+        }
+    });
+    function onview() {
+
+        onChangeSelection();
+        $("#schemesmenu").hide();
+        $("#notes").hide();
+        $("#notesmodel").hide();
+
+        //popup double click expand to avoid
+        $(document).on('dblclick', '.k-window-titlebar', function (e) {
+            debugger;
+            // Restore old size
+            dialog.toggleMaximization();
+
+
+        });
+    }
+    function closerole() {
+        $("#dialog").data("kendoWindow").close();
+        list();
+    }
+    function list() {
+        debugger;
+        var data = {};
+        data.context = getContext();
+        var Context = data.context;
+        $.ajax({
+            type: "POST",
+            data: JSON.stringify({ orgnId: Context.orgnId, locnId: Context.locnId, localeId: Context.localeId }),
+            url: "/GovtSchemes/GovtschemesList",
+            dataType: "json",
+            contentType: 'application/json; charset=utf-8',
+            success: function (response) {
+                debugger;
+                if (response != null) {
+                    generate_govtscheme_list(response.Summary);
+                }
+                else {
+                    grid_govt_schemeslist([]);
+                }
+            },
+            error: function (er) {
+                alert(er)
+                console.log(er)
+            }
+
+        });
+    }
+    function generate_govtscheme_list(res) {
+        debugger;
+        var data = changedataType(res);
+        grid_govt_schemeslist(data);
+    }
+    function grid_govt_schemeslist(data) {
+
+        $("#grid_govt_schemeslist").kendoGrid({
+            dataSource: {
+                data: data, //  pageSize: 20
+            },
+            height: 450,
+            sortable: true,
+            selectable: true,
+            filterable: true,
+            //change: onChangeSelection,
+            selectable: "singl",   //  Grid Row Selection
+            navigatable: true,
+            toolbar: "<a class='k-grid-add' id='Assign_sevices' onClick='serialno()'><span class='fa fa-plus' style='color:Black'></span></a>",
+            columns: [
+                {
+                    field: "scheme_id",
+                    title: "scheme ID",
+                    hidden:"true",
+                    width: 30
+                },
+                {
+                    field: "out_scheme_date",
+                    title: "Date",
+                    width: 30
+                },
+                {
+                    field: "out_scheme_category",
+                    title: "Category",
+                    width: 30
+                },
+                {
+                    field: "out_scheme_schname",
+                    title: "Name",
+                    width: 30
+                },
+                {
+                    field: "out_scheme_description",
+                    title: "Description",
+                    width: 30,
+                    attributes: {
+                        style: 'white-space: nowrap '
+                    }
+                },
+                {
+                    field: "out_scheme_keyword",
+                    title: "Keyword",
+                    width:30
+                },
+                {
+                    field: "out_scheme_url",
+                    title: "URL",
+                    hidden: "true",
+                    width: 30
+                },
+                {
+                    field: "out_scheme_upload",
+                    title: "Upload",
+                    hidden:"true",
+                    width: 30
+                },
+                {
+                    command: [
+                        {
+                            name: "View",
+                            text: "<span class='fa fa-eye' style ='color:#357ab8;'onClick='onview()'></span>"
+                        },
+                        {
+                            name: "Edit",
+                            text: "<span class='fa fa-pencil' style='color:#357ab8' onClick='onChangeSelection()'></span>"
+                        },
+
+
+                        {
+                            name: "Delete1",
+                            //text: "<span class='fa fa-close' style='color:#357ab8' onClick='ondelete()'></span>"
+                            text: "<span class='fa fa-times' style='color:#357ab8;padding-left:2px' onClick='ondelete()'></span>"
+                        },
+                    ], title: "Action", width: "25px",
+                },
+            ]
+        });
+
+
+
+    }
+
+    //Venkat Added 18-03-2021
+
+    $("#grid_govt_schemeslist").kendoTooltip({
+        show: function (e) {
+            if (this.content.text().length > 30) {
+                this.content.parent().css("visibility", "visible");
+            }
+        },
+        hide: function (e) {
+            this.content.parent().css("visibility", "hidden");
+        },
+        filter: "td:nth-child(4)", //this filter selects the second column's cells
+        position: "right",
+        content: function (e) {
+            var dataItem = $("#grid_govt_schemeslist").data("kendoGrid").dataItem(e.target.closest("tr"));
+            var content = dataItem.Text;
+            return content;
+        }
+    }).data("kendoTooltip");
+
+
+
+
+    function load_master_code() {
+        debugger;
+        try {
+            var data = {};
+            data.screen_Id = "GOVTSCHEMES";
+            var tab_values = ajaxcall_param("/Home/screenId_mastercodelist", JSON.stringify(data));
+        }
+        catch (err) {
+            javascript_log4j_root(arguments.callee.name, err);
+        }
+    }
+    function serialno() {
+        debugger;
+        $("#dialog").kendoWindow();
+        var dialog = $("#dialog").data("kendoWindow");
+        dialog.open().element.closest(".k-window").css({
+            top: 18,
+            left: 180, height: 590, width: 1077
+        });
+        dialog.title("Govt Schemes");
+        dialog.bind("open", serialno);
+
+
+        //add pop up close
+        dialog.unbind("close");
+        dialog.bind("close", onWindowEditClose);
+
+
+
+
+        clear_val();
+        $("#schemesmenu").show();
+        $("#notes").hide();
+        $("#notesmodel").hide();
+        $("#dowload").hide();
+
+        //popup double click expand to avoid
+        $(document).on('dblclick', '.k-window-titlebar', function (e) {
+            debugger;
+            // Restore old size
+            dialog.toggleMaximization();
+
+
+        });
+    }
+
+
+    //pop up close refresh
+    var onWindowEditClose = function (e) {
+        debugger;
+        list();
+    };
+
+
+    function save_Schems() {
+        debugger;
+        try {
+            var xhr = new XMLHttpRequest();
+            var fd = new FormData();
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+
+                    if (xhr.response.length > 48) {
+                        debugger;
+                        kendoAlert("Govt Schemes Duplicate");
+                    }
+                    else {
+
+                        debugger;
+                        kendoAlert("Govt Schemes saved successfully");
+                        list();
+                    }
+                  
+                }
+
+               
+
+            };
+
+            var data = getContext();
+            var formval = form_Serialize("govtschemes_form");
+            var obj_val = JSON.parse(formval);
+            var schemeCat = obj_val.In_scheme_category;
+            var schemeDate = obj_val.In_scheme_date;
+            var schemeState = obj_val.In_scheme_state;
+            var schemename = obj_val.In_scheme_schname;
+            var schemeDesc = obj_val.In_scheme_description;
+            var schemeKey = obj_val.In_scheme_keyword;
+            if (schemeCat == "" || schemeCat == null || schemeCat == undefined) {
+                debugger;
+                kendoAlert("Select the Scheme Category!");
+                return false;
+            }
+            if (schemeDate == "" || schemeDate == null || schemeDate == undefined) {
+                kendoAlert("Select the Scheme Date!");
+                return false;
+            }
+            if (schemeState == "" || schemeState == null || schemeState == undefined) {
+                kendoAlert("Select the State!");
+                return false;
+            }
+
+            if (schemename == "" || schemename == null || schemename == undefined) {
+                kendoAlert("Please fill the Scheme Name!");
+                return false;
+            }
+            if (schemeDesc == "" || schemeDesc == null || schemeDesc == undefined) {
+                kendoAlert("Please fill the Scheme Description!");
+                return false;
+            }
+           
+
+
+            if (obj_val.hasOwnProperty('In_scheme_date')) {
+                if (obj_val.In_scheme_date != '')
+                    obj_val.In_scheme_date = getFormated_StringDate(obj_val.In_scheme_date); //getFormated_StringDate(obj_val.finyear_start_date);
+            }
+            var SchemesID = obj_val.In_scheme_gid;
+            if (SchemesID == "") {
+                obj_val.In_scheme_gid = 0;
+            }
+            else {
+                obj_val.In_scheme_gid = parseInt(obj_val.In_scheme_gid);
+            }
+            var schemeStatus = obj_val.In_scheme_status;
+            if (schemeStatus == "") {
+                obj_val.In_scheme_status = 'A';
+            }
+            if (obj_val.In_scheme_gid == 0) {
+                obj_val.In_mode_flag = "I";
+            }
+            else {
+                obj_val.In_mode_flag = "U";
+            }
+            fd.append("orgnId", data.orgnId);
+            fd.append("locnId", data.locnId);
+            fd.append("userId", data.userId);
+            fd.append("localeId", data.localeId);
+            fd.append("In_scheme_gid", obj_val.In_scheme_gid);
+            fd.append("In_scheme_category", obj_val.In_scheme_category);
+            fd.append("In_scheme_date", obj_val.In_scheme_date);
+            fd.append("In_scheme_state", obj_val.In_scheme_state);
+            fd.append("In_scheme_schname", obj_val.In_scheme_schname);
+            fd.append("In_scheme_description", obj_val.In_scheme_description);
+            fd.append("In_scheme_keyword", obj_val.In_scheme_keyword);
+            //if (obj_val.In_scheme_state == 1156) {
+            //    fd.append("In_scheme_schname_locallang", "");
+            //    fd.append("In_schema_des_locallang", "");
+            //    fd.append("In_scheme_keyword_locallang", "");
+            //}
+            //else {
+                fd.append("In_scheme_schname_locallang", obj_val.In_scheme_schname_locallang);
+                fd.append("In_schema_des_locallang", obj_val.In_schema_des_locallang);
+                fd.append("In_scheme_keyword_locallang", obj_val.In_scheme_keyword_locallang);
+
+            //}
+            fd.append("In_scheme_schname_locallang", obj_val.In_scheme_schname_locallang);
+            fd.append("In_schema_des_locallang", obj_val.In_schema_des_locallang);
+            fd.append("In_scheme_keyword_locallang", obj_val.In_scheme_keyword_locallang);
+            fd.append("In_scheme_url", obj_val.In_scheme_url);
+            fd.append("uploadFile", document.getElementById('File').files[0]);
+            fd.append("In_scheme_status", obj_val.In_scheme_status);
+            fd.append("In_mode_flag", obj_val.In_mode_flag);
+            xhr.open("POST", "/GovtSchemes/GovtSchemesave/", true);
+            xhr.send(fd);
+            xhr.addEventListener("load", function (event) {
+            }, false);
+        }
+        catch (err) {
+            javascript_log4j_root(arguments.callee.name, err);
+        }
+    }
+    function onChangeSelection() {
+        debugger;
+        $("#schemesmenu").show();
+        $("#notesmodel").hide();
+         $("#notes").show();
+        $("#dowload").show();
+        $("#dialog").kendoWindow();
+        var dialog = $("#dialog").data("kendoWindow");
+        dialog.open().element.closest(".k-window").css({
+            top: 18,
+            left: 180, height: 606, width: 1077
+        });
+        dialog.title("Government Schemes");
+        dialog.bind("open", serialno);
+        clear_val();
+        //popup double click expand to avoid
+        $(document).on('dblclick', '.k-window-titlebar', function (e) {
+            debugger;
+            // Restore old size
+            dialog.toggleMaximization();
+
+
+        });
+        var grid = $("#grid_govt_schemeslist").data("kendoGrid");
+        var selectedItem = grid.dataItem(grid.select());
+        var formval = form_Serialize("govt_Schemes");
+        var obj_val = JSON.parse(formval);
+        obj_val.In_scheme_gid = selectedItem.scheme_id;
+        var data = {};
+        data.context = getContext();
+        data.context.Header = obj_val;
+        var Context = data.context;
+        $.ajax({
+            type: "POST",
+            data: JSON.stringify({ userId: Context.userId, orgnId: Context.orgnId, locnId: Context.locnId, localeId: Context.localeId, In_scheme_gid: Context.Header.In_scheme_gid }),
+            url: "/GovtSchemes/GovtSchemesfetch",
+            dataType: "json",
+            contentType: 'application/json; charset=utf-8',
+            success: function (response) {
+                debugger;
+                if (response != null) {
+                    generate_Govt_Schemes(response.schemeFetch);
+
+                }
+                else {
+
+                }
+            },
+            error: function (er) {
+                alert(er)
+                console.log(er)
+            }
+
+        });
+    }
+    function getfetch_Schems(res) {
+        debugger;
+        var schemes_gid = res.out_msg;
+        var data = {};
+        data.context = getContext();
+        var Context = data.context;
+        $.ajax({
+            type: "POST",
+            data: JSON.stringify({ userId: Context.userId, orgnId: Context.orgnId, locnId: Context.locnId, localeId: Context.localeId, In_scheme_gid: schemes_gid }),
+            url: "/GovtSchemes/GovtSchemesfetch",
+            dataType: "json",
+            contentType: 'application/json; charset=utf-8',
+            success: function (response) {
+                debugger;
+                if (response != null) {
+                    generate_Govt_Schemes(response.schemeFetch);
+                    $("#dowload").show();
+                }
+                else {
+
+                }
+            },
+            error: function (er) {
+                alert(er)
+                console.log(er)
+            }
+
+        });
+    }
+    function generate_Govt_Schemes(res) {
+        debugger;
+        $("#txtschemsgid").val(res.out_scheme_id);
+        $("#cmb_category").data("kendoComboBox").value(res.out_scheme_category);
+        $("#txtValidity1").val(res.out_scheme_date);
+        $('#cmb_states').data("kendoComboBox").value(res.out_scheme_state);
+        $("#txtschemename").val(res.out_scheme_name);
+        $("#txtschemenameT").val(res.out_scheme_schname_locallang);
+        $("#txtschemedesc").val(res.out_scheme_description);
+        $("#txtschemedescT").val(res.out_schema_des_locallang);
+        $("#txtschemekeywds").val(res.out_scheme_keyword);
+        $("#txtschemekeywdsT").val(res.out_scheme_keyword_locallang);
+        $("#urltypr").val(res.out_scheme_url);
+        var filename = res.out_scheme_upload;
+        $('#filename').text(filename);
+    }
+    function clear_val() {
+        $('#cmb_category').data("kendoComboBox").value("");
+        $("#txtValidity1").val("");
+        $('#cmb_states').data("kendoComboBox").value("");
+        $("#txtschemename").val("");
+        $("#txtschemenameT").val("");
+        $("#txtschemedesc").val("");
+        $("#txtschemedescT").val("");
+        $("#txtschemekeywds").val("");
+        $("#txtschemekeywdsT").val("");
+        $("#File").val("");
+        $("#notesdata").val("");
+        $("#urltypr").val("");
+        $("#filename").text("");
+         
+    }
+    function ondelete() {
+        debugger;
+        var kendoWindow = $("<div />").kendoWindow({
+            title: "Confirm",
+            width: "350px",
+            height: "130px",
+            resizable: false,
+            modal: true
+        });
+        kendoWindow.data("kendoWindow")
+            .content($("#grid_delete-confirmation").html())
+            .center().open();
+        kendoWindow
+            .find(".grid_delete-confirm,.grid_delete-cancel")
+            .click(function () {
+                if ($(this).hasClass("grid_delete-confirm")) {
+                    debugger;
+
+                        var xhr = new XMLHttpRequest();
+                        var fd = new FormData();
+                        xhr.onreadystatechange = function () {
+                            if (xhr.readyState == 4 && xhr.status == 200) {
+                                kendoAlert("Govt Schemes Deleted successfully");
+                                $("#dowload").hide();
+                                $("#notes").hide();
+                                clear_val();
+                                list();
+                            }
+                        };
+
+                        var grid = $("#grid_govt_schemeslist").data("kendoGrid");
+                        var selectedItem = grid.dataItem(grid.select());
+                        var formval = form_Serialize("govt_Schemes");
+                        var obj_val = JSON.parse(formval);
+                        obj_val.In_scheme_gid = selectedItem.scheme_id;
+                        var data = getContext();
+                        var formval = form_Serialize("govtschemes_form");
+                        var obj_val1 = JSON.parse(formval);
+                        fd.append("orgnId", data.orgnId);
+                        fd.append("locnId", data.locnId);
+                        fd.append("userId", data.userId);
+                        fd.append("localeId", data.localeId);
+                        fd.append("In_scheme_gid", selectedItem.scheme_id);
+                        fd.append("In_scheme_category", obj_val1.In_scheme_category);
+                        fd.append("In_scheme_date", obj_val1.In_scheme_date);
+                        fd.append("In_scheme_state", obj_val1.In_scheme_state);
+                        fd.append("In_scheme_schname", obj_val1.In_scheme_schname);
+                        fd.append("In_scheme_description", obj_val1.In_scheme_description);
+                        fd.append("In_scheme_keyword", obj_val1.In_scheme_keyword);
+                        fd.append("In_scheme_schname_locallang", obj_val1.In_scheme_schname_locallang);
+                        fd.append("In_schema_des_locallang", obj_val1.In_schema_des_locallang);
+                        fd.append("In_scheme_keyword_locallang", obj_val1.In_scheme_keyword_locallang);
+                        fd.append("In_scheme_url", obj_val1.In_scheme_url);
+                        fd.append("uploadFile", document.getElementById('File').files[0]);
+                        fd.append("In_scheme_status", obj_val1.In_scheme_status);
+                        fd.append("In_mode_flag", "D");
+                        xhr.open("POST", "/GovtSchemes/GovtSchemesave/", true);
+                        xhr.send(fd);
+                        xhr.addEventListener("load", function (event) {
+                        }, false);
+                    }
+
+
+                kendoWindow.data("kendoWindow").close();
+            });
+    }
+
+
+
+        function langTranslate(src, dest) {
+            debugger;
+            $("#" + src).focusout(function () {
+                debugger;
+                var id = $('#' + src).val();
+                //  $("#HelpDiv").hide();
+                if (id != "") {
+                    debugger;
+                    $.ajax({
+                        url: '@Url.Action("Language_Translate", "GovtSchemes")',
+                        type: 'GET',
+                        dataType: 'json',
+                        cache: false,
+                        data: { 'id': id },
+                        success: function (result) {
+                            debugger;
+                            var state = $('#cmb_states').data("kendoComboBox").value();
+                            if (state != "1156") {
+                            $('#' + dest).val(decodeEntities(result));
+                        }
+                        },
+                        error: function () {
+                            alert('Error occured');
+                        }
+                    });
+                }
+                else {
+                    $('#' + dest).val("");
+                    //  $("#HelpDiv").hide();
+                }
+
+            })
+            $('#' + dest).focus(function () {
+                $("#HelpDiv").html("")
+            });
+
+            $("body").click(function () {
+                $("#HelpDiv").hide();
+            });
+            $("tab_list").click(function () {
+                $("#HelpDiv").hide();
+            });
+
+
+        }
+
+    //var state = $('#cmb_states').data("kendoComboBox").value();
+    //if (state != "Pan India") {
+        debugger;
+    function decodeEntities(input) {
+        debugger;
+            var y = document.createElement('textarea');
+            y.innerHTML = input;
+            return y.value;
+        }
+    //}
+
+    function notes_data() {
+        $("#notesmodel").kendoWindow();
+        var notesmodel = $("#notesmodel").data("kendoWindow");
+        notesmodel.open().element.closest(".k-window").css({
+            top: 80,
+            left: 350, height: 150, width: 575
+        });
+        notesmodel.title("Notes");
+        notesmodel.bind("open", notesmodel);
+        $("#notesmodel").show();
+    }
+    function notesave() {
+        debugger;
+        var grid = $("#grid_govt_schemeslist").data("kendoGrid");
+        var selectedItem = grid.dataItem(grid.select());
+        var formval = form_Serialize("govt_Schemes");
+        var obj_val = JSON.parse(formval);
+        obj_val.In_scheme_gid = selectedItem.scheme_id;
+        obj_val.screenname = "GovtSchemes";
+        obj_val.mode_flag = "I";
+        obj_val.notesdata = $("#notesdata").val();
+        var data = {};
+        data.context = getContext();
+        data.context.Header = obj_val;
+        var Context = data.context;
+        $.ajax({
+            type: "POST",
+            data: JSON.stringify({
+                userId: Context.userId, locnId: Context.locnId,
+                id: Context.Header.In_scheme_gid, model_flag: Context.Header.mode_flag, notesdata: Context.Header.notesdata,
+                screenname: Context.Header.screenname
+            }),
+            url: "/Attacment/notes/",
+            dataType: "json",
+            contentType: 'application/json; charset=utf-8',
+            success: function (response) {
+                var Res = JSON.parse(response);
+                if (Res.out_result == "true") {
+                    kendoAlert("Notes Details Saved successfully");
+                    $("#notesmodel").data("kendoWindow").close();
+                }
+            },
+            error: function (er) {
+                alert(er)
+                console.log(er)
+            }
+
+        });
+    }
+    function DownloadFile() {
+        debugger;
+        var grid = $("#grid_govt_schemeslist").data("kendoGrid");
+        var selectedItem = grid.dataItem(grid.select());
+        var formval = form_Serialize("govt_Schemes");
+        var obj_val = JSON.parse(formval);
+        obj_val.In_scheme_gid = selectedItem.scheme_id;
+        var filedata = selectedItem.out_scheme_upload;
+        $("#download_exl_template").attr("href", filedata);
+        document.getElementById("download_exl_template").click();
+    }
+</script>

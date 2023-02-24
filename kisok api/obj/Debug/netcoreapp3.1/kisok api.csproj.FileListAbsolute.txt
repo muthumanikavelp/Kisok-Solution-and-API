@@ -1,0 +1,557 @@
+F:\bala\test\Kiosk web\kisok api\obj\Debug\netcoreapp3.1\kisok api.csprojAssemblyReference.cache
+F:\bala\test\Kiosk web\kisok api\obj\Debug\netcoreapp3.1\kisok api.AssemblyInfoInputs.cache
+F:\bala\test\Kiosk web\kisok api\obj\Debug\netcoreapp3.1\kisok api.AssemblyInfo.cs
+F:\bala\test\Kiosk web\kisok api\obj\Debug\netcoreapp3.1\kisok api.csproj.CoreCompileInputs.cache
+F:\bala\test\Kiosk web\kisok api\obj\Debug\netcoreapp3.1\kisok api.MvcApplicationPartsAssemblyInfo.cache
+F:\bala\test\Kiosk web\kisok api\bin\Debug\netcoreapp3.1\appsettings.Development.json
+F:\bala\test\Kiosk web\kisok api\bin\Debug\netcoreapp3.1\appsettings.json
+F:\bala\test\Kiosk web\kisok api\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+F:\bala\test\Kiosk web\kisok api\bin\Debug\netcoreapp3.1\kisok api.exe
+F:\bala\test\Kiosk web\kisok api\bin\Debug\netcoreapp3.1\kisok api.deps.json
+F:\bala\test\Kiosk web\kisok api\bin\Debug\netcoreapp3.1\kisok api.runtimeconfig.json
+F:\bala\test\Kiosk web\kisok api\bin\Debug\netcoreapp3.1\kisok api.runtimeconfig.dev.json
+F:\bala\test\Kiosk web\kisok api\bin\Debug\netcoreapp3.1\kisok api.dll
+F:\bala\test\Kiosk web\kisok api\bin\Debug\netcoreapp3.1\MySql.Data.dll
+F:\bala\test\Kiosk web\kisok api\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+F:\bala\test\Kiosk web\kisok api\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+F:\bala\test\Kiosk web\kisok api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+F:\bala\test\Kiosk web\kisok api\bin\Debug\netcoreapp3.1\nafdatamodel.dll
+F:\bala\test\Kiosk web\kisok api\bin\Debug\netcoreapp3.1\nafmodel.dll
+F:\bala\test\Kiosk web\kisok api\bin\Debug\netcoreapp3.1\nafservice.dll
+F:\bala\test\Kiosk web\kisok api\bin\Debug\netcoreapp3.1\nafmodel.pdb
+F:\bala\test\Kiosk web\kisok api\bin\Debug\netcoreapp3.1\nafservice.pdb
+F:\bala\test\Kiosk web\kisok api\bin\Debug\netcoreapp3.1\nafdatamodel.pdb
+F:\bala\test\Kiosk web\kisok api\obj\Debug\netcoreapp3.1\kisok api.RazorTargetAssemblyInfo.cache
+F:\bala\test\Kiosk web\kisok api\obj\Debug\netcoreapp3.1\kisok api.csproj.CopyComplete
+F:\bala\test\Kiosk web\kisok api\obj\Debug\netcoreapp3.1\staticwebassets\kisok api.StaticWebAssets.Manifest.cache
+F:\bala\test\Kiosk web\kisok api\obj\Debug\netcoreapp3.1\staticwebassets\kisok api.StaticWebAssets.xml
+F:\bala\test\Kiosk web\kisok api\obj\Debug\netcoreapp3.1\kisok api.genruntimeconfig.cache
+F:\bala\test\Kiosk web\kisok api\bin\Debug\netcoreapp3.1\kisok api.pdb
+F:\bala\test\Kiosk web\kisok api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+F:\bala\test\Kiosk web\kisok api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+F:\bala\test\Kiosk web\kisok api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+F:\bala\test\Kiosk web\kisok api\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+F:\bala\test\Kiosk web\kisok api\obj\Debug\netcoreapp3.1\kisok api.dll
+F:\bala\test\Kiosk web\kisok api\obj\Debug\netcoreapp3.1\kisok api.pdb
+F:\bala\single solution\Kiosk web\kisok api\bin\Debug\netcoreapp3.1\appsettings.Development.json
+F:\bala\single solution\Kiosk web\kisok api\bin\Debug\netcoreapp3.1\appsettings.json
+F:\bala\single solution\Kiosk web\kisok api\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+F:\bala\single solution\Kiosk web\kisok api\bin\Debug\netcoreapp3.1\kisok api.exe
+F:\bala\single solution\Kiosk web\kisok api\bin\Debug\netcoreapp3.1\kisok api.deps.json
+F:\bala\single solution\Kiosk web\kisok api\bin\Debug\netcoreapp3.1\kisok api.runtimeconfig.json
+F:\bala\single solution\Kiosk web\kisok api\bin\Debug\netcoreapp3.1\kisok api.runtimeconfig.dev.json
+F:\bala\single solution\Kiosk web\kisok api\bin\Debug\netcoreapp3.1\kisok api.dll
+F:\bala\single solution\Kiosk web\kisok api\bin\Debug\netcoreapp3.1\kisok api.pdb
+F:\bala\single solution\Kiosk web\kisok api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+F:\bala\single solution\Kiosk web\kisok api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+F:\bala\single solution\Kiosk web\kisok api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+F:\bala\single solution\Kiosk web\kisok api\bin\Debug\netcoreapp3.1\MySql.Data.dll
+F:\bala\single solution\Kiosk web\kisok api\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+F:\bala\single solution\Kiosk web\kisok api\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+F:\bala\single solution\Kiosk web\kisok api\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+F:\bala\single solution\Kiosk web\kisok api\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+F:\bala\single solution\Kiosk web\kisok api\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+F:\bala\single solution\Kiosk web\kisok api\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+F:\bala\single solution\Kiosk web\kisok api\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+F:\bala\single solution\Kiosk web\kisok api\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+F:\bala\single solution\Kiosk web\kisok api\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+F:\bala\single solution\Kiosk web\kisok api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+F:\bala\single solution\Kiosk web\kisok api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+F:\bala\single solution\Kiosk web\kisok api\bin\Debug\netcoreapp3.1\nafdatamodel.dll
+F:\bala\single solution\Kiosk web\kisok api\bin\Debug\netcoreapp3.1\nafmodel.dll
+F:\bala\single solution\Kiosk web\kisok api\bin\Debug\netcoreapp3.1\nafservice.dll
+F:\bala\single solution\Kiosk web\kisok api\bin\Debug\netcoreapp3.1\nafmodel.pdb
+F:\bala\single solution\Kiosk web\kisok api\bin\Debug\netcoreapp3.1\nafservice.pdb
+F:\bala\single solution\Kiosk web\kisok api\bin\Debug\netcoreapp3.1\nafdatamodel.pdb
+F:\bala\single solution\Kiosk web\kisok api\obj\Debug\netcoreapp3.1\kisok api.csprojAssemblyReference.cache
+F:\bala\single solution\Kiosk web\kisok api\obj\Debug\netcoreapp3.1\kisok api.AssemblyInfoInputs.cache
+F:\bala\single solution\Kiosk web\kisok api\obj\Debug\netcoreapp3.1\kisok api.AssemblyInfo.cs
+F:\bala\single solution\Kiosk web\kisok api\obj\Debug\netcoreapp3.1\kisok api.csproj.CoreCompileInputs.cache
+F:\bala\single solution\Kiosk web\kisok api\obj\Debug\netcoreapp3.1\kisok api.MvcApplicationPartsAssemblyInfo.cache
+F:\bala\single solution\Kiosk web\kisok api\obj\Debug\netcoreapp3.1\kisok api.RazorTargetAssemblyInfo.cache
+F:\bala\single solution\Kiosk web\kisok api\obj\Debug\netcoreapp3.1\kisok api.csproj.CopyComplete
+F:\bala\single solution\Kiosk web\kisok api\obj\Debug\netcoreapp3.1\staticwebassets\kisok api.StaticWebAssets.Manifest.cache
+F:\bala\single solution\Kiosk web\kisok api\obj\Debug\netcoreapp3.1\staticwebassets\kisok api.StaticWebAssets.xml
+F:\bala\single solution\Kiosk web\kisok api\obj\Debug\netcoreapp3.1\kisok api.dll
+F:\bala\single solution\Kiosk web\kisok api\obj\Debug\netcoreapp3.1\kisok api.pdb
+F:\bala\single solution\Kiosk web\kisok api\obj\Debug\netcoreapp3.1\kisok api.genruntimeconfig.cache
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\log4net.config
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\web.config
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\appsettings.Development.json
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\appsettings.json
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\kisok api.exe
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\kisok api.deps.json
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\kisok api.runtimeconfig.json
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\kisok api.runtimeconfig.dev.json
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\kisok api.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\kisok api.pdb
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\itextsharp.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\log4net.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Workspaces.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\dotnet-aspnet-codegenerator-design.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\MySql.Data.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\QRCoder.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\System.Composition.AttributedModel.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\System.Composition.Convention.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\System.Composition.Hosting.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\System.Composition.Runtime.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\System.Composition.TypedParts.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\nafdatamodel.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\nafmodel.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\nafservice.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\nafdatamodel.pdb
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\nafmodel.pdb
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\nafservice.pdb
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\obj\Debug\netcoreapp3.1\kisok api.csprojAssemblyReference.cache
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\obj\Debug\netcoreapp3.1\kisok api.AssemblyInfoInputs.cache
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\obj\Debug\netcoreapp3.1\kisok api.AssemblyInfo.cs
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\obj\Debug\netcoreapp3.1\kisok api.csproj.CoreCompileInputs.cache
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\obj\Debug\netcoreapp3.1\kisok api.MvcApplicationPartsAssemblyInfo.cache
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\obj\Debug\netcoreapp3.1\staticwebassets\kisok api.StaticWebAssets.Manifest.cache
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\obj\Debug\netcoreapp3.1\staticwebassets\kisok api.StaticWebAssets.xml
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\obj\Debug\netcoreapp3.1\scopedcss\bundle\kisok api.styles.css
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\obj\Debug\netcoreapp3.1\kisok api.RazorTargetAssemblyInfo.cache
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\obj\Debug\netcoreapp3.1\kisok api.csproj.CopyComplete
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\obj\Debug\netcoreapp3.1\kisok api.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\obj\Debug\netcoreapp3.1\kisok api.pdb
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\kisok api\obj\Debug\netcoreapp3.1\kisok api.genruntimeconfig.cache
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\log4net.config
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\web.config
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\appsettings.Development.json
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\appsettings.json
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\kisok api.exe
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\kisok api.deps.json
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\kisok api.runtimeconfig.json
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\kisok api.runtimeconfig.dev.json
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\kisok api.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\kisok api.pdb
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\itextsharp.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\log4net.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Workspaces.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\dotnet-aspnet-codegenerator-design.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\MySql.Data.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\QRCoder.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\System.Composition.AttributedModel.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\System.Composition.Convention.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\System.Composition.Hosting.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\System.Composition.Runtime.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\System.Composition.TypedParts.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\nafdatamodel.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\nafmodel.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\nafservice.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\nafdatamodel.pdb
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\nafmodel.pdb
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\nafservice.pdb
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\obj\Debug\netcoreapp3.1\kisok api.csprojAssemblyReference.cache
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\obj\Debug\netcoreapp3.1\kisok api.AssemblyInfoInputs.cache
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\obj\Debug\netcoreapp3.1\kisok api.AssemblyInfo.cs
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\obj\Debug\netcoreapp3.1\kisok api.csproj.CoreCompileInputs.cache
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\obj\Debug\netcoreapp3.1\kisok api.MvcApplicationPartsAssemblyInfo.cache
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\obj\Debug\netcoreapp3.1\staticwebassets\kisok api.StaticWebAssets.Manifest.cache
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\obj\Debug\netcoreapp3.1\staticwebassets\kisok api.StaticWebAssets.xml
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\obj\Debug\netcoreapp3.1\scopedcss\bundle\kisok api.styles.css
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\obj\Debug\netcoreapp3.1\kisok api.RazorTargetAssemblyInfo.cache
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\obj\Debug\netcoreapp3.1\kisok api.csproj.CopyComplete
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\obj\Debug\netcoreapp3.1\kisok api.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\obj\Debug\netcoreapp3.1\kisok api.pdb
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\kisok api\obj\Debug\netcoreapp3.1\kisok api.genruntimeconfig.cache
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\log4net.config
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\web.config
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\appsettings.Development.json
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\appsettings.json
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\kisok api.exe
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\kisok api.deps.json
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\kisok api.runtimeconfig.json
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\kisok api.runtimeconfig.dev.json
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\kisok api.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\kisok api.pdb
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\itextsharp.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\log4net.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Workspaces.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\dotnet-aspnet-codegenerator-design.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\MySql.Data.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\QRCoder.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\System.Composition.AttributedModel.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\System.Composition.Convention.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\System.Composition.Hosting.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\System.Composition.Runtime.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\System.Composition.TypedParts.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\nafdatamodel.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\nafmodel.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\nafservice.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\nafdatamodel.pdb
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\nafmodel.pdb
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\bin\Debug\netcoreapp3.1\nafservice.pdb
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\obj\Debug\netcoreapp3.1\kisok api.csprojAssemblyReference.cache
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\obj\Debug\netcoreapp3.1\kisok api.AssemblyInfoInputs.cache
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\obj\Debug\netcoreapp3.1\kisok api.AssemblyInfo.cs
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\obj\Debug\netcoreapp3.1\kisok api.csproj.CoreCompileInputs.cache
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\obj\Debug\netcoreapp3.1\kisok api.MvcApplicationPartsAssemblyInfo.cache
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\obj\Debug\netcoreapp3.1\staticwebassets\kisok api.StaticWebAssets.Manifest.cache
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\obj\Debug\netcoreapp3.1\staticwebassets\kisok api.StaticWebAssets.xml
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\obj\Debug\netcoreapp3.1\scopedcss\bundle\kisok api.styles.css
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\obj\Debug\netcoreapp3.1\kisok api.RazorTargetAssemblyInfo.cache
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\obj\Debug\netcoreapp3.1\kisok api.csproj.CopyComplete
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\obj\Debug\netcoreapp3.1\kisok api.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\obj\Debug\netcoreapp3.1\kisok api.pdb
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\kisok api\obj\Debug\netcoreapp3.1\kisok api.genruntimeconfig.cache
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\log4net.config
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\web.config
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\appsettings.Development.json
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\appsettings.json
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\kisok api.StaticWebAssets.xml
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\kisok api.exe
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\kisok api.deps.json
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\kisok api.runtimeconfig.json
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\kisok api.runtimeconfig.dev.json
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\kisok api.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\kisok api.pdb
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\itextsharp.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\log4net.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Workspaces.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\dotnet-aspnet-codegenerator-design.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\MySql.Data.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\QRCoder.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\System.Composition.AttributedModel.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\System.Composition.Convention.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\System.Composition.Hosting.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\System.Composition.Runtime.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\System.Composition.TypedParts.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\nafdatamodel.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\nafmodel.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\nafservice.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\nafdatamodel.pdb
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\nafmodel.pdb
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\bin\Debug\netcoreapp3.1\nafservice.pdb
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\obj\Debug\netcoreapp3.1\kisok api.csproj.AssemblyReference.cache
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\obj\Debug\netcoreapp3.1\kisok api.GeneratedMSBuildEditorConfig.editorconfig
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\obj\Debug\netcoreapp3.1\kisok api.AssemblyInfoInputs.cache
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\obj\Debug\netcoreapp3.1\kisok api.AssemblyInfo.cs
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\obj\Debug\netcoreapp3.1\kisok api.csproj.CoreCompileInputs.cache
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\obj\Debug\netcoreapp3.1\kisok api.MvcApplicationPartsAssemblyInfo.cache
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\obj\Debug\netcoreapp3.1\staticwebassets\kisok api.StaticWebAssets.Manifest.cache
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\obj\Debug\netcoreapp3.1\kisok api.RazorTargetAssemblyInfo.cache
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\obj\Debug\netcoreapp3.1\kisok api.csproj.CopyComplete
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\obj\Debug\netcoreapp3.1\kisok api.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\obj\Debug\netcoreapp3.1\kisok api.pdb
+D:\Ramya\Projects\Naf_Kiosk_Solution\kisok api\obj\Debug\netcoreapp3.1\kisok api.genruntimeconfig.cache

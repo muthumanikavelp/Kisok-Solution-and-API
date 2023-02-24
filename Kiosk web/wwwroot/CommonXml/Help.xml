@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+
+  <search id="S01" description="farmer Details Search"  multiple_select="NO" colname ='bank_code'>
+    <inputs table="core_mst_tfarmer">
+      <input seqno="1" column="farmer_code"	            coldesc="Farmer Code"	            datatype="A"    entflg="Y" defval="" 	defcondt="like"/>
+      <input seqno="2" column="farmer_name"	            coldesc="Farmer Name"	            datatype="A"    entflg="Y" defval="" 	defcondt="like"/>
+      <input seqno="3" column="fhw_name"	              coldesc="Father Name"	            datatype="A"    entflg="Y" defval="" 	defcondt="like"/>
+      <input seqno="4" column="reg_mobile_no"	          coldesc="MobileNo"	              datatype="A"    entflg="Y" defval="" 	defcondt="like"/>
+      <input seqno="5" column="farmer_village"	        coldesc="Village"	                datatype="A"    entflg="Y" defval="" 	defcondt="like"/>
+		  <input seqno="6" column="farmer_panchayat"	      coldesc="Panchayat"	              datatype="A"    entflg="Y" defval="" 	defcondt="like"/>
+		  <input seqno="7" column="farmer_taluk"	          coldesc="Taluk"	                  datatype="A"    entflg="Y" defval="" 	defcondt="like"/>
+		  <input seqno="8" column="farmer_dist"	            coldesc="District"	              datatype="A"    entflg="Y" defval="" 	defcondt="like"/>
+		      
+    </inputs>
+	  
+	  
+    <outputs orderby="1,2,3">
+      <output seqno="1" column="farmer_rowid"  	             coldesc="Farmer id"	             textalign="left" />
+      <output seqno="2" column="farmer_code"	               coldesc="Farmer code"	           textalign="left" />
+      <output seqno="3" column="farmer_name"  	             coldesc="Farmer Name"	           textalign="left" />
+      <output seqno="4" column="fhw_name"  	                 coldesc="Father Name"	           textalign="left" />
+      <output seqno="5" column="farmer_addr1"  	             coldesc="Farmer Address"	         textalign="left" />
+      <output seqno="6" column="reg_mobile_no"  	           coldesc="MobileNo"	               textalign="left" />
+      <output seqno="7" column="farmer_village"  	           coldesc="Village"	               textalign="left" />
+      <output seqno="8" column="farmer_panchayat"  	         coldesc="Panchayat"	             textalign="left" />
+      <output seqno="9" column="farmer_taluk"  	             coldesc="Taluk"	                 textalign="left" />
+	    <output seqno="10" column="farmer_dist"  	             coldesc="District"	               textalign="left" />
+	   
+		
+	</outputs>
+  </search>
+  
+  <!--End of Added-->
+
+  <condition>
+    <condt>equal to</condt>
+    <condt>like</condt>
+    <condt>greater than</condt>
+    <condt>not equal to</condt>
+    <condt>not like</condt>
+  </condition>
+
+</root>
+

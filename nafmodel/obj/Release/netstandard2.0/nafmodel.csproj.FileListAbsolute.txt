@@ -1,0 +1,214 @@
+F:\bala\single solution\Kiosk web\nafmodel\bin\Release\netstandard2.0\nafmodel.deps.json
+F:\bala\single solution\Kiosk web\nafmodel\bin\Release\netstandard2.0\nafmodel.dll
+F:\bala\single solution\Kiosk web\nafmodel\bin\Release\netstandard2.0\nafmodel.pdb
+F:\bala\single solution\Kiosk web\nafmodel\obj\Release\netstandard2.0\nafmodel.csprojAssemblyReference.cache
+F:\bala\single solution\Kiosk web\nafmodel\obj\Release\netstandard2.0\nafmodel.AssemblyInfoInputs.cache
+F:\bala\single solution\Kiosk web\nafmodel\obj\Release\netstandard2.0\nafmodel.AssemblyInfo.cs
+F:\bala\single solution\Kiosk web\nafmodel\obj\Release\netstandard2.0\nafmodel.csproj.CoreCompileInputs.cache
+F:\bala\single solution\Kiosk web\nafmodel\obj\Release\netstandard2.0\nafmodel.dll
+F:\bala\single solution\Kiosk web\nafmodel\obj\Release\netstandard2.0\nafmodel.pdb
+D:\Prema_backup\VSS_BALA\Kiosk web\Kiosk web\nafmodel\bin\Release\netstandard2.0\nafmodel.deps.json
+D:\Prema_backup\VSS_BALA\Kiosk web\Kiosk web\nafmodel\bin\Release\netstandard2.0\nafmodel.dll
+D:\Prema_backup\VSS_BALA\Kiosk web\Kiosk web\nafmodel\bin\Release\netstandard2.0\nafmodel.pdb
+D:\Prema_backup\VSS_BALA\Kiosk web\Kiosk web\nafmodel\obj\Release\netstandard2.0\nafmodel.AssemblyInfoInputs.cache
+D:\Prema_backup\VSS_BALA\Kiosk web\Kiosk web\nafmodel\obj\Release\netstandard2.0\nafmodel.AssemblyInfo.cs
+D:\Prema_backup\VSS_BALA\Kiosk web\Kiosk web\nafmodel\obj\Release\netstandard2.0\nafmodel.csproj.CoreCompileInputs.cache
+D:\Prema_backup\VSS_BALA\Kiosk web\Kiosk web\nafmodel\obj\Release\netstandard2.0\nafmodel.dll
+D:\Prema_backup\VSS_BALA\Kiosk web\Kiosk web\nafmodel\obj\Release\netstandard2.0\nafmodel.pdb
+D:\Prema_backup\KIOSK Project\VSS_BALA\Kiosk web\Kiosk web\nafmodel\bin\Release\netstandard2.0\nafmodel.deps.json
+D:\Prema_backup\KIOSK Project\VSS_BALA\Kiosk web\Kiosk web\nafmodel\bin\Release\netstandard2.0\nafmodel.dll
+D:\Prema_backup\KIOSK Project\VSS_BALA\Kiosk web\Kiosk web\nafmodel\bin\Release\netstandard2.0\nafmodel.pdb
+D:\Prema_backup\KIOSK Project\VSS_BALA\Kiosk web\Kiosk web\nafmodel\obj\Release\netstandard2.0\nafmodel.csprojAssemblyReference.cache
+D:\Prema_backup\KIOSK Project\VSS_BALA\Kiosk web\Kiosk web\nafmodel\obj\Release\netstandard2.0\nafmodel.AssemblyInfoInputs.cache
+D:\Prema_backup\KIOSK Project\VSS_BALA\Kiosk web\Kiosk web\nafmodel\obj\Release\netstandard2.0\nafmodel.AssemblyInfo.cs
+D:\Prema_backup\KIOSK Project\VSS_BALA\Kiosk web\Kiosk web\nafmodel\obj\Release\netstandard2.0\nafmodel.csproj.CoreCompileInputs.cache
+D:\Prema_backup\KIOSK Project\VSS_BALA\Kiosk web\Kiosk web\nafmodel\obj\Release\netstandard2.0\nafmodel.dll
+D:\Prema_backup\KIOSK Project\VSS_BALA\Kiosk web\Kiosk web\nafmodel\obj\Release\netstandard2.0\nafmodel.pdb
+D:\Prema_backup\GITBash\nafkiosk\nafmodel\bin\Release\netstandard2.0\nafmodel.deps.json
+D:\Prema_backup\GITBash\nafkiosk\nafmodel\bin\Release\netstandard2.0\nafmodel.dll
+D:\Prema_backup\GITBash\nafkiosk\nafmodel\bin\Release\netstandard2.0\nafmodel.pdb
+D:\Prema_backup\GITBash\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.csprojAssemblyReference.cache
+D:\Prema_backup\GITBash\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.AssemblyInfoInputs.cache
+D:\Prema_backup\GITBash\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.AssemblyInfo.cs
+D:\Prema_backup\GITBash\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.csproj.CoreCompileInputs.cache
+D:\Prema_backup\GITBash\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.dll
+D:\Prema_backup\GITBash\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.pdb
+E:\Prema\Prema New\nafkiosk\nafmodel\bin\Release\netstandard2.0\nafmodel.deps.json
+E:\Prema\Prema New\nafkiosk\nafmodel\bin\Release\netstandard2.0\nafmodel.dll
+E:\Prema\Prema New\nafkiosk\nafmodel\bin\Release\netstandard2.0\nafmodel.pdb
+E:\Prema\Prema New\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.csprojAssemblyReference.cache
+E:\Prema\Prema New\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.AssemblyInfoInputs.cache
+E:\Prema\Prema New\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.AssemblyInfo.cs
+E:\Prema\Prema New\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.csproj.CoreCompileInputs.cache
+E:\Prema\Prema New\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.dll
+E:\Prema\Prema New\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.pdb
+G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\nafmodel\bin\Release\netstandard2.0\nafmodel.deps.json
+G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\nafmodel\bin\Release\netstandard2.0\nafmodel.dll
+G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\nafmodel\bin\Release\netstandard2.0\nafmodel.pdb
+G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.csprojAssemblyReference.cache
+G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.AssemblyInfoInputs.cache
+G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.AssemblyInfo.cs
+G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.csproj.CoreCompileInputs.cache
+G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.dll
+G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.pdb
+D:\Vadivu\nafkiosk\nafkiosk\nafmodel\bin\Release\netstandard2.0\nafmodel.deps.json
+D:\Vadivu\nafkiosk\nafkiosk\nafmodel\bin\Release\netstandard2.0\nafmodel.dll
+D:\Vadivu\nafkiosk\nafkiosk\nafmodel\bin\Release\netstandard2.0\nafmodel.pdb
+D:\Vadivu\nafkiosk\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.csprojAssemblyReference.cache
+D:\Vadivu\nafkiosk\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.AssemblyInfoInputs.cache
+D:\Vadivu\nafkiosk\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.AssemblyInfo.cs
+D:\Vadivu\nafkiosk\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.csproj.CoreCompileInputs.cache
+D:\Vadivu\nafkiosk\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.dll
+D:\Vadivu\nafkiosk\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.pdb
+D:\Vadivu-naf\nafkiosk\nafkiosk\nafmodel\bin\Release\netstandard2.0\nafmodel.deps.json
+D:\Vadivu-naf\nafkiosk\nafkiosk\nafmodel\bin\Release\netstandard2.0\nafmodel.dll
+D:\Vadivu-naf\nafkiosk\nafkiosk\nafmodel\bin\Release\netstandard2.0\nafmodel.pdb
+D:\Vadivu-naf\nafkiosk\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.csprojAssemblyReference.cache
+D:\Vadivu-naf\nafkiosk\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.AssemblyInfoInputs.cache
+D:\Vadivu-naf\nafkiosk\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.AssemblyInfo.cs
+D:\Vadivu-naf\nafkiosk\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.csproj.CoreCompileInputs.cache
+D:\Vadivu-naf\nafkiosk\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.dll
+D:\Vadivu-naf\nafkiosk\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.pdb
+D:\Bala sir Solution\nafkiosk\nafmodel\bin\Release\netstandard2.0\nafmodel.deps.json
+D:\Bala sir Solution\nafkiosk\nafmodel\bin\Release\netstandard2.0\nafmodel.dll
+D:\Bala sir Solution\nafkiosk\nafmodel\bin\Release\netstandard2.0\nafmodel.pdb
+D:\Bala sir Solution\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.csprojAssemblyReference.cache
+D:\Bala sir Solution\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.AssemblyInfoInputs.cache
+D:\Bala sir Solution\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.AssemblyInfo.cs
+D:\Bala sir Solution\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.csproj.CoreCompileInputs.cache
+D:\Bala sir Solution\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.dll
+D:\Bala sir Solution\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.pdb
+E:\Vadivu\Latest Source\nafkiosk\nafmodel\bin\Release\netstandard2.0\nafmodel.deps.json
+E:\Vadivu\Latest Source\nafkiosk\nafmodel\bin\Release\netstandard2.0\nafmodel.dll
+E:\Vadivu\Latest Source\nafkiosk\nafmodel\bin\Release\netstandard2.0\nafmodel.pdb
+E:\Vadivu\Latest Source\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.csprojAssemblyReference.cache
+E:\Vadivu\Latest Source\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.csproj.CoreCompileInputs.cache
+E:\Vadivu\Latest Source\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.AssemblyInfoInputs.cache
+E:\Vadivu\Latest Source\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.AssemblyInfo.cs
+E:\Vadivu\Latest Source\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.dll
+E:\Vadivu\Latest Source\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.pdb
+D:\08-04-2021 -Kiosk\nafkiosk\nafmodel\bin\Release\netstandard2.0\nafmodel.deps.json
+D:\08-04-2021 -Kiosk\nafkiosk\nafmodel\bin\Release\netstandard2.0\nafmodel.dll
+D:\08-04-2021 -Kiosk\nafkiosk\nafmodel\bin\Release\netstandard2.0\nafmodel.pdb
+D:\08-04-2021 -Kiosk\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.csprojAssemblyReference.cache
+D:\08-04-2021 -Kiosk\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.AssemblyInfoInputs.cache
+D:\08-04-2021 -Kiosk\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.AssemblyInfo.cs
+D:\08-04-2021 -Kiosk\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.csproj.CoreCompileInputs.cache
+D:\08-04-2021 -Kiosk\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.dll
+D:\08-04-2021 -Kiosk\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.pdb
+E:\Vadivu\09-04-2021 -Kiosk latest solution\nafkiosk\nafmodel\bin\Release\netstandard2.0\nafmodel.deps.json
+E:\Vadivu\09-04-2021 -Kiosk latest solution\nafkiosk\nafmodel\bin\Release\netstandard2.0\nafmodel.dll
+E:\Vadivu\09-04-2021 -Kiosk latest solution\nafkiosk\nafmodel\bin\Release\netstandard2.0\nafmodel.pdb
+E:\Vadivu\09-04-2021 -Kiosk latest solution\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.csprojAssemblyReference.cache
+E:\Vadivu\09-04-2021 -Kiosk latest solution\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.csproj.CoreCompileInputs.cache
+E:\Vadivu\09-04-2021 -Kiosk latest solution\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.AssemblyInfoInputs.cache
+E:\Vadivu\09-04-2021 -Kiosk latest solution\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.AssemblyInfo.cs
+E:\Vadivu\09-04-2021 -Kiosk latest solution\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.dll
+E:\Vadivu\09-04-2021 -Kiosk latest solution\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.pdb
+E:\Vadivu\kiosk -15-04-2021\nafkiosk\nafmodel\bin\Release\netstandard2.0\nafmodel.deps.json
+E:\Vadivu\kiosk -15-04-2021\nafkiosk\nafmodel\bin\Release\netstandard2.0\nafmodel.dll
+E:\Vadivu\kiosk -15-04-2021\nafkiosk\nafmodel\bin\Release\netstandard2.0\nafmodel.pdb
+E:\Vadivu\kiosk -15-04-2021\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.csproj.CoreCompileInputs.cache
+E:\Vadivu\kiosk -15-04-2021\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.AssemblyInfoInputs.cache
+E:\Vadivu\kiosk -15-04-2021\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.AssemblyInfo.cs
+E:\Vadivu\kiosk -15-04-2021\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.dll
+E:\Vadivu\kiosk -15-04-2021\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.pdb
+D:\Vadivu\nafkiosk\nafmodel\bin\Release\netstandard2.0\nafmodel.deps.json
+D:\Vadivu\nafkiosk\nafmodel\bin\Release\netstandard2.0\nafmodel.dll
+D:\Vadivu\nafkiosk\nafmodel\bin\Release\netstandard2.0\nafmodel.pdb
+D:\Vadivu\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.csprojAssemblyReference.cache
+D:\Vadivu\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.AssemblyInfoInputs.cache
+D:\Vadivu\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.AssemblyInfo.cs
+D:\Vadivu\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.csproj.CoreCompileInputs.cache
+D:\Vadivu\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.dll
+D:\Vadivu\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.pdb
+E:\Vadivu\20-04-2021- modified solution\nafkiosk\nafmodel\bin\Release\netstandard2.0\nafmodel.deps.json
+E:\Vadivu\20-04-2021- modified solution\nafkiosk\nafmodel\bin\Release\netstandard2.0\nafmodel.dll
+E:\Vadivu\20-04-2021- modified solution\nafkiosk\nafmodel\bin\Release\netstandard2.0\nafmodel.pdb
+E:\Vadivu\20-04-2021- modified solution\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.csprojAssemblyReference.cache
+E:\Vadivu\20-04-2021- modified solution\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.csproj.CoreCompileInputs.cache
+E:\Vadivu\20-04-2021- modified solution\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.AssemblyInfoInputs.cache
+E:\Vadivu\20-04-2021- modified solution\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.AssemblyInfo.cs
+E:\Vadivu\20-04-2021- modified solution\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.dll
+E:\Vadivu\20-04-2021- modified solution\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.pdb
+E:\Vadivu\Git\nafkiosk\nafmodel\bin\Release\netstandard2.0\nafmodel.deps.json
+E:\Vadivu\Git\nafkiosk\nafmodel\bin\Release\netstandard2.0\nafmodel.dll
+E:\Vadivu\Git\nafkiosk\nafmodel\bin\Release\netstandard2.0\nafmodel.pdb
+E:\Vadivu\Git\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.csprojAssemblyReference.cache
+E:\Vadivu\Git\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.csproj.CoreCompileInputs.cache
+E:\Vadivu\Git\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.AssemblyInfoInputs.cache
+E:\Vadivu\Git\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.AssemblyInfo.cs
+E:\Vadivu\Git\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.dll
+E:\Vadivu\Git\nafkiosk\nafmodel\obj\Release\netstandard2.0\nafmodel.pdb
+E:\Vadivu\Git\nafkiosk-vadivu\nafmodel\bin\Release\netstandard2.0\nafmodel.deps.json
+E:\Vadivu\Git\nafkiosk-vadivu\nafmodel\bin\Release\netstandard2.0\nafmodel.dll
+E:\Vadivu\Git\nafkiosk-vadivu\nafmodel\bin\Release\netstandard2.0\nafmodel.pdb
+E:\Vadivu\Git\nafkiosk-vadivu\nafmodel\obj\Release\netstandard2.0\nafmodel.csprojAssemblyReference.cache
+E:\Vadivu\Git\nafkiosk-vadivu\nafmodel\obj\Release\netstandard2.0\nafmodel.csproj.CoreCompileInputs.cache
+E:\Vadivu\Git\nafkiosk-vadivu\nafmodel\obj\Release\netstandard2.0\nafmodel.AssemblyInfoInputs.cache
+E:\Vadivu\Git\nafkiosk-vadivu\nafmodel\obj\Release\netstandard2.0\nafmodel.AssemblyInfo.cs
+E:\Vadivu\Git\nafkiosk-vadivu\nafmodel\obj\Release\netstandard2.0\nafmodel.dll
+E:\Vadivu\Git\nafkiosk-vadivu\nafmodel\obj\Release\netstandard2.0\nafmodel.pdb
+D:\Kiosk\nafkiosk-vadivu\nafmodel\bin\Release\netstandard2.0\nafmodel.deps.json
+D:\Kiosk\nafkiosk-vadivu\nafmodel\bin\Release\netstandard2.0\nafmodel.dll
+D:\Kiosk\nafkiosk-vadivu\nafmodel\bin\Release\netstandard2.0\nafmodel.pdb
+D:\Kiosk\nafkiosk-vadivu\nafmodel\obj\Release\netstandard2.0\nafmodel.AssemblyInfoInputs.cache
+D:\Kiosk\nafkiosk-vadivu\nafmodel\obj\Release\netstandard2.0\nafmodel.AssemblyInfo.cs
+D:\Kiosk\nafkiosk-vadivu\nafmodel\obj\Release\netstandard2.0\nafmodel.csproj.CoreCompileInputs.cache
+D:\Kiosk\nafkiosk-vadivu\nafmodel\obj\Release\netstandard2.0\nafmodel.dll
+D:\Kiosk\nafkiosk-vadivu\nafmodel\obj\Release\netstandard2.0\nafmodel.pdb
+E:\Prema\KIOSK\nafkiosk-vadivu\nafmodel\bin\Release\netstandard2.0\nafmodel.deps.json
+E:\Prema\KIOSK\nafkiosk-vadivu\nafmodel\bin\Release\netstandard2.0\nafmodel.dll
+E:\Prema\KIOSK\nafkiosk-vadivu\nafmodel\bin\Release\netstandard2.0\nafmodel.pdb
+E:\Prema\KIOSK\nafkiosk-vadivu\nafmodel\obj\Release\netstandard2.0\nafmodel.csprojAssemblyReference.cache
+E:\Prema\KIOSK\nafkiosk-vadivu\nafmodel\obj\Release\netstandard2.0\nafmodel.AssemblyInfoInputs.cache
+E:\Prema\KIOSK\nafkiosk-vadivu\nafmodel\obj\Release\netstandard2.0\nafmodel.AssemblyInfo.cs
+E:\Prema\KIOSK\nafkiosk-vadivu\nafmodel\obj\Release\netstandard2.0\nafmodel.csproj.CoreCompileInputs.cache
+E:\Prema\KIOSK\nafkiosk-vadivu\nafmodel\obj\Release\netstandard2.0\nafmodel.dll
+E:\Prema\KIOSK\nafkiosk-vadivu\nafmodel\obj\Release\netstandard2.0\nafmodel.pdb
+E:\Selvakumar\Projects\nafkiosk-vadivu\nafmodel\bin\Release\netstandard2.0\nafmodel.deps.json
+E:\Selvakumar\Projects\nafkiosk-vadivu\nafmodel\bin\Release\netstandard2.0\nafmodel.dll
+E:\Selvakumar\Projects\nafkiosk-vadivu\nafmodel\bin\Release\netstandard2.0\nafmodel.pdb
+E:\Selvakumar\Projects\nafkiosk-vadivu\nafmodel\obj\Release\netstandard2.0\nafmodel.AssemblyInfoInputs.cache
+E:\Selvakumar\Projects\nafkiosk-vadivu\nafmodel\obj\Release\netstandard2.0\nafmodel.AssemblyInfo.cs
+E:\Selvakumar\Projects\nafkiosk-vadivu\nafmodel\obj\Release\netstandard2.0\nafmodel.csproj.CoreCompileInputs.cache
+E:\Selvakumar\Projects\nafkiosk-vadivu\nafmodel\obj\Release\netstandard2.0\nafmodel.dll
+E:\Selvakumar\Projects\nafkiosk-vadivu\nafmodel\obj\Release\netstandard2.0\nafmodel.pdb
+E:\Selvakumar\Projects\nafkiosk-vadivu\nafmodel\obj\Release\netstandard2.0\nafmodel.csprojAssemblyReference.cache
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\nafmodel\bin\Release\netstandard2.0\nafmodel.deps.json
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\nafmodel\bin\Release\netstandard2.0\nafmodel.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\nafmodel\bin\Release\netstandard2.0\nafmodel.pdb
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\nafmodel\obj\Release\netstandard2.0\nafmodel.csprojAssemblyReference.cache
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\nafmodel\obj\Release\netstandard2.0\nafmodel.AssemblyInfoInputs.cache
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\nafmodel\obj\Release\netstandard2.0\nafmodel.AssemblyInfo.cs
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\nafmodel\obj\Release\netstandard2.0\nafmodel.csproj.CoreCompileInputs.cache
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\nafmodel\obj\Release\netstandard2.0\nafmodel.dll
+E:\Prema\KIOSK\Latest\nafkiosk-vadivu\nafmodel\obj\Release\netstandard2.0\nafmodel.pdb
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\nafmodel\bin\Release\netstandard2.0\nafmodel.deps.json
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\nafmodel\bin\Release\netstandard2.0\nafmodel.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\nafmodel\bin\Release\netstandard2.0\nafmodel.pdb
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\nafmodel\obj\Release\netstandard2.0\nafmodel.csprojAssemblyReference.cache
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\nafmodel\obj\Release\netstandard2.0\nafmodel.AssemblyInfoInputs.cache
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\nafmodel\obj\Release\netstandard2.0\nafmodel.AssemblyInfo.cs
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\nafmodel\obj\Release\netstandard2.0\nafmodel.csproj.CoreCompileInputs.cache
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\nafmodel\obj\Release\netstandard2.0\nafmodel.dll
+E:\Prema\KIOSK\Latest\backup latest\nafkiosk-vadivu\nafmodel\obj\Release\netstandard2.0\nafmodel.pdb
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\nafmodel\bin\Release\netstandard2.0\nafmodel.deps.json
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\nafmodel\bin\Release\netstandard2.0\nafmodel.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\nafmodel\bin\Release\netstandard2.0\nafmodel.pdb
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\nafmodel\obj\Release\netstandard2.0\nafmodel.csprojAssemblyReference.cache
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\nafmodel\obj\Release\netstandard2.0\nafmodel.AssemblyInfoInputs.cache
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\nafmodel\obj\Release\netstandard2.0\nafmodel.AssemblyInfo.cs
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\nafmodel\obj\Release\netstandard2.0\nafmodel.csproj.CoreCompileInputs.cache
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\nafmodel\obj\Release\netstandard2.0\nafmodel.dll
+E:\B.Sanchu\nafkiosk-vadivu\nafkiosk-vadivu\nafmodel\obj\Release\netstandard2.0\nafmodel.pdb
+D:\Ramya\Projects\Naf_Kiosk_Solution\nafmodel\bin\Release\netstandard2.0\nafmodel.deps.json
+D:\Ramya\Projects\Naf_Kiosk_Solution\nafmodel\bin\Release\netstandard2.0\nafmodel.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\nafmodel\bin\Release\netstandard2.0\nafmodel.pdb
+D:\Ramya\Projects\Naf_Kiosk_Solution\nafmodel\obj\Release\netstandard2.0\nafmodel.csproj.AssemblyReference.cache
+D:\Ramya\Projects\Naf_Kiosk_Solution\nafmodel\obj\Release\netstandard2.0\nafmodel.GeneratedMSBuildEditorConfig.editorconfig
+D:\Ramya\Projects\Naf_Kiosk_Solution\nafmodel\obj\Release\netstandard2.0\nafmodel.AssemblyInfoInputs.cache
+D:\Ramya\Projects\Naf_Kiosk_Solution\nafmodel\obj\Release\netstandard2.0\nafmodel.AssemblyInfo.cs
+D:\Ramya\Projects\Naf_Kiosk_Solution\nafmodel\obj\Release\netstandard2.0\nafmodel.csproj.CoreCompileInputs.cache
+D:\Ramya\Projects\Naf_Kiosk_Solution\nafmodel\obj\Release\netstandard2.0\nafmodel.dll
+D:\Ramya\Projects\Naf_Kiosk_Solution\nafmodel\obj\Release\netstandard2.0\nafmodel.pdb

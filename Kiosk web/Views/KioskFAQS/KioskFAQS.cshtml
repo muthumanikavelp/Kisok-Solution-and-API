@@ -1,0 +1,1108 @@
+﻿
+@{
+    Layout = "~/Views/Shared/FormViewLayout1.cshtml";
+}
+
+<link href="~/css/common.css" rel="stylesheet" />
+<style>
+    /*Grid row line to be add*/
+    .k-window-titlebar {
+        background-color: snow;
+    }
+
+    /*dropdown,date design overload*/
+    .k-dropdown-wrap.k-state-default, .k-dropdown-wrap.k-state-focussed {
+        background-color: #ffffff !important;
+    }
+
+    .k-picker-wrap.k-state-default, .k-picker-wrap.k-state-focussed {
+        background-color: #ffffff !important;
+    }
+
+    #grid {
+        width: 300px;
+    }
+
+    .k-tooltip.k-popup {
+        visibility: hidden;
+    }
+
+    .k-grid tr td {
+        border-bottom: 1px solid #c5c5c5;
+    }
+</style>
+<div class="box-header text-center with-border">
+    <h3 class="box-title" style="text-align: center; color: red; font-weight: 600;">FAQs</h3>
+</div>
+<form id="FAQs_form" class="form-horizontal" data-role="validator" novalidate="novalidate">
+
+    <div class="row">
+
+        <div class="col-sm-12">
+            <div id="grid_Faqs">
+            </div>
+        </div>
+    </div>
+</form>
+<div id="dialog" style="background-color:white;" @*style="background: #e0dbdb !important;"*@>
+    <form id="Faqs_form1" class="form-horizontal" data-role="validator" novalidate="novalidate">
+        <div class="row">
+            <div class="row" style="margin-left: 15px;">
+                <div class="col-sm-3">
+                </div>
+                <div class="col-sm-4">
+                    <h5 style="text-align:center;color:red;font-size:19px;">Create FAQ</h5>
+                </div>
+                <div class="col-sm-3" id="Faqsmenu" style="margin-left: 84%;margin-top: -3%;">
+
+                    <img title="Save" style="cursor:pointer;" src="~/images/save-finals.jpg" onclick="save_FAQs()" />&nbsp;
+                    <img title="Notes" style="cursor:pointer;" src="~/images/notes-finals.jpg" id="notes" onclick="notesdata()" />
+                    <a id="download_exl_template" download href=""></a>
+
+
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="row" style="margin-left: 45px;">
+            <div class="col-sm-5" style="margin-right: 15px;">
+                <label class="title">Category</label><br />
+                <input id="cmb_samplests" name="In_category_code" data-role="filtercombo" style="width: 106%;height:20px" class="form-control">
+
+                <input type="hidden" id="txtfaqs_gid" name="In_faq_gid" />
+                <input type="hidden" id="txtMode" name="In_mode_flag" />
+            </div>
+            <div class="col-sm-5" style="width:44%">
+                <label class="title">Date</label>
+                <input class=".cusDate form-control" data-role='datepicker' id="txtValidity1" style="width:103% !important;height:20px" data-checkdate-msg="Enter Valid Date" name="In_date" onkeypress="return date_validate(event)" />
+                <span data-for='valid' class='k-invalid-msg'></span>
+            </div>
+        </div>
+        <div class="row" style="margin-top:20px;margin-left: 45px;">
+            <div class="col-sm-5" style="margin-right: 15px;">
+                <label for="remark" class="title">Questions</label>
+                <textarea class="form-control" rows="3" id="txt_question" name=""></textarea>
+            </div>
+            <div class="col-sm-5">
+                <label for="remark" class="title">Transliteration</label>
+                <textarea class="form-control" rows="3" id="questionT" name=""></textarea>
+            </div>
+        </div>
+
+        <div class="row" style="margin-top:20px;margin-left: 45px;">
+            <div class="col-sm-5" style="margin-right: 15px;">
+                <label for="remark" class="title">Answer</label>
+                <textarea class="form-control" rows="3" id="txt_answer" name="" ,style="width:101%;"></textarea>
+
+
+
+            </div>
+            <div class="col-sm-5">
+                <label for="remark" class="title"> </label>
+                <textarea class="form-control" rows="3" id="AnswerT" name="" style="margin-top:6px;"></textarea>
+            </div>
+        </div>
+        <div class="row" style="margin-top:20px;margin-left: 45px;">
+            <div class="col-sm-5">
+                <label for="remark" class="title">Key Word</label>
+                <textarea class="form-control" rows="3" id="txt_key" name=""></textarea>
+            </div>
+            <div class="col-sm-5">
+                <label for="remark" class="title"> </label>
+                <textarea class="form-control" rows="3" id="keyT" name="" style="margin-top: 6px;margin-left: 20px;"></textarea>
+            </div>
+        </div>
+
+
+        @*<div class="row" style="margin-top:8px;margin-left: 45px;">
+        <div class="col-sm-4" style="margin-top:12px;">
+            <label class="title" style="margin-top: 2%;">Upload</label>
+        <input type="text" class="form-control" rows="1" id="urltypefaq" name="In_Faq_url" style="width:125%;height: 10px;">
+</div>
+<div class="col-sm-4">
+    <label for="txtcode" style="font-weight:normal;margin-left: 32%;margin-top: 6%;">Browse File</label>
+    <input type="file" name="in_parent_code" id="attachfile" style="height: 29px;margin-left:32%;">
+</div>
+<div class="col-sm-2" style="margin-top: 3%; ">
+    <label class="title" id="txtfilename" style="margin-left: -34%;"></label>
+    <i class="fa fa-download" title="Download" aria-hidden="true" style="color:darkslateblue;font-size: 25px;cursor: pointer" id="dowload" onclick="Faqdownload()"></i>&nbsp;&nbsp;&nbsp;
+    <i class="fa fa-times" title="Delete" style="color:black;font-size: 15px;cursor:pointer;" onclick="deletefile()" data-dismiss="modal" aria-hidden="true" id="file"></i>
+</div>
+
+    </div>*@
+
+<div class="row" style="margin-top:8px;margin-left: 45px;">
+    <div class="col-sm-4" style="margin-top:12px;">
+        <label class="title" style="margin-top: 2%;">URL</label>
+
+        <input type="text" class="form-control" rows="1" id="urltypefaq" name="In_Faq_url" style="width:125%;height: 10px;">
+    </div>
+    <div class="col-sm-4">
+        <label for="txtcode" style="font-weight:normal;margin-left: 32%;margin-top: 6%;">Browse File</label>
+        <input type="file" name="in_parent_code" id="attachfile" style="height: 29px;margin-left:32%;">
+    </div>
+    <div class="col-sm-2" style="margin-top: 3%; ">
+        <label class="title" id="txtfilename" style="margin-left: -34%;"></label>
+        <i class="fa fa-download" title="Download" aria-hidden="true" style="color:darkslateblue;font-size: 25px;cursor: pointer" id="dowload" onclick="Faqdownload()"></i>&nbsp;&nbsp;&nbsp;
+        <i class="fa fa-times" title="Delete" style="color:black;font-size: 15px;cursor:pointer;" onclick="deletefile()" data-dismiss="modal" aria-hidden="true" id="file"></i>
+    </div>
+
+</div>
+<div class="row" style="padding-left: 13px;">
+    <div class="col-sm-4" style="padding-bottom:10px">
+        <label class="title" style="margin-top: 2%;margin-left: 13%;">Upload</label>
+        <input type="file" id="attachfilef" name="In_video_filenamef" class="form-control" style="width: 96%;height: 20px;margin-left: 47px;">
+        <input type="hidden" id="txtvideo_gid" name="In_video_gid" />
+        <input type="hidden" id="txtMode" name="In_mode_flag" />
+        <input type="hidden" id="txtfilepathf" name="" />
+        <input type="hidden" id="txtfilenamef" name="" />
+        <input type="hidden" id="txtattribute" name="" />
+    </div>
+    <div class="col-sm-3" style="padding-top:28px;width:18%">
+        <label class="title" id="filename"></label>
+    </div>
+    <div class="col-sm-3" style="padding-top: 28px;width: 32%;margin-left: -15%;" id="uploadviewmenu">
+        <label class="title"></label>
+        <i class="fa fa-eye fa-3x" title="View" style="color:red;font-size: 15px;cursor:pointer" onclick="viewvideo()" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;
+        <i class="fa fa-times" id="traindelete" title="Delete" style="color:black;font-size: 15px;cursor:pointer;" onclick="deletevideo()" data-dismiss="modal" aria-hidden="true"></i>
+    </div>
+</div>
+<div id="viewvideofile">
+    <video width="320" height="240" controls id="tranvideo">
+        <source src="" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+<div id="notesmodel" style="background-color:white;">
+    <div class="row">
+        <div class="col-sm-3">
+        </div>
+        <div class="col-sm-4">
+            <h5 style="text-align:center;color:red;font-size:14px;">Notes</h5>
+        </div>
+
+    </div>
+    <div class="col-sm-6" style="margin-left:25px;">
+        <label for="remark" class="title">Notes</label>
+        <textarea class="form-control" rows="3" id="txt_notes" name="" style="margin: 0px -210.609px 0px 0px; width: 462px; height: 61px;"></textarea>
+    </div>
+</div>
+    </form>
+</div>
+<script>
+    $(document).ready(function () {
+        debugger;
+
+        $("#dialog").hide();
+        $("#attachModal").hide();
+        $("#viewvideofile").hide();
+        $("#uploadviewmenu").hide();
+        Form_validate_Name = $('form.form-horizontal').attr('id');
+        var container = $("#Faqs_form1");
+        kendo.init(container);
+        container.kendoValidator({
+            rules: {
+                checkdate: function (input) {
+                    if (input.attr("data-role") == "datepicker") {
+                        var res = isDate(input.val());
+                        return res;
+                    }
+                    else {
+                        return true;
+                    }
+                }
+            }
+        });
+        //Datepicker
+        $("#txtValidity1").kendoDatePicker({
+            max: new Date(),// sets max date
+            format: "dd/MM/yyyy"
+        });
+
+        // load master name
+        load_master_code();
+
+        var list_in1 = "";
+        $("#cmb_samplests").empty();
+        list_in1 = grid_comboScreen_mastercodes("QCD_FAQS_CAT");
+        filter_combobox("cmb_samplests", list_in1);
+
+        grid_Faqs([]);
+        var data = {};
+        data.context = getContext();
+        var Context = data.context;
+        $.ajax({
+            type: "POST",
+            data: JSON.stringify({ userId: Context.userId, orgnId: Context.orgnId, locnId: Context.locnId, localeId: Context.localeId }),
+            url: "/KioskFAQS/FAQsList",
+            dataType: "json",
+            contentType: 'application/json; charset=utf-8',
+            success: function (response) {
+                debugger;
+                if (response != null) {
+                    generate_FAQs_list(response.List);
+                }
+                else {
+                    grid_Faqs([]);
+                }
+            },
+            error: function (er) {
+                alert(er)
+                console.log(er)
+            }
+
+        });
+        Screen_Id = "KIOSKFAQ";
+        permission = sec_Master_Permission(Screen_Id);
+
+
+        langTranslate('txt_question', 'questionT');
+        $("#txt_tranT").on("keypress", function (e) {
+            convertThis(e);
+        });
+        langTranslate('txt_answer', 'AnswerT');
+        $("#AnswerT").on("keypress", function (e) {
+            convertThis(e);
+        });
+        langTranslate('txt_key', 'keyT');
+        $("#keyT").on("keypress", function (e) {
+            convertThis(e);
+        });
+    });
+
+    $('#attachfile').bind('change', function () {
+
+        debugger;
+        var fp = $("#attachfile");
+        var lg = fp[0].files.length; // get length
+        var items = fp[0].files;
+        var fileSize = 0;
+
+        var ext = $('#attachfile').val().split('.').pop().toLowerCase();
+        //Allowed file types
+        if ($.inArray(ext, ['xlsx', 'xls', 'gif', 'png', 'jpg', 'jpeg', 'docx', 'doc', 'pdf', 'rtf', 'ppt', 'txt', 'odt', 'msg']) == -1) {
+            kendoAlert("The File is invalid.!");
+            $('#attachfile').val("");
+            //  $('#upload-file-info').html("");
+        }
+
+        if (lg > 0) {
+            for (var i = 0; i < lg; i++) {
+                fileSize = fileSize + items[i].size; // get file size
+            }
+            if (fileSize > 314572800) {
+                kendoAlert("File size must not be more than 300 MB.!");
+                $('#attachfile').val('');
+                return false;
+            }
+
+        }
+    });
+
+    $('#attachfilef').bind('change', function () {
+
+        debugger;
+        var fp = $("#attachfilef");
+        var lg = fp[0].files.length; // get length
+        var items = fp[0].files;
+        var fileSize = 0;
+
+        var ext = $('#attachfilef').val().split('.').pop().toLowerCase();
+        //Allowed file types
+        if ($.inArray(ext, ['mov', 'mp4', 'wmv', 'flv', 'avi', 'avchd', 'webm', 'mkv']) == -1) {
+            kendoAlert("The Video File is invalid.!");
+            $('#attachfilef').val("");
+            //  $('#upload-file-info').html("");
+        }
+
+        if (lg > 0) {
+            for (var i = 0; i < lg; i++) {
+                fileSize = fileSize + items[i].size; // get file size
+            }
+            if (fileSize > 314572800) {
+                kendoAlert("File size must not be more than 300 MB.!");
+                $('#attachfilef').val('');
+                return false;
+            }
+
+        }
+    });
+</script>
+<script>
+    //summary list bind
+    function generate_FAQs_list(res) {
+        var data = changedataType(res);
+        grid_Faqs(data);
+    }
+    //summary grid
+    function grid_Faqs(data) {
+        debugger;
+        $("#grid_Faqs").kendoGrid({
+            dataSource: {
+                data: data, //  pageSize: 20
+            },
+            height: 450,
+            sortable: true,
+            selectable: true,
+            filterable: true,
+            //change: onChangeSelection,
+            selectable: "singl",   //  Grid Row Selection
+            navigatable: true,
+            toolbar: "<a class='k-grid-add' id='Assign_sevices' value onClick='serialno()'><span class='fa fa-plus' style='color:Black'></span></a>",
+            columns: [
+                {
+                    field: "In_faq_gid",
+                    title: "In_faq_gid",
+                    hidden: true,
+                    width: 30
+                },
+                {
+                    field: "out_faq_date",
+                    title: "Date",
+                    width: 30
+                },
+                {
+                    field: "out_faqscategory",
+                    title: "Category",
+                    width: 30
+                },
+                {
+                    field: "out_faq_question",
+                    title: "Question",
+                    width: 30
+
+                },
+
+                {
+                    field: "out_faq_answer",
+                    title: "Answer",
+                    width: 30,
+                    attributes: {
+                        style: 'white-space: nowrap '
+                    }
+
+
+                },
+                {
+                    field: "out_keyword",
+                    title: "Key Word",
+                    width: 30
+                },
+                {
+                    command: [
+                        {
+                            name: "View",
+                            text: "<span class='fa fa-eye' style='color:#357ab8;' onClick='onview()'></span>"
+                        },
+                        {
+                            name: "Edit",
+                            text: "<span class='fa fa-pencil' style='color:#357ab8' onClick='onChangeSelection()'></span>"
+                        },
+
+                        {
+                            name: "Delete1",
+                            text: "<span class='fa fa-times' style='color:#357ab8;padding-left:-2px' onClick='FaqsDelete()'></span>"
+                        },
+                    ], title: "Action", width: "25px",
+                },
+            ]
+        });
+        load_master_code();
+    }
+
+    //Venkat Added 18-03-2021
+
+    $("#grid_Faqs").kendoTooltip({
+        show: function (e) {
+            if (this.content.text().length > 30) {
+                this.content.parent().css("visibility", "visible");
+            }
+        },
+        hide: function (e) {
+            this.content.parent().css("visibility", "hidden");
+        },
+        filter: "td:nth-child(4)", //this filter selects the second column's cells
+        position: "right",
+        content: function (e) {
+            var dataItem = $("#grid_Faqs").data("kendoGrid").dataItem(e.target.closest("tr"));
+            var content = dataItem.Text;
+            return content;
+        }
+    }).data("kendoTooltip");
+
+
+    //load master code binding
+    function load_master_code() {
+        debugger;
+        try {
+            var data = {};
+            data.screen_Id = "KIOSKFAQ";
+            var tab_values = ajaxcall_param("/Home/screenId_mastercodelist", JSON.stringify(data));
+        }
+        catch (err) {
+            javascript_log4j_root(arguments.callee.name, err);
+        }
+    }
+    //to click plus button(add new)
+    function serialno() {
+        $("#notes").hide();
+        $("#dialog").kendoWindow();
+        var dialog = $("#dialog").data("kendoWindow");
+        dialog.open().element.closest(".k-window").css({
+            top: 18,
+            left: 180, height: 585, width: 1077
+        });
+        dialog.title("FAQs");
+        dialog.bind("open", serialno);
+
+
+        //add pop up close
+        dialog.unbind("close");
+        dialog.bind("close", onWindowEditClose);
+
+
+
+
+        $("#Faqsmenu").show();
+        $("#notesmodel").hide();
+
+
+        clear_val();
+
+
+        //popup double click expand to avoid
+        $(document).on('dblclick', '.k-window-titlebar', function (e) {
+            debugger;
+            // Restore old size
+            dialog.toggleMaximization();
+
+
+        });
+    }
+
+
+
+    //pop up close refresh
+    var onWindowEditClose = function (e) {
+        debugger;
+        var data = {};
+        data.context = getContext();
+        var Context = data.context;
+        $.ajax({
+            type: "POST",
+            data: JSON.stringify({ userId: Context.userId, orgnId: Context.orgnId, locnId: Context.locnId, localeId: Context.localeId }),
+            url: "/KioskFAQS/FAQsList",
+            dataType: "json",
+            contentType: 'application/json; charset=utf-8',
+            success: function (response) {
+                debugger;
+                if (response != null) {
+                    generate_FAQs_list(response.List);
+                }
+                else {
+                    grid_Faqs([]);
+                }
+            },
+            error: function (er) {
+                alert(er)
+                console.log(er)
+            }
+
+        });
+    };
+
+
+    function clear_val() {
+        debugger;
+        $('#cmb_samplests').data("kendoComboBox").value("");
+        $("#txtValidity1").val("");
+        //  $('#cmb_states').data("kendoComboBox").value("");
+        $("#txt_question").val("");
+        $("#txt_answer").val("");
+        $("#txt_key").val("");
+
+        $("#questionT").val("");
+        $("#AnswerT").val("");
+        // $("#txtfilename").val("");
+        $("#txtfilename").text("");
+        $("#txtfilenamef").text("");
+        $("#File").val("");
+        $("#keyT").val("");
+
+    }
+    //close
+    function closerole() {
+        $("#dialog").data("kendoWindow").close();
+        setTimeout(function () {
+            debugger;
+            window.location.href = '../KioskFAQS/KioskFAQS';
+        });
+    }
+</script>
+<script>
+    //save
+    function Faqssave() {
+        debugger;
+        var faqgid = $("#txtfaqs_gid").val();
+        var date = $("#txtValidity1").val();
+        var question = $("#txt_question").val();
+        var answer = $("#txt_answer").val();
+        var keyword = $("#txt_key").val();
+        //var category = $("#cmb_samplests").val();
+        var category=   $('#cmb_samplests').data("kendoComboBox").value();
+
+
+        if (faqgid == "") {
+            faqgid = 0;
+            In_mode_flag = "I"
+        }
+        else {
+            In_mode_flag = "U"
+        }
+        if (date == "") {
+            kendoAlert("Date Cannot Be Blank");
+            return false;
+        }
+
+        if (category == "") {
+            kendoAlert("Category Cannot Be Blank");
+            return false;
+        }
+
+        if (question == "") {
+            kendoAlert("Question Cannot Be Blank");
+            return false;
+        }
+
+        if (answer == "") {
+            kendoAlert("Answer Cannot Be Blank");
+            return false;
+        }
+
+        if (keyword == "") {
+            kendoAlert("Keyword Cannot Be Blank");
+            return false;
+        }
+        var formval = form_Serialize("Faqs_form1");//add new popup id
+        var obj_val = JSON.parse(formval);
+        if (obj_val.hasOwnProperty('In_date')) {
+            if (obj_val.In_date != '')
+                obj_val.In_date = getFormated_StringDate(obj_val.In_date); //getFormated_StringDate(obj_val.finyear_start_date);
+        }
+        var faqgid = obj_val.In_faq_gid;
+        if (faqgid == "") {
+            faqgid = 0;
+            In_mode_flag = "I"
+        }
+        else {
+            In_mode_flag = "U"
+        }
+        var data = {};
+        data.context = getContext();
+        var Context = data.context;
+        $.ajax({
+            type: "POST",
+            data: JSON.stringify({
+                userId: Context.userId, orgnId: Context.orgnId, locnId: Context.locnId, localeId: Context.localeId,
+                In_mode_flag: In_mode_flag,
+                In_faq_gid: faqgid, In_faq_category: category,
+                In_faq_date: obj_val.In_date,
+                In_faq_question: question, In_faq_answer: answer,
+                In_faq_keywords: keyword
+            }),
+
+            url: "/KioskFAQS/DeleteFAQs",
+            dataType: "json",
+            contentType: 'application/json; charset=utf-8',
+            success: function (response) {
+                debugger;
+                var Res = JSON.parse(response);
+
+                if (Res[1] == "true") {
+                    debugger;
+                    kendoAlert("FAQs saved successfully");
+
+                }
+                setTimeout(function () {
+                    debugger;
+                    window.location.href = '../KioskFAQS/KioskFAQS';
+                },  500);
+
+            }
+        });
+    }
+
+
+    //Delete
+    function FaqsDelete() {
+        debugger;
+        var kendoWindow = $("<div />").kendoWindow({
+            title: "Confirm",
+            width: "350px",
+            height: "130px",
+            resizable: false,
+            modal: true
+        });
+        kendoWindow.data("kendoWindow")
+            .content($("#grid_delete-confirmation").html())
+            .center().open();
+        kendoWindow
+            .find(".grid_delete-confirm,.grid_delete-cancel")
+            .click(function () {
+                debugger;
+                if ($(this).hasClass("grid_delete-confirm")) {
+                    debugger;
+                    var grid = $("#grid_Faqs").data("kendoGrid");
+                    var selectedItem1 = grid.dataItem(grid.select());
+                    var formval = form_Serialize("FAQs_form");
+                    var obj_val = JSON.parse(formval);
+
+                    obj_val.In_faq_gid = selectedItem1.In_faq_gid;
+                    in_mode_flag = "D";
+                    var data = {};
+                    data.context = getContext();
+
+
+                    var Context = data.context;
+                    $.ajax({
+                        type: "POST",
+                        data: JSON.stringify({
+                            userId: Context.userId, orgnId: Context.orgnId, locnId: Context.locnId,
+                            localeId: Context.localeId,
+                            In_mode_flag: in_mode_flag, In_faq_gid: obj_val.In_faq_gid
+                        }),
+                        url: "/KioskFAQS/DeleteFAQs",
+                        dataType: "json",
+                        contentType: 'application/json; charset=utf-8',
+                        success: function (response) {
+                            debugger;
+                            var Res = JSON.parse(response);
+                            if (Res[1] == "true") {
+                                kendoAlert("FAQs Deleted successfully");
+                            }
+                            setTimeout(function () {
+                                debugger;
+                                window.location.href = '../KioskFAQS/KioskFAQS';
+                            }, 2500);
+
+
+
+                        }
+
+
+
+                    });
+                }
+                kendoWindow.data("kendoWindow").close();
+            });
+    }
+
+    function onview() {
+
+        onChangeSelection();
+        $("#Faqsmenu").hide();
+        $("#notes").hide();
+        $("#notesmodel").hide();
+        $("#file").hide();
+
+        //popup double click expand to avoid
+        $(document).on('dblclick', '.k-window-titlebar', function (e) {
+            debugger;
+            // Restore old size
+            dialog.toggleMaximization();
+
+
+        });
+    }
+    //EDIT
+    function onChangeSelection() {
+        debugger;
+        $("#Faqsmenu").show();
+        $("#notesmodel").hide();
+
+        $("#notes").show();
+        $("#dialog").kendoWindow();
+        var dialog = $("#dialog").data("kendoWindow");
+        dialog.open().element.closest(".k-window").css({
+            //top: 121,
+            //left: 300, height: 585, width: 900
+                        top: 18,
+            left: 180, height: 585, width: 1077
+        });
+        dialog.title("FAQ Edit");
+        dialog.bind("open", serialno);
+        //popup double click expand to avoid
+        $(document).on('dblclick', '.k-window-titlebar', function (e) {
+            debugger;
+            // Restore old size
+            dialog.toggleMaximization();
+
+
+        });
+        var grid = $("#grid_Faqs").data("kendoGrid");
+        var selectedItem = grid.dataItem(grid.select());
+        var formval = form_Serialize("FAQs_form1");
+        var obj_val = JSON.parse(formval);
+        obj_val.In_faq_gid = selectedItem.In_faq_gid;
+        var data1 = {};
+        data1.context = getContext();
+        data1.context.In_mode_flag = "U";
+        var Context = data1.context;
+        var faqs_id = obj_val.In_faq_gid;
+        $.ajax({
+            type: "POST",
+            data: JSON.stringify({
+                userId: Context.userId, orgnId: Context.orgnId, locnId: Context.locnId,
+                localeId: Context.localeId, In_faq_gid: obj_val.In_faq_gid
+            }),
+            url: "/KioskFAQS/FAQfetch",
+            dataType: "json",
+            contentType: 'application/json; charset=utf-8',
+            success: function (response) {
+                debugger;
+                var Res = JSON.parse(response);
+                if (Res != null) {
+                    generate_FAQs(Res.answers);
+                }
+                else {
+                }
+            },
+            error: function (er) {
+                alert(er)
+                console.log(er)
+            }
+        });
+
+    }
+
+    //edit binding data
+    function generate_FAQs(res) {
+        debugger;
+        $("#txtfaqs_gid").val(res.in_faq_gid);
+        $("#txtValidity1").val(res.out_faq_date);
+        $('#cmb_samplests').data("kendoComboBox").value(res.out_faqscategory);
+
+        $("#txt_question").val(res.out_faq_question);
+        $("#txt_answer").val(res.out_faq_answer);
+        $("#txt_key").val(res.out_keyword);
+        $("#txtfilename").text(res.in_faq_ans_upload);
+        $("#txtfilenamef").text(res.in_video_filenamef);
+        $('#filename').text(res.in_video_filenamef);
+        if (res.In_video_filenamef != "") {
+            $("#uploadviewmenu").show();
+        } else {
+            $("#uploadviewmenu").hide();
+        }
+
+        $("#txt_notes").text(res.in_notes);
+        $("#questionT").text(res.in_faq_ques_locallang);
+        $("#AnswerT").text(res.in_faq_answer_locallang);
+        $("#keyT").text(res.in_faq_keywords_locallang);
+        $("#urltypefaq").val(res.in_faq_urltype);
+    }
+
+
+    //Notes popup open
+    function notesdata() {
+        debugger;
+        $("#notesmodel").kendoWindow();
+        var notesmodel = $("#notesmodel").data("kendoWindow");
+        notesmodel.open().element.closest(".k-window").css({
+            top: 80,
+            left: 350, height: 150, width: 575
+        });
+        notesmodel.title("Notes");
+        notesmodel.bind("open", notesmodel);
+        $("#notesmodel").show();
+    }
+
+    //notes save
+    function notesave() {
+        debugger;
+
+        save_FAQs();
+    }
+
+    // FAQ Save Update
+    function save_FAQs() {
+        debugger;
+        try {
+            var xhr = new XMLHttpRequest();
+            var fd = new FormData();
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    kendoAlert("FAQs saved successfully");
+
+                }
+
+            };
+
+            var faqgid = $("#txtfaqs_gid").val();
+            var date = $("#txtValidity1").val();
+            var question = $("#txt_question").val();
+            var answer = $("#txt_answer").val();
+            var keyword = $("#txt_key").val();
+            var category = $('#cmb_samplests').data("kendoComboBox").text();
+            var notes = $("#txt_notes").val();
+            var questionlan = $("#questionT").val();
+            var answerlan = $("#AnswerT").val();
+            var keyvaluelan = $("#keyT").val();
+            var faqurl = $("#urltypefaq").val();
+
+            if (date == "") {
+                kendoAlert("Date Cannot Be Blank");
+                return false;
+            }
+
+            if (category == "") {
+                kendoAlert("Category Cannot Be Blank");
+                return false;
+            }
+
+            if (question == "") {
+                kendoAlert("Question Cannot Be Blank");
+                return false;
+            }
+
+            if (answer == "") {
+                kendoAlert("Answer Cannot Be Blank");
+                return false;
+            }
+
+            if (keyword == "") {
+                kendoAlert("Keyword Cannot Be Blank");
+                return false;
+            }
+            var formval = form_Serialize("Faqs_form1");//add new popup id
+            var obj_val = JSON.parse(formval);
+            if (obj_val.hasOwnProperty('In_date')) {
+                if (obj_val.In_date != '')
+                    obj_val.In_date = getFormated_StringDate(obj_val.In_date); //getFormated_StringDate(obj_val.finyear_start_date);
+            }
+            var faqgid = obj_val.In_faq_gid;
+            if (faqgid == "") {
+                faqgid = 0;
+                In_mode_flag = "I"
+            }
+            else {
+                In_mode_flag = "U"
+            }
+
+            var data = getContext()
+
+            fd.append("file", document.getElementById('attachfile').files[0]);
+            fd.append("file1", document.getElementById('attachfilef').files[0]);
+            fd.append("userID", data.userId);
+            fd.append("orgnId", data.orgnId);
+            fd.append("locnId", data.locnId);
+            fd.append("localeId", data.localeId);
+            fd.append("model_flag", In_mode_flag);
+            fd.append("gid", faqgid);
+            fd.append("In_faq_category", category);
+            fd.append("In_faq_date", obj_val.In_date);
+            fd.append("In_faq_question", question);
+            fd.append("In_faq_answer", answer);
+            fd.append("In_faq_keywords", keyword);
+            fd.append("In_notes", notes);
+            fd.append("In_faq_ques_locallang", questionlan);
+            fd.append("In_faq_answer_locallang", answerlan);
+            fd.append("In_faq_keywords_locallang", keyvaluelan);
+            fd.append("In_faq_urltype", faqurl);
+
+
+            xhr.open("POST", "/KioskFAQS/faqattachment_save/", true);
+            xhr.send(fd);
+            xhr.addEventListener("load", function (event) {
+            }, false);
+
+        }
+        catch (err) {
+            javascript_log4j_root(arguments.callee.name, err);
+        }
+    }
+
+
+    //file delete
+    function deletefile() {
+        debugger;
+        var filepath = $("#txtfilename").text();
+        if (filepath != "") {
+            var data = {};
+            data.context = getContext();
+            var Context = data.context;
+            $.ajax({
+                type: "POST",
+                data: JSON.stringify({
+                    filepath: filepath
+                }),
+               // data: "{ filepath:'" + filepath + "'}",
+                url: "/KioskFAQS/deleteFile",
+                dataType: "json",
+                contentType: 'application/json; charset=utf-8',
+                success: function (response) {
+                    debugger;
+                    if (response == "sucess") {
+                        filedelete();
+                     }
+                     },
+                error: function (er) {
+                    alert(er)
+                    console.log(er)
+                }
+
+            });
+
+        }
+    }
+
+    function filedelete() {
+
+            debugger;
+            var faqgid = $("#txtfaqs_gid").val();
+            var date = $("#txtValidity1").val();
+            var question = $("#txt_question").val();
+            var answer = $("#txt_answer").val();
+            var keyword = $("#txt_key").val();
+            //var category = $("#cmb_samplests").val();
+            var category = $('#cmb_samplests').data("kendoComboBox").value();
+            var formval = form_Serialize("Faqs_form1");//add new popup id
+            var obj_val = JSON.parse(formval);
+            if (obj_val.hasOwnProperty('In_date')) {
+                if (obj_val.In_date != '')
+                    obj_val.In_date = getFormated_StringDate(obj_val.In_date); //getFormated_StringDate(obj_val.finyear_start_date);
+            }
+            var faqgid = obj_val.In_faq_gid;
+
+                In_mode_flag = "Filedelete"
+
+            var data = {};
+            data.context = getContext();
+            var Context = data.context;
+            $.ajax({
+                type: "POST",
+                data: JSON.stringify({
+                    userId: Context.userId, orgnId: Context.orgnId, locnId: Context.locnId, localeId: Context.localeId,
+                    In_mode_flag: In_mode_flag,
+                    In_faq_gid: faqgid, In_faq_category: category,
+                    In_faq_date: obj_val.In_date,
+                    In_faq_question: question, In_faq_answer: answer,
+                    In_faq_keywords: keyword
+                }),
+
+                url: "/KioskFAQS/DeleteFAQs",
+                dataType: "json",
+                contentType: 'application/json; charset=utf-8',
+                success: function (response) {
+                    debugger;
+                   // var Res = JSON.parse(response);
+
+
+
+                }
+            });
+
+
+    }
+
+
+    //download
+    function Faqdownload() {
+        debugger;
+        var file ="/FAQsFiles/"+ $("#txtfilename").text();
+        $("#download_exl_template").attr("href", file);
+        document.getElementById("download_exl_template").click();
+
+
+    }
+
+    function decodeEntities(input) {
+        var y = document.createElement('textarea');
+        y.innerHTML = input;
+        return y.value;
+    }
+
+    //Transulate
+     function langTranslate(src, dest) {
+        debugger;
+        $("#" + src).focusout(function () {
+            var id = $('#' + src).val();
+           // $("#HelpDiv").hide();
+            if (id != "") {
+
+                $.ajax({
+                    url: '@Url.Action("Language_Translate", "KioskFAQS")',
+                    type: 'GET',
+                    dataType: 'json',
+                    cache: false,
+                    data: { 'id': id },
+                    success: function (result) {
+                        $('#' + dest).val(decodeEntities(result));
+                    },
+                    error: function () {
+                        alert('Error occured');
+                    }
+                });
+            }
+
+        })
+
+
+
+    }
+
+    function viewvideo() {
+        debugger;
+        // var filename = "http://169.38.82.131:751/videos/tranningcat/" + $("#txtfilename").val();
+        var filename = $("#txtfilenamef").val();
+        var catagoryId = $("#cmb_samplests").val();
+        var path = "/" + catagoryId + "/" + filename;
+        var vid = document.getElementById("tranvideo");
+        vid.src = path;
+        // vid.src = filename;
+        $("#viewvideofile").kendoWindow();
+        var viewvideofile = $("#viewvideofile").data("kendoWindow");
+        viewvideofile.open().element.closest(".k-window").css({
+            top: 125,
+            left: 409, height: 300, width: 468
+        });
+        viewvideofile.title(filename);
+        viewvideofile.bind("open", viewvideofile);
+    }
+    function deletevideo() {
+        debugger;
+        // var filepath = $("#txtfilepathf").val();
+        var filepath = $("#txtfilenamef").val();
+
+
+        if (filepath != "") {
+            var data = {};
+            data.context = getContext();
+            var Context = data.context;
+            $.ajax({
+                type: "POST",
+                data: JSON.stringify({
+                    filepath: filepath
+                }),
+                url: "/Tranningvideos/deletevideo",
+                dataType: "json",
+                contentType: 'application/json; charset=utf-8',
+                success: function (response) {
+                    debugger;
+                    //if (response == "sucess") {
+                    //    filedelete();
+                    //}
+                    filedelete();
+                },
+                error: function (er) {
+                    alert(er)
+                    console.log(er)
+                }
+
+            });
+
+        }
+    }
+</script>
+
+
+

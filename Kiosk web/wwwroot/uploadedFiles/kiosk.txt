@@ -1,0 +1,9 @@
+KIOSK:eg:atm machine or railway ticket machine=>to testing soil
+
+mobile app:farmer details,land details 
+web app:
+
+iss:kiosk api edit  build publish
+
+flexivpn08
+Flexi@123

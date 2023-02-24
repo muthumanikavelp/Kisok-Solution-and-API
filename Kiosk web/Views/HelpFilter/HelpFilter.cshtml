@@ -1,0 +1,47 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <div class="modal-header" style="width:100%; padding:5px; padding-top:7px;">
+        <div class="row">
+            <div class="col-md-8" style="left: 20px;">
+                <h4 class=" modal-title" id="Helphdr"></h4>
+            </div>
+            <div class="col-md-4" style=" right: 27px;">
+                <div style=" float:right">
+                    <button class="btn btn-primary" id="btnSearch" type="button" onclick="getGriddata()">Search</button>
+                    &nbsp;&nbsp;
+                    <button class="btn btn-warning" id="btnClear" type="button" onclick=clearGrid();>Clear</button>
+                    &nbsp;&nbsp;
+                    <button class="btn btn-danger" id="btnClose" type="button" onclick=closeModal();>Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-body" style="height: 411px; width: 100%;">
+        <div class="col-md-10">
+            <div class=" box-body ">
+                <div id="grid_condition" style="height: 100px; bottom: 15px; right: 14px; width: 103%;">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-10">
+            <div class=" box-body ">
+                <div id="grid_resultset" style="bottom: 15px; right: 14px; width: 103%; "></div>
+            </div>
+        </div>
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-2" style="padding-top:20px">
+            <button class="btn btn-primary" id="btnTransfer" type="button" onclick="Transferdata()">Select</button>
+        </div>
+        <div class="col-md-5">
+        </div>
+    </div>
+</body>
+</html>

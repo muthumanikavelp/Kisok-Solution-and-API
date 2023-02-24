@@ -1,0 +1,139 @@
+﻿
+@{
+    ViewBag.Title = "ListViewLayout";
+    Layout = "~/Views/Shared/MainLayout.cshtml";
+}
+<html>
+<head>
+    <title></title>
+    <style>
+        .content {
+            padding-top: 7px;
+            padding-left: 7px;
+            padding-right: 7px;
+            padding-bottom: 7px;
+        }
+
+        .navbar {
+            margin-bottom: 1px;
+        }
+
+        .box {
+            margin-bottom: 1px;
+        }
+
+        .k-filter-row th {
+            padding: 0.0em 0.0em 0.1em;
+            font-size: 12px;
+        }
+
+        .k-datepicker .k-input {
+            height: 18px;
+        }
+
+        .k-autocomplete .k-input {
+            height: 18px;
+        }
+
+        .k-autocomplete.k-state-default, .k-picker-wrap.k-state-default, .k-numeric-wrap.k-state-default {
+            height: 18px;
+        }
+
+        .breadcrumb > li + li:before {
+            color: #E6E6E6;
+        }
+    </style>
+    <script src="~/Scripts/jszip.min.js"></script>
+    <script>
+        function btn_onClick(event) {
+            click_btn_val = "";
+            if (event != "") {
+                if (event == "Create") {
+                    click_btn_val = "Create";
+                }
+                else if (event == "Edit") {
+                    click_btn_val = "Edit";
+                }
+                else if (event == "View") {
+                    click_btn_val = "View";
+                }
+                else
+                    click_btn_val = "";
+                setlocalStorage('btn_clk_val', click_btn_val);
+                document.location = form_list_url;
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="box box-info" style="height: 582px; border-top: #ffffff;">
+        <div class="box-header" style="padding-bottom:0px">
+            <div class="row" style="margin-top: -9px; margin-bottom:5px">
+                <div class="col-sm-12" style="padding-left:6px;padding-right:6px">
+                    <ol class="breadcrumb" style="background-color: #E6E6E6">
+                        <li><button id="btn_new" class="btn btn-info" data-toggle="tooltip" data-placement="bottom" title="नया बनाओ"> <span class="glyphicon glyphicon-plus-sign"></span> Create New </button></li>
+                        <li><button id="btn_Edit" class="btn btn-info" data-toggle="tooltip" data-placement="bottom" title="संपादित करें"> <span class="glyphicon glyphicon-pencil"></span> Edit </button></li>
+                        <li><button id="btn_View" class="btn btn-info" data-toggle="tooltip" data-placement="bottom" title="राय"> <span class="glyphicon glyphicon-info-sign"></span> View </button></li>
+                        <li class="pull-right"><h2 style="font-size:23px;margin-top:-8px">@ViewBag.list</h2></li>
+                    </ol>
+                </div>
+                <div class="col-sm-12" style="padding-left:6px;padding-right:6px;margin-top:-20px">
+                    <nav class="navbar navbar-inverse" style="background-color: #f5f5f5; border-color: #f5f5f5; min-height: 42px; ">
+                        <div class="row" style="padding-top:7px">
+                            <div class="col-sm-4" style="padding-left:20px;">
+                                <a data-toggle="modal" class="adv_filter" href="~/AdvancedFilter/AdvancedFilter" hdrtitle="" fltid="" data-target="#advfilterModal" style="text-decoration:underline">Advanced Filter</a>&nbsp;&nbsp;
+                            </div>
+                            <div class="col-sm-4"></div>
+                           <div class="col-sm-4 pull-right">                                                                                                                                                
+                                &nbsp;&nbsp;
+                                <a data-toggle="modal" class="Export btn btn-sm btn-info" href="~/ExportExcel/ExportExcel" hdrtitle="" data-target="#exportexcelModal"><span class=" glyphicon glyphicon-export mr"></span></a>&nbsp;                              
+                               <button id="list_refresh" type="submit" class="btn btn-sm btn-info" data-toggle="tooltip" data-placement="top" title="" onclick="master_list_refresh()"><span class="glyphicon glyphicon-refresh"></span></button>
+                                &nbsp;&nbsp;
+                            </div>
+                        </div>
+
+                    </nav>
+                </div>
+                @*<div class="col-sm-12" id="list3" style="padding-left:6px;padding-right:6px;margin-top:11px">
+                    <nav class="navbar navbar-inverse" style="background-color: #f5f5f5; border-color: #f5f5f5; min-height: 42px; ">
+                        <div class="col-sm-12" style="padding-top:7px">
+                            <div class="col-sm-4" style="padding-left:0px">
+
+                                <label id="lblTitle"> Query Form</label>
+                            </div>
+                            <div class="col-sm-6"></div>
+                            <div class="col-sm-2">
+                                <a data-toggle="modal" class="adv_filter" href="~/AdvanceFilter/AdvanceFilter" hdrtitle="" fltid="" data-target="#advfilterModal" style="text-decoration:underline"><i class="fa fa-filter fa-lg" aria-hidden="true" title="Advance Filter"></i></a>&nbsp;&nbsp;&nbsp;
+                                <a data-toggle="modal" class="Export" href="~/ExportExcel/ExportExcel" hdrtitle="" data-target="#exportexcelModal"><i class="fa fa-file-excel-o fa-lg" title="Export Excel"></i></a>&nbsp;&nbsp;&nbsp;
+                                <a data-toggle="modal" class="Download" href="#" hdrtitle="" data-target="#"><i class="fa fa-download  fa-lg" title="Download"></i></a>&nbsp;&nbsp;&nbsp;
+                                <a href="#"><i class="fa fa-refresh fa-lg" id="list_refresh" title="Refresh" ></i></a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>*@
+
+            </div>
+
+        </div>
+        <div class="box-body" style="padding-top:0px">
+            @RenderBody()
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            removelocalStorage('btn_clk_val');
+            $("#Topsubheader").hide();
+            $("#bottomFooter").hide();
+            // document.getElementById("lblTitle").innerHTML = getlocalStorage("header_title");
+
+            $('#list_refresh').on('mouseenter', function (e) {
+                var list_tooltip = $('#textserarch').val();
+                $('#list_refresh').prop('title', list_tooltip);
+            });
+        });
+    </script>
+</body>
+
+</html>
+
+

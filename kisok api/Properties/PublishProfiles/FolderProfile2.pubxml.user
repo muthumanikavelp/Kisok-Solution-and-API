@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\Bala sir Solution\nafKiosk_webApi_Pub_2021-03-22</_PublishTargetUrl>
+    <History>True|2021-03-22T07:29:52.0613691Z;True|2021-03-19T16:39:59.4512250+05:30;True|2021-03-19T16:28:57.7490987+05:30;True|2021-03-19T13:02:23.1434192+05:30;True|2021-03-18T16:45:25.5754031+05:30;True|2021-03-17T17:17:54.4569662+05:30;True|2021-03-17T14:58:36.0447585+05:30;True|2021-03-17T13:23:53.1557037+05:30;True|2021-03-17T13:17:37.4061945+05:30;True|2021-03-17T13:08:42.9339725+05:30;True|2021-03-17T13:04:38.6152080+05:30;True|2021-03-17T12:44:35.0088058+05:30;True|2021-03-17T12:38:28.3640477+05:30;True|2021-03-17T12:22:15.2644497+05:30;True|2021-03-17T11:56:58.7181789+05:30;True|2021-03-17T11:25:52.4300256+05:30;</History>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\Ramya\Publish\Kisok\API</_PublishTargetUrl>
+    <History>True|2023-01-07T10:54:56.3950866Z;True|2022-08-02T17:59:58.2917071+05:30;True|2021-11-11T18:12:15.9284759+05:30;True|2021-11-01T16:53:27.8231048+05:30;True|2021-10-22T19:05:16.7240713+05:30;True|2021-10-20T16:31:31.7795765+05:30;True|2021-10-18T12:20:19.1554095+05:30;True|2021-10-18T11:05:40.8363815+05:30;True|2021-10-16T20:06:37.2295871+05:30;True|2021-10-13T18:07:35.6456394+05:30;True|2021-10-04T10:52:16.6067467+05:30;True|2021-09-17T12:06:33.7042540+05:30;True|2021-09-06T19:58:11.1698092+05:30;True|2021-09-06T16:05:13.7510093+05:30;True|2021-06-28T19:12:48.0679491+05:30;True|2021-06-01T18:59:08.6303815+05:30;</History>
+  </PropertyGroup>
+</Project>

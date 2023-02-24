@@ -1,0 +1,674 @@
+ [08/04/2021 10:28:29.984 PM]- downloadpdf method - System.Net.WebException: Could not find a part of the path 'E:\Vadivu\Latest Source\nafkiosk\kisok api\videos\newheader1.jpg'.
+ ---> System.Net.WebException: Could not find a part of the path 'E:\Vadivu\Latest Source\nafkiosk\kisok api\videos\newheader1.jpg'.
+ ---> System.IO.DirectoryNotFoundException: Could not find a part of the path 'E:\Vadivu\Latest Source\nafkiosk\kisok api\videos\newheader1.jpg'.
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, Boolean useAsync)
+   at System.Net.FileWebResponse..ctor(FileWebRequest request, Uri uri, FileAccess access, Boolean useAsync)
+   --- End of inner exception stack trace ---
+   at System.Net.FileWebResponse..ctor(FileWebRequest request, Uri uri, FileAccess access, Boolean useAsync)
+   at System.Net.FileWebRequest.CreateResponse()
+   --- End of inner exception stack trace ---
+   at System.Net.FileWebRequest.CreateResponse()
+   at System.Net.FileWebRequest.<>c.<BeginGetResponse>b__59_0(Object s)
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.TaskToApm.End[TResult](IAsyncResult asyncResult)
+   at System.Net.FileWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.FileWebRequest.GetResponse()
+   at iTextSharp.text.Image.GetInstance(Uri url, Boolean recoverFromImageError)
+   at iTextSharp.text.Image.GetInstance(Uri url)
+   at iTextSharp.text.Image.GetInstance(String filename)
+   at Kiosk_web.Controllers.SoilCardController.exportpdf(String path) in D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\Controllers\SoilCardController.cs:line 352
+   at Kiosk_web.Controllers.SoilCardController.downloadpdf() in D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\Controllers\SoilCardController.cs:line 238
+ [08/04/2021 10:31:13.414 PM]- downloadpdf method - System.Net.WebException: Could not find a part of the path 'E:\Vadivu\Latest Source\nafkiosk\kisok api\videos\newheader1.jpg'.
+ ---> System.Net.WebException: Could not find a part of the path 'E:\Vadivu\Latest Source\nafkiosk\kisok api\videos\newheader1.jpg'.
+ ---> System.IO.DirectoryNotFoundException: Could not find a part of the path 'E:\Vadivu\Latest Source\nafkiosk\kisok api\videos\newheader1.jpg'.
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, Boolean useAsync)
+   at System.Net.FileWebResponse..ctor(FileWebRequest request, Uri uri, FileAccess access, Boolean useAsync)
+   --- End of inner exception stack trace ---
+   at System.Net.FileWebResponse..ctor(FileWebRequest request, Uri uri, FileAccess access, Boolean useAsync)
+   at System.Net.FileWebRequest.CreateResponse()
+   --- End of inner exception stack trace ---
+   at System.Net.FileWebRequest.CreateResponse()
+   at System.Net.FileWebRequest.<>c.<BeginGetResponse>b__59_0(Object s)
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.TaskToApm.End[TResult](IAsyncResult asyncResult)
+   at System.Net.FileWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.FileWebRequest.GetResponse()
+   at iTextSharp.text.Image.GetInstance(Uri url, Boolean recoverFromImageError)
+   at iTextSharp.text.Image.GetInstance(Uri url)
+   at iTextSharp.text.Image.GetInstance(String filename)
+   at Kiosk_web.Controllers.SoilCardController.exportpdf(String path) in D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\Controllers\SoilCardController.cs:line 352
+   at Kiosk_web.Controllers.SoilCardController.downloadpdf() in D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\Controllers\SoilCardController.cs:line 238
+ [08/04/2021 10:34:16.781 PM]- downloadpdf method - System.Net.WebException: Could not find a part of the path 'E:\Vadivu\Latest Source\nafkiosk\kisok api\videos\newheader1.jpg'.
+ ---> System.Net.WebException: Could not find a part of the path 'E:\Vadivu\Latest Source\nafkiosk\kisok api\videos\newheader1.jpg'.
+ ---> System.IO.DirectoryNotFoundException: Could not find a part of the path 'E:\Vadivu\Latest Source\nafkiosk\kisok api\videos\newheader1.jpg'.
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, Boolean useAsync)
+   at System.Net.FileWebResponse..ctor(FileWebRequest request, Uri uri, FileAccess access, Boolean useAsync)
+   --- End of inner exception stack trace ---
+   at System.Net.FileWebResponse..ctor(FileWebRequest request, Uri uri, FileAccess access, Boolean useAsync)
+   at System.Net.FileWebRequest.CreateResponse()
+   --- End of inner exception stack trace ---
+   at System.Net.FileWebRequest.CreateResponse()
+   at System.Net.FileWebRequest.<>c.<BeginGetResponse>b__59_0(Object s)
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.TaskToApm.End[TResult](IAsyncResult asyncResult)
+   at System.Net.FileWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.FileWebRequest.GetResponse()
+   at iTextSharp.text.Image.GetInstance(Uri url, Boolean recoverFromImageError)
+   at iTextSharp.text.Image.GetInstance(Uri url)
+   at iTextSharp.text.Image.GetInstance(String filename)
+   at Kiosk_web.Controllers.SoilCardController.exportpdf(String path) in D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\Controllers\SoilCardController.cs:line 352
+   at Kiosk_web.Controllers.SoilCardController.downloadpdf() in D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\Controllers\SoilCardController.cs:line 238
+ [08/04/2021 10:35:36.091 PM]- downloadpdf method - System.Net.WebException: Could not find a part of the path 'E:\Vadivu\Latest Source\nafkiosk\kisok api\videos\newheader1.jpg'.
+ ---> System.Net.WebException: Could not find a part of the path 'E:\Vadivu\Latest Source\nafkiosk\kisok api\videos\newheader1.jpg'.
+ ---> System.IO.DirectoryNotFoundException: Could not find a part of the path 'E:\Vadivu\Latest Source\nafkiosk\kisok api\videos\newheader1.jpg'.
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, Boolean useAsync)
+   at System.Net.FileWebResponse..ctor(FileWebRequest request, Uri uri, FileAccess access, Boolean useAsync)
+   --- End of inner exception stack trace ---
+   at System.Net.FileWebResponse..ctor(FileWebRequest request, Uri uri, FileAccess access, Boolean useAsync)
+   at System.Net.FileWebRequest.CreateResponse()
+   --- End of inner exception stack trace ---
+   at System.Net.FileWebRequest.CreateResponse()
+   at System.Net.FileWebRequest.<>c.<BeginGetResponse>b__59_0(Object s)
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.TaskToApm.End[TResult](IAsyncResult asyncResult)
+   at System.Net.FileWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.FileWebRequest.GetResponse()
+   at iTextSharp.text.Image.GetInstance(Uri url, Boolean recoverFromImageError)
+   at iTextSharp.text.Image.GetInstance(Uri url)
+   at iTextSharp.text.Image.GetInstance(String filename)
+   at Kiosk_web.Controllers.SoilCardController.exportpdf(String path) in D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\Controllers\SoilCardController.cs:line 352
+   at Kiosk_web.Controllers.SoilCardController.downloadpdf() in D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\Controllers\SoilCardController.cs:line 238
+ [08/04/2021 10:43:52.913 PM]- downloadpdf method - System.Net.WebException: Could not find a part of the path 'E:\Vadivu\Latest Source\nafkiosk\kisok api\videos\newheader1.jpg'.
+ ---> System.Net.WebException: Could not find a part of the path 'E:\Vadivu\Latest Source\nafkiosk\kisok api\videos\newheader1.jpg'.
+ ---> System.IO.DirectoryNotFoundException: Could not find a part of the path 'E:\Vadivu\Latest Source\nafkiosk\kisok api\videos\newheader1.jpg'.
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, Boolean useAsync)
+   at System.Net.FileWebResponse..ctor(FileWebRequest request, Uri uri, FileAccess access, Boolean useAsync)
+   --- End of inner exception stack trace ---
+   at System.Net.FileWebResponse..ctor(FileWebRequest request, Uri uri, FileAccess access, Boolean useAsync)
+   at System.Net.FileWebRequest.CreateResponse()
+   --- End of inner exception stack trace ---
+   at System.Net.FileWebRequest.CreateResponse()
+   at System.Net.FileWebRequest.<>c.<BeginGetResponse>b__59_0(Object s)
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.TaskToApm.End[TResult](IAsyncResult asyncResult)
+   at System.Net.FileWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.FileWebRequest.GetResponse()
+   at iTextSharp.text.Image.GetInstance(Uri url, Boolean recoverFromImageError)
+   at iTextSharp.text.Image.GetInstance(Uri url)
+   at iTextSharp.text.Image.GetInstance(String filename)
+   at Kiosk_web.Controllers.SoilCardController.exportpdf(String path) in D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\Controllers\SoilCardController.cs:line 354
+   at Kiosk_web.Controllers.SoilCardController.downloadpdf() in D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\Controllers\SoilCardController.cs:line 239
+ [08/04/2021 10:44:44.154 PM]- downloadpdf method - System.Net.WebException: Could not find a part of the path 'E:\Vadivu\Latest Source\nafkiosk\kisok api\videos\newheader1.jpg'.
+ ---> System.Net.WebException: Could not find a part of the path 'E:\Vadivu\Latest Source\nafkiosk\kisok api\videos\newheader1.jpg'.
+ ---> System.IO.DirectoryNotFoundException: Could not find a part of the path 'E:\Vadivu\Latest Source\nafkiosk\kisok api\videos\newheader1.jpg'.
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, Boolean useAsync)
+   at System.Net.FileWebResponse..ctor(FileWebRequest request, Uri uri, FileAccess access, Boolean useAsync)
+   --- End of inner exception stack trace ---
+   at System.Net.FileWebResponse..ctor(FileWebRequest request, Uri uri, FileAccess access, Boolean useAsync)
+   at System.Net.FileWebRequest.CreateResponse()
+   --- End of inner exception stack trace ---
+   at System.Net.FileWebRequest.CreateResponse()
+   at System.Net.FileWebRequest.<>c.<BeginGetResponse>b__59_0(Object s)
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.TaskToApm.End[TResult](IAsyncResult asyncResult)
+   at System.Net.FileWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.FileWebRequest.GetResponse()
+   at iTextSharp.text.Image.GetInstance(Uri url, Boolean recoverFromImageError)
+   at iTextSharp.text.Image.GetInstance(Uri url)
+   at iTextSharp.text.Image.GetInstance(String filename)
+   at Kiosk_web.Controllers.SoilCardController.exportpdf(String path) in D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\Controllers\SoilCardController.cs:line 354
+   at Kiosk_web.Controllers.SoilCardController.downloadpdf() in D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\Controllers\SoilCardController.cs:line 239
+ [08/04/2021 10:45:40.703 PM]- downloadpdf method - System.Net.WebException: Could not find a part of the path 'E:\Vadivu\Latest Source\nafkiosk\kisok api\videos\newheader1.jpg'.
+ ---> System.Net.WebException: Could not find a part of the path 'E:\Vadivu\Latest Source\nafkiosk\kisok api\videos\newheader1.jpg'.
+ ---> System.IO.DirectoryNotFoundException: Could not find a part of the path 'E:\Vadivu\Latest Source\nafkiosk\kisok api\videos\newheader1.jpg'.
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, Boolean useAsync)
+   at System.Net.FileWebResponse..ctor(FileWebRequest request, Uri uri, FileAccess access, Boolean useAsync)
+   --- End of inner exception stack trace ---
+   at System.Net.FileWebResponse..ctor(FileWebRequest request, Uri uri, FileAccess access, Boolean useAsync)
+   at System.Net.FileWebRequest.CreateResponse()
+   --- End of inner exception stack trace ---
+   at System.Net.FileWebRequest.CreateResponse()
+   at System.Net.FileWebRequest.<>c.<BeginGetResponse>b__59_0(Object s)
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.TaskToApm.End[TResult](IAsyncResult asyncResult)
+   at System.Net.FileWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.FileWebRequest.GetResponse()
+   at iTextSharp.text.Image.GetInstance(Uri url, Boolean recoverFromImageError)
+   at iTextSharp.text.Image.GetInstance(Uri url)
+   at iTextSharp.text.Image.GetInstance(String filename)
+   at Kiosk_web.Controllers.SoilCardController.exportpdf(String path) in D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\Controllers\SoilCardController.cs:line 354
+   at Kiosk_web.Controllers.SoilCardController.downloadpdf() in D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\Controllers\SoilCardController.cs:line 239
+ [08/04/2021 10:49:06.757 PM]- downloadpdf method - System.Net.WebException: Could not find a part of the path 'E:\Vadivu\Latest Source\nafkiosk\kisok api\videos\newheader1.jpg'.
+ ---> System.Net.WebException: Could not find a part of the path 'E:\Vadivu\Latest Source\nafkiosk\kisok api\videos\newheader1.jpg'.
+ ---> System.IO.DirectoryNotFoundException: Could not find a part of the path 'E:\Vadivu\Latest Source\nafkiosk\kisok api\videos\newheader1.jpg'.
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, Boolean useAsync)
+   at System.Net.FileWebResponse..ctor(FileWebRequest request, Uri uri, FileAccess access, Boolean useAsync)
+   --- End of inner exception stack trace ---
+   at System.Net.FileWebResponse..ctor(FileWebRequest request, Uri uri, FileAccess access, Boolean useAsync)
+   at System.Net.FileWebRequest.CreateResponse()
+   --- End of inner exception stack trace ---
+   at System.Net.FileWebRequest.CreateResponse()
+   at System.Net.FileWebRequest.<>c.<BeginGetResponse>b__59_0(Object s)
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.TaskToApm.End[TResult](IAsyncResult asyncResult)
+   at System.Net.FileWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.FileWebRequest.GetResponse()
+   at iTextSharp.text.Image.GetInstance(Uri url, Boolean recoverFromImageError)
+   at iTextSharp.text.Image.GetInstance(Uri url)
+   at iTextSharp.text.Image.GetInstance(String filename)
+   at Kiosk_web.Controllers.SoilCardController.exportpdf(String path) in D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\Controllers\SoilCardController.cs:line 354
+   at Kiosk_web.Controllers.SoilCardController.downloadpdf() in D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\Controllers\SoilCardController.cs:line 239
+ [08/04/2021 10:57:20.024 PM]- downloadpdf method - System.Net.WebException: Could not find a part of the path 'E:\Vadivu\Latest Source\nafkiosk\kisok api\videos\newheader1.jpg'.
+ ---> System.Net.WebException: Could not find a part of the path 'E:\Vadivu\Latest Source\nafkiosk\kisok api\videos\newheader1.jpg'.
+ ---> System.IO.DirectoryNotFoundException: Could not find a part of the path 'E:\Vadivu\Latest Source\nafkiosk\kisok api\videos\newheader1.jpg'.
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, Boolean useAsync)
+   at System.Net.FileWebResponse..ctor(FileWebRequest request, Uri uri, FileAccess access, Boolean useAsync)
+   --- End of inner exception stack trace ---
+   at System.Net.FileWebResponse..ctor(FileWebRequest request, Uri uri, FileAccess access, Boolean useAsync)
+   at System.Net.FileWebRequest.CreateResponse()
+   --- End of inner exception stack trace ---
+   at System.Net.FileWebRequest.CreateResponse()
+   at System.Net.FileWebRequest.<>c.<BeginGetResponse>b__59_0(Object s)
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.TaskToApm.End[TResult](IAsyncResult asyncResult)
+   at System.Net.FileWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.FileWebRequest.GetResponse()
+   at iTextSharp.text.Image.GetInstance(Uri url, Boolean recoverFromImageError)
+   at iTextSharp.text.Image.GetInstance(Uri url)
+   at iTextSharp.text.Image.GetInstance(String filename)
+   at Kiosk_web.Controllers.SoilCardController.exportpdf(String path) in D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\Controllers\SoilCardController.cs:line 355
+   at Kiosk_web.Controllers.SoilCardController.downloadpdf() in D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\Controllers\SoilCardController.cs:line 240
+ [08/04/2021 11:00:25.182 PM]- downloadpdf method - System.Net.WebException: Could not find a part of the path 'E:\Vadivu\Latest Source\nafkiosk\kisok api\videos\newheader1.jpg'.
+ ---> System.Net.WebException: Could not find a part of the path 'E:\Vadivu\Latest Source\nafkiosk\kisok api\videos\newheader1.jpg'.
+ ---> System.IO.DirectoryNotFoundException: Could not find a part of the path 'E:\Vadivu\Latest Source\nafkiosk\kisok api\videos\newheader1.jpg'.
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, Boolean useAsync)
+   at System.Net.FileWebResponse..ctor(FileWebRequest request, Uri uri, FileAccess access, Boolean useAsync)
+   --- End of inner exception stack trace ---
+   at System.Net.FileWebResponse..ctor(FileWebRequest request, Uri uri, FileAccess access, Boolean useAsync)
+   at System.Net.FileWebRequest.CreateResponse()
+   --- End of inner exception stack trace ---
+   at System.Net.FileWebRequest.CreateResponse()
+   at System.Net.FileWebRequest.<>c.<BeginGetResponse>b__59_0(Object s)
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.TaskToApm.End[TResult](IAsyncResult asyncResult)
+   at System.Net.FileWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.FileWebRequest.GetResponse()
+   at iTextSharp.text.Image.GetInstance(Uri url, Boolean recoverFromImageError)
+   at iTextSharp.text.Image.GetInstance(Uri url)
+   at iTextSharp.text.Image.GetInstance(String filename)
+   at Kiosk_web.Controllers.SoilCardController.exportpdf(String path) in D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\Controllers\SoilCardController.cs:line 355
+   at Kiosk_web.Controllers.SoilCardController.downloadpdf() in D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\Controllers\SoilCardController.cs:line 240
+ [08/04/2021 11:01:17.195 PM]- downloadpdf method - System.Net.WebException: Could not find a part of the path 'E:\Vadivu\Latest Source\nafkiosk\kisok api\videos\newheader1.jpg'.
+ ---> System.Net.WebException: Could not find a part of the path 'E:\Vadivu\Latest Source\nafkiosk\kisok api\videos\newheader1.jpg'.
+ ---> System.IO.DirectoryNotFoundException: Could not find a part of the path 'E:\Vadivu\Latest Source\nafkiosk\kisok api\videos\newheader1.jpg'.
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, Boolean useAsync)
+   at System.Net.FileWebResponse..ctor(FileWebRequest request, Uri uri, FileAccess access, Boolean useAsync)
+   --- End of inner exception stack trace ---
+   at System.Net.FileWebResponse..ctor(FileWebRequest request, Uri uri, FileAccess access, Boolean useAsync)
+   at System.Net.FileWebRequest.CreateResponse()
+   --- End of inner exception stack trace ---
+   at System.Net.FileWebRequest.CreateResponse()
+   at System.Net.FileWebRequest.<>c.<BeginGetResponse>b__59_0(Object s)
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.TaskToApm.End[TResult](IAsyncResult asyncResult)
+   at System.Net.FileWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.FileWebRequest.GetResponse()
+   at iTextSharp.text.Image.GetInstance(Uri url, Boolean recoverFromImageError)
+   at iTextSharp.text.Image.GetInstance(Uri url)
+   at iTextSharp.text.Image.GetInstance(String filename)
+   at Kiosk_web.Controllers.SoilCardController.exportpdf(String path) in D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\Controllers\SoilCardController.cs:line 355
+   at Kiosk_web.Controllers.SoilCardController.downloadpdf() in D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\Controllers\SoilCardController.cs:line 240
+ [08/04/2021 11:05:32.032 PM]- downloadpdf method - System.Net.WebException: Could not find a part of the path 'E:\Vadivu\Latest Source\nafkiosk\kisok api\videos\newheader1.jpg'.
+ ---> System.Net.WebException: Could not find a part of the path 'E:\Vadivu\Latest Source\nafkiosk\kisok api\videos\newheader1.jpg'.
+ ---> System.IO.DirectoryNotFoundException: Could not find a part of the path 'E:\Vadivu\Latest Source\nafkiosk\kisok api\videos\newheader1.jpg'.
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, Boolean useAsync)
+   at System.Net.FileWebResponse..ctor(FileWebRequest request, Uri uri, FileAccess access, Boolean useAsync)
+   --- End of inner exception stack trace ---
+   at System.Net.FileWebResponse..ctor(FileWebRequest request, Uri uri, FileAccess access, Boolean useAsync)
+   at System.Net.FileWebRequest.CreateResponse()
+   --- End of inner exception stack trace ---
+   at System.Net.FileWebRequest.CreateResponse()
+   at System.Net.FileWebRequest.<>c.<BeginGetResponse>b__59_0(Object s)
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.TaskToApm.End[TResult](IAsyncResult asyncResult)
+   at System.Net.FileWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.FileWebRequest.GetResponse()
+   at iTextSharp.text.Image.GetInstance(Uri url, Boolean recoverFromImageError)
+   at iTextSharp.text.Image.GetInstance(Uri url)
+   at iTextSharp.text.Image.GetInstance(String filename)
+   at Kiosk_web.Controllers.SoilCardController.exportpdf(String path) in D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\Controllers\SoilCardController.cs:line 355
+   at Kiosk_web.Controllers.SoilCardController.downloadpdf() in D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\Controllers\SoilCardController.cs:line 240
+ [08/04/2021 11:06:27.358 PM]- downloadpdf method - System.Net.WebException: Could not find a part of the path 'E:\Vadivu\Latest Source\nafkiosk\kisok api\videos\newheader1.jpg'.
+ ---> System.Net.WebException: Could not find a part of the path 'E:\Vadivu\Latest Source\nafkiosk\kisok api\videos\newheader1.jpg'.
+ ---> System.IO.DirectoryNotFoundException: Could not find a part of the path 'E:\Vadivu\Latest Source\nafkiosk\kisok api\videos\newheader1.jpg'.
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, Boolean useAsync)
+   at System.Net.FileWebResponse..ctor(FileWebRequest request, Uri uri, FileAccess access, Boolean useAsync)
+   --- End of inner exception stack trace ---
+   at System.Net.FileWebResponse..ctor(FileWebRequest request, Uri uri, FileAccess access, Boolean useAsync)
+   at System.Net.FileWebRequest.CreateResponse()
+   --- End of inner exception stack trace ---
+   at System.Net.FileWebRequest.CreateResponse()
+   at System.Net.FileWebRequest.<>c.<BeginGetResponse>b__59_0(Object s)
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.TaskToApm.End[TResult](IAsyncResult asyncResult)
+   at System.Net.FileWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.FileWebRequest.GetResponse()
+   at iTextSharp.text.Image.GetInstance(Uri url, Boolean recoverFromImageError)
+   at iTextSharp.text.Image.GetInstance(Uri url)
+   at iTextSharp.text.Image.GetInstance(String filename)
+   at Kiosk_web.Controllers.SoilCardController.exportpdf(String path) in D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\Controllers\SoilCardController.cs:line 355
+   at Kiosk_web.Controllers.SoilCardController.downloadpdf() in D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\Controllers\SoilCardController.cs:line 240
+ [08/04/2021 11:13:12.926 PM]- downloadpdf method - Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'string' does not contain a definition for 'path'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at Kiosk_web.Controllers.SoilCardController.downloadpdf() in D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\Controllers\SoilCardController.cs:line 244
+ [08/04/2021 11:20:30.662 PM]- downloadpdf method - Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'string' does not contain a definition for 'path'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at Kiosk_web.Controllers.SoilCardController.downloadpdf() in D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\Controllers\SoilCardController.cs:line 244
+ [03/05/2021 12:05:06.005 PM]- Error -2nd Method -System.Net.WebException: The remote server returned an error: (404) Not Found.
+   at System.Net.HttpWebRequest.GetResponse()
+   at iTextSharp.text.Image.GetInstance(Uri url, Boolean recoverFromImageError)
+   at iTextSharp.text.Image.GetInstance(Uri url)
+   at iTextSharp.text.Image.GetInstance(String filename)
+   at Kiosk_web.Controllers.SoilCardController.exportpdf(String path) in E:\Vadivu\Git\nafkiosk\Kiosk web\Controllers\SoilCardController.cs:line 430
+ [03/05/2021 12:05:06.219 PM]- downloadpdf method - Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'string' does not contain a definition for 'path'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at Kiosk_web.Controllers.SoilCardController.downloadpdf() in E:\Vadivu\Git\nafkiosk\Kiosk web\Controllers\SoilCardController.cs:line 317
+ [03/05/2021 12:05:07.406 PM]- Error -2nd Method -System.Net.WebException: The remote server returned an error: (404) Not Found.
+   at System.Net.HttpWebRequest.GetResponse()
+   at iTextSharp.text.Image.GetInstance(Uri url, Boolean recoverFromImageError)
+   at iTextSharp.text.Image.GetInstance(Uri url)
+   at iTextSharp.text.Image.GetInstance(String filename)
+   at Kiosk_web.Controllers.SoilCardController.exportpdf(String path) in E:\Vadivu\Git\nafkiosk\Kiosk web\Controllers\SoilCardController.cs:line 430
+ [03/05/2021 12:05:07.439 PM]- Error -2nd Method -System.Net.WebException: The remote server returned an error: (404) Not Found.
+   at System.Net.HttpWebRequest.GetResponse()
+   at iTextSharp.text.Image.GetInstance(Uri url, Boolean recoverFromImageError)
+   at iTextSharp.text.Image.GetInstance(Uri url)
+   at iTextSharp.text.Image.GetInstance(String filename)
+   at Kiosk_web.Controllers.SoilCardController.exportpdf(String path) in E:\Vadivu\Git\nafkiosk\Kiosk web\Controllers\SoilCardController.cs:line 430
+ [03/05/2021 12:05:07.489 PM]- downloadpdf method - Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'string' does not contain a definition for 'path'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Kiosk_web.Controllers.SoilCardController.downloadpdf() in E:\Vadivu\Git\nafkiosk\Kiosk web\Controllers\SoilCardController.cs:line 317
+ [03/05/2021 12:05:07.507 PM]- downloadpdf method - Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'string' does not contain a definition for 'path'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Kiosk_web.Controllers.SoilCardController.downloadpdf() in E:\Vadivu\Git\nafkiosk\Kiosk web\Controllers\SoilCardController.cs:line 317
+ [03/05/2021 12:05:07.981 PM]- Error -2nd Method -System.Net.WebException: The remote server returned an error: (404) Not Found.
+   at System.Net.HttpWebRequest.GetResponse()
+   at iTextSharp.text.Image.GetInstance(Uri url, Boolean recoverFromImageError)
+   at iTextSharp.text.Image.GetInstance(Uri url)
+   at iTextSharp.text.Image.GetInstance(String filename)
+   at Kiosk_web.Controllers.SoilCardController.exportpdf(String path) in E:\Vadivu\Git\nafkiosk\Kiosk web\Controllers\SoilCardController.cs:line 430
+ [03/05/2021 12:05:08.011 PM]- downloadpdf method - Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'string' does not contain a definition for 'path'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Kiosk_web.Controllers.SoilCardController.downloadpdf() in E:\Vadivu\Git\nafkiosk\Kiosk web\Controllers\SoilCardController.cs:line 317
+ [03/05/2021 12:13:53.278 PM]- Error -2nd Method -System.Net.WebException: The remote server returned an error: (404) Not Found.
+   at System.Net.HttpWebRequest.GetResponse()
+   at iTextSharp.text.Image.GetInstance(Uri url, Boolean recoverFromImageError)
+   at iTextSharp.text.Image.GetInstance(Uri url)
+   at iTextSharp.text.Image.GetInstance(String filename)
+   at Kiosk_web.Controllers.SoilCardController.exportpdf(String path) in E:\Vadivu\Git\nafkiosk\Kiosk web\Controllers\SoilCardController.cs:line 430
+ [03/05/2021 12:13:53.314 PM]- downloadpdf method - Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'string' does not contain a definition for 'path'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Kiosk_web.Controllers.SoilCardController.downloadpdf() in E:\Vadivu\Git\nafkiosk\Kiosk web\Controllers\SoilCardController.cs:line 317
+ [03/05/2021 07:46:54.286 PM]- downloadpdf method - Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'string' does not contain a definition for 'path'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at Kiosk_web.Controllers.SoilCardController.downloadpdf() in E:\Vadivu\Git\nafkiosk\Kiosk web\Controllers\SoilCardController.cs:line 317
+ [06/05/2021 05:42:11.343 PM]- downloadpdf method - System.Net.WebException: The filename, directory name, or volume label syntax is incorrect. : 'D:\Kiosk\nafkiosk-vadivu\Kiosk web\wwwroot\advert\naflogo.png,D:\Kiosk\nafkiosk-vadivu\Kiosk web\wwwroot\advert\naf.jpg'
+ ---> System.Net.WebException: The filename, directory name, or volume label syntax is incorrect. : 'D:\Kiosk\nafkiosk-vadivu\Kiosk web\wwwroot\advert\naflogo.png,D:\Kiosk\nafkiosk-vadivu\Kiosk web\wwwroot\advert\naf.jpg'
+ ---> System.IO.IOException: The filename, directory name, or volume label syntax is incorrect. : 'D:\Kiosk\nafkiosk-vadivu\Kiosk web\wwwroot\advert\naflogo.png,D:\Kiosk\nafkiosk-vadivu\Kiosk web\wwwroot\advert\naf.jpg'
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, Boolean useAsync)
+   at System.Net.FileWebResponse..ctor(FileWebRequest request, Uri uri, FileAccess access, Boolean useAsync)
+   --- End of inner exception stack trace ---
+   at System.Net.FileWebResponse..ctor(FileWebRequest request, Uri uri, FileAccess access, Boolean useAsync)
+   at System.Net.FileWebRequest.CreateResponse()
+   --- End of inner exception stack trace ---
+   at System.Net.FileWebRequest.CreateResponse()
+   at System.Net.FileWebRequest.<>c.<BeginGetResponse>b__59_0(Object s)
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.TaskToApm.End[TResult](IAsyncResult asyncResult)
+   at System.Net.FileWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.FileWebRequest.GetResponse()
+   at iTextSharp.text.Image.GetInstance(Uri url, Boolean recoverFromImageError)
+   at iTextSharp.text.Image.GetInstance(Uri url)
+   at iTextSharp.text.Image.GetInstance(String filename)
+   at Kiosk_web.Controllers.SoilCardController.exportpdf(String path) in D:\Kiosk\nafkiosk-vadivu\Kiosk web\Controllers\SoilCardController.cs:line 694
+   at Kiosk_web.Controllers.SoilCardController.downloadpdf() in D:\Kiosk\nafkiosk-vadivu\Kiosk web\Controllers\SoilCardController.cs:line 313
+ [06/05/2021 06:11:15.755 PM]- downloadpdf method - Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'string' does not contain a definition for 'path'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at Kiosk_web.Controllers.SoilCardController.downloadpdf() in D:\Kiosk\nafkiosk-vadivu\Kiosk web\Controllers\SoilCardController.cs:line 317
+ [27/05/2021 07:03:10.687 PM]- Error -2nd Method -System.ArgumentNullException: Value cannot be null. (Parameter 'path')
+   at System.IO.Path.GetFullPath(String path)
+   at iTextSharp.text.Utilities.ToURL(String filename)
+   at iTextSharp.text.Image.GetInstance(String filename)
+   at Kiosk_web.Controllers.IrrigationWaterTestController.exportpdf(String path) in D:\Kiosk\nafkiosk-vadivu\Kiosk web\Controllers\IrrigationWaterTestController.cs:line 501
+ [27/05/2021 07:03:10.820 PM]- downloadpdf method - Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'string' does not contain a definition for 'path'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at Kiosk_web.Controllers.IrrigationWaterTestController.downloadpdf() in D:\Kiosk\nafkiosk-vadivu\Kiosk web\Controllers\IrrigationWaterTestController.cs:line 307
+ [27/05/2021 07:21:59.454 PM]- Error -2nd Method -System.ArgumentNullException: Value cannot be null. (Parameter 'path')
+   at System.IO.Path.GetFullPath(String path)
+   at iTextSharp.text.Utilities.ToURL(String filename)
+   at iTextSharp.text.Image.GetInstance(String filename)
+   at Kiosk_web.Controllers.IrrigationWaterTestController.exportpdf(String path) in D:\Kiosk\nafkiosk-vadivu\Kiosk web\Controllers\IrrigationWaterTestController.cs:line 501
+ [27/05/2021 07:21:59.507 PM]- downloadpdf method - Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'string' does not contain a definition for 'path'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Kiosk_web.Controllers.IrrigationWaterTestController.downloadpdf() in D:\Kiosk\nafkiosk-vadivu\Kiosk web\Controllers\IrrigationWaterTestController.cs:line 307
+ [27/05/2021 07:51:36.020 PM]- Error -2nd Method -System.ArgumentNullException: Value cannot be null. (Parameter 'path')
+   at System.IO.Path.GetFullPath(String path)
+   at iTextSharp.text.Utilities.ToURL(String filename)
+   at iTextSharp.text.Image.GetInstance(String filename)
+   at Kiosk_web.Controllers.IrrigationWaterTestController.exportpdf(String path) in D:\Kiosk\nafkiosk-vadivu\Kiosk web\Controllers\IrrigationWaterTestController.cs:line 501
+ [27/05/2021 07:51:36.069 PM]- downloadpdf method - Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'string' does not contain a definition for 'path'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at Kiosk_web.Controllers.IrrigationWaterTestController.downloadpdf() in D:\Kiosk\nafkiosk-vadivu\Kiosk web\Controllers\IrrigationWaterTestController.cs:line 307
+ [27/05/2021 08:02:45.053 PM]- Error -2nd Method -System.ArgumentNullException: Value cannot be null. (Parameter 'path')
+   at System.IO.Path.GetFullPath(String path)
+   at iTextSharp.text.Utilities.ToURL(String filename)
+   at iTextSharp.text.Image.GetInstance(String filename)
+   at Kiosk_web.Controllers.IrrigationWaterTestController.exportpdf(String path) in D:\Kiosk\nafkiosk-vadivu\Kiosk web\Controllers\IrrigationWaterTestController.cs:line 501
+ [27/05/2021 08:02:45.108 PM]- downloadpdf method - Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'string' does not contain a definition for 'path'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Kiosk_web.Controllers.IrrigationWaterTestController.downloadpdf() in D:\Kiosk\nafkiosk-vadivu\Kiosk web\Controllers\IrrigationWaterTestController.cs:line 307
+ [27/05/2021 08:03:34.627 PM]- Error -2nd Method -System.ArgumentNullException: Value cannot be null. (Parameter 'path')
+   at System.IO.Path.GetFullPath(String path)
+   at iTextSharp.text.Utilities.ToURL(String filename)
+   at iTextSharp.text.Image.GetInstance(String filename)
+   at Kiosk_web.Controllers.IrrigationWaterTestController.exportpdf(String path) in D:\Kiosk\nafkiosk-vadivu\Kiosk web\Controllers\IrrigationWaterTestController.cs:line 501
+ [27/05/2021 08:03:34.701 PM]- downloadpdf method - Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'string' does not contain a definition for 'path'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Kiosk_web.Controllers.IrrigationWaterTestController.downloadpdf() in D:\Kiosk\nafkiosk-vadivu\Kiosk web\Controllers\IrrigationWaterTestController.cs:line 307
+ [27/05/2021 08:04:13.990 PM]- downloadpdf method - Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'string' does not contain a definition for 'path'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at Kiosk_web.Controllers.SoilCardController.downloadpdf() in D:\Kiosk\nafkiosk-vadivu\Kiosk web\Controllers\SoilCardController.cs:line 317
+ [27/05/2021 08:20:08.681 PM]- Error -2nd Method -System.ArgumentNullException: Value cannot be null. (Parameter 'path')
+   at System.IO.Path.GetFullPath(String path)
+   at iTextSharp.text.Utilities.ToURL(String filename)
+   at iTextSharp.text.Image.GetInstance(String filename)
+   at Kiosk_web.Controllers.IrrigationWaterTestController.exportpdf(String path) in D:\Kiosk\nafkiosk-vadivu\Kiosk web\Controllers\IrrigationWaterTestController.cs:line 501
+ [27/05/2021 08:20:08.763 PM]- downloadpdf method - Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'string' does not contain a definition for 'path'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Kiosk_web.Controllers.IrrigationWaterTestController.downloadpdf() in D:\Kiosk\nafkiosk-vadivu\Kiosk web\Controllers\IrrigationWaterTestController.cs:line 307
+ [27/05/2021 08:24:28.490 PM]- downloadpdf method - Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'string' does not contain a definition for 'path'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Kiosk_web.Controllers.SoilCardController.downloadpdf() in D:\Kiosk\nafkiosk-vadivu\Kiosk web\Controllers\SoilCardController.cs:line 317
+ [28/05/2021 04:44:03.031 PM]- downloadpdf method - System.Net.WebException: The remote server returned an error: (503) Service Unavailable.
+   at System.Net.HttpWebRequest.GetResponse()
+   at iTextSharp.text.Image.GetInstance(Uri url, Boolean recoverFromImageError)
+   at iTextSharp.text.Image.GetInstance(Uri url)
+   at iTextSharp.text.Image.GetInstance(String filename)
+   at Kiosk_web.Controllers.SoilCardController.exportpdf(String path) in D:\Kiosk\nafkiosk-vadivu\Kiosk web\Controllers\SoilCardController.cs:line 693
+   at Kiosk_web.Controllers.SoilCardController.downloadpdf() in D:\Kiosk\nafkiosk-vadivu\Kiosk web\Controllers\SoilCardController.cs:line 313
+ [01/06/2021 09:51:14.528 AM]- downloadpdf method - System.Net.WebException: The remote server returned an error: (500) Internal Server Error.
+   at System.Net.HttpWebRequest.GetResponse()
+   at iTextSharp.text.Image.GetInstance(Uri url, Boolean recoverFromImageError)
+   at iTextSharp.text.Image.GetInstance(Uri url)
+   at iTextSharp.text.Image.GetInstance(String filename)
+   at Kiosk_web.Controllers.SoilCardController.exportpdf(String path) in D:\Kiosk\nafkiosk-vadivu\Kiosk web\Controllers\SoilCardController.cs:line 693
+   at Kiosk_web.Controllers.SoilCardController.downloadpdf() in D:\Kiosk\nafkiosk-vadivu\Kiosk web\Controllers\SoilCardController.cs:line 313
+ [01/06/2021 09:51:14.725 AM]- downloadpdf method - System.Net.WebException: The remote server returned an error: (401) Unauthorized.
+   at System.Net.HttpWebRequest.GetResponse()
+   at iTextSharp.text.Image.GetInstance(Uri url, Boolean recoverFromImageError)
+   at iTextSharp.text.Image.GetInstance(Uri url)
+   at iTextSharp.text.Image.GetInstance(String filename)
+   at Kiosk_web.Controllers.SoilCardController.exportpdf(String path) in D:\Kiosk\nafkiosk-vadivu\Kiosk web\Controllers\SoilCardController.cs:line 693
+   at Kiosk_web.Controllers.SoilCardController.downloadpdf() in D:\Kiosk\nafkiosk-vadivu\Kiosk web\Controllers\SoilCardController.cs:line 313
+ [01/06/2021 09:57:18.629 AM]- downloadpdf method - Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'string' does not contain a definition for 'path'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at Kiosk_web.Controllers.SoilCardController.downloadpdf() in D:\Kiosk\nafkiosk-vadivu\Kiosk web\Controllers\SoilCardController.cs:line 317
+ [13/07/2021 07:12:03.380 PM]- downloadpdf method - System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at Kiosk_web.Controllers.SoilCardController.exportpdf(String path) in E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\Controllers\SoilCardController.cs:line 713
+   at Kiosk_web.Controllers.SoilCardController.downloadpdf() in E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\Controllers\SoilCardController.cs:line 313
+ [13/07/2021 07:15:52.103 PM]- downloadpdf method - Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'string' does not contain a definition for 'path'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at Kiosk_web.Controllers.SoilCardController.downloadpdf() in E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\Controllers\SoilCardController.cs:line 317
+ [13/07/2021 07:32:24.187 PM]- downloadpdf method - Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'string' does not contain a definition for 'path'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at Kiosk_web.Controllers.SoilCardController.downloadpdf() in E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\Controllers\SoilCardController.cs:line 317
+ [13/07/2021 07:34:52.383 PM]- downloadpdf method - Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'string' does not contain a definition for 'path'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Kiosk_web.Controllers.SoilCardController.downloadpdf() in E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\Controllers\SoilCardController.cs:line 317
+ [13/07/2021 07:35:52.339 PM]- downloadpdf method - Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'string' does not contain a definition for 'path'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Kiosk_web.Controllers.SoilCardController.downloadpdf() in E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\Controllers\SoilCardController.cs:line 317
+ [13/07/2021 07:40:55.030 PM]- downloadpdf method - System.IO.IOException: The process cannot access the file 'E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\wwwroot\DownloadXLFiles\Soil_Card_Printb3552035-fc9e-409b-8b79-bf3d4d720bfb_.pdf' because it is being used by another process.
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at Kiosk_web.Controllers.SoilCardController.exportpdf(String path) in E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\Controllers\SoilCardController.cs:line 616
+   at Kiosk_web.Controllers.SoilCardController.downloadpdf() in E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\Controllers\SoilCardController.cs:line 313
+ [13/07/2021 07:42:44.710 PM]- downloadpdf method - Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'string' does not contain a definition for 'path'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Kiosk_web.Controllers.SoilCardController.downloadpdf() in E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\Controllers\SoilCardController.cs:line 317
+ [14/07/2021 10:42:47.545 AM]- downloadpdf method - Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'string' does not contain a definition for 'path'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Kiosk_web.Controllers.SoilCardController.downloadpdf() in E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\Controllers\SoilCardController.cs:line 317
+ [14/07/2021 10:42:47.600 AM]- downloadpdf method - Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'string' does not contain a definition for 'path'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at Kiosk_web.Controllers.SoilCardController.downloadpdf() in E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\Controllers\SoilCardController.cs:line 317
+ [14/07/2021 10:48:06.523 AM]- downloadpdf method - Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'string' does not contain a definition for 'path'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Kiosk_web.Controllers.SoilCardController.downloadpdf() in E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\Controllers\SoilCardController.cs:line 317
+ [14/07/2021 11:01:24.044 AM]- downloadpdf method - System.Net.WebException: The filename, directory name, or volume label syntax is incorrect. : 'E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\wwwroot\advert\background.jpgE:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\wwwroot\advert\NABL.JPG'
+ ---> System.Net.WebException: The filename, directory name, or volume label syntax is incorrect. : 'E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\wwwroot\advert\background.jpgE:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\wwwroot\advert\NABL.JPG'
+ ---> System.IO.IOException: The filename, directory name, or volume label syntax is incorrect. : 'E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\wwwroot\advert\background.jpgE:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\wwwroot\advert\NABL.JPG'
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, Boolean useAsync)
+   at System.Net.FileWebResponse..ctor(FileWebRequest request, Uri uri, FileAccess access, Boolean useAsync)
+   --- End of inner exception stack trace ---
+   at System.Net.FileWebResponse..ctor(FileWebRequest request, Uri uri, FileAccess access, Boolean useAsync)
+   at System.Net.FileWebRequest.CreateResponse()
+   --- End of inner exception stack trace ---
+   at System.Net.FileWebRequest.CreateResponse()
+   at System.Net.FileWebRequest.<>c.<BeginGetResponse>b__59_0(Object s)
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.TaskToApm.End[TResult](IAsyncResult asyncResult)
+   at System.Net.FileWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.FileWebRequest.GetResponse()
+   at iTextSharp.text.Image.GetInstance(Uri url, Boolean recoverFromImageError)
+   at iTextSharp.text.Image.GetInstance(Uri url)
+   at iTextSharp.text.Image.GetInstance(String filename)
+   at Kiosk_web.Controllers.SoilCardController.exportpdf(String path) in E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\Controllers\SoilCardController.cs:line 694
+   at Kiosk_web.Controllers.SoilCardController.downloadpdf() in E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\Controllers\SoilCardController.cs:line 313
+ [14/07/2021 11:01:45.897 AM]- downloadpdf method - System.Net.WebException: The filename, directory name, or volume label syntax is incorrect. : 'E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\wwwroot\advert\background.jpgE:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\wwwroot\advert\NABL.JPG'
+ ---> System.Net.WebException: The filename, directory name, or volume label syntax is incorrect. : 'E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\wwwroot\advert\background.jpgE:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\wwwroot\advert\NABL.JPG'
+ ---> System.IO.IOException: The filename, directory name, or volume label syntax is incorrect. : 'E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\wwwroot\advert\background.jpgE:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\wwwroot\advert\NABL.JPG'
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, Boolean useAsync)
+   at System.Net.FileWebResponse..ctor(FileWebRequest request, Uri uri, FileAccess access, Boolean useAsync)
+   --- End of inner exception stack trace ---
+   at System.Net.FileWebResponse..ctor(FileWebRequest request, Uri uri, FileAccess access, Boolean useAsync)
+   at System.Net.FileWebRequest.CreateResponse()
+   --- End of inner exception stack trace ---
+   at System.Net.FileWebRequest.CreateResponse()
+   at System.Net.FileWebRequest.<>c.<BeginGetResponse>b__59_0(Object s)
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.TaskToApm.End[TResult](IAsyncResult asyncResult)
+   at System.Net.FileWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.FileWebRequest.GetResponse()
+   at iTextSharp.text.Image.GetInstance(Uri url, Boolean recoverFromImageError)
+   at iTextSharp.text.Image.GetInstance(Uri url)
+   at iTextSharp.text.Image.GetInstance(String filename)
+   at Kiosk_web.Controllers.SoilCardController.exportpdf(String path) in E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\Controllers\SoilCardController.cs:line 694
+   at Kiosk_web.Controllers.SoilCardController.downloadpdf() in E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\Controllers\SoilCardController.cs:line 313
+ [14/07/2021 11:05:20.372 AM]- downloadpdf method - System.Net.WebException: The filename, directory name, or volume label syntax is incorrect. : 'E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\wwwroot\advert\background.jpgE:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\wwwroot\advert\NABL.JPG'
+ ---> System.Net.WebException: The filename, directory name, or volume label syntax is incorrect. : 'E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\wwwroot\advert\background.jpgE:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\wwwroot\advert\NABL.JPG'
+ ---> System.IO.IOException: The filename, directory name, or volume label syntax is incorrect. : 'E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\wwwroot\advert\background.jpgE:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\wwwroot\advert\NABL.JPG'
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, Boolean useAsync)
+   at System.Net.FileWebResponse..ctor(FileWebRequest request, Uri uri, FileAccess access, Boolean useAsync)
+   --- End of inner exception stack trace ---
+   at System.Net.FileWebResponse..ctor(FileWebRequest request, Uri uri, FileAccess access, Boolean useAsync)
+   at System.Net.FileWebRequest.CreateResponse()
+   --- End of inner exception stack trace ---
+   at System.Net.FileWebRequest.CreateResponse()
+   at System.Net.FileWebRequest.<>c.<BeginGetResponse>b__59_0(Object s)
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.TaskToApm.End[TResult](IAsyncResult asyncResult)
+   at System.Net.FileWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.FileWebRequest.GetResponse()
+   at iTextSharp.text.Image.GetInstance(Uri url, Boolean recoverFromImageError)
+   at iTextSharp.text.Image.GetInstance(Uri url)
+   at iTextSharp.text.Image.GetInstance(String filename)
+   at Kiosk_web.Controllers.SoilCardController.exportpdf(String path) in E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\Controllers\SoilCardController.cs:line 694
+   at Kiosk_web.Controllers.SoilCardController.downloadpdf() in E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\Controllers\SoilCardController.cs:line 313
+ [14/07/2021 11:19:01.071 AM]- downloadpdf method - Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'string' does not contain a definition for 'path'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at Kiosk_web.Controllers.SoilCardController.downloadpdf() in E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\Controllers\SoilCardController.cs:line 317
+ [14/07/2021 11:23:53.104 AM]- downloadpdf method - Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'string' does not contain a definition for 'path'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at Kiosk_web.Controllers.SoilCardController.downloadpdf() in E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\Controllers\SoilCardController.cs:line 317
+ [14/07/2021 11:25:23.967 AM]- downloadpdf method - Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'string' does not contain a definition for 'path'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Kiosk_web.Controllers.SoilCardController.downloadpdf() in E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\Controllers\SoilCardController.cs:line 317
+ [14/07/2021 12:16:58.493 PM]- downloadpdf method - Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'string' does not contain a definition for 'path'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at Kiosk_web.Controllers.SoilCardController.downloadpdf() in E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\Controllers\SoilCardController.cs:line 317

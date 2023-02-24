@@ -1,0 +1,32 @@
+D:\Bala sir Solution\nafkiosk\kisok api\obj\Release\netcoreapp3.1\PubTmp\Out\kisok api.exe
+D:\Bala sir Solution\nafkiosk\kisok api\obj\Release\netcoreapp3.1\PubTmp\Out\log4net.config
+D:\Bala sir Solution\nafkiosk\kisok api\obj\Release\netcoreapp3.1\PubTmp\Out\appsettings.Development.json
+D:\Bala sir Solution\nafkiosk\kisok api\obj\Release\netcoreapp3.1\PubTmp\Out\appsettings.json
+D:\Bala sir Solution\nafkiosk\kisok api\obj\Release\netcoreapp3.1\PubTmp\Out\kisok api.dll
+D:\Bala sir Solution\nafkiosk\kisok api\obj\Release\netcoreapp3.1\PubTmp\Out\kisok api.deps.json
+D:\Bala sir Solution\nafkiosk\kisok api\obj\Release\netcoreapp3.1\PubTmp\Out\kisok api.runtimeconfig.json
+D:\Bala sir Solution\nafkiosk\kisok api\obj\Release\netcoreapp3.1\PubTmp\Out\kisok api.pdb
+D:\Bala sir Solution\nafkiosk\kisok api\obj\Release\netcoreapp3.1\PubTmp\Out\BouncyCastle.Crypto.dll
+D:\Bala sir Solution\nafkiosk\kisok api\obj\Release\netcoreapp3.1\PubTmp\Out\itextsharp.dll
+D:\Bala sir Solution\nafkiosk\kisok api\obj\Release\netcoreapp3.1\PubTmp\Out\log4net.dll
+D:\Bala sir Solution\nafkiosk\kisok api\obj\Release\netcoreapp3.1\PubTmp\Out\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Bala sir Solution\nafkiosk\kisok api\obj\Release\netcoreapp3.1\PubTmp\Out\Microsoft.IdentityModel.Logging.dll
+D:\Bala sir Solution\nafkiosk\kisok api\obj\Release\netcoreapp3.1\PubTmp\Out\Microsoft.IdentityModel.Tokens.dll
+D:\Bala sir Solution\nafkiosk\kisok api\obj\Release\netcoreapp3.1\PubTmp\Out\MySql.Data.dll
+D:\Bala sir Solution\nafkiosk\kisok api\obj\Release\netcoreapp3.1\PubTmp\Out\Newtonsoft.Json.dll
+D:\Bala sir Solution\nafkiosk\kisok api\obj\Release\netcoreapp3.1\PubTmp\Out\System.Configuration.ConfigurationManager.dll
+D:\Bala sir Solution\nafkiosk\kisok api\obj\Release\netcoreapp3.1\PubTmp\Out\System.Data.SqlClient.dll
+D:\Bala sir Solution\nafkiosk\kisok api\obj\Release\netcoreapp3.1\PubTmp\Out\System.IdentityModel.Tokens.Jwt.dll
+D:\Bala sir Solution\nafkiosk\kisok api\obj\Release\netcoreapp3.1\PubTmp\Out\System.Security.Cryptography.ProtectedData.dll
+D:\Bala sir Solution\nafkiosk\kisok api\obj\Release\netcoreapp3.1\PubTmp\Out\runtimes\win-arm64\native\sni.dll
+D:\Bala sir Solution\nafkiosk\kisok api\obj\Release\netcoreapp3.1\PubTmp\Out\runtimes\win-x64\native\sni.dll
+D:\Bala sir Solution\nafkiosk\kisok api\obj\Release\netcoreapp3.1\PubTmp\Out\runtimes\win-x86\native\sni.dll
+D:\Bala sir Solution\nafkiosk\kisok api\obj\Release\netcoreapp3.1\PubTmp\Out\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Bala sir Solution\nafkiosk\kisok api\obj\Release\netcoreapp3.1\PubTmp\Out\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Bala sir Solution\nafkiosk\kisok api\obj\Release\netcoreapp3.1\PubTmp\Out\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\Bala sir Solution\nafkiosk\kisok api\obj\Release\netcoreapp3.1\PubTmp\Out\nafdatamodel.dll
+D:\Bala sir Solution\nafkiosk\kisok api\obj\Release\netcoreapp3.1\PubTmp\Out\nafmodel.dll
+D:\Bala sir Solution\nafkiosk\kisok api\obj\Release\netcoreapp3.1\PubTmp\Out\nafservice.dll
+D:\Bala sir Solution\nafkiosk\kisok api\obj\Release\netcoreapp3.1\PubTmp\Out\nafmodel.pdb
+D:\Bala sir Solution\nafkiosk\kisok api\obj\Release\netcoreapp3.1\PubTmp\Out\nafservice.pdb
+D:\Bala sir Solution\nafkiosk\kisok api\obj\Release\netcoreapp3.1\PubTmp\Out\nafdatamodel.pdb

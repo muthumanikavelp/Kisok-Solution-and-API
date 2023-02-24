@@ -1,0 +1,150 @@
+﻿
+@{
+    ViewBag.Title = "FormViewLayout";
+    Layout = "~/Views/Shared/MainLayout.cshtml";
+}
+<html>
+<head>
+    <title></title>
+    <style>
+        .content {
+            padding-top: 7px;
+            padding-left: 7px;
+            padding-right: 7px;
+            padding-bottom: 7px;
+        }
+
+        .breadcrumb > li + li:before {
+            color: #ecf0f5;
+        }
+
+        .breadcrumb {
+            margin-bottom: 0px;
+        }
+
+        .box {
+            margin-bottom: 1px;
+        }
+
+
+        #mode::-webkit-input-placeholder {
+            color: black;
+        }
+
+        #mode::-moz-placeholder {
+            color: black;
+        }
+
+        #DocStat::-webkit-input-placeholder {
+            color: black;
+        }
+
+        #DocStat::-moz-placeholder {
+            color: black;
+        }
+
+        #ProcStage::-webkit-input-placeholder {
+            color: black;
+        }
+
+        #ProcStage::-moz-placeholder {
+            color: black;
+        }
+
+        #colorstrip {
+            height: 0px;
+            border-bottom: solid 20px #255774;
+            color: white;
+        }
+
+        #colorstrip1 {
+            height: 0px;
+            border-bottom: solid 33px #8c8c8c;
+            color: white;
+        }
+
+        .control-label.required:after {
+            content: "*";
+            color: red;
+        }
+
+        .select2-container--default .select2-selection--single .select2-selection__rendered {
+            line-height: 23px;
+        }
+
+        .breadcrumb > li + li:before {
+            color: #E6E6E6;
+        }
+    </style>
+</head>
+<body>
+    <div class="box box-info" id="form_design" style="height: 100%; border-top: #ffffff;">
+        <div class="box-body" style="padding-top:0px">
+            @RenderBody()
+            
+           
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $("#menu_sidebar").css("z-index", "1030");
+        });
+
+        $("#inact").click(function (e) {
+            e.preventDefault();
+            var kendoWindow = $("<div />").kendoWindow({
+                title: "Confirm",
+                width: "350px",
+                height: "130px",
+                resizable: false,
+                modal: true
+            });
+            kendoWindow.data("kendoWindow")
+        .content($("#delete-confirmation").html())
+        .center().open();
+            kendoWindow
+                .find(".delete-confirm,.delete-cancel")
+                    .click(function () {
+                        if ($(this).hasClass("delete-confirm")) {
+                            master_InActdraft();
+                        }
+                        else {
+                            kendoWindow.data("kendoWindow").close();
+                        }
+                        kendoWindow.data("kendoWindow").close();
+                    })
+                    .end()
+        });
+    </script>
+    <script>
+        $("#dropdown_download").kendoComboBox({
+            dataSource: [{ TemplId: 21, TemplName: "CostSheet", FileName: "CostSheet.xlsx" }, { TemplId: 2, TemplName: "UmoldIT_Training", FileName: "UmoldIT_Training.docx" }, { TemplId: 30, TemplName: "Offering", FileName: "Offering.xlsx" }],
+            template: downloadView,
+            optionLabel: {
+                ScreenName: "Download",
+                ScreenId: "Download",
+            },
+            dataTextField: "TemplName",
+            dataValueField: "TemplId"
+        });
+
+        function downloadView(content) {
+            return "<div><div class='pull-left'>" + content.TemplName + "</div><div class='pull-right'><span class='badge'><i class='fa fa-download' onclick=downloadComboFile(this,'" + content.FileName + "')></i></span> <span class='badge'></div>";
+        }
+
+        function downloadComboFile(evt, fileName) {
+            window.location.href = '../Download/Task/' + fileName;
+        }
+
+
+        $("#dropdown_info").kendoComboBox({
+            dataSource: [{ TemplId: 1, TemplName: "ViewReferenceInfo" }, { TemplId: 2, TemplName: "ViewMails" }, { TemplId: 3, TemplName: "ViewWorkflowInfo" }],
+            dataTextField: "TemplName",
+            dataValueField: "TemplId"
+        });
+    </script>
+</body>
+
+</html>
+
+

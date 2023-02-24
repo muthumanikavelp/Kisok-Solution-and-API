@@ -1,0 +1,121 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <div class="box-header text-center with-border">
+        <h3 class="box-title" style="text-align:center;color:red;font-weight: 600;">Attachment</h3>
+    </div>
+    <div class="row" style="padding-top:20px;padding-bottom:20px;padding-left:10px">
+        <div class="col-sm-3">
+            <label for="txtcode">Browse File</label>
+            <input type="file" id="txtcode" name="in_parent_code" class="form-control" style="width:96%;height:20px">
+        </div>
+        <div class="col-sm-3">
+            <label for="txtcode">Description</label>
+            <input type="text" id="txtdes" name="in_des_code" class="form-control" style="width:96%;height:20px">
+        </div>
+        <div class="col-sm-3">
+            <label for="txtcode">Document</label>
+            <input type="text" id="txtdoc" name="in_doc_code" class="form-control" style="width:90%;height:20px">
+        </div>
+        <div class="col-sm-1">
+            <label></label>
+            <button type="submit" id="button_Attachment" value="Upload" class="btn btn-primary" style="height:1%;margin-top:2%;"> <span class="fa fa-upload"></span></button>
+        </div>
+    </div>
+    <div class="row" style="padding-left: 10px">
+        <div class="col-lg-10">
+            <div id="grid_attachment">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    $(document).ready(function () {
+        grid_attachment([]);
+    });
+    $('#txtcode').bind('change', function () {
+
+        debugger;
+        var fp = $("#txtcode");
+        var lg = fp[0].files.length; // get length
+        var items = fp[0].files;
+        var fileSize = 0;
+
+        var ext = $('#txtcode').val().split('.').pop().toLowerCase();
+        //Allowed file types
+        if ($.inArray(ext, ['xlsx', 'xls', 'gif', 'png', 'jpg', 'jpeg', 'docx', 'doc', 'pdf', 'rtf', 'ppt', 'txt', 'odt', 'msg']) == -1) {
+            kendoAlert("The file type is invalid.!");
+            $('#txtcode').val("");
+           // $('#upload-file-info').html("");
+        }
+
+        if (lg > 0) {
+            for (var i = 0; i < lg; i++) {
+                fileSize = fileSize + items[i].size; // get file size
+            }
+            if (fileSize > 314572800) {
+                kendoAlert("File size must not be more than 300 MB.!");
+                $('#txtcode').val('');
+                return false;
+            }
+
+        }
+    });
+    function grid_attachment(data) {
+        $("#grid_attachment").kendoGrid({
+            dataSource: {
+                data: data, //  pageSize: 20
+            },
+            height: 270,
+            sortable: true,
+            selectable: true,
+            navigatable: true,
+            filterable: true,
+            columns: [
+                {
+                    field: "out_attach_rowid",
+                    title: "attach Id",
+                    hidden: true,
+                    width: 30
+                },
+                {
+                    field: "file_code",
+                    title: "File",
+                    width: 30,
+                    template: '<a href=\"#=file_code#\">#=File#</a>'
+                   
+                },
+                {
+                    field: "out_document",
+                    title: "Document",
+                    width: 30
+                },
+                {
+                    field: "out_descrition",
+                    title: "descrition",
+                    width: 30
+                },
+                {
+                    field: "out_attached_by",
+                    title: "Attached By",
+                    width: 30
+                },
+                {
+                    command: [
+                        {
+                            name: "Delete",
+                            text: "<span class='fa fa-times' style='color:#357ab8;padding-left:2px' onClick='ondelete()'></span>"
+                        },
+                    ], title: "Action", width: "25px",
+                },],
+        });
+    }
+</script>
+

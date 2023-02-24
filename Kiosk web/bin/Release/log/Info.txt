@@ -1,0 +1,269 @@
+ [08/04/2021 10:28:25.726 PM]- webRootPath -D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\wwwroot
+ [08/04/2021 10:28:25.770 PM]- fileLocation -D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\wwwroot\DownloadXLFiles
+ [08/04/2021 10:28:25.770 PM]- Clientpath  - /DownloadXLFiles/Soil_Card_Print3ddafec9-cf93-46ce-b291-d1c10748db95_.pdf
+ [08/04/2021 10:28:25.770 PM]-  path -D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\wwwroot\DownloadXLFiles\Soil_Card_Print3ddafec9-cf93-46ce-b291-d1c10748db95_.pdf
+ [08/04/2021 10:31:10.916 PM]- webRootPath -D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\wwwroot
+ [08/04/2021 10:31:10.917 PM]- fileLocation -D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\wwwroot\DownloadXLFiles
+ [08/04/2021 10:31:10.918 PM]- Clientpath  - /DownloadXLFiles/Soil_Card_Printc290dfa3-53a4-4672-a171-06b2b8c4e14a_.pdf
+ [08/04/2021 10:31:10.919 PM]-  path -D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\wwwroot\DownloadXLFiles\Soil_Card_Printc290dfa3-53a4-4672-a171-06b2b8c4e14a_.pdf
+ [08/04/2021 10:34:00.157 PM]- webRootPath -D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\wwwroot
+ [08/04/2021 10:34:11.160 PM]- fileLocation -D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\wwwroot\DownloadXLFiles
+ [08/04/2021 10:34:11.161 PM]- Clientpath  - /DownloadXLFiles/Soil_Card_Print61ddf5d9-c339-428b-8192-44e2e4ad8ecf_.pdf
+ [08/04/2021 10:34:11.161 PM]-  path -D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\wwwroot\DownloadXLFiles\Soil_Card_Print61ddf5d9-c339-428b-8192-44e2e4ad8ecf_.pdf
+ [08/04/2021 10:34:42.157 PM]- webRootPath -D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\wwwroot
+ [08/04/2021 10:34:43.318 PM]- fileLocation -D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\wwwroot\DownloadXLFiles
+ [08/04/2021 10:34:43.754 PM]- Clientpath  - /DownloadXLFiles/Soil_Card_Printbcdb64df-01a5-4114-b9fe-a6e7d2de8c1c_.pdf
+ [08/04/2021 10:35:01.863 PM]-  path -D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\wwwroot\DownloadXLFiles\Soil_Card_Printbcdb64df-01a5-4114-b9fe-a6e7d2de8c1c_.pdf
+ [08/04/2021 10:43:48.370 PM]- webRootPath -D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\wwwroot
+ [08/04/2021 10:43:48.383 PM]- fileLocation -D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\wwwroot\DownloadXLFiles
+ [08/04/2021 10:43:48.383 PM]- Clientpath  - /DownloadXLFiles/Soil_Card_Print9ac50a8d-6c20-486b-8805-ca49440b986c_.pdf
+ [08/04/2021 10:43:48.383 PM]-  path -D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\wwwroot\DownloadXLFiles\Soil_Card_Print9ac50a8d-6c20-486b-8805-ca49440b986c_.pdf
+ [08/04/2021 10:44:05.694 PM]- webRootPath -D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\wwwroot
+ [08/04/2021 10:44:07.177 PM]- fileLocation -D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\wwwroot\DownloadXLFiles
+ [08/04/2021 10:44:07.754 PM]- Clientpath  - /DownloadXLFiles/Soil_Card_Printc285af0d-de09-433d-8939-64c4c5e0596d_.pdf
+ [08/04/2021 10:44:09.362 PM]-  path -D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\wwwroot\DownloadXLFiles\Soil_Card_Printc285af0d-de09-433d-8939-64c4c5e0596d_.pdf
+ [08/04/2021 10:45:26.386 PM]- webRootPath -D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\wwwroot
+ [08/04/2021 10:45:26.386 PM]- fileLocation -D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\wwwroot\DownloadXLFiles
+ [08/04/2021 10:45:26.387 PM]- Clientpath  - /DownloadXLFiles/Soil_Card_Print39f1aa93-7c06-4c20-afb5-90b44d324420_.pdf
+ [08/04/2021 10:45:26.387 PM]-  path -D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\wwwroot\DownloadXLFiles\Soil_Card_Print39f1aa93-7c06-4c20-afb5-90b44d324420_.pdf
+ [08/04/2021 10:49:01.509 PM]- webRootPath -D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\wwwroot
+ [08/04/2021 10:49:01.526 PM]- fileLocation -D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\wwwroot\DownloadXLFiles
+ [08/04/2021 10:49:01.526 PM]- Clientpath  - /DownloadXLFiles/Soil_Card_Printd6df835b-c4b7-45ed-b2f5-d9aacd5362b8_.pdf
+ [08/04/2021 10:49:01.526 PM]-  path -D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\wwwroot\DownloadXLFiles\Soil_Card_Printd6df835b-c4b7-45ed-b2f5-d9aacd5362b8_.pdf
+ [08/04/2021 10:57:14.891 PM]- webRootPath -D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\wwwroot
+ [08/04/2021 10:57:14.905 PM]- fileLocation -D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\wwwroot\DownloadXLFiles
+ [08/04/2021 10:57:14.905 PM]- Clientpath  - /DownloadXLFiles/Soil_Card_Printda861f63-5a71-468d-807d-a113649b46c6_.pdf
+ [08/04/2021 10:57:14.905 PM]-  path -D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\wwwroot\DownloadXLFiles\Soil_Card_Printda861f63-5a71-468d-807d-a113649b46c6_.pdf
+ [08/04/2021 10:58:02.045 PM]- webRootPath -D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\wwwroot
+ [08/04/2021 10:58:03.050 PM]- fileLocation -D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\wwwroot\DownloadXLFiles
+ [08/04/2021 10:58:03.459 PM]- Clientpath  - /DownloadXLFiles/Soil_Card_Printe21d5845-118a-4a46-af1e-8028e44a6ffb_.pdf
+ [08/04/2021 10:58:03.927 PM]-  path -D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\wwwroot\DownloadXLFiles\Soil_Card_Printe21d5845-118a-4a46-af1e-8028e44a6ffb_.pdf
+ [08/04/2021 11:00:20.383 PM]- webRootPath -D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\wwwroot
+ [08/04/2021 11:00:20.399 PM]- fileLocation -D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\wwwroot\DownloadXLFiles
+ [08/04/2021 11:00:20.399 PM]- Clientpath  - /DownloadXLFiles/Soil_Card_Print1e91f311-b4c6-409d-a1f6-34ea0c05357a_.pdf
+ [08/04/2021 11:00:20.399 PM]-  path -D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\wwwroot\DownloadXLFiles\Soil_Card_Print1e91f311-b4c6-409d-a1f6-34ea0c05357a_.pdf
+ [08/04/2021 11:00:40.927 PM]- webRootPath -D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\wwwroot
+ [08/04/2021 11:00:41.996 PM]- fileLocation -D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\wwwroot\DownloadXLFiles
+ [08/04/2021 11:00:42.780 PM]- Clientpath  - /DownloadXLFiles/Soil_Card_Printabd70378-24f5-4f0c-9dcb-4fdab7c7ed33_.pdf
+ [08/04/2021 11:00:45.483 PM]-  path -D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\wwwroot\DownloadXLFiles\Soil_Card_Printabd70378-24f5-4f0c-9dcb-4fdab7c7ed33_.pdf
+ [08/04/2021 11:05:29.082 PM]- webRootPath -D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\wwwroot
+ [08/04/2021 11:05:29.094 PM]- fileLocation -D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\wwwroot\DownloadXLFiles
+ [08/04/2021 11:05:29.095 PM]- Clientpath  - /DownloadXLFiles/Soil_Card_Print5655668e-fc5c-42d0-8edc-f87b550c1864_.pdf
+ [08/04/2021 11:05:29.095 PM]-  path -D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\wwwroot\DownloadXLFiles\Soil_Card_Print5655668e-fc5c-42d0-8edc-f87b550c1864_.pdf
+ [08/04/2021 11:06:01.931 PM]- webRootPath -D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\wwwroot
+ [08/04/2021 11:06:03.003 PM]- fileLocation -D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\wwwroot\DownloadXLFiles
+ [08/04/2021 11:06:03.541 PM]- Clientpath  - /DownloadXLFiles/Soil_Card_Print904d96e8-40c6-47d1-84b8-953aecfa584e_.pdf
+ [08/04/2021 11:06:04.014 PM]-  path -D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\wwwroot\DownloadXLFiles\Soil_Card_Print904d96e8-40c6-47d1-84b8-953aecfa584e_.pdf
+ [08/04/2021 11:07:20.718 PM]- webRootPath -D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\wwwroot
+ [08/04/2021 11:07:22.048 PM]- fileLocation -D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\wwwroot\DownloadXLFiles
+ [08/04/2021 11:07:23.072 PM]- Clientpath  - /DownloadXLFiles/Soil_Card_Print10bb81b8-2db4-43ff-944a-f7df1cf65c63_.pdf
+ [08/04/2021 11:07:25.030 PM]-  path -D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\wwwroot\DownloadXLFiles\Soil_Card_Print10bb81b8-2db4-43ff-944a-f7df1cf65c63_.pdf
+ [08/04/2021 11:11:32.126 PM]- webRootPath -D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\wwwroot
+ [08/04/2021 11:11:33.553 PM]- fileLocation -D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\wwwroot\DownloadXLFiles
+ [08/04/2021 11:11:34.182 PM]- Clientpath  - /DownloadXLFiles/Soil_Card_Printb0c3fa89-e9b5-46be-ae42-2a85e3191c7a_.pdf
+ [08/04/2021 11:11:34.917 PM]-  path -D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\wwwroot\DownloadXLFiles\Soil_Card_Printb0c3fa89-e9b5-46be-ae42-2a85e3191c7a_.pdf
+ [08/04/2021 11:12:49.673 PM]- filecontent - System.Byte[]
+ [08/04/2021 11:20:21.908 PM]- webRootPath -D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\wwwroot
+ [08/04/2021 11:20:21.919 PM]- fileLocation -D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\wwwroot\DownloadXLFiles
+ [08/04/2021 11:20:21.919 PM]- Clientpath  - /DownloadXLFiles/Soil_Card_Print7f91fe60-cca1-4700-a3ff-621f17230630_.pdf
+ [08/04/2021 11:20:21.919 PM]-  path -D:\08-04-2021 -Kiosk\nafkiosk\Kiosk web\wwwroot\DownloadXLFiles\Soil_Card_Print7f91fe60-cca1-4700-a3ff-621f17230630_.pdf
+ [08/04/2021 11:20:29.428 PM]- filecontent - System.Byte[]
+ [03/05/2021 12:05:01.996 PM]- webRootPath -E:\Vadivu\Git\nafkiosk\Kiosk web\wwwroot
+ [03/05/2021 12:05:02.034 PM]- fileLocation -E:\Vadivu\Git\nafkiosk\Kiosk web\wwwroot\DownloadXLFiles
+ [03/05/2021 12:05:02.034 PM]- Clientpath  - /DownloadXLFiles/Soil_Card_Print12572cf5-acb8-43a8-9bae-7a6b00ee8dc1_.pdf
+ [03/05/2021 12:05:02.034 PM]-  path -E:\Vadivu\Git\nafkiosk\Kiosk web\wwwroot\DownloadXLFiles\Soil_Card_Print12572cf5-acb8-43a8-9bae-7a6b00ee8dc1_.pdf
+ [03/05/2021 12:05:06.025 PM]- filecontent - System.Byte[]
+ [03/05/2021 12:05:06.888 PM]- webRootPath -E:\Vadivu\Git\nafkiosk\Kiosk web\wwwroot
+ [03/05/2021 12:05:06.888 PM]- fileLocation -E:\Vadivu\Git\nafkiosk\Kiosk web\wwwroot\DownloadXLFiles
+ [03/05/2021 12:05:06.888 PM]- Clientpath  - /DownloadXLFiles/Soil_Card_Print51144004-b2af-4e9b-a409-08646e7afd5c_.pdf
+ [03/05/2021 12:05:06.888 PM]-  path -E:\Vadivu\Git\nafkiosk\Kiosk web\wwwroot\DownloadXLFiles\Soil_Card_Print51144004-b2af-4e9b-a409-08646e7afd5c_.pdf
+ [03/05/2021 12:05:07.129 PM]- webRootPath -E:\Vadivu\Git\nafkiosk\Kiosk web\wwwroot
+ [03/05/2021 12:05:07.129 PM]- fileLocation -E:\Vadivu\Git\nafkiosk\Kiosk web\wwwroot\DownloadXLFiles
+ [03/05/2021 12:05:07.129 PM]- Clientpath  - /DownloadXLFiles/Soil_Card_Print1a3ee825-5e7e-4b35-926f-3375ed6aee35_.pdf
+ [03/05/2021 12:05:07.129 PM]-  path -E:\Vadivu\Git\nafkiosk\Kiosk web\wwwroot\DownloadXLFiles\Soil_Card_Print1a3ee825-5e7e-4b35-926f-3375ed6aee35_.pdf
+ [03/05/2021 12:05:07.330 PM]- webRootPath -E:\Vadivu\Git\nafkiosk\Kiosk web\wwwroot
+ [03/05/2021 12:05:07.330 PM]- fileLocation -E:\Vadivu\Git\nafkiosk\Kiosk web\wwwroot\DownloadXLFiles
+ [03/05/2021 12:05:07.330 PM]- Clientpath  - /DownloadXLFiles/Soil_Card_Print146ecaaf-4b2f-4d86-a3b3-6b039a29d531_.pdf
+ [03/05/2021 12:05:07.330 PM]-  path -E:\Vadivu\Git\nafkiosk\Kiosk web\wwwroot\DownloadXLFiles\Soil_Card_Print146ecaaf-4b2f-4d86-a3b3-6b039a29d531_.pdf
+ [03/05/2021 12:05:07.439 PM]- filecontent - System.Byte[]
+ [03/05/2021 12:05:07.440 PM]- filecontent - System.Byte[]
+ [03/05/2021 12:05:07.982 PM]- filecontent - System.Byte[]
+ [03/05/2021 12:12:24.664 PM]- webRootPath -E:\Vadivu\Git\nafkiosk\Kiosk web\wwwroot
+ [03/05/2021 12:12:26.932 PM]- fileLocation -E:\Vadivu\Git\nafkiosk\Kiosk web\wwwroot\DownloadXLFiles
+ [03/05/2021 12:12:27.705 PM]- Clientpath  - /DownloadXLFiles/Soil_Card_Print6dd37495-182d-4aca-829e-7533157dbb73_.pdf
+ [03/05/2021 12:12:28.435 PM]-  path -E:\Vadivu\Git\nafkiosk\Kiosk web\wwwroot\DownloadXLFiles\Soil_Card_Print6dd37495-182d-4aca-829e-7533157dbb73_.pdf
+ [03/05/2021 12:13:53.281 PM]- filecontent - System.Byte[]
+ [03/05/2021 07:46:52.847 PM]- webRootPath -E:\Vadivu\Git\nafkiosk\Kiosk web\wwwroot
+ [03/05/2021 07:46:52.867 PM]- fileLocation -E:\Vadivu\Git\nafkiosk\Kiosk web\wwwroot\DownloadXLFiles
+ [03/05/2021 07:46:52.867 PM]- Clientpath  - /DownloadXLFiles/Soil_Card_Printc6f7303b-1e6e-4dc0-a2d3-d1c49410650a_.pdf
+ [03/05/2021 07:46:52.867 PM]-  path -E:\Vadivu\Git\nafkiosk\Kiosk web\wwwroot\DownloadXLFiles\Soil_Card_Printc6f7303b-1e6e-4dc0-a2d3-d1c49410650a_.pdf
+ [03/05/2021 07:46:53.805 PM]- filecontent - System.Byte[]
+ [06/05/2021 04:49:38.015 PM]- webRootPath -D:\Kiosk\nafkiosk-vadivu\Kiosk web\wwwroot
+ [06/05/2021 04:49:38.132 PM]- fileLocation -D:\Kiosk\nafkiosk-vadivu\Kiosk web\wwwroot\DownloadXLFiles
+ [06/05/2021 04:49:38.132 PM]- Clientpath  - /DownloadXLFiles/Soil_Card_Printdd9e0fb3-fcb4-4144-a242-2589636b6225_.pdf
+ [06/05/2021 04:49:38.132 PM]-  path -D:\Kiosk\nafkiosk-vadivu\Kiosk web\wwwroot\DownloadXLFiles\Soil_Card_Printdd9e0fb3-fcb4-4144-a242-2589636b6225_.pdf
+ [06/05/2021 04:49:48.135 PM]- webRootPath -D:\Kiosk\nafkiosk-vadivu\Kiosk web\wwwroot
+ [06/05/2021 04:49:48.135 PM]- fileLocation -D:\Kiosk\nafkiosk-vadivu\Kiosk web\wwwroot\DownloadXLFiles
+ [06/05/2021 04:49:48.135 PM]- Clientpath  - /DownloadXLFiles/Soil_Card_Print085e1379-b556-45fe-a0e0-b38b1fb9390b_.pdf
+ [06/05/2021 04:49:48.135 PM]-  path -D:\Kiosk\nafkiosk-vadivu\Kiosk web\wwwroot\DownloadXLFiles\Soil_Card_Print085e1379-b556-45fe-a0e0-b38b1fb9390b_.pdf
+ [06/05/2021 05:04:46.057 PM]- webRootPath -D:\Kiosk\nafkiosk-vadivu\Kiosk web\wwwroot
+ [06/05/2021 05:04:46.066 PM]- fileLocation -D:\Kiosk\nafkiosk-vadivu\Kiosk web\wwwroot\DownloadXLFiles
+ [06/05/2021 05:04:46.067 PM]- Clientpath  - /DownloadXLFiles/Soil_Card_Printfe0b07ff-8f59-4d85-9689-9077f6c08ca4_.pdf
+ [06/05/2021 05:04:46.067 PM]-  path -D:\Kiosk\nafkiosk-vadivu\Kiosk web\wwwroot\DownloadXLFiles\Soil_Card_Printfe0b07ff-8f59-4d85-9689-9077f6c08ca4_.pdf
+ [06/05/2021 05:15:48.426 PM]- webRootPath -D:\Kiosk\nafkiosk-vadivu\Kiosk web\wwwroot
+ [06/05/2021 05:15:48.434 PM]- fileLocation -D:\Kiosk\nafkiosk-vadivu\Kiosk web\wwwroot\DownloadXLFiles
+ [06/05/2021 05:15:48.435 PM]- Clientpath  - /DownloadXLFiles/Soil_Card_Printa956db8e-7a2a-4894-a908-a807c07964ed_.pdf
+ [06/05/2021 05:15:48.435 PM]-  path -D:\Kiosk\nafkiosk-vadivu\Kiosk web\wwwroot\DownloadXLFiles\Soil_Card_Printa956db8e-7a2a-4894-a908-a807c07964ed_.pdf
+ [06/05/2021 05:18:50.630 PM]- webRootPath -D:\Kiosk\nafkiosk-vadivu\Kiosk web\wwwroot
+ [06/05/2021 05:18:50.639 PM]- fileLocation -D:\Kiosk\nafkiosk-vadivu\Kiosk web\wwwroot\DownloadXLFiles
+ [06/05/2021 05:18:50.639 PM]- Clientpath  - /DownloadXLFiles/Soil_Card_Printb02a82cf-a51c-432f-9ce8-5d00556e7b64_.pdf
+ [06/05/2021 05:18:50.639 PM]-  path -D:\Kiosk\nafkiosk-vadivu\Kiosk web\wwwroot\DownloadXLFiles\Soil_Card_Printb02a82cf-a51c-432f-9ce8-5d00556e7b64_.pdf
+ [06/05/2021 05:22:09.852 PM]- webRootPath -D:\Kiosk\nafkiosk-vadivu\Kiosk web\wwwroot
+ [06/05/2021 05:22:09.859 PM]- fileLocation -D:\Kiosk\nafkiosk-vadivu\Kiosk web\wwwroot\DownloadXLFiles
+ [06/05/2021 05:22:09.859 PM]- Clientpath  - /DownloadXLFiles/Soil_Card_Print15e968f4-b9b0-46c0-a686-56cb73ac392c_.pdf
+ [06/05/2021 05:22:09.859 PM]-  path -D:\Kiosk\nafkiosk-vadivu\Kiosk web\wwwroot\DownloadXLFiles\Soil_Card_Print15e968f4-b9b0-46c0-a686-56cb73ac392c_.pdf
+ [06/05/2021 06:11:05.175 PM]- webRootPath -D:\Kiosk\nafkiosk-vadivu\Kiosk web\wwwroot
+ [06/05/2021 06:11:05.183 PM]- fileLocation -D:\Kiosk\nafkiosk-vadivu\Kiosk web\wwwroot\DownloadXLFiles
+ [06/05/2021 06:11:05.183 PM]- Clientpath  - /DownloadXLFiles/Soil_Card_Print573aeba0-2861-4fa5-b924-992d23ab1d87_.pdf
+ [06/05/2021 06:11:05.183 PM]-  path -D:\Kiosk\nafkiosk-vadivu\Kiosk web\wwwroot\DownloadXLFiles\Soil_Card_Print573aeba0-2861-4fa5-b924-992d23ab1d87_.pdf
+ [06/05/2021 06:11:15.482 PM]- filecontent - System.Byte[]
+ [27/05/2021 07:03:05.180 PM]- webRootPath -D:\Kiosk\nafkiosk-vadivu\Kiosk web\wwwroot
+ [27/05/2021 07:03:05.226 PM]- fileLocation -D:\Kiosk\nafkiosk-vadivu\Kiosk web\wwwroot\DownloadXLFiles
+ [27/05/2021 07:03:05.226 PM]- Clientpath  - /DownloadXLFiles/Soil_Card_Printbbb6b805-cd68-431d-abd3-47417d017ad9_.pdf
+ [27/05/2021 07:03:05.226 PM]-  path -D:\Kiosk\nafkiosk-vadivu\Kiosk web\wwwroot\DownloadXLFiles\Soil_Card_Printbbb6b805-cd68-431d-abd3-47417d017ad9_.pdf
+ [27/05/2021 07:03:10.711 PM]- filecontent - System.Byte[]
+ [27/05/2021 07:03:43.515 PM]- webRootPath -D:\Kiosk\nafkiosk-vadivu\Kiosk web\wwwroot
+ [27/05/2021 07:03:44.791 PM]- fileLocation -D:\Kiosk\nafkiosk-vadivu\Kiosk web\wwwroot\DownloadXLFiles
+ [27/05/2021 07:03:45.307 PM]- Clientpath  - /DownloadXLFiles/Soil_Card_Print4f8809ec-e933-41fe-b4d3-c5c5ad250a33_.pdf
+ [27/05/2021 07:03:45.815 PM]-  path -D:\Kiosk\nafkiosk-vadivu\Kiosk web\wwwroot\DownloadXLFiles\Soil_Card_Print4f8809ec-e933-41fe-b4d3-c5c5ad250a33_.pdf
+ [27/05/2021 07:21:59.454 PM]- filecontent - System.Byte[]
+ [27/05/2021 07:50:20.556 PM]- webRootPath -D:\Kiosk\nafkiosk-vadivu\Kiosk web\wwwroot
+ [27/05/2021 07:50:20.569 PM]- fileLocation -D:\Kiosk\nafkiosk-vadivu\Kiosk web\wwwroot\DownloadXLFiles
+ [27/05/2021 07:50:20.569 PM]- Clientpath  - /DownloadXLFiles/Soil_Card_Print13b12859-dc66-40b6-8fe9-2676d5fda3c5_.pdf
+ [27/05/2021 07:50:20.569 PM]-  path -D:\Kiosk\nafkiosk-vadivu\Kiosk web\wwwroot\DownloadXLFiles\Soil_Card_Print13b12859-dc66-40b6-8fe9-2676d5fda3c5_.pdf
+ [27/05/2021 07:51:36.020 PM]- filecontent - System.Byte[]
+ [27/05/2021 07:54:11.911 PM]- webRootPath -D:\Kiosk\nafkiosk-vadivu\Kiosk web\wwwroot
+ [27/05/2021 07:54:15.628 PM]- fileLocation -D:\Kiosk\nafkiosk-vadivu\Kiosk web\wwwroot\DownloadXLFiles
+ [27/05/2021 07:54:17.769 PM]- Clientpath  - /DownloadXLFiles/Soil_Card_Print1facd41b-8cde-4310-923a-c8b838d66d7c_.pdf
+ [27/05/2021 07:54:20.227 PM]-  path -D:\Kiosk\nafkiosk-vadivu\Kiosk web\wwwroot\DownloadXLFiles\Soil_Card_Print1facd41b-8cde-4310-923a-c8b838d66d7c_.pdf
+ [27/05/2021 08:02:45.053 PM]- filecontent - System.Byte[]
+ [27/05/2021 08:03:29.247 PM]- webRootPath -D:\Kiosk\nafkiosk-vadivu\Kiosk web\wwwroot
+ [27/05/2021 08:03:29.248 PM]- fileLocation -D:\Kiosk\nafkiosk-vadivu\Kiosk web\wwwroot\DownloadXLFiles
+ [27/05/2021 08:03:29.248 PM]- Clientpath  - /DownloadXLFiles/Soil_Card_Print6fa8a124-de95-4c4a-b3b4-21ae9638786d_.pdf
+ [27/05/2021 08:03:29.249 PM]-  path -D:\Kiosk\nafkiosk-vadivu\Kiosk web\wwwroot\DownloadXLFiles\Soil_Card_Print6fa8a124-de95-4c4a-b3b4-21ae9638786d_.pdf
+ [27/05/2021 08:03:34.627 PM]- filecontent - System.Byte[]
+ [27/05/2021 08:04:12.236 PM]- webRootPath -D:\Kiosk\nafkiosk-vadivu\Kiosk web\wwwroot
+ [27/05/2021 08:04:12.236 PM]- fileLocation -D:\Kiosk\nafkiosk-vadivu\Kiosk web\wwwroot\DownloadXLFiles
+ [27/05/2021 08:04:12.236 PM]- Clientpath  - /DownloadXLFiles/Soil_Card_Print05a36483-441a-40e4-9ecd-be2483f40021_.pdf
+ [27/05/2021 08:04:12.237 PM]-  path -D:\Kiosk\nafkiosk-vadivu\Kiosk web\wwwroot\DownloadXLFiles\Soil_Card_Print05a36483-441a-40e4-9ecd-be2483f40021_.pdf
+ [27/05/2021 08:04:13.938 PM]- filecontent - System.Byte[]
+ [27/05/2021 08:20:03.428 PM]- webRootPath -D:\Kiosk\nafkiosk-vadivu\Kiosk web\wwwroot
+ [27/05/2021 08:20:03.430 PM]- fileLocation -D:\Kiosk\nafkiosk-vadivu\Kiosk web\wwwroot\DownloadXLFiles
+ [27/05/2021 08:20:03.432 PM]- Clientpath  - /DownloadXLFiles/Soil_Card_Printc4e28412-87b4-43b6-a20f-add189bf73d5_.pdf
+ [27/05/2021 08:20:03.436 PM]-  path -D:\Kiosk\nafkiosk-vadivu\Kiosk web\wwwroot\DownloadXLFiles\Soil_Card_Printc4e28412-87b4-43b6-a20f-add189bf73d5_.pdf
+ [27/05/2021 08:20:08.681 PM]- filecontent - System.Byte[]
+ [27/05/2021 08:22:58.338 PM]- webRootPath -D:\Kiosk\nafkiosk-vadivu\Kiosk web\wwwroot
+ [27/05/2021 08:23:05.956 PM]- fileLocation -D:\Kiosk\nafkiosk-vadivu\Kiosk web\wwwroot\DownloadXLFiles
+ [27/05/2021 08:23:08.534 PM]- Clientpath  - /DownloadXLFiles/Soil_Card_Print0dd11390-4519-4c55-8652-8e8853f84ff5_.pdf
+ [27/05/2021 08:23:13.057 PM]-  path -D:\Kiosk\nafkiosk-vadivu\Kiosk web\wwwroot\DownloadXLFiles\Soil_Card_Print0dd11390-4519-4c55-8652-8e8853f84ff5_.pdf
+ [27/05/2021 08:24:10.110 PM]- filecontent - System.Byte[]
+ [28/05/2021 04:43:53.488 PM]- webRootPath -D:\Kiosk\nafkiosk-vadivu\Kiosk web\wwwroot
+ [28/05/2021 04:43:53.513 PM]- fileLocation -D:\Kiosk\nafkiosk-vadivu\Kiosk web\wwwroot\DownloadXLFiles
+ [28/05/2021 04:43:53.513 PM]- Clientpath  - /DownloadXLFiles/Soil_Card_Printd4088542-8229-42f9-908f-39aefa34a989_.pdf
+ [28/05/2021 04:43:53.513 PM]-  path -D:\Kiosk\nafkiosk-vadivu\Kiosk web\wwwroot\DownloadXLFiles\Soil_Card_Printd4088542-8229-42f9-908f-39aefa34a989_.pdf
+ [01/06/2021 09:51:09.909 AM]- webRootPath -D:\Kiosk\nafkiosk-vadivu\Kiosk web\wwwroot
+ [01/06/2021 09:51:09.948 AM]- fileLocation -D:\Kiosk\nafkiosk-vadivu\Kiosk web\wwwroot\DownloadXLFiles
+ [01/06/2021 09:51:09.949 AM]- Clientpath  - /DownloadXLFiles/Soil_Card_Print70cf4d09-3711-42a9-b44a-338110647517_.pdf
+ [01/06/2021 09:51:09.949 AM]-  path -D:\Kiosk\nafkiosk-vadivu\Kiosk web\wwwroot\DownloadXLFiles\Soil_Card_Print70cf4d09-3711-42a9-b44a-338110647517_.pdf
+ [01/06/2021 09:51:14.283 AM]- webRootPath -D:\Kiosk\nafkiosk-vadivu\Kiosk web\wwwroot
+ [01/06/2021 09:51:14.284 AM]- fileLocation -D:\Kiosk\nafkiosk-vadivu\Kiosk web\wwwroot\DownloadXLFiles
+ [01/06/2021 09:51:14.284 AM]- Clientpath  - /DownloadXLFiles/Soil_Card_Print74beea60-dd98-4c34-9050-bdc9784fad52_.pdf
+ [01/06/2021 09:51:14.284 AM]-  path -D:\Kiosk\nafkiosk-vadivu\Kiosk web\wwwroot\DownloadXLFiles\Soil_Card_Print74beea60-dd98-4c34-9050-bdc9784fad52_.pdf
+ [01/06/2021 09:53:21.317 AM]- webRootPath -D:\Kiosk\nafkiosk-vadivu\Kiosk web\wwwroot
+ [01/06/2021 09:53:24.904 AM]- fileLocation -D:\Kiosk\nafkiosk-vadivu\Kiosk web\wwwroot\DownloadXLFiles
+ [01/06/2021 09:53:26.185 AM]- Clientpath  - /DownloadXLFiles/Soil_Card_Print4ca9218a-e76b-4f2c-8154-7eba4da7a9b3_.pdf
+ [01/06/2021 09:53:26.769 AM]-  path -D:\Kiosk\nafkiosk-vadivu\Kiosk web\wwwroot\DownloadXLFiles\Soil_Card_Print4ca9218a-e76b-4f2c-8154-7eba4da7a9b3_.pdf
+ [01/06/2021 09:55:10.811 AM]- filecontent - System.Byte[]
+ [13/07/2021 07:11:59.036 PM]- webRootPath -E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\wwwroot
+ [13/07/2021 07:11:59.082 PM]- fileLocation -E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\wwwroot\DownloadXLFiles
+ [13/07/2021 07:11:59.082 PM]- Clientpath  - /DownloadXLFiles/Soil_Card_Printc9115bd8-b669-40ef-a3f7-c667dc54a789_.pdf
+ [13/07/2021 07:11:59.082 PM]-  path -E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\wwwroot\DownloadXLFiles\Soil_Card_Printc9115bd8-b669-40ef-a3f7-c667dc54a789_.pdf
+ [13/07/2021 07:15:49.666 PM]- webRootPath -E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\wwwroot
+ [13/07/2021 07:15:49.666 PM]- fileLocation -E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\wwwroot\DownloadXLFiles
+ [13/07/2021 07:15:49.667 PM]- Clientpath  - /DownloadXLFiles/Soil_Card_Printe3c57370-0546-4666-9c85-243f87a6053f_.pdf
+ [13/07/2021 07:15:49.667 PM]-  path -E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\wwwroot\DownloadXLFiles\Soil_Card_Printe3c57370-0546-4666-9c85-243f87a6053f_.pdf
+ [13/07/2021 07:15:51.935 PM]- filecontent - System.Byte[]
+ [13/07/2021 07:18:52.279 PM]- webRootPath -E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\wwwroot
+ [13/07/2021 07:19:15.423 PM]- fileLocation -E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\wwwroot\DownloadXLFiles
+ [13/07/2021 07:19:22.396 PM]- Clientpath  - /DownloadXLFiles/Soil_Card_Printe59941e9-7a1c-49d5-99fb-1169aafe069c_.pdf
+ [13/07/2021 07:26:13.493 PM]- webRootPath -E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\wwwroot
+ [13/07/2021 07:26:14.711 PM]- fileLocation -E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\wwwroot\DownloadXLFiles
+ [13/07/2021 07:26:17.946 PM]- Clientpath  - /DownloadXLFiles/Soil_Card_Print97db7bb7-8a99-4ae2-98f8-c19e1ac2601c_.pdf
+ [13/07/2021 07:26:19.035 PM]-  path -E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\wwwroot\DownloadXLFiles\Soil_Card_Print97db7bb7-8a99-4ae2-98f8-c19e1ac2601c_.pdf
+ [13/07/2021 07:26:24.912 PM]- filecontent - System.Byte[]
+ [13/07/2021 07:33:07.104 PM]- webRootPath -E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\wwwroot
+ [13/07/2021 07:33:07.105 PM]- fileLocation -E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\wwwroot\DownloadXLFiles
+ [13/07/2021 07:33:07.105 PM]- Clientpath  - /DownloadXLFiles/Soil_Card_Printa9821ac7-8ea8-4aca-a32a-f96f961975ae_.pdf
+ [13/07/2021 07:33:07.116 PM]-  path -E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\wwwroot\DownloadXLFiles\Soil_Card_Printa9821ac7-8ea8-4aca-a32a-f96f961975ae_.pdf
+ [13/07/2021 07:34:52.329 PM]- filecontent - System.Byte[]
+ [13/07/2021 07:35:20.278 PM]- webRootPath -E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\wwwroot
+ [13/07/2021 07:35:25.339 PM]- fileLocation -E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\wwwroot\DownloadXLFiles
+ [13/07/2021 07:35:25.907 PM]- Clientpath  - /DownloadXLFiles/Soil_Card_Print08ea6bfb-3c99-4203-8fab-9b38380e3d0b_.pdf
+ [13/07/2021 07:35:29.821 PM]-  path -E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\wwwroot\DownloadXLFiles\Soil_Card_Print08ea6bfb-3c99-4203-8fab-9b38380e3d0b_.pdf
+ [13/07/2021 07:35:52.148 PM]- filecontent - System.Byte[]
+ [13/07/2021 07:39:46.843 PM]- webRootPath -E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\wwwroot
+ [13/07/2021 07:39:47.918 PM]- fileLocation -E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\wwwroot\DownloadXLFiles
+ [13/07/2021 07:39:48.374 PM]- Clientpath  - /DownloadXLFiles/Soil_Card_Printb3552035-fc9e-409b-8b79-bf3d4d720bfb_.pdf
+ [13/07/2021 07:39:48.698 PM]-  path -E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\wwwroot\DownloadXLFiles\Soil_Card_Printb3552035-fc9e-409b-8b79-bf3d4d720bfb_.pdf
+ [13/07/2021 07:41:07.614 PM]- webRootPath -E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\wwwroot
+ [13/07/2021 07:41:07.614 PM]- fileLocation -E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\wwwroot\DownloadXLFiles
+ [13/07/2021 07:41:07.614 PM]- Clientpath  - /DownloadXLFiles/Soil_Card_Print8824d70c-163e-40dd-ad29-c5f8dd6bd802_.pdf
+ [13/07/2021 07:41:07.614 PM]-  path -E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\wwwroot\DownloadXLFiles\Soil_Card_Print8824d70c-163e-40dd-ad29-c5f8dd6bd802_.pdf
+ [13/07/2021 07:42:44.648 PM]- filecontent - System.Byte[]
+ [14/07/2021 10:39:46.978 AM]- webRootPath -E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\wwwroot
+ [14/07/2021 10:39:48.339 AM]- fileLocation -E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\wwwroot\DownloadXLFiles
+ [14/07/2021 10:39:48.883 AM]- Clientpath  - /DownloadXLFiles/Soil_Card_Print400833bf-d2a8-40ab-bd8f-3d04266324a4_.pdf
+ [14/07/2021 10:39:49.391 AM]-  path -E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\wwwroot\DownloadXLFiles\Soil_Card_Print400833bf-d2a8-40ab-bd8f-3d04266324a4_.pdf
+ [14/07/2021 10:42:45.246 AM]- webRootPath -E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\wwwroot
+ [14/07/2021 10:42:45.247 AM]- fileLocation -E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\wwwroot\DownloadXLFiles
+ [14/07/2021 10:42:45.247 AM]- Clientpath  - /DownloadXLFiles/Soil_Card_Printb5a50a22-0b79-4bab-8582-b2ff2d42a262_.pdf
+ [14/07/2021 10:42:45.248 AM]-  path -E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\wwwroot\DownloadXLFiles\Soil_Card_Printb5a50a22-0b79-4bab-8582-b2ff2d42a262_.pdf
+ [14/07/2021 10:42:46.025 AM]- filecontent - System.Byte[]
+ [14/07/2021 10:42:47.001 AM]- filecontent - System.Byte[]
+ [14/07/2021 10:48:04.131 AM]- webRootPath -E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\wwwroot
+ [14/07/2021 10:48:04.136 AM]- fileLocation -E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\wwwroot\DownloadXLFiles
+ [14/07/2021 10:48:04.136 AM]- Clientpath  - /DownloadXLFiles/Soil_Card_Print1790d956-ce1a-46c2-ab44-476ee7596d1e_.pdf
+ [14/07/2021 10:48:04.136 AM]-  path -E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\wwwroot\DownloadXLFiles\Soil_Card_Print1790d956-ce1a-46c2-ab44-476ee7596d1e_.pdf
+ [14/07/2021 10:48:06.409 AM]- filecontent - System.Byte[]
+ [14/07/2021 11:01:21.290 AM]- webRootPath -E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\wwwroot
+ [14/07/2021 11:01:21.302 AM]- fileLocation -E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\wwwroot\DownloadXLFiles
+ [14/07/2021 11:01:21.302 AM]- Clientpath  - /DownloadXLFiles/Soil_Card_Print52ae2d08-b59a-4990-bb4c-1ce643bef9b5_.pdf
+ [14/07/2021 11:01:21.302 AM]-  path -E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\wwwroot\DownloadXLFiles\Soil_Card_Print52ae2d08-b59a-4990-bb4c-1ce643bef9b5_.pdf
+ [14/07/2021 11:01:44.973 AM]- webRootPath -E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\wwwroot
+ [14/07/2021 11:01:44.974 AM]- fileLocation -E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\wwwroot\DownloadXLFiles
+ [14/07/2021 11:01:44.974 AM]- Clientpath  - /DownloadXLFiles/Soil_Card_Printa70c3611-7e82-46b7-99ac-ad8b4d680332_.pdf
+ [14/07/2021 11:01:44.974 AM]-  path -E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\wwwroot\DownloadXLFiles\Soil_Card_Printa70c3611-7e82-46b7-99ac-ad8b4d680332_.pdf
+ [14/07/2021 11:04:37.393 AM]- webRootPath -E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\wwwroot
+ [14/07/2021 11:04:38.560 AM]- fileLocation -E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\wwwroot\DownloadXLFiles
+ [14/07/2021 11:04:39.256 AM]- Clientpath  - /DownloadXLFiles/Soil_Card_Printf0ef409e-d250-42b8-9543-881b0c8212d1_.pdf
+ [14/07/2021 11:04:40.106 AM]-  path -E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\wwwroot\DownloadXLFiles\Soil_Card_Printf0ef409e-d250-42b8-9543-881b0c8212d1_.pdf
+ [14/07/2021 11:18:19.930 AM]- webRootPath -E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\wwwroot
+ [14/07/2021 11:18:21.189 AM]- fileLocation -E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\wwwroot\DownloadXLFiles
+ [14/07/2021 11:18:21.645 AM]- Clientpath  - /DownloadXLFiles/Soil_Card_Printec88429b-e875-4a1a-b852-b9a0732a220e_.pdf
+ [14/07/2021 11:18:22.073 AM]-  path -E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\wwwroot\DownloadXLFiles\Soil_Card_Printec88429b-e875-4a1a-b852-b9a0732a220e_.pdf
+ [14/07/2021 11:19:00.918 AM]- filecontent - System.Byte[]
+ [14/07/2021 11:23:48.892 AM]- webRootPath -E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\wwwroot
+ [14/07/2021 11:23:48.917 AM]- fileLocation -E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\wwwroot\DownloadXLFiles
+ [14/07/2021 11:23:48.917 AM]- Clientpath  - /DownloadXLFiles/Soil_Card_Print3ae074d2-1cfe-4b7b-b3d2-4b45149ae3f1_.pdf
+ [14/07/2021 11:23:48.917 AM]-  path -E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\wwwroot\DownloadXLFiles\Soil_Card_Print3ae074d2-1cfe-4b7b-b3d2-4b45149ae3f1_.pdf
+ [14/07/2021 11:23:52.151 AM]- filecontent - System.Byte[]
+ [14/07/2021 11:24:35.729 AM]- webRootPath -E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\wwwroot
+ [14/07/2021 11:24:37.209 AM]- fileLocation -E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\wwwroot\DownloadXLFiles
+ [14/07/2021 11:24:38.046 AM]- Clientpath  - /DownloadXLFiles/Soil_Card_Printc5f74a58-c517-4737-991b-f4615692a64e_.pdf
+ [14/07/2021 11:24:38.619 AM]-  path -E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\wwwroot\DownloadXLFiles\Soil_Card_Printc5f74a58-c517-4737-991b-f4615692a64e_.pdf
+ [14/07/2021 11:25:23.812 AM]- filecontent - System.Byte[]
+ [14/07/2021 12:16:55.570 PM]- webRootPath -E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\wwwroot
+ [14/07/2021 12:16:55.618 PM]- fileLocation -E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\wwwroot\DownloadXLFiles
+ [14/07/2021 12:16:55.619 PM]- Clientpath  - /DownloadXLFiles/Soil_Card_Printe805c7ea-bab2-49ba-bb83-3a6b19dd76a8_.pdf
+ [14/07/2021 12:16:55.619 PM]-  path -E:\Selvakumar\Projects\nafkiosk-vadivu\Kiosk web\wwwroot\DownloadXLFiles\Soil_Card_Printe805c7ea-bab2-49ba-bb83-3a6b19dd76a8_.pdf
+ [14/07/2021 12:16:58.123 PM]- filecontent - System.Byte[]

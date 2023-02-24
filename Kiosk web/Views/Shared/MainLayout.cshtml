@@ -1,0 +1,1352 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>kiosk</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!--Style Sheet-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/AdminLTE.min.css" rel="stylesheet" />
+    <link href="~/css/_all-skins.css" rel="stylesheet" />   
+    <link href="~/css/converse.css" rel="stylesheet" />
+    <link href="~/css/myStyle.css" rel="stylesheet" />
+    <link href="~/css/kendo.common.min.css" rel="stylesheet" />
+    <link href="~/css/kendo.default.min.css" rel="stylesheet" />
+    <style>
+        .control-label.required:after {
+            content: "*";
+            color: red;
+        }
+
+        span.k-tooltip {
+            white-space: pre-line;
+        }
+
+        span.k-tooltip {
+            position: fixed;
+            display: -webkit-box;
+            border-width: 1px;
+            padding: 2px 5px 1px 6px;
+        }
+
+
+        .btn-primary {
+            background-color: #30749c;
+            border-color: #30749c;
+        }
+
+            .btn-primary:hover,
+            .btn-primary:active,
+            .btn-primary.hover {
+                background-color: #30749c;
+            }
+
+        a:hover, a:focus {
+            outline: none;
+            text-decoration: none;
+            /*color: #72afd2;*/
+            color: #3c8dbc;
+        }
+
+        .k-grid .k-grouping-header {
+            height: 20px;
+            font-size: 12px;
+        }
+
+        .k-grid .k-i-arrow-n, .k-grid .k-i-arrow-s {
+            float: left;
+        }
+
+        .k-grid-header {
+            background-color: #FEE7D5;
+            color: black;
+            font-size: 12px;
+        }
+
+            .k-grid-header th.k-header, .k-filter-row th {
+                text-align: center;
+            }
+
+            .k-grid th.k-header, .k-grid-header .k-grid th.k-header, .k-grid-header {
+                background-color: #c5deed;
+                color: black;
+            }
+
+                .k-grid-header .k-header .k-link, .k-grid-header .k-header, .k-grid-header .k-link, .k-grid-header .k-link:link, .k-pager-info, .k-scheduler-header, .k-scheduler-agendaview .k-scheduler-datecolumn {
+                    color: black;
+                }
+
+        .k-grid td {
+            padding: 0.3em 0.3em;
+            font-size: 12px;
+        }
+
+        .k-grid .k-grouping-header {
+            height: 20px;
+            font-size: 12px;
+        }
+
+        .k-grouping-header .k-group-indicator, .k-pivot-toolbar .k-button {
+            height: 20px;
+        }
+
+        .k-grid th.k-header,
+        .k-grid th.k-header .k-link {
+            color: black;
+        }
+
+
+        .k-grid-content > table > tbody > tr {
+            border-color: #fdd4b4;
+        }
+
+
+
+        .k-grid-content > table > tbody > .k-alt {
+            /*background: #E0E6F8;*/
+            line-height: 1px;
+        }
+
+        .form-horizontal .control-label {
+            text-align: left;
+        }
+
+
+
+        div.k-grid tbody .k-button {
+            min-width: 0;
+        }
+
+        .k-button.k-primary {
+            background-color: #3c8dbc;
+            border-color: #3c8dbc;
+        }
+
+        .form-horizontal .control-label {
+            font-weight: 400;
+        }
+
+        .second-navbar {
+            top: 50px;
+        }
+
+        .breadcrumb > li + li:before {
+            color: #cccccc;
+        }
+
+        .slimScrollBar {
+            background: none repeat scroll 0 0 #6b58cd !important;
+            border-radius: 0;
+            display: none;
+            height: 702.936px;
+            position: absolute;
+            right: 1px;
+            top: 145px;
+            width: 10px !important;
+            z-index: 99;
+            opacity: 0.7 !important;
+        }
+
+        .k-filter-row th {
+            padding: 0.0em 0.0em 0.1em;
+            font-size: 12px;
+        }
+
+        .k-grid .k-autocomplete.k-state-default, .k-grid .k-picker-wrap.k-state-default, .k-grid .k-numeric-wrap.k-state-default {
+            height: 18px;
+        }
+
+        .k-button.k-grid-Delete {
+            width: 15px;
+            height: 20px;
+            padding: 0.01em 0.7em 1px;
+        }
+       
+        .k-button.k-grid-Copy {
+            width: 15px;
+            height: 20px;
+            padding: 0.01em 0.7em 1px;
+        }
+
+        .k-button.k-grid-Attach {
+            width: 15px;
+            height: 20px;
+            padding: 0.01em 0.7em 1px;
+        }
+
+        .k-button.k-grid-AdhocTask {
+            width: 15px;
+            height: 20px;
+            padding: 0.01em 0.7em 1px;
+        }
+
+        .k-button.k-grid-CheckList {
+            width: 15px;
+            height: 20px;
+            padding: 0.01em 0.7em 1px;
+        }
+
+        .k-button.k-grid-Notes {
+            width: 15px;
+            height: 20px;
+            padding: 0.01em 0.7em 1px;
+        }
+
+        .fa-close {
+            margin-left: -6px;
+            padding: 0em 0.1em 1em;
+        }
+
+
+
+        .fa-paperclip {
+            margin-left: -6px;
+            padding: 0em 0.1em 1em;
+        }
+
+
+        .fa-pencil {
+            margin-left: -5px;
+            margin-right: -5px;
+            padding: 0em 0.1em 0.1em;
+        }
+
+        .fa-list {
+            margin-left: -6px;
+            padding: 0em 0.1em 1em;
+        }
+
+        .fa-commenting {
+            margin-left: -6px;
+            padding: 0em 0.1em 1em;
+        }
+
+        .fa-clipboard {
+            margin-left: -6px;
+            padding: 0em 0.1em 1em;
+        }
+
+
+        .togglefollow {
+            color: #7FFF00 !important;
+        }
+
+
+
+        span.k-tooltip {
+            white-space: pre-line;
+        }
+
+
+        .main-footer {
+            background: #cccccc;
+        }
+
+        .content-wrapper, .right-side {
+            background-color: #e7e7e7;
+        }
+
+        .info-box-icon {
+            background: white;
+        }
+        /*.k-grid-toolbar {
+            height: 10px;
+        }*/
+
+        #conversejs .box-flyout {
+            position: relative !important;
+        }
+
+        #colorstrip {
+            height: 0px;
+            border-bottom: solid 20px #605ca8;
+            color: white;
+        }
+
+        #colorstrip1 {
+            height: 0px;
+            border-bottom: solid 33px #605ca8;
+            color: white;
+        }
+
+        .manageFav {
+            float: left;
+            background-color: transparent;
+            background-image: none;
+            padding: 15px 0px;
+            font-family: fontAwesome;
+            text-decoration: underline;
+        }
+
+        #controlbox {
+            position: fixed;
+            bottom: 362px;
+            right: 0px;
+        }
+
+
+
+        .products-list .product-img img {
+            width: 57px;
+            height: 60px;
+        }
+
+        .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:active, .nav-tabs > li.active > a:focus {
+            background-color: #b3b3b3;
+        }
+
+        .nav-tabs > li > a, .nav-tabs > li > a:hover, .nav-tabs > li > a:active {
+            background-color: #e6e6e6;
+        }
+
+        .k-input[readonly] {
+            background-color: #eae8e8;
+            color: #2e2e2e;
+        }
+
+        span.k-tooltip {
+            white-space: pre-line;
+        }
+
+        .k-window-titlebar {
+            background-color: #3c8dbc;
+        }
+
+        .panel_size {
+            margin-bottom: 2px;
+        }
+
+        div.k-window-content {
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+
+        .main-header .navbar-custom-menu1,
+        .main-header .navbar-right {
+            float: left;
+        }
+
+        .whi {
+            color: #fff;
+            font-weight: bold;
+            font-size: 17px;
+        }
+
+
+        .k-callout-n {
+            border-bottom-color: black;
+        }
+
+        .k-widget.k-tooltip {
+            color: white;
+            background-color: black;
+            position: absolute;
+        }
+
+
+        .submenu {
+            height: 350px;
+            overflow-x: hidden;
+            /*width:300px;*/
+            overflow-y: scroll;
+            scrollbar-face-color: #3c8dbc;
+            scrollbar-shadow-color: #FFFFFF;
+            scrollbar-highlight-color: #FFFFFF;
+            scrollbar-3dlight-color: #FFFFFF;
+            scrollbar-darkshadow-color: #FFFFFF;
+            scrollbar-track-color: #FFFFFF;
+            scrollbar-arrow-color: #FFFFFF;
+        }
+
+
+            /* Let's get this party started */
+            .submenu::-webkit-scrollbar {
+                width: 12px;
+            }
+
+            /* Track */
+            .submenu::-webkit-scrollbar-track {
+                -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+                -webkit-border-radius: 10px;
+                border-radius: 10px;
+            }
+
+            /* Handle */
+            .submenu::-webkit-scrollbar-thumb {
+                -webkit-border-radius: 10px;
+                border-radius: 10px;
+                background: #3c8dbc;
+                -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+            }
+
+        .sidebar-mini.sidebar-collapse .sidebar-menu > li:hover > a > span:not(.pull-right), .sidebar-mini.sidebar-collapse .sidebar-menu > li:hover > .treeview-menu {
+            width: 237px;
+        }
+    </style>
+
+    <!--Scripts-->
+    <script src="~/Scripts/jQuery-2.1.4.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/app.min.js"></script>
+    <script src="~/Scripts/jquery.slimscroll.min.js"></script>
+    <script src="~/Scripts/kendo.all.min.js"></script>
+    <script src="~/CommonScripts/Common_func.js"></script>
+    <script src="~/CommonScripts/AjaxScript.js"></script>
+    <script src="~/CommonScripts/AdvanceFilter.js"></script>
+    <script src="~/CommonScripts/ValidationScript.js"></script>
+
+    <script>
+        function kendodate_format() {
+            $(".cusDate").kendoDatePicker({
+                format: "dd/MM/yyyy",
+                max: new Date(),
+            });
+        }
+    </script>
+    <script>
+        var converse_var = false;
+        $(document).ready(function () {
+
+        });
+
+    </script>
+
+</head>
+<body class="hold-transition skin-blue sidebar-mini sidebar-collapse">
+    <div class="wrapper">
+        <header class="main-header">
+            <div class="logo">
+                <a href="#" class="logo" style="background-color: #3c8dbc">
+                    <!-- mini logo for sidebar mini 50x50 pixels -->
+                    @*<span class="logo-mini"><img src="~/images/nat_agro.jpg" style="height:52px" /></span>*@
+                    <span class="logo-mini"><img src="~/images/naf.jpg" style="height:52px" /></span>
+                    <!-- logo for regular state and mobile devices -->
+                    <span class="logo-lg"><b><img src="~/images/naf.jpg" /></b></span>
+                </a>
+            </div>
+            <nav class="navbar navbar-fixed-top" role="navigation">
+                <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+
+                <div class="navbar-custom-menu1" style="width:58%">
+                    <ul class="nav navbar-nav" style="display:inline-block; padding-left:5px;">
+                        @*<li class="dropdown messages-menu" style="padding-top:14px"><img src="~/images/logo_Kanchi.png" alt="LOGO"></li>*@
+                        <li class="dropdown messages-menu" style="padding-top:14px;width:102px;display:none;"><img src="~/images/logo_Kanchi1.png" alt="LOGO"></li>
+                        @*<li class="dropdown messages-menu" style="padding-top:14px"><img src="~/images/logo_t.png" alt="LOGO"></li>*@
+                        <li class="dropdown messages-menu" style="margin-left:-5px;padding-top: 13px;display:none;">
+                            <p><strong style="font-size:17px">Organization</strong></p>
+                        </li>
+                        <li class="dropdown messages-menu" style="margin-left: 25px;padding-top: 13px;display:none;">
+                            <label id="org" class="whi"></label>
+                            <label id="orgid" class="whi" style="display:none"></label>
+                            <label id="locid" class="whi" style="display:none"></label>
+                            <label id="orgtype" class="whi" style="display:none"></label>
+                            <label id="orgtname" class="whi" style="display:none"></label>
+                            <!--<label id="orgtlevel" class="whi" style="display:none"></label>
+                             <label id="orgtleveldesc" class="whi" style="display:none"></label> -->
+                        </li>
+
+                    </ul>
+                </div>
+                <!-- logo for regular state and mobile devices -->
+                <!-- Navbar Right Menu -->
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <!-- Messages: style can be found in dropdown.less-->
+
+                        <li class="dropdown messages-menu">
+                            <a href="/Home/Home">
+                                <i class="fa  fa-home fa-lg" title="Home"></i>
+                            </a>
+                        </li>
+
+
+                        <li id="MTamil" class="dropdown messages-menu" style="padding-top:10px"><button id="btn_tamil" class="btn  btn-primary">தமிழ்</button></li>
+                        <li id="MHindi" class="dropdown messages-menu" style="padding-top:10px"><button id="btn_hindi" class="btn  btn-primary">हिंदी</button></li>
+                        <li id="MEnglish" class="dropdown messages-menu" style="display:none;padding-top:10px"><button id="btn_english" class="btn  btn-primary">English</button></li>
+
+                        <!-- Notifications: style can be found in dropdown.less -->
+                        <!-- Tasks: style can be found in dropdown.less -->
+                        <!-- User Account: style can be found in dropdown.less -->
+                        <li class="dropdown notifications-menu">
+                            @*<a data-toggle="modal" class="ChangePassword" href="~/ChangePassword/ChangePassword" data-target="#ChangePasswordModal">
+                <i class="fa fa-lock fa-lg" title="Change Password"></i>
+            </a>*@
+
+                        </li>
+
+                        <li class="dropdown messages-menu">
+                            @*<a href="#" onclick="loadHelp()">
+                <i class="fa  fa-question-circle fa-lg" title="Help"></i>
+            </a>*@
+                        </li>
+
+                        <li class="dropdown user user-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <img id="profileImg" src="~/images/user2-160x160.jpg" class="user-image" alt="User Image"> <span class="hidden-xs username"></span> </a>
+                            <ul class="dropdown-menu">
+                                <!-- User image -->
+                                <li class="user-header">
+                                    <img id="profileImg1" src="~/images/user2-160x160.jpg" class="img-circle" alt="User Image">
+                                    <p class="role" />
+
+                                </li>
+                                <!-- Menu Footer-->
+                                <li class="user-footer">
+                                    @*<div class="pull-left"> <a href="#" class="btn btn-default btn-flat">Profile</a> </div>*@
+                                    <div class="pull-right">
+                                        <ol class="breadcrumb" style="margin-bottom: 0px; background-color: #E6E6E6;">
+                                            <li><button id="logout" onclick="logoutmobile()"> Sign out</button></li>
+                                            @*<a href="#" onclick="chatLogout()" class="btn btn-default btn-flat">Sign out</a>*@
+                                        </ol>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- Control Sidebar Toggle Button -->
+                        <li> <a href="#" data-toggle="control-sidebar"> <img src="~/images/logo-small (2).png" alt="LOGO" style="width:32px"> </a> </li>
+                        <li> 
+                        <img src="~/images/logobnynew.png" style="margin-top:13px;margin-right:13px;"alt="LOGO"> 
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+    </div>
+    </header>
+    <aside class="main-sidebar" id="menu_sidebar">
+        <section class="sidebar">
+            <ul id="menus" class="sidebar-menu">
+            </ul>
+        </section>
+    </aside>
+    <div class="content-wrapper">
+        <div class="loadProgress"></div>
+        <section class="content" style="padding-bottom:1px;">
+            @RenderBody()
+        </section>
+        <div class="modal fade" id="exportexcelModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+            <div class="modal-dialog" style=" width:650px">
+                <div class="modal-content">
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="advfilterModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="fileattachModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+            <div class="modal-dialog" style="width:65%;height:550px;">
+                <div class="modal-content">
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="ReportModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+            <div class="modal-dialog" style="width:65%;height:550px;">
+                <div class="modal-content">
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="invoice_payment" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+            <div class="modal-dialog" style="width:70%;height:570px;">
+                <div class="modal-content">
+                </div>
+            </div>
+        </div>
+        @*Added By SheebaSebsthian*@
+        <div class="modal fade" id="WhsRecpt" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+            <div class="modal-dialog" style="width:70%;height:570px;">
+                <div class="modal-content">
+                </div>
+            </div>
+        </div>
+        @*End*@
+        <div class="modal fade" id="ccAvenue_payment" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+            <div class="modal-dialog" style="width:70%;height:570px;">
+                <div class="modal-content">
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="ChangePasswordModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="notesModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="chklistModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+            <div class="modal-dialog" style="width:89%;height:570px;">
+                <div class="modal-content">
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="repaymentModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+            <div class="modal-dialog" style="width:89%;height:570px;">
+                <div class="modal-content">
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="foreclosureModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+            <div class="modal-dialog" style="width:89%;height:570px;">
+                <div class="modal-content">
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="repaymentMainModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+            <div class="modal-dialog" style="width:89%;height:570px;">
+                <div class="modal-content">
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="CMQUERY" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+            <div class="modal-dialog" style="width:89%;height:570px;">
+                <div class="modal-content">
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="searchadvance" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+            <div class="modal-dialog" style="width:89%;height:570px;">
+                <div class="modal-content">
+                </div>
+            </div>
+        </div>
+    </div>
+    <input type="hidden" id="hdnHelp" value="@ViewBag.helpName" />
+    <footer class="main-footer" style="height:37px">
+        <div class="pull-right hidden-xs">
+            <img class="flexilogo" src="~/images/logo-small_right.png" alt="LOGO" style="margin-top: -17px; margin-right: -15px; height: 35px;">
+        </div>
+        <img id="scsLogo" src="~/images/bny_logo.png" style="margin-top:-12px;display:none;" /><label class="pull-right" style="margin-top: -8px;margin-right: 460px;">Powered By Flexicode. Ver1.0.7</label>
+    </footer>
+
+    <div class="control-sidebar-bg"></div>
+    </div><!-- ./wrapper -->
+
+
+
+    <script>
+        function logoutmobile() {
+            debugger;
+            var data = {};
+            data.userId = getlocalStorage("User_Id_Value");//sessionStorage.getItem('User_Id_Value');
+            data.Dbtype = getlocalStorage("Db_type");
+            //var profile = ajaxcall_param('/Login/LogOut', JSON.stringify(data));
+            location.href = "../Login/Login"
+
+        }
+
+        $(function () {
+            setlocalStorage('MenuId', $("#lblForm_menuid").text());
+
+            setlocalStorage('localeId', "en_US");
+        });
+
+
+        $("#m1").on('click', function () {
+            $(".m1").removeClass('hide');
+            $(".m2,.m3").addClass('hide');
+        });
+        $("#m2").on('click', function () {
+            $(".m2").removeClass('hide');
+            $(".m1,.m3").addClass('hide');
+        });
+        $("#m3").on('click', function () {
+            $(".m3").removeClass('hide');
+            $(".m1,.m2").addClass('hide');
+        });
+        $("#m4").on('click', function () {
+            $(".m4").removeClass('hide');
+            $(".m5,.m6").addClass('hide');
+        });
+        $("#m5").on('click', function () {
+            $(".m5").removeClass('hide');
+            $(".m4,.m6").addClass('hide');
+        });
+        $("#m6").on('click', function () {
+            $(".m6").removeClass('hide');
+            $(".m4,.m5").addClass('hide');
+        });
+    </script>
+
+    <!--old code-->
+
+    <script type="text/javascript">
+        $(window).load(function () {
+            get_menu_submenu();
+            $(".loadProgress").fadeOut("150");
+        })
+
+        var userid = getlocalStorage("User_Id_Value");//sessionStorage.getItem('User_Id_Value');
+        var role = getlocalStorage('role');
+        $(".username").text(userid);
+        $(".role").text(userid + "-" + role);
+
+        $("#btnFollow").click(function () {
+            $("#btnFollow").toggleClass("togglefollow");
+        });
+
+        function home_screen() {
+            var pathname = window.location.pathname;
+            pathname = pathname.split("/");
+            pathname = pathname[1];
+            if (pathname == "Home") {
+                removelocalStorage('btn_clk_val');
+                $("#Topsubheader").hide();
+                $("#bottomFooter").hide();
+            }
+        }
+
+        $(function () {
+            home_screen();
+            setTimeout(function () {
+                var child_del = $('.k-grid-Delete').children('span:first');
+                $('.k-grid-Delete').html(child_del);
+
+                var child_copy = $('.k-grid-Copy').children('span:first');
+                $('.k-grid-Copy').html(child_copy);
+            }, 200);
+        });
+
+        $(document).on("click", '.k-grid-add', function () {
+            var child_del = $('.k-grid-Delete').children('span:first');
+            $('.k-grid-Delete').html(child_del);
+
+            var child_copy = $('.k-grid-Copy').children('span:first');
+            $('.k-grid-Copy').html(child_copy);
+        });
+        function getContext() {
+            //Replace USER INPUT with appropriate values for context data items
+            var user_id = getlocalStorage("User_Id_Value");;
+            var data = {};
+            var context = {
+                orgnId: getlocalStorage("org_id"), //Unicode string
+                locnId: getlocalStorage("loc_id"), //Unicode string
+                userId: user_id, //Unicode string
+                localeId: getlocalStorage("localeId"),//Unicode string
+            };
+            return context;
+        }
+
+        function get_menu_submenu() {
+            debugger;
+            var arr = [];
+            var data = {};
+
+            data.userId = getlocalStorage('User_Id_Value');
+            data.Dbtype = getlocalStorage("Db_type");
+            var menu_data = ajaxcall_param('/Login/get_Menu_subMenu', JSON.stringify(data));
+            menu_data = JSON.parse(menu_data);
+            var err_msg = menu_data.msg;
+            if (err_msg != "" && err_msg != undefined) {
+                kendo_Exit_Alert(menu_data.msg);
+                return false;
+            }
+            else {
+                var main_menu = menu_data.mainmenulist;
+                main_menu = JSON.parse(main_menu);
+                $("#org").text(main_menu[0].Orgname);
+                $("#loc").text(main_menu[0].Locname);
+                $("#orgid").text(main_menu[0].Orgid);
+                $("#locid").text(main_menu[0].Locid);
+                $("#orgtype").text(main_menu[0].Orgtype);
+                $("#orgtname").text(main_menu[0].Orgtname);
+                setlocalStorage('org_id', $("#orgid").text());
+                //setlocalStorage('loc_id', $("#locid").text());
+                setlocalStorage('org_type', $("#orgtype").text());
+                setlocalStorage('org', $("#org").text());
+                //setlocalStorage('loc', $("#loc").text());
+                var instname = getlocalStorage("Db_type");
+                setlocalStorage('loc_id', instname);
+                setlocalStorage('orgtname', $("#orgtname").text());
+                var sub_menu = menu_data.submenulist;
+                sub_menu = JSON.parse(sub_menu);
+
+                $.each(sub_menu, function (skey, svalue) {
+                    if (sub_menu[skey].SMenuCode != "") {
+                        arr.push(sub_menu[skey]);
+                    }
+                });
+
+                var strmenu = "";
+                strmenu = ' <li class="header ">Main Menus</li>';
+                $.each(main_menu, function (mkey, mvalue) {
+                    strmenu += '<li><a title="' + mvalue.MenuName + '"> <i class="' + mvalue.UrlIcon + '"></i> <span>' + mvalue.MenuName + '</span></a>';
+                    strmenu += '<ul class="treeview-menu submenu">';
+                    $.each(sub_menu, function (skey, svalue) {
+                        if (mvalue.MenuId == svalue.MenuId) {
+                            if (svalue.SMenuCode == "" && svalue.Url != "") {
+                                strmenu += '<li class="dirty_anger"><a href="/' + svalue.Url + '" onclick="header_title(\'' + svalue.MenuName + '\',\'' + svalue.MenuCode + '\',\'' + svalue.MenuId + '\');" title="' + svalue.MenuName + '"> <i class="' + svalue.UrlIcon + '"></i> <span>' + svalue.MenuName + '</span> </a></li>';
+                            }
+                            else {
+                                if (svalue.SMenuCode == "" && svalue.Url == "") {
+                                    strmenu += '<li class="dirty_anger"><a href="#" onclick="header_title(\'' + svalue.MenuName + '\',\'' + svalue.MenuCode + '\',\'' + svalue.MenuId + '\');" title="' + svalue.MenuName + '"> <i class="' + svalue.UrlIcon + '"></i> <span>' + svalue.MenuName + '</span><i class="fa fa-angle-left  pull-right"></i> </a>';
+                                    strmenu += '<ul class="treeview-menu">';
+                                    $.each(arr, function (akey, avalue) {
+                                        if (arr[akey].SMenuCode == svalue.MenuCode) {
+                                            strmenu += '<li><a href="/' + avalue.Url + '" onclick="header_title(\'' + avalue.MenuName + '\',\'' + avalue.MenuCode + '\',,\'' + svalue.MenuId + '\');" title="' + avalue.MenuName + '"> <i class="' + avalue.UrlIcon + '"></i> <span>' + avalue.MenuName + '</span> </a></li>';
+                                        }
+                                    });
+                                    strmenu += '</ul></li>';
+                                }
+                            }
+                        }
+                    });
+                    strmenu += '</ul></li>';
+                });
+                $("#menus").append(strmenu);
+                strmenu = "";
+            }
+        }
+    </script>
+
+    <script>
+        var winclose_bool = true;
+
+        function chatLogout() {
+            location.href = "../Login/Login"
+            //logoutmobile();
+        }
+
+        function app_exit() {
+            winclose_bool = false;
+            window.close();
+            user_login_log("Session timeout");
+        }
+
+        function assign_exit() {
+            ass_wnd.close();
+        }
+        function DetectBrowserExit() {
+            if (winclose_bool == true)
+                user_login_log("Browser Close");
+        }
+
+        window.onbeforeunload = function () {
+            DetectBrowserExit();
+        }
+
+        function user_login_log(reason) {
+            try {
+                var r_no = getlocalStorage('user_log_rowno');
+                if (r_no == "")
+                    r_no = 0;
+                var data = {};
+                data.user_id = getlocalStorage('User_Id_Value');
+                data.ip_address = "";
+                data.rowno = parseInt(r_no);
+                data.logout_reason = reason;
+                loginvalue = ajaxcall_param('/Login/insert_ipAddress', JSON.stringify(data));
+                //var ip_resut = ajaxcall_param('/Login/insert_ipAddress', JSON.stringify(data));
+            }
+            catch (err) {
+                alert(err);
+            }
+        }
+        function loadHelp() {
+            var helpname = {};
+            helpname.id = $("#hdnHelp").val();
+            var data = ajaxcall_param('/Home/displayHelp', JSON.stringify(helpname));
+            var uri_dec = decodeURIComponent(data);
+            window.open(uri_dec, "_blank", "toolbar=yes, scrollbars=yes, resizable=yes, top=100, bottom = 300, left=400, width=850, height=600");
+        }
+    </script>
+
+    <script type="text/x-kendo-template" id="deleteYesNo-confirmation">
+        <div class="row" style="padding-bottom: 20px; padding-left: 17px;">
+            <strong>Are you sure you want to de-activate this record?</strong>
+        </div>
+        <div class="row">
+            <div class="col-sm-2">
+            </div>
+            <div class="col-sm-2">
+                <button class="delete-confirm k-button" style="width:125%">Yes</button>
+            </div>
+            <div class="col-sm-2">
+                <button class="delete-cancel k-button" style="width:125%"> No</button>
+            </div>
+            <div class="col-sm-2">
+            </div>
+        </div>
+
+    </script>
+
+    <script>
+        $(document).on('click', '#inactivate', function (e) {
+            //$("#inactivate").click(function (e) {
+            if ($('#DocStat').val() != undefined && ($('#DocStat').val() == "Inactive" || $('#DocStat').val() == "New")) {
+                kendoAlert('New / Inactive record cannot be deleted');
+                return false;
+            }
+            else if ($('#DocStat').val() == "") {
+                kendoAlert('Status Field cannot be blank');
+                return false;
+            }
+            else {
+                e.preventDefault();
+                var kendoWindow = $("<div />").kendoWindow({
+                    title: "Confirm",
+                    width: "350px",
+                    height: "130px",
+                    resizable: false,
+                    modal: true
+                });
+                kendoWindow.data("kendoWindow")
+                    .content($("#deleteYesNo-confirmation").html())
+                    .center().open();
+                kendoWindow
+                    .find(" .delete-confirm, .delete-cancel") //.Yes-delete-Reason,
+                    .click(function () {
+                        if ($(this).hasClass("delete-confirm")) {
+                            DeleteDetails();
+                            kendoWindow.data("kendoWindow").close();
+                        }
+                        else {
+                            kendoWindow.data("kendoWindow").close();
+                        }
+                    })
+            }
+        });
+        function otherreasonchange() {
+            var combo_name = 'DelReason';
+            var concat = combo_name + '_input';
+            var val = $('.k-combobox .k-input[name = ' + concat + ' ]').val();
+            if (val == "Others") {
+                $('div #otherreasontext:last').attr('readonly', false);
+            }
+            else {
+                $('div #otherreasontext:last').attr('readonly', true);
+            }
+        }
+        $(document).ready(function () {
+            $("#txtic_invoicedate").kendoDatePicker({
+                max: new Date(),// sets max date
+                format: "dd/MM/yyyy",
+                value: new Date(),
+            });
+        });
+        $(document).ready(function () {
+            $("#txtCredit_date").kendoDatePicker({
+                max: new Date(),// sets max date
+                format: "dd/MM/yyyy",
+                value: new Date(),
+            });
+
+
+        });
+    </script>
+
+    <script>
+        $(document).on('click', '#deactivate', function (e) {
+            if ($('#DocStat').val() != undefined && ($('#DocStat').val() == "Inactive" || $('#DocStat').val() == "New")) {
+                kendoAlert('New / Inactive record cannot be deleted');
+                return false;
+            }
+            else if ($('#DocStat').val() == "") {
+                kendoAlert('Status Field cannot be blank');
+                return false;
+            }
+            else {
+                e.preventDefault();
+                var kendoWindow = $("<div />").kendoWindow({
+                    title: "Confirm",
+                    width: "350px",
+                    height: "130px",
+                    //width: "430px",
+                    //height: "205px",
+                    resizable: false,
+                    modal: true
+                });
+                kendoWindow.data("kendoWindow")
+                    .content($("#deleteYesNo-confirmation").html())
+                    .center().open();
+                kendoWindow
+                    .find(" .delete-confirm, .delete-cancel") //.Yes-delete-Reason,
+                    .click(function () {
+                        if ($(this).hasClass("delete-confirm")) {
+                            DeleteDetails();
+                            kendoWindow.data("kendoWindow").close();
+                        }
+                        else {
+                            kendoWindow.data("kendoWindow").close();
+                        }
+                    })
+            }
+        });
+    </script>
+    <script type="text/x-kendo-template" id="ok-confirmation">
+        <div id="div">
+            <div class="col-sm-3">
+            </div>
+            <div class="col-sm-6">
+                <button class="okcon_close k-button" style="width:45%">OK</button>
+            </div>
+            <div class="col-sm-3">
+            </div>
+        </div>
+    </script>
+    <script>
+        window.kendoAlert = function (msg) {
+            var win = $("<div />").kendoWindow({
+                title: "Message",
+                width: "350px",
+                height: "130px",
+                resizable: false,
+                modal: true
+            });
+            win.data("kendoWindow")
+                .content(msg + "<br><br>" + $("#ok-confirmation").html()).center().open();
+            win
+                .find(".okcon_close")
+                .click(function () {
+                    win.data("kendoWindow").close();
+                })
+                .end()
+        }
+    </script>
+
+    <script type="text/x-kendo-template" id="ok_exit_confirmation">
+        <div id="div">
+            <div class="col-sm-3">
+            </div>
+            <div class="col-sm-6">
+                <button class="ok k-button" style="width:45%" onclick="app_exit();">OK</button>
+            </div>
+            <div class="col-sm-3">
+            </div>
+        </div>
+    </script>
+
+
+    <script>
+        window.kendo_Exit_Alert = function (msg) {
+            var win = $("<div />").kendoWindow({
+                title: "Message",
+                width: "350px",
+                height: "130px",
+                modal: true,
+                draggable: false,
+                resizable: false
+            }).getKendoWindow();
+            win.center().open();
+            $(".k-window-actions").hide();
+            win.content(msg + "<br><br>" + $("#ok_exit_confirmation").html()).center().open();
+        };
+
+        $('.report').click(function () {
+            $('.k-grid-excel').click();
+        });
+    </script>
+
+    <script type="text/x-kendo-template" id="assign_popup_confirmation">
+        <div id="div">
+            <div class="col-sm-3">
+            </div>
+            <div class="col-sm-6">
+                <button class="okASS_close k-button" style="width:45%">OK</button>
+            </div>
+            <div class="col-sm-3">
+            </div>
+        </div>
+    </script>
+
+    <script>
+        window.kendo_AssignPopup_Alert = function (msg) {
+            var winP = $("<div />").kendoWindow({
+                title: "Message",
+                width: "350px",
+                height: "130px",
+                modal: true,
+                draggable: false,
+                resizable: false
+            });
+
+            winP.data("kendoWindow")
+                .content(msg + "<br><br>" + $("#assign_popup_confirmation").html()).center().open();
+            winP
+                .find(".okASS_close")
+                .click(function () {
+                    winP.data("kendoWindow").close();
+                    ass_wnd.close();
+                })
+                .end()
+        };
+
+
+    </script>
+
+    <script type="text/javascript">
+        function back_onClick() {
+            document.location = form_list_url;
+        }
+    </script>
+    <script>
+        function date_validate(event) {
+            var x = event.charCode;
+            if ((x >= 48 && x <= 57) || (x == 47) || (x == 0)) {
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+    </script>
+    <script type="text/x-kendo-template" id="grid_delete-confirmation">
+        <div class="row" style="padding-bottom: 20px; padding-left: 17px;">
+            <strong>Are you sure you want to Delete this record?</strong>
+        </div>
+        <div class="row">
+            <div class="col-sm-2">
+            </div>
+            <div class="col-sm-2">
+                <button class="grid_delete-confirm k-button" style="width:125%">Yes</button>
+            </div>
+            <div class="col-sm-2">
+                <button class="grid_delete-cancel k-button" style="width:125%"> No</button>
+            </div>
+            <div class="col-sm-2">
+            </div>
+        </div>
+    </script>
+    <script type="text/x-kendo-template" id="grid_delete-confirmation-attach">
+        <div class="row" style="padding-bottom: 20px; padding-left: 17px;">
+            <strong>Are you sure you want to Attachment?</strong>
+        </div>
+        <div class="row">
+            <div class="col-sm-2">
+            </div>
+            <div class="col-sm-2">
+                <button class="grid_delete-confirm k-button" style="width:125%">Yes</button>
+            </div>
+            <div class="col-sm-2">
+                <button class="grid_delete-cancel k-button" style="width:125%"> No</button>
+            </div>
+            <div class="col-sm-2">
+            </div>
+        </div>
+    </script>
+
+    <script>
+        function DeleteWindowEvent(e, dataItem, grid) {
+            e.preventDefault();
+
+            if (dataItem.In_mode_flag != "I") {
+                var kendoWindow = $("<div />").kendoWindow({
+                    title: "Confirm",
+                    width: "350px",
+                    height: "130px",
+                    resizable: false,
+                    modal: true
+                });
+                kendoWindow.data("kendoWindow")
+                    .content($("#grid_delete-confirmation").html())
+                    .center().open();
+                kendoWindow
+                    .find(".grid_delete-confirm,.grid_delete-cancel")
+                    .click(function () {
+                        if ($(this).hasClass("grid_delete-confirm")) {
+                            if (dataItem.In_mode_flag == "S" || dataItem.In_mode_flag == "U") {
+                                dataItem.In_mode_flag = "D";
+                                ($(e.target).closest("tr")).css('backgroundColor', '#ff3333');
+                            }
+                            else if (dataItem.In_mode_flag == "D") {
+                                dataItem.In_mode_flag = "S";
+                                ($(e.target).closest("tr")).css('backgroundColor', '');
+                            }
+                            else if (dataItem.In_mode_flag == undefined) {
+                                grid.dataSource.remove(dataItem);
+                                grid.dataSource.sync();
+                            }
+
+                        }
+                        else {
+                            if (dataItem.In_mode_flag == "D")
+                                dataItem.In_mode_flag = "D";
+                            else if (dataItem.In_mode_flag == "U")
+                                dataItem.In_mode_flag = "U";
+                            else if (dataItem.In_mode_flag == "S")
+                                dataItem.In_mode_flag = "S";
+                            kendoWindow.data("kendoWindow").close();
+                        }
+                        kendoWindow.data("kendoWindow").close();
+                    })
+                //.end()
+            }
+            else {
+                grid.dataSource.remove(dataItem);
+                grid.dataSource.sync();
+
+                var rows = grid.tbody.children();
+
+                for (var j = 0; j < rows.length; j++) {
+                    var row = $(rows[j]);
+                    var dataItem = grid.dataItem(row);
+
+                    if (dataItem.In_mode_flag == "I") {
+                        row.css('backgroundColor', 'lightgreen')
+                    }
+                    else if (dataItem.In_mode_flag == "D") {
+                        grid.closeCell();
+                        row.css('backgroundColor', '#ff3333')
+                    }
+                }
+            }
+
+        };
+    </script>
+
+
+    <script type="text/x-kendo-template" id="grid_undo-confirmation">
+        <div class="row" style="padding-bottom: 20px; padding-left: 17px;">
+            <strong>Are you sure you want to undo?</strong>
+        </div>
+        <div class="row">
+            <div class="col-sm-2">
+            </div>
+            <div class="col-sm-2">
+                <button class="grid_undo-confirm k-button" style="width:125%">Yes</button>
+            </div>
+            <div class="col-sm-2">
+                <button class="grid_undo-cancel k-button" style="width:125%"> No</button>
+            </div>
+            <div class="col-sm-2">
+            </div>
+        </div>
+    </script>
+
+
+    <script>
+        function DeleteWindowEvent(e, dataItem, grid) {
+            e.preventDefault();
+            if (dataItem.In_mode_flag == "" || dataItem.In_mode_flag == undefined) {
+                dataItem.In_mode_flag = dataItem.out_mode_flag;
+            }
+            if (dataItem.In_mode_flag == "" || dataItem.In_mode_flag == undefined) {
+                dataItem.In_mode_flag = dataItem.in_mode_flag;
+            }
+            if (dataItem.In_mode_flag != "I" && dataItem.In_mode_flag != "D" && dataItem.In_mode_flag != "T") {
+                var kendoWindow = $("<div />").kendoWindow({
+                    title: "Confirm",
+                    width: "350px",
+                    height: "130px",
+                    resizable: false,
+                    modal: true
+                });
+                kendoWindow.data("kendoWindow")
+                    .content($("#grid_delete-confirmation").html())
+                    .center().open();
+                kendoWindow
+                    .find(".grid_delete-confirm,.grid_delete-cancel")
+                    .click(function () {
+                        if ($(this).hasClass("grid_delete-confirm")) {
+                            if (dataItem.In_mode_flag == "S" || dataItem.In_mode_flag == "U") {
+                                dataItem.In_mode_flag = "D";
+                                if (dataItem.out_mode_flag == "S") {
+                                    dataItem.out_mode_flag = "D";
+                                }
+                                ($(e.target).closest("tr")).css('backgroundColor', '#ff3333');
+                            }
+                            else if (dataItem.In_mode_flag == undefined) {
+                                grid.dataSource.remove(dataItem);
+                                grid.dataSource.sync();
+                            }
+
+                        }
+                        else {
+                            if (dataItem.In_mode_flag == "U")
+                                dataItem.In_mode_flag = "U";
+                            else if (dataItem.In_mode_flag == "S")
+                                dataItem.In_mode_flag = "S";
+                            kendoWindow.data("kendoWindow").close();
+                        }
+                        kendoWindow.data("kendoWindow").close();
+                    })
+            }
+            else if (dataItem.In_mode_flag == "D") {
+                var kendoWindow = $("<div />").kendoWindow({
+                    title: "Confirm",
+                    width: "350px",
+                    height: "130px",
+                    resizable: false,
+                    modal: true
+                });
+                kendoWindow.data("kendoWindow")
+                    .content($("#grid_undo-confirmation").html())
+                    .center().open();
+                kendoWindow
+                    .find(".grid_undo-confirm,.grid_undo-cancel")
+                    .click(function () {
+                        if ($(this).hasClass("grid_undo-confirm")) {
+                            if (dataItem.In_mode_flag == "D") {
+                                dataItem.In_mode_flag = "S";
+                                ($(e.target).closest("tr")).css('backgroundColor', '');
+                            }
+                        }
+                        else {
+                            if (dataItem.In_mode_flag == "D")
+                                dataItem.In_mode_flag = "D";
+                            kendoWindow.data("kendoWindow").close();
+                        }
+                        kendoWindow.data("kendoWindow").close();
+                    })
+            }
+            else {
+                grid.dataSource.remove(dataItem);
+                grid.dataSource.sync();
+
+                var rows = grid.tbody.children();
+
+                for (var j = 0; j < rows.length; j++) {
+                    var row = $(rows[j]);
+                    var dataItem = grid.dataItem(row);
+
+                    if (dataItem.In_mode_flag == "I") {
+                        row.css('backgroundColor', 'lightgreen')
+                    }
+                    else if (dataItem.In_mode_flag == "D") {
+                        grid.closeCell();
+                        row.css('backgroundColor', '#ff3333')
+                    }
+                }
+            }
+
+        };
+    </script>
+
+    <script>
+
+        $("#btn_tamil").click(function () {
+            $("#MEnglish").css("display", "block");
+            $("#MTamil").css("display", "none");
+            setlocalStorage('localeId', "ta_IN");
+            master_get_tamil();
+        });
+        $("#btn_hindi").click(function () {
+            $("#MEnglish").css("display", "block");
+            $("#MHindi").css("display", "none");
+            setlocalStorage('localeId', "hi_IN");
+            master_get_hindi();
+        });
+        $("#btn_english").click(function () {
+            $("#MEnglish").css("display", "none");
+            if (getlocalStorage("Db_type") == "Ta") {
+                $("#MTamil").css("display", "block");
+            } else {
+                $("#MHindi").css("display", "none");
+            }
+
+            setlocalStorage('localeId', "en_US");
+            master_get_english();
+        });
+    </script>
+</body>
+</html>

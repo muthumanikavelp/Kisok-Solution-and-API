@@ -1,0 +1,32 @@
+G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\obj\Release\netcoreapp3.1\PubTmp\Out\kisok api.exe
+G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\obj\Release\netcoreapp3.1\PubTmp\Out\log4net.config
+G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\obj\Release\netcoreapp3.1\PubTmp\Out\appsettings.Development.json
+G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\obj\Release\netcoreapp3.1\PubTmp\Out\appsettings.json
+G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\obj\Release\netcoreapp3.1\PubTmp\Out\kisok api.dll
+G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\obj\Release\netcoreapp3.1\PubTmp\Out\kisok api.deps.json
+G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\obj\Release\netcoreapp3.1\PubTmp\Out\kisok api.runtimeconfig.json
+G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\obj\Release\netcoreapp3.1\PubTmp\Out\kisok api.pdb
+G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\obj\Release\netcoreapp3.1\PubTmp\Out\BouncyCastle.Crypto.dll
+G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\obj\Release\netcoreapp3.1\PubTmp\Out\itextsharp.dll
+G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\obj\Release\netcoreapp3.1\PubTmp\Out\log4net.dll
+G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\obj\Release\netcoreapp3.1\PubTmp\Out\Microsoft.IdentityModel.JsonWebTokens.dll
+G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\obj\Release\netcoreapp3.1\PubTmp\Out\Microsoft.IdentityModel.Logging.dll
+G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\obj\Release\netcoreapp3.1\PubTmp\Out\Microsoft.IdentityModel.Tokens.dll
+G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\obj\Release\netcoreapp3.1\PubTmp\Out\MySql.Data.dll
+G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\obj\Release\netcoreapp3.1\PubTmp\Out\Newtonsoft.Json.dll
+G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\obj\Release\netcoreapp3.1\PubTmp\Out\System.Configuration.ConfigurationManager.dll
+G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\obj\Release\netcoreapp3.1\PubTmp\Out\System.Data.SqlClient.dll
+G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\obj\Release\netcoreapp3.1\PubTmp\Out\System.IdentityModel.Tokens.Jwt.dll
+G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\obj\Release\netcoreapp3.1\PubTmp\Out\System.Security.Cryptography.ProtectedData.dll
+G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\obj\Release\netcoreapp3.1\PubTmp\Out\runtimes\win-arm64\native\sni.dll
+G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\obj\Release\netcoreapp3.1\PubTmp\Out\runtimes\win-x64\native\sni.dll
+G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\obj\Release\netcoreapp3.1\PubTmp\Out\runtimes\win-x86\native\sni.dll
+G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\obj\Release\netcoreapp3.1\PubTmp\Out\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\obj\Release\netcoreapp3.1\PubTmp\Out\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\obj\Release\netcoreapp3.1\PubTmp\Out\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\obj\Release\netcoreapp3.1\PubTmp\Out\nafdatamodel.dll
+G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\obj\Release\netcoreapp3.1\PubTmp\Out\nafmodel.dll
+G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\obj\Release\netcoreapp3.1\PubTmp\Out\nafservice.dll
+G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\obj\Release\netcoreapp3.1\PubTmp\Out\nafmodel.pdb
+G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\obj\Release\netcoreapp3.1\PubTmp\Out\nafservice.pdb
+G:\KioskFinal\Prema\Latest Source\nafkiosk\nafkiosk\kisok api\obj\Release\netcoreapp3.1\PubTmp\Out\nafdatamodel.pdb

@@ -1,0 +1,27 @@
+ http://169.38.82.131:751/api/Kiosk_Scheme/Schemelist?org=flexi&locn=TA&lang=en_US&user=Kiosk&In_schemecat_Id=1073
+schemes:
+key word:
+http://localhost:49462/api/Kiosk_Scheme/Schemelist?org=flexi&locn=TA&lang=en_US&user=Kiosk&In_schemecat_Id=1073&keyword=Test
+all list
+http://localhost:49462/api/Kiosk_Scheme/Schemelist?org=flexi&locn=TA&lang=ta_IN&user=Kiosk&In_schemecat_Id=1073&keyword=
+
+FAQS:
+keyword:
+http://localhost:49462/api/Kiosk_FAQS/FAQSQuestion?org=flexi&locn=TA&lang=ta_IN&user=Kiosk&In_faqscat_Id=1095&keyword=rice marginal leaf
+
+all list:
+http://localhost:49462/api/Kiosk_FAQS/FAQSQuestion?org=flexi&locn=TA&lang=ta_IN&user=Kiosk&In_faqscat_Id=1095&keyword= 
+
+videos:
+keyword
+http://localhost:49462/api/Kiosk_Video/VideoTiltleList?org=flexi&locn=TA&user=kiosk&In_video_gid=1092&lang=ta_IN&keyword=KANCHI FDR FIS LRS
+
+all list
+
+http://localhost:49462/api/Kiosk_Video/VideoTiltleList?org=flexi&locn=TA&user=kiosk&In_video_gid=1092&lang=ta_IN&keyword=
+
+
+
+
+
+inetmgr

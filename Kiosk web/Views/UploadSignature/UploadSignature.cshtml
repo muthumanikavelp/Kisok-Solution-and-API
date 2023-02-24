@@ -1,0 +1,496 @@
+﻿
+@{
+    Layout = "~/Views/Shared/FormViewLayout1.cshtml";
+}
+@*<link href="~/css/common.css" rel="stylesheet" />*@
+
+<style>
+    .k-window-titlebar {
+        background-color: snow;
+    }
+    /*dropdown,date design overload*/
+    .k-dropdown-wrap.k-state-default, .k-dropdown-wrap.k-state-focussed {
+        background-color: #ffffff !important;
+    }
+
+    .k-picker-wrap.k-state-default, .k-picker-wrap.k-state-focussed {
+        background-color: #ffffff !important;
+    }
+    /*table row line to be add*/
+    .k-grid tr td {
+        border-bottom: 1px solid #c5c5c5;
+    }
+</style>
+<div class="box-header text-center with-border">
+    <h3 class="box-title" style="text-align: center; color: red; font-weight: 600; ">Upload Signature</h3>
+</div>
+<form id="uploadsign_form1" class="form-horizontal" data-role="validator" novalidate="novalidate">
+    <div class="row">
+        <div class="col-sm-12">
+            <div id="grid_uploadsign">
+            </div>
+        </div>
+    </div>
+</form>
+<div id="dialog" style="background-color:white;" >
+    <form id="uploadsign_form" class="form-horizontal" data-role="validator" novalidate="novalidate">
+        <div class="row">
+            <div class="col-sm-3">
+            </div>
+            <div class="col-sm-4">
+                <h5 style="text-align:center;color:red;font-size:19px;">Upload Signature</h5>
+            </div>
+            <div class="col-sm-3" id="videomenu">
+                <div style="float:right;">
+
+                    <img title="Save" class="shade" style="cursor:pointer;" src="~/images/save-finals.jpg" onclick="save_Image()" />&nbsp;
+
+                </div>
+            </div>
+        </div>
+        <hr style="margin-top:0px !important;margin-bottom:0px !important;">
+        <div class="row" style="margin-left: -5px; margin-top: 4%;">
+            <label class=" col-sm-3 control-label" style="font-weight: bold; padding-left: 5%;">Name:</label>
+            <div class=" col-sm-7" style="padding-left: 5%;">
+                <input type="text" name="In_signature_name" id="txtsignname" class="form-control" style=" height: 25px; margin-left: -25%;">
+            </div>
+        </div>
+        <div class="row" style="margin-left: -5px; margin-top: 4%;">
+            <label class=" col-sm-3 control-label" style="font-weight: bold; padding-left: 5%;">Designation:</label>
+            <div class=" col-sm-7" style="padding-left: 5%;">
+                <input type="text" name="In_signature_desgn" id="txtsigndesgn" class="form-control" style=" height: 25px; margin-left: -25%;">
+            </div>
+        </div>
+        <div class="row" style="margin-left: -5px;margin-top: 5%;">
+            <label class=" col-sm-3 control-label" style="font-weight: bold; padding-left: 5%;">Signature Image:</label>
+            <div class=" col-sm-7" style="padding-left: 5%;">
+
+                <input type="file" name="In_signature_image" id="signfile" class="form-control" style="height: 25px;margin-left: -25%;" />
+                <label class="title" style="width: 100%;margin-left: -25%;" id="filename" name="In_signature_image"></label>
+                <input type="hidden" id="signature_rowid" name="In_signature_rowid" />
+                <input type="hidden" id="txtfilepath" name="In_signature_image" />
+                <input type="hidden" id="txtMode" name="In_mode_flag" />
+
+            </div>
+
+        </div>
+
+        <div id="dialogFileuploadView">
+            <img id="sign_img" src="~/images/Bill Image.jpg" class="col-sm-5 img-bordered profileImg" alt="User Image" height="250" width="100" />
+        </div>
+    </form>
+</div>
+<div id="dialog1" style="background-color:white;">
+    <form id="soil_print" class="form-horizontal" data-role="validator" novalidate="novalidate">
+        <div class="row">
+        </div>
+    </form>
+</div>
+<script>
+    $(document).ready(function () {
+        $("#dialogFileuploadView").hide();
+     
+        kendodate_format();
+        $("#dialog").hide();
+        grid_uploadsign([]);
+        list();
+        load_master_code();
+        Screen_Id = "SIGN";
+        permission = sec_Master_Permission(Screen_Id);
+    });
+    $('#signfile').bind('change', function () {
+
+        debugger;
+        var fp = $("#signfile");
+        var lg = fp[0].files.length; // get length
+        var items = fp[0].files;
+        var fileSize = 0;
+
+        var ext = $('#signfile').val().split('.').pop().toLowerCase();
+        //Allowed file types
+        if ($.inArray(ext, ['png', 'jpg', 'jpeg']) == -1) {
+            kendoAlert("The file type is invalid.!");
+            $('#signfile').val("");
+            $('#upload-file-info').html("");
+        }
+
+        if (lg > 0) {
+            for (var i = 0; i < lg; i++) {
+                fileSize = fileSize + items[i].size; // get file size
+            }
+            if (fileSize > 314572800) {
+                kendoAlert("File size must not be more than 100 MB.!");
+                $('#signfile').val('');
+                return false;
+            }
+
+        }
+    });
+    function load_master_code() {
+        try {
+            var data = {};
+            data.screen_Id = "SIGN";
+            var tab_values = ajaxcall_param("/Home/screenId_mastercodelist", JSON.stringify(data));
+        }
+        catch (err) {
+            javascript_log4j_root(arguments.callee.name, err);
+        }
+    }
+    function grid_uploadsign(data) {
+        $("#grid_uploadsign").kendoGrid({
+            dataSource: {
+                data: data, //  pageSize: 20
+            },
+            height: 450,
+            sortable: true,
+            selectable: true,
+            filterable: true,
+            //change: onChangeSelection,
+            selectable: "singl",   //  Grid Row Selection
+            navigatable: true,
+            toolbar: "<a class='k-grid-add' id='Assign_sevices' onClick='serialno()'><span class='fa fa-plus' style='color:Black'></span></a>",
+            columns: [
+               
+                {
+                    field: "signature_rowid",
+                    title: "Sign ID",
+                    width: 30
+                },
+                {
+                    field: "signature_name",
+                    title: "Name",
+                    width: 30
+                },
+                {
+                    field: "signature_desgn",
+                    title: "Designation",
+                    width: 30
+                },
+                {
+                    field: "signature_image",
+                    title: "Signature image",
+                    width: 30
+                },
+                
+                {
+                    command: [
+                        {
+                            name: "View",
+                            text: "<span class='fa fa-eye' style ='color:#357ab8;'onClick='onview()'></span>"
+                        },
+                        {
+                            name: "Edit",
+                            text: "<span class='fa fa-pencil' style='color:#357ab8' onClick='onChangeSelection()'></span>"
+                        },
+                        {
+                            name: "Delete1",
+                            text: "<span class='fa fa-times' style='color:#357ab8;padding-left:2px' onClick='ondelete()'></span>"
+                        },
+                    ], title: "Action", width: "25px",
+                },
+            ]
+        });
+    }
+    function list() {
+        debugger;
+        var data = {};
+        data.context = getContext();
+        var Context = data.context;
+        $.ajax({
+            type: "POST",
+            data: JSON.stringify({ orgnId: Context.orgnId, locnId: Context.locnId, localeId: Context.localeId, userId: Context.userId }),
+            url: "/UploadSignature/uploadsignList",
+            dataType: "json",
+            contentType: 'application/json; charset=utf-8',
+            success: function (response) {
+                debugger;
+                if (response != null) {
+                    generate_uploadsign_list(response.list);
+                }
+                else {
+                    grid_uploadsign([]);
+                }
+            },
+            error: function (er) {
+                alert(er)
+                console.log(er)
+            }
+
+        });
+    }
+    function ondelete() {
+        debugger;
+        var kendoWindow = $("<div />").kendoWindow({
+            title: "Confirm",
+            width: "350px",
+            height: "130px",
+            resizable: false,
+            modal: true
+        });
+        kendoWindow.data("kendoWindow")
+            .content($("#grid_delete-confirmation").html())
+            .center().open();
+        kendoWindow
+            .find(".grid_delete-confirm,.grid_delete-cancel")
+            .click(function () {
+                if ($(this).hasClass("grid_delete-confirm")) {
+                    debugger;
+                    var xhr = new XMLHttpRequest();
+                    var fd = new FormData();
+                    xhr.onreadystatechange = function () {
+                        if (xhr.readyState == 4 && xhr.status == 200) {
+                            kendoAlert("Upload Signature Details Deleted successfully");
+                           
+                            clear_val();
+                            list();
+                        }
+                    };
+                    var grid = $("#grid_uploadsign").data("kendoGrid");
+                    var selectedItem = grid.dataItem(grid.select());
+                    var formval = form_Serialize("uploadsign_form");
+                    var obj_val1 = JSON.parse(formval);
+                    obj_val1.In_signature_rowid = selectedItem.signature_rowid;
+                    var data = getContext();
+                    fd.append("orgnId", data.orgnId);
+                    fd.append("locnId", data.locnId);
+                    fd.append("userId", data.userId);
+                    fd.append("localeId", data.localeId);
+                    fd.append("In_signature_rowid", selectedItem.signature_rowid);
+                    fd.append("In_signature_tran_id", selectedItem.signature_tran_id);
+                    fd.append("In_signature_name", selectedItem.signature_name);
+                    fd.append("In_signature_desgn", selectedItem.signature_desgn);
+                    fd.append("uploadFile", document.getElementById('signfile').files[0]);
+                    fd.append("In_mode_flag", "D");
+                    xhr.open("POST", "/UploadSignature/uploadsignsave", true);
+                    xhr.send(fd);
+                    xhr.addEventListener("load", function (event) {
+                    }, false);
+                }
+                kendoWindow.data("kendoWindow").close();
+               
+            });
+    }
+    function generate_uploadsign_list(res) {
+        var data = changedataType(res);
+        grid_uploadsign(data);
+    }
+    function closerole() {
+        $("#dialog").data("kendoWindow").close();
+        list();
+    }
+    function serialno() {
+        $("#dialog").kendoWindow();
+        var dialog = $("#dialog").data("kendoWindow");
+        dialog.open().element.closest(".k-window").css({
+            top: 171,
+            left: 293, height: 330, width: 768
+        });
+        dialog.title("Upload Signature");
+        dialog.bind("open", serialno);
+
+        //add pop up close
+        dialog.unbind("close");
+        dialog.bind("close", onWindowEditClose);
+        clear_val();
+        $("#videomenu").show();
+        //popup double click expand to avoid
+        $(document).on('dblclick', '.k-window-titlebar', function (e) {
+            debugger;
+            // Restore old size
+            dialog.toggleMaximization();
+        });
+    }
+    //pop up close refresh
+    var onWindowEditClose = function (e) {
+        debugger;
+        list();
+    };
+    function onChangeSelection() {
+        debugger;
+        $("#dialog").kendoWindow();
+        var dialog = $("#dialog").data("kendoWindow");
+        dialog.open().element.closest(".k-window").css({
+            top: 171,
+            left: 293, height: 330, width: 768
+        });
+        dialog.title("Upload Signature");
+        dialog.bind("open", serialno);
+        clear_val();
+        //popup double click expand to avoid
+        $(document).on('dblclick', '.k-window-titlebar', function (e) {
+            debugger;
+            // Restore old size
+            dialog.toggleMaximization();
+        });
+        var grid = $("#grid_uploadsign").data("kendoGrid");
+        var selectedItem = grid.dataItem(grid.select());
+        var formval = form_Serialize("uploadsign_form");
+        var obj_val = JSON.parse(formval);
+        obj_val.In_signature_rowid = selectedItem.signature_rowid;
+        var data = {};
+        data.context = getContext();
+        data.context.Header = obj_val;
+        var Context = data.context;
+        $.ajax({
+            type: "POST",
+            data: JSON.stringify({ userId: Context.userId, orgnId: Context.orgnId, locnId: Context.locnId, localeId: Context.localeId, In_signature_rowid: Context.Header.In_signature_rowid }),
+            url: "/UploadSignature/uploadsignfetch",
+            dataType: "json",
+            contentType: 'application/json; charset=utf-8',
+            success: function (response) {
+                debugger;
+                if (response != null) {
+                    generate_uploadsign_fetch(response.UploadSign);
+                }
+                else {
+
+                }
+            },
+            error: function (er) {
+                alert(er)
+                console.log(er)
+            }
+
+        });
+        $("#videomenu").show();
+    }
+    function generate_uploadsign_fetch(res) {
+        debugger;
+        $("#signature_rowid").val(res.signature_rowid);
+        $("#txtMode").val(res.mode_flag);
+        $("#txtsignname").val(res.signature_name);
+        $("#txtsigndesgn").val(res.signature_desgn);
+        var filename = res.signature_image;
+        $('#filename').text(filename);
+    }
+    function clear_val() {
+        $("#signature_rowid").val("");
+        $("#txtMode").val("");
+        $("#txtsignname").val("");
+        $("#txtsigndesgn").val("");
+        $('#filename').text("");
+      
+    }
+    function save_Image() {
+        debugger;
+        var xhr = new XMLHttpRequest();
+        var fd = new FormData();
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4 && xhr.status == 200)
+            {
+                    debugger;
+                    kendoAlert("Upload Signature saved successfully");
+                   // generate_uploadsign_fetch();
+                    list();
+            }
+        };
+        debugger;
+        var data = getContext();
+        var formval = form_Serialize("uploadsign_form");
+        var obj_val = JSON.parse(formval);
+       
+        var adgid = obj_val.In_signature_rowid;
+        if (adgid == "") {
+            obj_val.In_signature_rowid = 0;
+        }
+        else {
+            obj_val.In_signature_rowid = parseInt(obj_val.In_signature_rowid);
+        }
+        var tranid = obj_val.In_signature_tran_id;
+        if (tranid == "") {
+            obj_val.In_signature_tran_id = "0";
+        }
+
+        if (obj_val.In_signature_name == "") {
+            kendoAlert("Signature Name Cannot be Empty");
+            return false;
+        }
+        if (obj_val.In_signature_desgn == "") {
+            kendoAlert("Signature designation Cannot be Empty");
+            return false;
+        }
+        if (obj_val.In_signature_rowid != 0) {
+            obj_val.In_mode_flag = "U";
+        }
+        else {
+            obj_val.In_mode_flag = "I";
+        }
+
+        fd.append("userId", data.userId);
+        fd.append("orgnId", data.orgnId);
+        fd.append("locnId", data.locnId);
+        fd.append("localeId", data.localeId);
+        fd.append("In_signature_rowid", obj_val.In_signature_rowid);
+        fd.append("In_signature_tran_id", obj_val.In_signature_tran_id);
+        fd.append("In_signature_name", obj_val.In_signature_name);
+        fd.append("In_signature_desgn", obj_val.In_signature_desgn);
+        var uploaddoc = $('#filename').text();
+        fd.append("In_signature_image", uploaddoc);
+        fd.append("uploadFile", document.getElementById('signfile').files[0]);
+        fd.append("In_mode_flag", obj_val.In_mode_flag);
+        xhr.open("POST", "/UploadSignature/uploadsignsave", true);
+        xhr.send(fd);
+        xhr.addEventListener("load", function (event) {
+        }, false);
+    }
+    function onview() {
+
+        debugger;
+        $("#dialog").kendoWindow();
+        var dialog = $("#dialog").data("kendoWindow");
+        dialog.open().element.closest(".k-window").css({
+            top: 171,
+            left: 293, height: 330, width: 768
+        });
+        dialog.title("Upload Signature");
+        dialog.bind("open", serialno);
+        clear_val();
+        //popup double click expand to avoid
+        $(document).on('dblclick', '.k-window-titlebar', function (e) {
+            debugger;
+            // Restore old size
+            dialog.toggleMaximization();
+        });
+        var grid = $("#grid_uploadsign").data("kendoGrid");
+        var selectedItem = grid.dataItem(grid.select());
+        var formval = form_Serialize("uploadsign_form");
+        var obj_val = JSON.parse(formval);
+        obj_val.In_signature_rowid = selectedItem.signature_rowid;
+        var data = {};
+        data.context = getContext();
+        data.context.Header = obj_val;
+        var Context = data.context;
+        $.ajax({
+            type: "POST",
+            data: JSON.stringify({ userId: Context.userId, orgnId: Context.orgnId, locnId: Context.locnId, localeId: Context.localeId, In_signature_rowid: Context.Header.In_signature_rowid }),
+            url: "/UploadSignature/uploadsignfetch",
+            dataType: "json",
+            contentType: 'application/json; charset=utf-8',
+            success: function (response) {
+                debugger;
+                if (response != null) {
+                    generate_uploadsign_fetch(response.UploadSign);
+                }
+                else {
+
+                }
+            },
+            error: function (er) {
+                alert(er)
+                console.log(er)
+            }
+
+        });
+        $("#videomenu").hide();
+      
+        //popup double click expand to avoid
+        $(document).on('dblclick', '.k-window-titlebar', function (e) {
+            debugger;
+            // Restore old size
+            dialog.toggleMaximization();
+
+
+        });
+    }
+  
+</script>

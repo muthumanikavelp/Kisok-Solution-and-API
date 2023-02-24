@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>kiosk | Log in</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!--Style Sheet-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="~/CSS/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/CSS/AdminLTE.min.css" rel="stylesheet" />
+    <link href="~/CSS/kendo.common-material.min.css" rel="stylesheet" />
+    <link href="~/CSS/kendo.material.min.css" rel="stylesheet" />
+    <style>
+        .btn-primary {
+            background-color: #30749c;
+            border-color: #30749c;
+        }
+
+            .btn-primary:hover,
+            .btn-primary:active,
+            .btn-primary.hover {
+                background-color: #30749c;
+            }
+
+        input:required:invalid, input:focus:invalid {
+            border: 1px solid #ff9980;
+        }
+
+        input:required:valid {
+            border: 1px solid #99bbff;
+        }
+
+        select:required:invalid, select:focus:invalid {
+            border: 1px solid #ff9980;
+        }
+
+        select:required:valid {
+            border: 1px solid #99bbff;
+        }
+
+        span.k-tooltip {
+            padding: 4px 17px !important;
+            width: 190px !important;
+        }
+
+        .k-tooltip-validation .k-warning {
+            margin-left: -17px;
+        }
+    </style>
+    <!--Scripts-->
+    <script src="~/Scripts/jQuery-2.1.4.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/CommonScripts/Common_func.js"></script>
+    <script src="~/CommonScripts/AjaxScript.js"></script>
+    <script src="~/Scripts/kendo.all.min.js"></script>
+    <script type="text/x-kendo-template" id="ok-confirmation">
+        <div id="div">
+            <div class="col-sm-3">
+            </div>
+            <div class="col-sm-6">
+                <button class="ok k-button" onclick="con_close()">OK</button>
+            </div>
+            <div class="col-sm-3">
+            </div>
+        </div>
+    </script>
+
+    <script>
+        window.kendoAlert = function (msg) {
+            var win = $("<div />").kendoWindow({
+                title: "Message",
+                width: "350px",
+                height: "130px",
+                modal: true,
+                draggable: false,
+                resizable: false
+            }).getKendoWindow();
+            win.center().open();
+            win.content(msg + "<br><br>" + $("#ok-confirmation").html()).center().open();
+        };
+        function con_close() {
+            //  $(".k-i-close").click();
+            $('.k-window').css('display', 'none');
+            $('.k-overlay').css('display', 'none');
+        }
+    </script>
+</head>
+<body>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2021 - FFI - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/Scripts/jQuery-2.1.4.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/CommonScripts/Common_func.js"></script>
+    <script src="~/CommonScripts/AjaxScript.js"></script>
+    <script src="~/Scripts/kendo.all.min.js"></script>
+    @*<script src="~/lib/jquery/dist/jquery.min.js"></script>*@
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+   @* <script src="~/js/site.js" asp-append-version="true"></script>*@
+  @*  @RenderSection("Scripts", required: false)*@
+</body>
+</html>

@@ -1,0 +1,2376 @@
+﻿
+@{
+
+    Layout = "~/Views/Shared/FormViewLayout1.cshtml";
+}
+<style>
+    .k-grid tr td {
+        border-bottom: 1px solid #c5c5c5;
+    }
+</style>
+
+<link href="~/css/common.css" rel="stylesheet" />
+<script src="~/CommonScripts/HelpFile.js"></script>
+<div class="box-header text-center with-border">
+    <h6 class="box-title" style="text-align:center;color:red;font-weight: 600;">Farmer List</h6>
+</div>
+<form id="Farmer_Reg" class="form-horizontal" data-role="validator" novalidate="novalidate">
+
+    <div class="row">
+        <div class="col-sm-12">
+            <div id="grid_Farmer_list">
+                <a id="downloadpath" download href=""></a>
+            </div>
+        </div>
+
+    </div>
+
+</form>
+
+
+<div id="dialog" @*style="background: #e0dbdb !important;"*@ style="background-color:white;">
+    <form id="farmerreg_form" class="form-horizontal" data-role="validator" novalidate="novalidate">
+        <div class="row">
+            <div class="col-sm-3">
+            </div>
+            <div class="col-sm-4">
+                <h6 style="text-align:center;color:red;font-size:19px;">Farmer Land Details</h6>
+            </div>
+            <div class="col-sm-3" id="schemesmenu">
+                @*<i class="fa fa-times" style="color:black;font-size: 20px;cursor:pointer;" data-dismiss="modal" onclick="closerole()" aria-hidden="true"></i>*@
+            </div>
+            <div>
+                <input type="hidden" id="txtfarmergid" name="In_farmer_gid" />
+            </div>
+
+            <div class="col-sm-11">
+                <div id="grid_Land_list" style="width:106%;">
+                </div>
+            </div>
+            @*<div class="row" style="padding-left: 10px">
+                    <div class="col-lg-11">
+                        <div id="grid_attachment">
+                        </div>
+                    </div>
+                </div>*@
+        </div>
+    </form>
+</div>
+
+<div id="Soildialog" style="background-color:white;display:none;" @*style="background: #e0dbdb !important;"*@>
+    <form id="soil_form" class="form-horizontal" data-role="validator" novalidate="novalidate">
+        <div class="row">
+            <div class="col-sm-3">
+            </div>
+            <div class="col-sm-4">
+                <h5 style="text-align:center;color:red;font-size:19px;font:bold">Soil Health Card</h5>
+            </div>
+            <div class="col-sm-3" id="soilmenu" style="float: right;margin-right: -120px;">
+
+                <img title="Attachments" class="shade" style="cursor:pointer;" src="~/images/attach-finals.jpg" id="attach" onclick="attachment()" />&nbsp;
+                <img title="Notes" class="shade" style="cursor:pointer;" src="~/images/notes-finals.jpg" id="notes" onclick="notes_data()" />&nbsp;
+                @*<button type="button" id="soilprint"  onclick="Print()">PRINT PDF</button>*@
+                <img title="Print" class="shade" style="cursor:pointer;" src="~/images/printing.png" id="soilprint" onclick="Print()" />
+
+            </div>
+        </div>
+        <hr />
+        <div class=" row" style="padding-left:66px;padding-bottom:7px">
+            <div class="col-sm-2">
+                <label class="title">Farmer Code</label>
+                <input type="text" name="In_farmer_code" id="txtfarmercode" class="form-control" style="width: 100%;height: 20px" readonly>
+            </div>
+            <div class="col-sm-1" style="padding-top:31px;width:3%">
+                <label class="title"></label>
+                <a class="HelpWindow fa fa-search fa-lg" role="button" id="pay_help1" data-toggle="modal" hdrtitle="Member" searchid="S01" data-target="#HelpModal" title="Search" style="font-size: 19px; "></a>
+            </div>
+            <div class="col-sm-2">
+                <label class="title">Farmer Name</label>
+                <input type="text" name="In_farmer_name" id="txtfarmername" class="form-control" style="width:100%;height:20px" readonly>
+                <input type="hidden" id="txtfarmer_gid" name="In_farmer_gid" />
+                <input type="hidden" id="txtMode" name="In_mode_flag" />
+                <input type="hidden" id="txtsoilgid" name="In_soil_gid" />
+            </div>
+            <div class="col-sm-2" style="padding-left: 44px;">
+                <label class="title">Tran ID</label>
+                <input type="text" name="In_Tran_Id" id="txttranid" class="form-control" style="width:100%;height:20px" readonly>
+            </div>
+            <div class="col-sm-2" style="padding-left: 44px;">
+                <label class="title">Collection Date</label>
+                <input class=".cusDate form-control" data-role='datepicker' id="txtValidity1" style="width:100%;height:20px" data-checkdate-msg="Enter Valid Date" name="In_collection_date" onkeypress="return date_validate(event)" />
+                <span data-for='valid' class='k-invalid-msg'></span>
+            </div>
+        </div>
+
+        <div class=" row" style="padding-left:66px;padding-bottom:7px">
+            <div class="col-sm-2">
+                <label class="title">Sample Status</label>
+                <input id="cmb_samplests" name="In_sample_status" data-role="filtercombo" style="width:114%; height: 20px" class="form-control">
+            </div>
+            <div class="col-sm-1" style="padding-top:31px;width:3%">
+
+            </div>
+            <div class="col-sm-2">
+                <label class="title">Reject Reason</label>
+                <input id="cmb_rejreason" name="In_reject_reason" data-role="filtercombo" style="width: 114%; height: 20px" class="form-control">
+            </div>
+            <div class="col-sm-2" style="padding-left: 44px;">
+                <label class="title">Sample ID</label>
+                <input type="text" name="In_sample_Id" id="txtsampleid" class="form-control" style="width:100%;height:20px" MaxLength="100">
+            </div>
+            <div class="col-sm-2" style="padding-left: 44px;">
+                <label class="title">Sample Drawn By</label>
+                <input id="cmb_sampleby" name="In_sample_drawnby" data-role="filtercombo" style="width:115%; height: 20px" class="form-control">
+            </div>
+        </div>
+
+        <div class=" row" style="padding-left:66px;padding-bottom:7px">
+            <div class="col-sm-2">
+                <label class="title">Customer Reference</label>
+                <input type="text" id="txtcusref" name="In_customer_ref" class="form-control" style="width:100%;height:20px">
+            </div>
+            <div class="col-sm-1" style="padding-top:31px;width:3%">
+
+            </div>
+            <div class="col-sm-2">
+                <label class="title">Lab Report No.</label>
+                <input type="text" id="txtlab_rep" name="In_Lab_reportno" class="form-control" style="width:100%;height:20px" readonly>
+            </div>
+            <div class="col-sm-2" style="padding-left: 44px;">
+                <label class="title">Lab ID</label>
+                <input type="text" name="In_Lab_Id" id="txtlabid" class="form-control" style="width:100%;height:20px" MaxLength="100">
+            </div>
+            <div class="col-sm-2" style="padding-left: 44px;">
+                <label class="title">Sample Received On</label>
+                <input class=".cusDate form-control" data-role='datepicker' id="txtValidity2" style="width:100%;height:20px" data-checkdate-msg="Enter Valid Date" name="In_sample_receiveon" onkeypress="return date_validate(event)" />
+                <span data-for='valid' class='k-invalid-msg'></span>
+            </div>
+        </div>
+
+        <div class="row" style="padding-left: 66px;padding-bottom: 15px ">
+            <div class="col-sm-2">
+                <label class="title">Analysis Started On</label>
+                <input class="form-control" data-role='datepicker' id="txtValidity3" style="width:114% !important; height: 20px" data-checkdate-msg="Enter Valid Date" name="In_Analysis_starton" onkeypress="return date_validate(event)" />
+                <span data-for='valid' class='k-invalid-msg'></span>
+            </div>
+            <div class="col-sm-1" style="padding-top:31px;width:3%">
+
+            </div>
+            <div class="col-sm-2">
+                <label class="title">Analysis Completed On</label>
+                <input class=".cusDate form-control" data-role='datepicker' id="txtValidity4" style="width:114% !important; height: 20px" data-checkdate-msg="Enter Valid Date" name="In_Analysis_completeon" onkeypress="return date_validate(event)" />
+                <span data-for='valid' class='k-invalid-msg'></span>
+            </div>
+            <div class="col-sm-2" style="padding-left: 44px;">
+                <label class="title">Test Method</label>
+                <input id="txttestmethod" name="In_test_method" data-role="filtercombo" style="width:248%;height:20px" class="form-control">
+            </div>
+        </div>
+
+        <div class="row">
+            @*<h5 style="text-align:center;color:red;font-size:19px;">Soil Parameters</h5>*@
+            <div class="col-xs-11" style="margin-left: 6%;width: 84%;">
+                <div id="grid_soil_parameter">
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top:10px;margin-left: 5%;">
+            <div class="col-sm-6">
+                <label class="title">Crop Recommendation</label>
+                <textarea class="comment" rows="1" id="comment" name="In_crop_recommendation" style="height: 82px; width: 693px;"></textarea>
+            </div>
+            <div class="col-sm-3" style=" margin-left: 18%;margin-top: 2%;">
+                @*<input type="checkbox" class="form-check-input" value="">&nbsp; <span style="font-size:13px;">Confirm Report Completion</span>*@
+                <input type="checkbox" id="cropcheckbox" name="In_crop_confirm" class="form-check-input" value="0" disabled="disabled">&nbsp; <span style="font-size:13px;">Confirm Report Completion</span>
+                <input type="hidden" id="cropcheckbox" name="In_crop_confirm" value="0" />
+
+            </div>
+        </div>
+        <div class="modal fade" id="HelpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+            <div class="modal-dialog" style="width:75%;height:500px;">
+                <div class="modal-content">
+                </div>
+            </div>
+        </div>
+        <div id="attachModal" style="background-color:white;">
+            <div class="row" style="padding-top:20px;padding-bottom:20px;padding-left:10px">
+              
+            </div>
+            <div class="row" style="padding-left: 10px">
+                <div class="col-lg-11">
+                    <div id="grid_attachment">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="notesmodel" style="background-color:white;">
+            <div class="row">
+                <div class="col-sm-3">
+                </div>
+                <div class="col-sm-4">
+                    <h5 style="text-align:center;color:red;font-size:14px;">Notes</h5>
+                </div>
+
+            </div>
+            <div class="col-sm-6" style="margin-left:25px;">
+                <label for="remark" class="title">Notes</label>
+                <textarea class="form-control" rows="3" id="notesdata" name="" style="margin: 0px -210.609px 0px 0px; width: 462px; height: 61px;"></textarea>
+            </div>
+        </div>
+
+    </form>
+</div>
+
+@*irrigation*@
+
+<div id="irrigation_dialog" style="background-color:white;display:none">
+    <form id="irrigation_form" class="form-horizontal" data-role="validator" novalidate="novalidate">
+        <div class="row">
+            <div class="col-sm-3">
+            </div>
+            <div class="col-sm-4">
+                <h5 style="text-align:center;color:red;font-size:19px;font:bold">Irrigation Water</h5>
+            </div>
+            <div class="col-sm-3" id="irrigationmenu" style="float: right;margin-right: -150px;">
+                
+                <img title="Attachments" class="shade" style="cursor:pointer;" src="~/images/attach-finals.jpg" id="attach" onclick="irriationattachment()" />&nbsp;
+                <img title="Notes" class="shade" style="cursor:pointer;" src="~/images/notes-finals.jpg" id="notes" onclick="irrigationnotes_data()" />&nbsp;
+                <img title="Print" class="shade" style="cursor:pointer;" src="~/images/printing.png" id="irrigationprint" onclick="irrigationPrint()" />
+                <a id="downloadpath" download href=""></a>
+            </div>
+        </div>
+        <hr />
+        <div class=" row" style="padding-left:66px;padding-bottom:7px">
+            <div class="col-sm-2">
+                <label class="title">Farmer Code</label>
+                <input type="text" name="In_farmer_code" id="irrigationtxtfarmercode" class="form-control" style="width: 100%;height: 20px" readonly>
+            </div>
+            <div class="col-sm-1" style="padding-top:31px;width:3%">
+                <label class="title"></label>
+                <a class="HelpWindow fa fa-search fa-lg" role="button" id="pay_help1" data-toggle="modal" href="/HelpFilter/HelpFilter" hdrtitle="Member" searchid="S01" data-target="#HelpModal" onclick=transfer(this,"form","","form_control"); title="Search" style="font-size: 19px; "></a>
+            </div>
+            <div class="col-sm-2">
+                <label class="title">Farmer Name</label>
+                <input type="text" name="In_farmer_name" id="irrigationtxtfarmername" class="form-control" style="width:100%;height:20px" readonly>
+                <input type="hidden" id="txtfarmer_gid" name="In_farmer_gid" />
+                <input type="hidden" id="irrigationtxtMode" name="In_mode_flag" />
+                <input type="hidden" id="txtirrigationgid" name="In_irrigation_gid" />
+            </div>
+            <div class="col-sm-2" style="padding-left: 44px;">
+                <label class="title">Tran ID</label>
+                <input type="text" name="In_Tran_Id" id="irrigationtxttranid" class="form-control" style="width:100%;height:20px" readonly>
+            </div>
+            <div class="col-sm-2" style="padding-left: 44px;">
+                <label class="title">Collection Date</label>
+                <input class=".cusDate form-control" data-role='datepicker' id="irrigationtxtValidity1" style="width:100%;height:20px" data-checkdate-msg="Enter Valid Date" name="In_collection_date" onkeypress="return date_validate(event)" />
+                <span data-for='valid' class='k-invalid-msg'></span>
+            </div>
+        </div>
+
+        <div class=" row" style="padding-left:66px;padding-bottom:7px">
+            <div class="col-sm-2">
+                <label class="title">Sample Status</label>
+                <input id="cmb_irrigationsamplests" name="In_sample_status" data-role="filtercombo" style="width:114%; height: 20px" class="form-control">
+            </div>
+            <div class="col-sm-1" style="padding-top:31px;width:3%">
+
+            </div>
+            <div class="col-sm-2">
+                <label class="title">Reject Reason</label>
+                <input id="cmb_irrigationrejreason" name="In_reject_reason" data-role="filtercombo" style="width: 114%; height: 20px" class="form-control">
+            </div>
+            <div class="col-sm-2" style="padding-left: 44px;">
+                <label class="title">Sample ID</label>
+                <input type="text" name="In_sample_Id" id="irrigationtxtsampleid" class="form-control" style="width:100%;height:20px" MaxLength="100">
+            </div>
+            <div class="col-sm-2" style="padding-left: 44px;">
+                <label class="title">Sample Drawn By</label>
+                <input id="cmb_irrigationsampleby" name="In_sample_drawnby" data-role="filtercombo" style="width:115%; height: 20px" class="form-control">
+            </div>
+        </div>
+
+        <div class=" row" style="padding-left:66px;padding-bottom:7px">
+            <div class="col-sm-2">
+                <label class="title">Customer Reference</label>
+                <input type="text" id="irrigationtxtcusref" name="In_customer_ref" class="form-control" style="width:100%;height:20px">
+            </div>
+            <div class="col-sm-1" style="padding-top:31px;width:3%">
+
+            </div>
+            <div class="col-sm-2">
+                <label class="title">Lab Report No.</label>
+                <input type="text" id="irrigationtxtlab_rep" name="In_Lab_reportno" class="form-control" style="width:100%;height:20px" MaxLength="100">
+            </div>
+            <div class="col-sm-2" style="padding-left: 44px;">
+                <label class="title">Lab ID</label>
+                <input type="text" name="In_Lab_Id" id="irrigationtxtlabid" class="form-control" style="width:100%;height:20px" MaxLength="100">
+            </div>
+            <div class="col-sm-2" style="padding-left: 44px;">
+                <label class="title">Sample Received On</label>
+                <input class=".cusDate form-control" data-role='datepicker' id="irrigationtxtValidity2" style="width:100%;height:20px" data-checkdate-msg="Enter Valid Date" name="In_sample_receiveon" onkeypress="return date_validate(event)" />
+                <span data-for='valid' class='k-invalid-msg'></span>
+            </div>
+        </div>
+
+        <div class="row" style="padding-left: 66px;padding-bottom: 15px ">
+            <div class="col-sm-2">
+                <label class="title">Analysis Started On</label>
+                <input class="form-control" data-role='datepicker' id="irrigationtxtValidity3" style="width:114% !important; height: 20px" data-checkdate-msg="Enter Valid Date" name="In_Analysis_starton" onkeypress="return date_validate(event)" />
+                <span data-for='valid' class='k-invalid-msg'></span>
+            </div>
+            <div class="col-sm-1" style="padding-top:31px;width:3%">
+
+            </div>
+            <div class="col-sm-2">
+                <label class="title">Analysis Completed On</label>
+                <input class=".cusDate form-control" data-role='datepicker' id="irrigationtxtValidity4" style="width:114% !important; height: 20px" data-checkdate-msg="Enter Valid Date" name="In_Analysis_completeon" onkeypress="return date_validate(event)" />
+                <span data-for='valid' class='k-invalid-msg'></span>
+            </div>
+            <div class="col-sm-2" style="padding-left: 44px;">
+                <label class="title">Test Method</label>
+                <input id="irrigationtxttestmethod" name="In_test_method" data-role="filtercombo" style="width:248%;height:20px" class="form-control">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-11" style="margin-left: 6%;width: 84%;">
+                <div id="grid_irrigation_parameter">
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top:10px;margin-left: 5%;">
+            <div class="col-sm-6">
+                <label class="title">Crop Recommendation</label>
+                <textarea class="comment" rows="1" id="irrigationcomment" name="In_crop_recommendation" style="height: 82px; width: 693px;"></textarea>
+            </div>
+            <div class="col-sm-3" style=" margin-left: 18%;margin-top: 2%;">
+                @*<input type="checkbox" class="form-check-input" value="">&nbsp; <span style="font-size:13px;">Confirm Report Completion</span>*@
+                <input type="checkbox" id="irrigationcropcheckbox" name="In_crop_confirm" class="form-check-input" value="0" disabled="disabled">&nbsp; <span style="font-size:13px;">Confirm Report Completion</span>
+                <input type="hidden" id="irrigationcropcheckbox" name="In_crop_confirm" value="0" />
+
+                </div>
+                </div>
+                <div class="modal fade" id="HelpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+                    <div class="modal-dialog" style="width:75%;height:500px;">
+                        <div class="modal-content">
+                        </div>
+                    </div>
+                </div>
+                <div id="irrigationattachModal" @*style="background: #e0dbdb !important;"*@ style="background-color:white;">
+                    <div class="row" style="padding-top:20px;padding-bottom:20px;padding-left:10px">
+                        @*<div class="col-sm-3">
+                            <label for="txtcode" style="font-weight: normal;">Browse File</label>
+                            <input type="file" id="attachfile" name="in_parent_code" class="form-control" style="width:96%;height:20px">
+                        </div>
+                        <div class="col-sm-3">
+                            <label for="txtcode" style="font-weight: normal;">Description</label>
+                            <input type="text" id="txtdes" name="in_des_code" class="form-control" style="width:96%;height:20px">
+                        </div>
+                        <div class="col-sm-3">
+                            <label for="txtcode" style="font-weight: normal;">Document</label>
+                            <input id="txtdoc" name="in_doc_code" class="form-control" data-role="filtercombo" style="width:90%;height:20px" value="irrigation" readonly>
+                        </div>*@
+                        @*<div class="col-sm-1">
+                            <label></label>
+                            <button title="Upload" type="submit" id="button_Attachment" value="Upload" onclick="save_Image()" class="btn btn-primary" style="height:1%;margin-top:31%;cursor:pointer;"> <span class="fa fa-upload"></span></button>
+                            <a id="download_exl_template" download href=""></a>
+                        </div>*@
+                    </div>
+                    <div class="row" style="padding-left: 10px">
+                        <div class="col-lg-11">
+                            <div id="irrigationgrid_attachment">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="irrigationnotesmodel" style="background-color:white;">
+                    <div class="row">
+                        <div class="col-sm-3">
+                        </div>
+                        <div class="col-sm-4">
+                            <h5 style="text-align:center;color:red;font-size:14px;">Notes</h5>
+                        </div>
+                        @*<div class="col-sm-3" id="notesmenu">
+                            <img title="Save" src="~/images/save-finals.jpg" onclick="notesave()" style="margin-left: 70%;cursor:pointer;" />
+                        </div>*@
+                    </div>
+                    <div class="col-sm-6" style="margin-left:25px;">
+                        <label for="remark" class="title">Notes</label>
+                        <textarea class="form-control" rows="3" id="irrigationnotesdata" name="" style="margin: 0px -210.609px 0px 0px; width: 462px; height: 61px;"></textarea>
+                    </div>
+                </div>
+
+    </form>
+</div>
+
+
+@*Soil Grid*@
+<div id="FarmersoilListdialog" style="background-color:white;">
+    <div class="col-sm-11">
+        <div id="grid_Land_Soillist" style="width:106%;">
+        </div>
+    </div>
+</div>
+<div id="FarmersoilDetailListdialog" style="background-color:white;">
+    <div class="col-sm-11">
+        <div id="grid_Land_SoillistView" style="width:106%;">
+        </div>
+    </div>
+</div>
+
+@*Irrigation*@
+<div id="FarmerirrigationListdialog" style="background-color:white;">
+    <div class="col-sm-11">
+        <div id="grid_Land_Irregationlist" style="width:106%;">
+        </div>
+    </div>
+</div>
+<div id="FarmerirrigationDetailListdialog" style="background-color:white;">
+    <div class="col-sm-11">
+        <div id="grid_Land_IrrigationlistView" style="width:106%;">
+        </div>
+    </div>
+</div>
+<div id="dialogprint" style="background-color:white;">
+    <form id="soil_print" class="form-horizontal" data-role="validator" novalidate="novalidate">
+        <div class="row">
+            <div class="col-sm-4">
+                <h5 style="text-align: center; color: red; font-size: 20px; margin-left: 64%;">Print PDF</h5>
+            </div>
+            <div class="col-sm-3" id="soilprintmenu" style="float: right;margin-right: -90px;">
+                <img title="Print" class="shade" style="cursor:pointer;" src="~/images/printing.png" id="soilprintchk" onclick="Submit()" />
+                <a id="downloadpath" download href=""></a>
+            </div>
+        </div>
+        <hr style="margin-top:0px !important;margin-bottom:0px !important;">
+        <div class="row" id="NABL_radio" style="margin-left: 30px;margin-top: 4%;">
+            @*<label class=" col-sm-3 control-label" style="font-weight: bold; padding-left: 5%;">Header Part</label>*@
+            <input type="radio" id="headwith" name="headerwith" value="Yes" style="font-weight: bold;" /> With Header
+            <input type="radio" id="headwith" name="headerwith" value="No" style="margin-left: 65px;font-weight: bold;" /> Without Header
+        </div>
+      
+        <div class="row" style="margin-left: -5px;margin-top: 5%;">
+            <label class=" col-sm-3 control-label" style="font-weight: bold; padding-left: 5%;">Signature Name</label>
+            <input id="cmb_signload" data-role="filtercombo" class="form-control">
+        </div>
+
+
+    </form>
+</div>
+<script>
+    $(document).ready(function () {
+        debugger;
+        grid_Farmer_list([]);
+        $("#dialog").hide();
+        $("#dialogprint").hide();
+        list();
+        Screen_Id = "FARMREG";
+        grid_Land_list([]);
+        load_master_code();
+        var list_in = "";
+        $("#cmb_soilsts").empty();
+        list_in = grid_comboScreen_mastercodes("QCD_Soil_Status");
+        filter_combobox("cmb_soilsts", list_in);
+       // $('#cmb_soilsts').data("kendoComboBox").value(982);
+
+        var list_in1 = "";
+        $("#cmb_samplests").empty();
+        list_in1 = grid_comboScreen_mastercodes("QCD_Soil_Status");
+        //  console.log(list_in1);
+        filter_combobox("cmb_samplests", list_in1);
+
+
+        var list_in2 = "";
+        $("#cmb_rejreason").empty();
+        list_in2 = grid_comboScreen_mastercodes("QCD_SOIL_RejMas");
+        filter_combobox("cmb_rejreason", list_in2);
+
+        var list_in3 = "";
+        $("#cmb_sampleby").empty();
+        list_in3 = grid_comboScreen_mastercodes("QCD_SOIL_SampleBY");
+        filter_combobox("cmb_sampleby", list_in3);
+      //  $('#cmb_sampleby').data("kendoComboBox").value(1152);
+
+
+        var list_in4 = "";
+        $("#txttestmethod").empty();
+        list_in4 = grid_comboScreen_mastercodes("QCD_SOIL_TestMethod");
+        filter_combobox("txttestmethod", list_in4);
+
+        grid_attachment([]);
+
+
+        //irrigation
+
+        irrigation_load_master_code();
+         var list_in5 = "";
+        $("#cmb_irrigationsts").empty();
+        list_in5 = grid_comboScreen_mastercodes("QCD_Soil_Status");
+        filter_combobox("cmb_irrigationsts", list_in5);
+       // $('#cmb_irrigationsts').data("kendoComboBox").value(982);
+
+        var list_in6 = "";
+        $("#cmb_irrigationsamplests").empty();
+        list_in6 = grid_comboScreen_mastercodes("QCD_Soil_Status");
+        //  console.log(list_in1);
+        filter_combobox("cmb_irrigationsamplests", list_in6);
+
+
+        var list_in7 = "";
+        $("#cmb_irrigationrejreason").empty();
+        list_in7 = grid_comboScreen_mastercodes("QCD_SOIL_RejMas");
+        filter_combobox("cmb_irrigationrejreason", list_in7);
+
+        var list_in8= "";
+        $("#cmb_irrigationsampleby").empty();
+        list_in8 = grid_comboScreen_mastercodes("QCD_SOIL_SampleBY");
+        filter_combobox("cmb_irrigationsampleby", list_in8);
+        $('#cmb_irrigationsampleby').data("kendoComboBox").value(1152);
+
+
+        var list_in9= "";
+        $("#irrigationtxttestmethod").empty();
+        list_in9 = grid_comboScreen_mastercodes("QCD_SOIL_TestMethod");
+        filter_combobox("irrigationtxttestmethod", list_in9);
+
+         var list_sign = "";
+        $("#cmb_signload").empty();
+        list_sign = grid_comboScreen_mastercodes("SIGNATURE");
+        console.log(list_sign);
+        filter_combobox("cmb_signload", list_sign);
+
+
+
+       // grid_attachment([]);
+
+    });
+
+    function onview() {
+        debugger;
+       // Land_list([]);
+        grid_Land_Soillist([]);
+        onChangeSelection();
+    }
+
+    //soil
+    function load_master_code() {
+        debugger;
+        try {
+            var data = {};
+            data.screen_Id = "SOILCARD";
+            var tab_values = ajaxcall_param("/Home/screenId_mastercodelist", JSON.stringify(data));
+        }
+        catch (err) {
+            javascript_log4j_root(arguments.callee.name, err);
+        }
+    }
+
+    //irrigation
+
+
+    function irrigation_load_master_code() {
+        debugger;
+        try {
+            var data = {};
+            data.screen_Id = "IRRIGATIONMaker";
+            var tab_values = ajaxcall_param("/Home/screenId_mastercodelist", JSON.stringify(data));
+        }
+        catch (err) {
+            javascript_log4j_root(arguments.callee.name, err);
+        }
+    }
+
+
+    function list() {
+        debugger;
+        var data = {};
+        data.context = getContext();
+        var Context = data.context;
+        $.ajax({
+            type: "POST",
+            data: JSON.stringify({ orgnId: Context.orgnId, locnId: Context.locnId, localeId: Context.localeId }),
+            url: "/ListViewMaker/GetFarmersList",
+            dataType: "json",
+            contentType: 'application/json; charset=utf-8',
+            success: function (response) {
+                debugger;
+                if (response != null) {
+                    generate_grid_Farmer_list(response.Summary);
+                }
+                else {
+                    generate_grid_Farmer_list([]);
+                }
+            },
+            error: function (er) {
+                alert(er)
+                console.log(er)
+            }
+
+        });
+    }
+    function generate_grid_Farmer_list(res) {
+        debugger;
+        var data = changedataType(res);
+        grid_Farmer_list(data);
+    }
+    function grid_Farmer_list(data) {
+        $("#grid_Farmer_list").kendoGrid({
+            dataSource: {
+                data: data, //  pageSize: 20
+            },
+            height: 450,
+            scrollable: true,
+            sortable: true,
+            selectable: true,
+            filterable: true,
+            //change: onChangeSelection,
+            selectable: "singl",   //  Grid Row Selection
+            navigatable: true,
+          //  toolbar: "<a class='k-grid-add' id='Assign_sevices' onClick='serialno()'><span class='fa fa-plus' style='color:Black'></span></a>",
+            columns: [
+                {
+                    field: "farmer_rowid",
+                    title: "Farmer ID",
+                    hidden:"true",
+                    width: 30
+                },
+                {
+                    field: "farmer_code",
+                    title: "Farmer Code",
+                    width: 140
+                },
+                {
+                    field: "farmer_name",
+                    title: "Farmer Name",
+                    width: 130
+                },
+                {
+                    field: "sur_name",
+                    title: "Sur Name",
+                    width: 100
+                },
+
+                {
+                    field: "fhw_name",
+                    title: "Father/Husband/Wife's Name",
+                    width:200
+                },
+                {
+                    field: "farmer_dob",
+                    title: "DOB",
+                    width:100
+                },
+                {
+                    field: "farmer_addr1",
+                    title: "Address",
+                    width:100
+                },
+                {
+                    field: "farmer_village",
+                    title: "Village",
+                    hidden: "true",
+                    width: 100
+                },
+                {
+                    field: "farmer_village_desc",
+                    title: "Village",
+                    width: 100
+                },
+                {
+                    field: "farmer_panchayat",
+                    title: "Panchayat",
+                    hidden: "true",
+                    width: 100
+                },
+                {
+                    field: "farmer_panchayat_desc",
+                    title: "Panchayat",
+                    width: 100
+                },
+                {
+                    field: "farmer_taluk_desc",
+                    title: "Taluk",
+                    width: 100
+                },
+                {
+                    field: "farmer_taluk",
+                    title: "Taluk",
+                    hidden: "true",
+                    width: 100
+                },
+                {
+                    field: "farmer_dist",
+                    title: "District",
+                    hidden: "true",
+                    width: 100
+                },
+                {
+                    field: "farmer_dist_desc",
+                    title: "District",
+                    width:100
+                },
+
+                {
+                    field: "farmer_state",
+                    title: "State",
+                    hidden: "true",
+                    width: 100
+                },
+                {
+                    field: "farmer_state_desc",
+                    title: "State",
+                    width: 100
+                },
+
+                {
+                    field: "farmer_country",
+                    title: "Country",
+                    hidden: "true",
+                    width:100
+                },
+                {
+                    field: "farmer_country_desc",
+                    title: "Country",
+                    width:100
+                },
+
+                {
+                    field: "farmer_pincode",
+                    title: "Pincode",
+                    width:100
+                },
+
+                {
+                    field: "Farmer_Mobileno",
+                    title: "Mobile No",
+                    template: '<div style="text-align:right;">#= kendo.toString(Farmer_Mobileno, "n2") #</div>',
+                    width: 100
+                },
+                {
+                    field: "Farmer_InsertedDate",
+                    title: "Created Date",
+                    width: 100
+                },
+
+                {
+                    command: [
+                        {
+                            name: "View",
+                            text: "<span class='fa fa-eye' style ='color:#357ab8;cursor: pointer;' title='Land Details' onClick='onview()'></span>"
+                        },
+
+                        {
+                            name: "Barcode",
+                            text: "<span class='fa fa-qrcode' style ='color:#357ab8;cursor: pointer;' title='Farmer Barcode Print' onClick='ondownloadbarcode()'></span>"
+                        },
+                        {
+                            name: "Soil View",
+                            text: "<span class='fa fa-eye'  style ='color:#357ab8;cursor: pointer;' title='Soil Details' onClick='onsoilview()'></span>"
+                        },
+                        {
+                            name: "Soil View",
+                            text: "<span class='fa fa-eye'  style ='color:#357ab8;cursor: pointer;' title='Irrigation Details' onClick='onirrigationview()'></span>"
+                        },
+
+                    ], title: "View Land Details", width: "150px",
+                },
+            ]
+        });
+    }
+
+    //soil Details
+    function onsoilview() {
+        debugger;
+        var grid = $("#grid_Farmer_list").data("kendoGrid");
+        var selectedItem = grid.dataItem(grid.select());
+        var formval = form_Serialize("Farmer_Reg");
+        var obj_val = JSON.parse(formval);
+        obj_val.In_farmer_gid = selectedItem.farmer_rowid;
+        var farmer_gid = obj_val.In_farmer_gid;
+        onChangeLandSoilSelection(farmer_gid);
+
+    }
+
+
+    //Land Soil Details
+    function onChangeLandSoilSelection(farmer_gid) {
+        debugger;
+        $("#dialog").hide();
+        $("#FarmersoilListdialog").kendoWindow();
+        var dialog = $("#FarmersoilListdialog").data("kendoWindow");
+        dialog.open().element.closest(".k-window").css({
+            top: 18,
+            left: 180, height: 570, width: 1077
+        });
+        dialog.title("Farmer Soil Details");
+        dialog.bind("open", serialno);
+
+
+        //add pop up close
+        dialog.unbind("close");
+        dialog.bind("close", onWindowEditClosesoil);
+
+        grid_Land_Soillist([]);
+
+
+        //$("#cropcheckbox").prop('enabled', true);
+        //$("#cropcheckbox").prop('checked', false);
+        var grid = $("#Farmer_Land_soilList").data("kendoGrid");
+
+        //var obj_val = JSON.parse(formval);
+       // obj_val.In_farmer_gid = selectedItem.farmer_rowid;
+        var soil_status = "FarmerSoilDetails";
+        var data = {};
+        data.context = getContext();
+       // data.context.Header = obj_val;
+        var Context = data.context;
+        $.ajax({
+            type: "POST",
+            data: JSON.stringify({ userId: Context.userId, orgnId: Context.orgnId, locnId: Context.locnId, localeId: Context.localeId, In_farmer_gid: farmer_gid, soil_status: soil_status}),
+            url: "/SoilCard/SoilcardList",
+            dataType: "json",
+            contentType: 'application/json; charset=utf-8',
+            success: function (response) {
+                debugger;
+                //var response = (JSON.parse(response));
+                if (response != null) {
+                    debugger;
+                    generate_Land_soil_list(response.List);
+                    //if (response.header.out_crop_confirm == "1" && response.header.out_soil_confirm == "C") {
+                    //    debugger;
+                    //    $("#cropcheckbox").prop('enabled', true);
+                    //    $("#cropcheckbox").prop('checked', true);
+                    //}
+                }
+                else {
+
+                    generate_Land_soil_list([]);
+                    //if (response.header.out_crop_confirm == "1" && response.header.out_soil_confirm == "C") {
+                    //    debugger;
+                    //    $("#cropcheckbox").prop('enabled', true);
+                    //    $("#cropcheckbox").prop('checked', true);
+                    //}
+               }
+            },
+            error: function (er) {
+                alert(er)
+                console.log(er)
+            }
+
+
+        });
+    }
+
+    //pop up close refresh
+    var onWindowEditClosesoil = function (e) {
+        debugger;
+        setTimeout(function () {
+            debugger;
+            window.location.href = '../ListViewMaker/ListViewMakerForm';
+        });
+       // list();
+    };
+    function generate_Land_soil_list(res) {
+        debugger;
+        if (res != null) {
+            debugger;
+            var data = changedataType(res);
+            grid_Land_Soillist(data);
+        }
+        else {
+            grid_Land_Soillist([]);
+        }
+    }
+    function grid_Land_Soillist(data) {
+        $("#grid_Land_Soillist").kendoGrid({
+            dataSource: {
+                data: data,
+                schema: {
+                    model: {
+                        fields: {
+
+                            In_soil_gid: { type: "string" },
+                            Collection_date: { type: "string" },
+                            tran_id: { type: "string" },
+                            out_land_gid: { type: "string" },
+                            In_farmer_code: { type: "string" },
+                            In_farmer_name: { type: "string" },
+                            soil_status: { type: "string" },
+                        }
+                    }
+                }
+            },
+            height: 470,
+            groupable: false,
+            dataBinding: setDefaultValues,
+
+            dataBound: function (e) {
+                resultData = e.sender._data;
+                var rows = $('#grid_Land_Soillist').data('kendoGrid').tbody.children();
+                setColor(rows, resultData);
+            },
+            sortable: true,
+            selectable: true,
+            navigatable: true,
+
+            columns: [
+                {
+                    field: "In_soil_gid",
+                    title: "In_soil_gid",
+                    hidden: true,
+                    width: 30
+                },
+                {
+                    field: "Collection_date",
+                    title: "Collection Date",
+                    width: 120
+                },
+                {
+                    field: "tran_id",
+                    title: "Transaction Id",
+                    width:120
+                },
+                {
+                    field: "In_farmer_code",
+                    title: "Farmer Code",
+                    width: 120
+                },
+                {
+                    field: "In_farmer_name",
+                    title: "Farmer Name",
+                    width: 120
+                },
+                {
+                    field: "soil_status",
+                    title: "Status",
+                    width: 120
+                },
+
+
+                 {
+                    command: [
+                        {
+                            name: "View",
+                            text: "<span class='fa fa-eye' style ='color:#357ab8cursor: pointer;' title='View Soil Details' onClick='onviewSoilDetails()'></span>"
+                        },
+
+                    ],
+                },
+
+
+
+
+            ],
+            editable: true
+
+        });
+
+    }
+
+        //Soil Details:
+        function onviewSoilDetails() {
+            debugger;
+            var grid = $("#grid_Land_Soillist").data("kendoGrid");
+            var selectedItem = grid.dataItem(grid.select());
+            var formval = form_Serialize("Farmer_Reg");
+            var obj_val = JSON.parse(formval);
+            obj_val.soil_gid = selectedItem.In_soil_gid;
+            var soil_gid = obj_val.soil_gid;
+            SoilDetailsView(soil_gid);
+        }
+
+    function SoilDetailsView(soil_gid) {
+
+
+                debugger;
+
+          //  $("#FarmersoilListdialog").hide();
+       // $("#dialog").hide();
+        $("#attachModal").hide();
+        $("#notesmodel").hide();
+        $("#Soildialog").kendoWindow();
+        var dialog = $("#Soildialog").data("kendoWindow");
+                dialog.open().element.closest(".k-window").css({
+                    top: 18,
+                    left: 180, height: 698, width: 1077
+                });
+                dialog.title("Soil Health Card View");
+                dialog.bind("open", serialno);
+                // clear_val();
+
+                //popup double click expand to avoid
+                $(document).on('dblclick', '.k-window-titlebar', function (e) {
+                    debugger;
+                    // Restore old size
+                    dialog.toggleMaximization();
+
+
+                });
+
+
+        $("#cropcheckbox").prop('enabled', true);
+        $("#cropcheckbox").prop('checked', false);
+                var grid = $("#grid_soil").data("kendoGrid");
+
+                //obj_val.soil_gid = selectedItem.In_soil_gid;
+                //$("#txtUserId").val(selectedItem.user_code);
+                var data = {};
+                data.context = getContext();
+               // data.context.Header = obj_val;
+                var Context = data.context;
+                $.ajax({
+                    type: "POST",
+                    data: JSON.stringify({ userId: Context.userId, orgnId: Context.orgnId, locnId: Context.locnId, localeId: Context.localeId, soil_gid: soil_gid }),
+                    url: "/SoilCard/Soilcardfetch",
+                    dataType: "json",
+                    contentType: 'application/json; charset=utf-8',
+                    success: function (response) {
+                        debugger;
+                    //    if (response != null) {
+                    //        debugger;
+                    //        if (response.header.out_sample_status != "Waiting for approval") {
+                    //            debugger;
+                    //        generate_soil_header(response.header);
+                    //        generate_soilparameter_list(response.detail);
+                    //       if (response.header.out_crop_confirm == "1" && response.header.out_soil_confirm == "C") {
+                    //            debugger;
+                    //            $("#cropcheckbox").prop('enabled', true);
+                    //            $("#cropcheckbox").prop('checked', true);
+                    //        }
+                    //    }
+                    //    //else {
+
+                    //    //}
+                    //},
+
+                        if (response != null) {
+                            debugger;
+                            if (response.header.out_sample_status != "Waiting for approval") {
+                                debugger;
+                                generate_soil_header(response.header);
+                                generate_soilparameter_list(response.detail);
+                                if (response.header.out_crop_confirm == "1" && response.header.out_soil_confirm == "C") {
+                                    debugger;
+                                   // $("#cropcheckbox").prop('enabled', true);
+                                    $("#cropcheckbox").prop('checked', true);
+                                }
+
+                            }
+                            else {
+                                debugger;
+
+                                generate_soil_header(response.header);
+                                var x = Math.floor((Math.random() * 10000000000000000) + 100000000000000000);
+                                $("#txtlab_rep").val(x);
+                                getsoilparameters();
+                                if (response.header.out_crop_confirm == "1" && response.header.out_soil_confirm == "C") {
+                                    debugger;
+                                  //  $("#cropcheckbox").prop('enabled', true);
+                                    $("#cropcheckbox").prop('checked', true);
+                                }
+
+                            }
+                        }
+
+                        else {
+
+                        }
+                    },
+                    error: function (er) {
+                        alert(er)
+                        console.log(er)
+                    }
+
+                });
+    }
+
+    function generate_soil_header(res) {
+        debugger;
+       // $("#Soildialog").show();
+        $("#txtfarmercode").val(res.out_farmer_code);
+        $("#txtValidity1").val(res.out_collection_date);
+       $('#cmb_samplests').data("kendoComboBox").value(res.out_sample_status);
+        $('#cmb_rejreason').data("kendoComboBox").value(res.out_reject_reason);
+        $('#cmb_sampleby').data("kendoComboBox").value(res.out_sample_drawnby);
+        $("#txtfarmername").val(res.out_farmer_name);
+        $("#txttranid").val(res.out_Tran_Id);
+        $("#txtsampleid").val(res.out_sample_Id);
+        $("#txtcusref").val(res.out_customer_ref);
+        $("#txtlab_rep").val(res.out_Lab_reportno);
+        $("#txtMode").val(res.in_mode_flag);
+        $("#txtlabid").val(res.out_Lab_Id);
+        $("#txtValidity2").val(res.out_sample_receiveon);
+        $("#txtValidity3").val(res.out_Analysis_starton);
+        $("#txtValidity4").val(res.out_Analysis_completeon);
+        $("#txttestmethod").data("kendoComboBox").value(res.out_test_method);
+      /*  $("#txttestmethod").val(res.out_test_method);*/
+        $("#comment").val(res.out_crop_recommendation);
+        $("#txtsoilgid").val(res.out_soil_gid);
+        $("#txtfarmer_gid").val(res.out_farmer_gid);
+        $("#notesdata").val(res.out_soil_notes);
+
+    }
+    function generate_soilparameter_list(res) {
+        if (res != null) {
+            var data = changedataType(res);
+            grid_soil_parameter(data);
+        }
+        else {
+            grid_soil_parameter([]);
+        }
+    }
+
+    function ondownloadbarcode() {
+        debugger;
+        var grid = $("#grid_Farmer_list").data("kendoGrid");
+        var selectedItem = grid.dataItem(grid.select());
+        var formval = form_Serialize("Farmer_Reg");
+        var obj_val = JSON.parse(formval);
+        obj_val.In_farmer_gid = selectedItem.farmer_rowid;
+        var data = {};
+        data.context = getContext();
+        data.context.Header = obj_val;
+        var Context = data.context;
+        $.ajax({
+            type: "POST",
+            data: JSON.stringify({ userId: Context.userId, orgnId: Context.orgnId, locnId: Context.locnId, localeId: Context.localeId, In_farmer_gid: Context.Header.In_farmer_gid }),
+            url: "/ListViewMaker/Getfarmerbarcode",
+            dataType: "json",
+            contentType: 'application/json; charset=utf-8',
+            success: function (response) {
+                debugger;
+                if (response != null) {
+                    debugger;
+                    var url_path = (response);
+                    $("#downloadpath").attr("href", url_path.path);
+                    document.getElementById("downloadpath").click();
+
+                }
+
+            },
+            error: function (er) {
+                alert(er)
+                console.log(er)
+            }
+
+
+        });
+    }
+
+
+    //End
+
+    function serialno() {
+        debugger;
+        $("#dialog").kendoWindow();
+        var dialog = $("#dialog").data("kendoWindow");
+        dialog.open().element.closest(".k-window").css({
+            top: 18,
+            left: 180, height: 570, width: 1077
+        });
+        dialog.title("Farmer Land details");
+        dialog.bind("open", serialno);
+
+        //add pop up close
+        dialog.unbind("close");
+        dialog.bind("close", onWindowEditClose);
+
+        $(document).on('dblclick', '.k-window-titlebar', function (e) {
+            debugger;
+            // Restore old size
+            dialog.toggleMaximization();
+
+
+        });
+
+
+
+
+
+    }
+    //pop up close refresh
+    var onWindowEditClose = function (e) {
+        debugger;
+        //list();
+    };
+    function onChangeSelection() {
+        debugger;
+        $("#FarmersoilListdialog").hide();
+        $("#dialog").kendoWindow();
+        var dialog = $("#dialog").data("kendoWindow");
+        dialog.open().element.closest(".k-window").css({
+            top: 18,
+            left: 180, height: 570, width: 1077
+        });
+        dialog.title("Farmer Land Details");
+        dialog.bind("open", serialno);
+
+        //add pop up close
+        //dialog.unbind("close");
+        //dialog.bind("close", onWindowEditClose);
+        grid_Land_list([]);
+        var grid = $("#grid_Farmer_list").data("kendoGrid");
+        var selectedItem = grid.dataItem(grid.select());
+        var formval = form_Serialize("Farmer_Reg");
+        var obj_val = JSON.parse(formval);
+        obj_val.In_farmer_gid = selectedItem.farmer_rowid;
+        var data = {};
+        data.context = getContext();
+        data.context.Header = obj_val;
+        var Context = data.context;
+        $.ajax({
+            type: "POST",
+            data: JSON.stringify({ userId: Context.userId, orgnId: Context.orgnId, locnId: Context.locnId, localeId: Context.localeId, In_farmer_gid: Context.Header.In_farmer_gid }),
+            url: "/ListViewMaker/GetFarmersLandList",
+            dataType: "json",
+            contentType: 'application/json; charset=utf-8',
+            success: function (response) {
+                debugger;
+                //var response =(JSON.parse(response));
+                if (response != null) {
+                    debugger;
+                     //Land_list(response.land[0]);
+                    Land_list(response.Land);
+                }
+                else {
+
+                     Land_list([]);
+                }
+            },
+            error: function (er) {
+                alert(er)
+                console.log(er)
+            }
+
+
+        });
+
+    }
+
+
+    //pop up close refresh
+    var onWindowEditClose = function (e) {
+        debugger;
+      //  list();
+        Land_list([]);
+    };
+
+    function Land_list(res) {
+        debugger;
+        if (res != null) {
+            debugger;
+            var data = changedataType(res);
+            grid_Land_list(data);
+        }
+        else {
+            grid_Land_list([]);
+        }
+    }
+    function grid_Land_list(data) {
+        debugger;
+        $("#grid_Land_list").kendoGrid({
+            dataSource: {
+                data: data,
+                schema: {
+                    model: {
+                        fields: {
+
+                            out_farmer_code: { type: "string" },
+                            out_farmer_gid: { type: "string" },
+                            out_farmer_name: { type: "string"},
+                            out_land_gid:   { type: "string"},
+                            out_land_irrsou:  { type: "string" },
+                            out_land_irrsou_desc:   { type: "string" },
+                            out_land_latitude:  { type: "string" },
+                            out_land_longtitude: { type: "string"},
+                            out_land_noofacres:  { type: "string" },
+                            out_land_ownership: { type: "string" },
+                            out_land_ownership_desc: { type: "string" },
+                            out_land_soiltype: { type: "string" },
+                            out_land_soiltype_desc: { type: "string" },
+                            out_land_type: { type: "string" },
+                            out_land_type_desc: { type: "string" },
+                        }
+                    }
+                }
+            },
+            height: 470,
+            groupable: false,
+            dataBinding: setDefaultValues,
+
+            dataBound: function (e) {
+                resultData = e.sender._data;
+                var rows = $('#grid_Land_list').data('kendoGrid').tbody.children();
+                setColor(rows, resultData);
+            },
+            sortable: true,
+            selectable: true,
+            navigatable: true,
+
+            columns: [
+                {
+                    field: "out_farmer_gid",
+                    title: "Farmer ID",
+                    hidden: "true",
+                    width: 30
+                },
+                {
+                    field: "out_land_gid",
+                    title: "Farmer Code",
+                    hidden: "true",
+                    width: 30
+                },
+                {
+                    field: "out_farmer_code",
+                    title: "Farmer Code",
+                    width: 40
+                },
+                {
+                    field: "out_farmer_name",
+                    title: "Farmer Name",
+                    width: 30
+
+                },
+                {
+                    field: "out_land_type",
+                    title: "Land Type",
+                    hidden: "true",
+                    width: 30
+                },
+                {
+                    field: "out_land_type_desc",
+                    title: "Land Type",
+                    width: 30
+                },
+                {
+                    field: "out_land_ownership_desc",
+                    title: "Land Ownership",
+                    width: 35
+                },
+                {
+                    field: "out_land_ownership",
+                    title: "Land Ownership",
+                    hidden: "true",
+                    width: 45
+                },
+                {
+                    field: "out_land_soiltype",
+                    title: "Land Soiltype",
+                    hidden: "true",
+                    width: 30
+                },
+                {
+                    field: "out_land_soiltype_desc",
+                    title: "Land Soiltype",
+                    width: 30
+                },
+                {
+                    field: "out_land_irrsou",
+                    title: "Village",
+                    hidden: "true",
+                    width: 30
+                },
+                {
+                    field: "out_land_irrsou_desc",
+                    title: "Land Irregation Source",
+                    width: 45
+                },
+                {
+                    field: "out_land_noofacres",
+                    title: "Acres",
+                    template: '<div style="text-align:right;">#= kendo.toString(out_land_noofacres, "n2") #</div>',
+                    width: 30
+                },
+                {
+                    field: "out_land_longtitude",
+                    title: "Land Longtitude",
+                    template: '<div style="text-align:right;">#= kendo.toString(out_land_longtitude, "n2") #</div>',
+                    width: 40
+                },
+                {
+                    field: "out_land_latitude",
+                    title: "Land Latitude",
+                    template: '<div style="text-align:right;">#= kendo.toString(out_land_latitude, "n2") #</div>',
+                    width: 40
+                }],
+            editable: true
+
+        });
+
+    }
+
+    function grid_soil_parameter(data) {
+        $("#grid_soil_parameter").kendoGrid({
+
+                dataSource: {
+                    data: data,
+                    schema: {
+                        model: {
+                            fields: {
+
+                                in_soilparam_rowid: { type: "string" },
+                                out_soil_Id: { type: "string" },
+                                out_farmer_name: { type: "string" },
+                                In_soil_Parameter: { type: "string" },
+                                In_soil_Parameter_desc: { type: "string" },
+                                In_soil_uom: { type: "string" },
+                                In_soil_uom_desc: { type: "string" },
+                                In_soil_results: { type: "string" },
+                                In_mode_flag: { type: "string" },
+
+                            }
+                        }
+                    }
+                },
+                height: 250,
+                groupable: false,
+                dataBinding: setDefaultValues,
+
+                dataBound: function (e) {
+                    resultData = e.sender._data;
+                    var rows = $('#grid_soil_parameter').data('kendoGrid').tbody.children();
+                    setColor(rows, resultData);
+                },
+                sortable: true,
+                selectable: true,
+                navigatable: true,
+
+            columns: [
+                {
+                    field: "in_soilparam_rowid",
+                    title: "Soil out_soilparam_rowid",
+                    hidden: true,
+                    width: 30
+                },
+                {
+                    field: "out_soil_Id",
+                    title: "Sl",
+                    width: 30
+                },
+                {
+                    field: "In_soil_Parameter",
+                    title: "In_soil_Parameter",
+                    hidden: true,
+                    width: 30
+                },
+                {
+                    field: "In_soil_Parameter_desc",
+                    title: "Soil Parameter",
+                    //editor: function (container, options) {
+                    //    combo_editor_man(container, "cmb_" + options.field, eval(options.field + "_list"), options.field, "In_soil_Parameter", "grid_soil_parameter")
+                    //},
+                    width: 100
+                },
+                {
+                    field: "In_soil_uom",
+                    title: "In_soil_uom",
+                    hidden: true,
+                    width: 30
+                },
+                {
+                    field: "In_soil_uom_desc",
+                    title: "UoM",
+                    //editor: function (container, options) {
+                    //    combo_editor_man(container, "cmb_" + options.field, eval(options.field + "_list"), options.field, "In_soil_uom", "grid_soil_parameter")
+                    //},
+                    width: 100
+                },
+                {
+                    field: "In_soil_results",
+                    title: "Result",
+                    width: 100
+                },
+                {
+                    field: "In_mode_flag",
+                    title: "In_mode_flag",
+                    hidden: true,
+                    width: 30
+                },
+
+            ],
+            editable: true,
+        });
+    //    load_master_code();
+    //    In_soil_Parameter_desc_list = grid_comboScreen_mastercodes("QCD_SOIL_PARAM");
+    //    In_soil_uom_desc_list = grid_comboScreen_mastercodes("QCD_UOM_TYPE");
+    }
+
+
+    //soil Attachment
+    function attachment() {
+        $("#attachModal").kendoWindow();
+        var attachModal = $("#attachModal").data("kendoWindow");
+        attachModal.open().element.closest(".k-window").css({
+            top: 80,
+            left: 350, height: 420, width: 775
+        });
+        attachModal.title("Attachment");
+        attachModal.bind("open", attachModal);
+        attachlist();
+    }
+    function attachlist() {
+        $("#attachModal").show();
+        var soilid = $("#txtsoilgid").val();
+        var doc_type = "soilcard";
+        var data = {};
+        data.context = getContext();
+        var Context = data.context;
+        $.ajax({
+            type: "POST",
+            data: JSON.stringify({ orgnId: Context.orgnId, locnId: Context.locnId, localeId: Context.localeId, id: soilid, doc_type: doc_type }),
+            url: "/Attacment/attachmentList/",
+            dataType: "json",
+            contentType: 'application/json; charset=utf-8',
+            success: function (response) {
+                debugger;
+                if (response != null) {
+                    generate_attach_list(response.attach);
+                }
+                else {
+                    grid_attachment([]);
+                }
+            },
+            error: function (er) {
+                alert(er)
+                console.log(er)
+            }
+
+        });
+    }
+
+    function generate_attach_list(res) {
+        var data = changedataType(res);
+        grid_attachment(data);
+    }
+    function grid_attachment(data) {
+        $("#grid_attachment").kendoGrid({
+            dataSource: {
+                data: data,
+                schema: {
+                    model: {
+                        fields: {
+
+                            attach_gid: { type: "string" },
+                            filepath: { type: "string" },
+                            filename: { type: "string" },
+                            document: { type: "string" },
+                            description: { type: "string" },
+                            userId: { type: "string" },
+
+                        }
+                    }
+                }
+            },
+            height: 470,
+            groupable: false,
+            dataBinding: setDefaultValues,
+
+            dataBound: function (e) {
+                resultData = e.sender._data;
+                var rows = $('#grid_attachment').data('kendoGrid').tbody.children();
+                setColor(rows, resultData);
+            },
+            sortable: true,
+            selectable: true,
+            navigatable: true,
+            columns: [
+                {
+                    field: "attach_gid",
+                    title: "attach Id",
+                    hidden: true,
+                    width: 30
+                },
+                {
+                    field: "filepath",
+                    title: "File",
+                    width: 100
+                },
+                {
+                    field: "filename",
+                    title: "File name",
+                    width:80
+                },
+                {
+                    field: "document",
+                    title: "Document",
+                    width:80
+                },
+                {
+                    field: "description",
+                    title: "descrition",
+                    width: 80
+                },
+                {
+                    field: "userId",
+                    title: "Attached By",
+                    width: 80
+                },
+                {
+
+                },], editable: true
+        });
+    }
+
+    //soil Notes
+    function notes_data() {
+        $("#notesmodel").kendoWindow();
+        var notesmodel = $("#notesmodel").data("kendoWindow");
+        notesmodel.open().element.closest(".k-window").css({
+            top: 80,
+            left: 350, height: 150, width: 575
+        });
+        notesmodel.title("Notes");
+        notesmodel.bind("open", notesmodel);
+        $("#notesmodel").show();
+    }
+
+
+
+    function langTranslate(src, dest) {
+        debugger;
+        $("#" + src).focusout(function () {
+            var id = $('#' + src).val();
+          //  $("#HelpDiv").hide();
+            if (id != "") {
+
+                $.ajax({
+                    url: '@Url.Action("Language_Translate", "GovtSchemes")',
+                    type: 'GET',
+                    dataType: 'json',
+                    cache: false,
+                    data: { 'id': id },
+                    success: function (result) {
+                        $('#' + dest).val(decodeEntities(result));
+                    },
+                    error: function () {
+                        alert('Error occured');
+                    }
+                });
+            }
+            else {
+                $('#' + dest).val("");
+              //  $("#HelpDiv").hide();
+            }
+
+        })
+        $('#' + dest).focus(function () {
+            $("#HelpDiv").html("")
+        });
+
+        $("body").click(function () {
+            $("#HelpDiv").hide();
+        });
+        $("tab_list").click(function () {
+            $("#HelpDiv").hide();
+        });
+
+
+    }
+    function decodeEntities(input) {
+        var y = document.createElement('textarea');
+        y.innerHTML = input;
+        return y.value;
+    }
+
+    //soil Print
+    function Print() {
+        debugger;
+        printpopup();
+
+    }
+
+    function printpopup() {
+        $("#dialogprint").kendoWindow();
+        var dialog = $("#dialogprint").data("kendoWindow");
+        dialog.open().element.closest(".k-window").css({
+            top: 171,
+            left: 293, height: 250, width: 640
+        });
+        dialog.title("Print");
+        dialog.bind("open", printpopup);
+
+        //add pop up close
+        dialog.unbind("close");
+        dialog.bind("close", onWindowEditClose);
+
+
+
+        //popup double click expand to avoid
+        $(document).on('dblclick', '.k-window-titlebar', function (e) {
+            debugger;
+            // Restore old size
+            dialog.toggleMaximization();
+
+
+        });
+    }
+    //pop up close refresh
+    var onWindowEditClose = function (e) {
+        debugger;
+        list();
+    };
+   function getsoilwithheader(Signature_Name, Signature_ImPath, Signature_Desgn)
+    {
+        debugger;
+        var withchecked = $('#headwith').is(':checked');
+        var signature_name = Signature_Name;
+        var signature_path = Signature_ImPath;
+        var signature_desgn = Signature_Desgn;
+        $.ajax({
+            type: "POST",
+            url: '@Url.Action("downloadpdf", "SoilCard")',
+            data: { 'Signature_NameP': signature_name, 'Signature_ImPathP': signature_path, 'Headerpart': withchecked, 'Signature_Desgnp': signature_desgn},
+            success: function (response) {
+                debugger;
+                if (response != null) {
+                    debugger;
+                    var url_path = (response);
+                    $("#downloadpath").attr("href", url_path);
+                    document.getElementById("downloadpath").click();
+
+                }
+
+            },
+            error: function (er) {
+                alert(er)
+                console.log(er)
+            }
+
+
+        });
+
+    }
+ function Submit() {
+        debugger;
+     var signdropdown = $('#cmb_signload').data("kendoComboBox").value();
+     var Headerpart = $("input[name='headerwith']:checked").val();
+     if (Headerpart != undefined) {
+         if (signdropdown != "") {
+             var data = {};
+             data.context = getContext();
+             var Context = data.context;
+             $.ajax({
+                 type: "POST",
+                 data: JSON.stringify({ userId: Context.userId, orgnId: Context.orgnId, locnId: Context.locnId, localeId: Context.localeId, In_signature_rowid: signdropdown }),
+                 url: "/UploadSignature/uploadsignfetch",
+                 dataType: "json",
+                 contentType: 'application/json; charset=utf-8',
+                 success: function (response) {
+                     debugger;
+                     if (response != null) {
+                         var Signature_Name = response.UploadSign.signature_name;
+                         var Signature_ImPath = response.UploadSign.signature_image;
+                         var Signature_Desgn = response.UploadSign.signature_desgn;
+                         getsoilwithheader(Signature_Name, Signature_ImPath, Signature_Desgn);
+                     }
+                     else {
+
+                     }
+                 },
+                 error: function (er) {
+                     alert(er)
+                     console.log(er)
+                 }
+
+             });
+         }
+         else {
+             kendoAlert("Please select the name for signature!!!");
+         }
+     }
+     else {
+         kendoAlert("Please select the Header part!!!");
+     }
+
+    }
+    //irrigation start
+
+    //irrigation Details
+    function onirrigationview() {
+        debugger;
+        var grid = $("#grid_Farmer_list").data("kendoGrid");
+        var selectedItem = grid.dataItem(grid.select());
+        var formval = form_Serialize("Farmer_Reg");
+        var obj_val = JSON.parse(formval);
+        obj_val.In_farmer_gid = selectedItem.farmer_rowid;
+        var irrigationfarmer_gid = obj_val.In_farmer_gid;
+        onChangeIrrigationSelection(irrigationfarmer_gid);
+    }
+
+
+
+      //Irrgation List
+    function onChangeIrrigationSelection(irrigationfarmer_gid) {
+        debugger;
+        $("#dialog").hide();
+        $("#soildialog").hide();
+
+        $("#FarmerirrigationListdialog").kendoWindow();
+        var dialog = $("#FarmerirrigationListdialog").data("kendoWindow");
+        dialog.open().element.closest(".k-window").css({
+            top: 18,
+            left: 180, height: 570, width: 1077
+        });
+        dialog.title("Irrigation Water Details");
+        dialog.bind("open", serialno);
+
+
+        //add pop up close
+        dialog.unbind("close");
+        dialog.bind("close", onWindowEditClosesoil);
+
+      //  grid_Land_Soillist([]);
+
+
+        var grid = $("#Farmer_Land_soilList").data("kendoGrid");
+
+        //var obj_val = JSON.parse(formval);
+        // obj_val.In_farmer_gid = selectedItem.farmer_rowid;
+        var soil_status = "FarmerIrrigationDetails";
+        var data = {};
+        data.context = getContext();
+        // data.context.Header = obj_val;
+        var Context = data.context;
+        $.ajax({
+            type: "POST",
+            data: JSON.stringify({ userId: Context.userId, orgnId: Context.orgnId, locnId: Context.locnId, localeId: Context.localeId, In_farmer_gid: irrigationfarmer_gid, irrigation_status: soil_status }),
+           // url: "/SoilCard/SoilcardList",
+            url: '@Url.Action("irrigationList", "IrrigationWaterTest")',
+            dataType: "json",
+            contentType: 'application/json; charset=utf-8',
+            success: function (response) {
+                debugger;
+                //var response = (JSON.parse(response));
+                if (response != null) {
+                    debugger;
+                    $("#soildialog").hide();
+                    generate_Land_Irrigation_list(response.List);
+                    //if (response.header.out_crop_confirm == "1" && response.header.out_soil_confirm == "C") {
+                    //    debugger;
+                    //    $("#cropcheckbox").prop('enabled', true);
+                    //    $("#cropcheckbox").prop('checked', true);
+                    //}
+                }
+                else {
+
+                    generate_Land_Irrigation_list([]);
+                    //if (response.header.out_crop_confirm == "1" && response.header.out_soil_confirm == "C") {
+                    //    debugger;
+                    //    $("#cropcheckbox").prop('enabled', true);
+                    //    $("#cropcheckbox").prop('checked', true);
+                    //}
+                }
+            },
+            error: function (er) {
+                alert(er)
+                console.log(er)
+            }
+
+
+        });
+    }
+
+
+    function generate_Land_Irrigation_list(res) {
+        debugger;
+        if (res != null) {
+            debugger;
+            $("#soildialog").hide();
+            var data = changedataType(res);
+            grid_Land_Irregationlist(data);
+        }
+        else {
+            grid_Land_Irregationlist([]);
+        }
+    }
+    function grid_Land_Irregationlist(data) {
+        $("#grid_Land_Irregationlist").kendoGrid({
+            dataSource: {
+                data: data,
+                schema: {
+                    model: {
+                        fields: {
+
+                            In_irrigation_gid: { type: "string" },
+                            Collection_date: { type: "string" },
+                            tran_id: { type: "string" },
+
+                            In_farmer_code: { type: "string" },
+                            In_farmer_name: { type: "string" },
+                            irrigation_status: { type: "string" },
+                        }
+                    }
+                }
+            },
+            height: 470,
+            groupable: false,
+            dataBinding: setDefaultValues,
+
+            dataBound: function (e) {
+                resultData = e.sender._data;
+                var rows = $('#grid_Land_Irregationlist').data('kendoGrid').tbody.children();
+                setColor(rows, resultData);
+            },
+            sortable: true,
+            selectable: true,
+            navigatable: true,
+
+            columns: [
+                {
+                    field: "In_irrigation_gid",
+                    title: "In_irrigation_gid",
+                    hidden: true,
+                    width: 30
+                },
+                {
+                    field: "Collection_date",
+                    title: "Collection Date",
+                    width: 120
+                },
+                {
+                    field: "tran_id",
+                    title: "Transaction Id",
+                    width: 120
+                },
+                {
+                    field: "In_farmer_code",
+                    title: "Farmer Code",
+                    width: 120
+                },
+                {
+                    field: "In_farmer_name",
+                    title: "Farmer Name",
+                    width: 120
+                },
+                {
+                    field: "irrigation_status",
+                    title: "Status",
+                    width: 120
+                },
+
+
+                {
+                    command: [
+                        {
+                            name: "View",
+                            text: "<span class='fa fa-eye' style ='color:#357ab8cursor: pointer;' title='View Irrigation Details' onClick='onviewIrrigationDetails()'></span>"
+                        },
+
+                    ],
+                },
+
+
+
+
+            ],
+            editable: true
+
+        });
+
+    }
+
+
+    //Irrigation view Details:
+    function onviewIrrigationDetails() {
+        debugger;
+        var grid = $("#grid_Land_Irregationlist").data("kendoGrid");
+        var selectedItem = grid.dataItem(grid.select());
+        var formval = form_Serialize("Farmer_Reg");
+        var obj_val = JSON.parse(formval);
+        obj_val.In_irrigation_gid = selectedItem.In_irrigation_gid;
+        var irrigation_gid = obj_val.In_irrigation_gid;
+        IrrigationDetailsView(irrigation_gid);
+    }
+
+    function IrrigationDetailsView(irrigation_gid) {
+
+
+        debugger;
+        $("#soildialog").hide();
+        $("#FarmersoilListdialog").hide();
+        $("#dialog").hide();
+        $("#irrigationattachModal").hide();
+
+        $("#irriationattachment").hide();
+       // $("#irrigationattachModal").hide();
+        $("#notesmodel").hide();
+        $("#irrigationnotes_data").hide();
+        $("#irrigation_dialog").hide();
+        $("#irrigationnotesmodel").hide();
+        $("#irrigation_dialog").kendoWindow();
+        var dialog = $("#irrigation_dialog").data("kendoWindow");
+        dialog.open().element.closest(".k-window").css({
+            top: 18,
+            left: 180, height: 698, width: 1077
+        });
+        dialog.title("Irrigation Water View");
+        dialog.bind("open", serialno);
+        // clear_val();
+
+        //popup double click expand to avoid
+        $(document).on('dblclick', '.k-window-titlebar', function (e) {
+            debugger;
+            // Restore old size
+            dialog.toggleMaximization();
+
+
+        });
+
+
+        $("#irrigationcropcheckbox").prop('enabled', true);
+        $("#irrigationcropcheckbox").prop('checked', false);
+        var grid = $("#grid_soil").data("kendoGrid");
+        var data = {};
+        data.context = getContext();
+       // data.context.Header = obj_val;
+        var Context = data.context;
+
+        $.ajax({
+            type: "POST",
+            data: JSON.stringify({ userId: Context.userId, orgnId: Context.orgnId, locnId: Context.locnId, localeId: Context.localeId, irrigation_gid: irrigation_gid }),
+            url: "/IrrigationWaterTest/irrigationfetch",
+            dataType: "json",
+            contentType: 'application/json; charset=utf-8',
+
+            success: function (response) {
+                debugger;
+                if (response != null) {
+                    if (response.header.out_sample_status != "Waiting for approval") {
+                        generate_irrigation_header(response.header);
+                        generate_irrigationparameter_list(response.detail);
+
+                        if (response.header.out_crop_confirm == "1" && response.header.out_soil_confirm == "C") {
+                            debugger;
+                          //  $("#irrigationcropcheckbox").prop('enabled', true);
+                            $("#irrigationcropcheckbox").prop('checked', true);
+                        }
+                    }
+                    else {
+                        generate_irrigation_header(response.header);
+                        var x = Math.floor((Math.random() * 10000000000000000) + 100000000000000000);
+                        $("#txtlab_rep").val(x);
+
+                        getirrigationparameters();
+                        if (response.header.out_crop_confirm == "1" && response.header.out_soil_confirm == "C") {
+                            debugger;
+                          //  $("#irrigationcropcheckbox").prop('enabled', true);
+                            $("#irrigationcropcheckbox").prop('checked', true);
+                        }
+                    }
+                }
+                else {
+
+                }
+            },
+            error: function (er) {
+                alert(er)
+                console.log(er)
+            }
+
+        });
+    }
+
+    function grid_irrigation_parameter(data) {
+        $("#grid_irrigation_parameter").kendoGrid({
+            dataSource: {
+                data: data,
+                schema: {
+                    model: {
+                        fields: {
+
+                            In_irrigationparam_rowid: { type: "string" },
+                            out_irrigation_Id: { type: "string" },
+                            In_irrigation_Parameter: { type: "string" },
+                            In_irrigation_Parameter_desc: { type: "string" },
+                            In_irrigation_uom: { type: "string" },
+                            In_irrigation_uom_desc: { type: "string" },
+                            In_irrigation_results: { type: "string" },
+                            In_soil_results: { type: "string" },
+                            In_mode_flag: { type: "string" },
+
+                        }
+                    }
+                }
+            },
+            height: 250,
+            groupable: false,
+            dataBinding: setDefaultValues,
+
+            dataBound: function (e) {
+                resultData = e.sender._data;
+                var rows = $('#grid_irrigation_parameter').data('kendoGrid').tbody.children();
+                setColor(rows, resultData);
+            },
+            sortable: true,
+            selectable: true,
+            navigatable: true,
+
+            columns: [
+                {
+                    field: "In_irrigationparam_rowid",
+                    title: "out_irrigationparam_rowid",
+                    hidden: true,
+                    width: 30
+                },
+                {
+                    field: "out_irrigation_Id",
+                    title: "Sl",
+                    width: 30
+                },
+                {
+                    field: "In_irrigation_Parameter",
+                    title: "In_irrigation_Parameter",
+                    hidden: true,
+                    width: 30
+                },
+                {
+                    field: "In_irrigation_Parameter_desc",
+                    title: "Irrigation Parameter",
+                    //editor: function (container, options) {
+                    //    combo_editor_man(container, "cmb_" + options.field, eval(options.field + "_list"), options.field, "In_irrigation_Parameter", "grid_irrigation_parameter")
+                    //},
+                    width: 100
+                },
+                {
+                    field: "In_irrigation_uom",
+                    title: "In_irrigation_uom",
+                    hidden: true,
+                    width: 30
+                },
+                {
+                    field: "In_irrigation_uom_desc",
+                    title: "UoM",
+                    //editor: function (container, options) {
+                    //    combo_editor_man(container, "cmb_" + options.field, eval(options.field + "_list"), options.field, "In_irrigation_uom", "grid_irrigation_parameter")
+                    //},
+                    width: 100
+                },
+                {
+                    field: "In_irrigation_results",
+                    title: "Result",
+                    width: 100
+                },
+                {
+                    field: "In_mode_flag",
+                    title: "In_mode_flag",
+                    hidden: true,
+                    width: 30
+                },
+
+            ],
+            editable: true,
+        });
+
+    }
+
+    function generate_irrigation_header(res) {
+        debugger;
+        if (res.out_sample_status == "Approved") {
+            $("#irrigationprint").show();
+        }
+        else if (res.out_sample_status == "Rejected") {
+            $("#irrigationprint").hide();
+        }
+
+        else {
+            $("#irrigationprint").hide();
+        }
+
+        $("#irrigationtxtfarmercode").val(res.out_farmer_code);
+        $("#irrigationtxtValidity1").val(res.out_collection_date);
+        $('#cmb_irrigationsamplests').data("kendoComboBox").value(res.out_sample_status);
+        $('#cmb_irrigationrejreason').data("kendoComboBox").value(res.out_reject_reason);
+        $('#cmb_irrigationsampleby').data("kendoComboBox").value(res.out_sample_drawnby);
+        $("#irrigationtxtfarmername").val(res.out_farmer_name);
+        $("#irrigationtxttranid").val(res.out_Tran_Id);
+        $("#irrigationtxtsampleid").val(res.out_sample_Id);
+        $("#irrigationtxtcusref").val(res.out_customer_ref);
+        $("#irrigationtxtlab_rep").val(res.out_Lab_reportno);
+        $("#irrigationtxtMode").val(res.in_mode_flag);
+        $("#irrigationtxtlabid").val(res.out_Lab_Id);
+        $("#irrigationtxtValidity2").val(res.out_sample_receiveon);
+        $("#irrigationtxtValidity3").val(res.out_Analysis_starton);
+        $("#irrigationtxtValidity4").val(res.out_Analysis_completeon);
+        $("#irrigationtxttestmethod").data("kendoComboBox").value(res.out_test_method);
+        $("#irrigationcomment").val(res.out_crop_recommendation);
+        $("#txtirrigationgid").val(res.out_irrigation_gid);
+        $("#irrigationtxtfarmer_gid").val(res.out_farmer_gid);
+        $("#irrigationnotesdata").val(res.out_irrigation_notes);
+
+    }
+    function generate_irrigationparameter_list(res) {
+        if (res != null) {
+            var data = changedataType(res);
+            grid_irrigation_parameter(data);
+        }
+        else {
+            grid_irrigation_parameter([]);
+        }
+    }
+
+
+
+
+    //irrigation notes data
+
+    function irrigationnotes_data() {
+        $("#irriationattachment").hide();
+        $("#irrigationattachModal").hide();
+        $("#irrigationnotesmodel").kendoWindow();
+        var notesmodel = $("#irrigationnotesmodel").data("kendoWindow");
+        notesmodel.open().element.closest(".k-window").css({
+            top: 80,
+            left: 350, height: 150, width: 575
+        });
+        notesmodel.title("Notes");
+        notesmodel.bind("open", notesmodel);
+        $("#irrigationnotesmodel").show();
+    }
+
+
+
+    //irrigation Attachment
+    function irriationattachment() {
+        $("#attachModal").hide();
+        $("#irrigationattachModal").kendoWindow();
+        var attachModal = $("#irrigationattachModal").data("kendoWindow");
+        attachModal.open().element.closest(".k-window").css({
+            top: 80,
+            left: 350, height: 420, width: 775
+        });
+        attachModal.title("Attachment");
+        attachModal.bind("open", attachModal);
+        irrigationattachlist();
+    }
+    function irrigationattachlist() {
+        $("#irrigationattachModal").show();
+        var soilid = $("#txtirrigationgid").val();
+        var doc_type = "soilcard";
+        var data = {};
+        data.context = getContext();
+        var Context = data.context;
+        $.ajax({
+            type: "POST",
+            data: JSON.stringify({ orgnId: Context.orgnId, locnId: Context.locnId, localeId: Context.localeId, id: soilid, doc_type: doc_type }),
+            url: "/Attacment/attachmentList/",
+            dataType: "json",
+            contentType: 'application/json; charset=utf-8',
+            success: function (response) {
+                debugger;
+                if (response != null) {
+                    irrigationgenerate_attach_list(response.attach);
+                }
+                else {
+                    irrigationgrid_attachment([]);
+                }
+            },
+            error: function (er) {
+                alert(er)
+                console.log(er)
+            }
+
+        });
+    }
+
+    function irrigationgenerate_attach_list(res) {
+        var data = changedataType(res);
+        irrigationgrid_attachment(data);
+    }
+    function irrigationgrid_attachment(data) {
+        $("#irrigationgrid_attachment").kendoGrid({
+            dataSource: {
+                data: data,
+                schema: {
+                    model: {
+                        fields: {
+
+                            attach_gid: { type: "string" },
+                            filepath: { type: "string" },
+                            filename: { type: "string" },
+                            document: { type: "string" },
+                            description: { type: "string" },
+                            userId: { type: "string" },
+
+                        }
+                    }
+                }
+            },
+            height: 470,
+            groupable: false,
+            dataBinding: setDefaultValues,
+
+            dataBound: function (e) {
+                resultData = e.sender._data;
+                var rows = $('#irrigationgrid_attachment').data('kendoGrid').tbody.children();
+                setColor(rows, resultData);
+            },
+            sortable: true,
+            selectable: true,
+            navigatable: true,
+            columns: [
+                {
+                    field: "attach_gid",
+                    title: "attach Id",
+                    hidden: true,
+                    width: 30
+                },
+                {
+                    field: "filepath",
+                    title: "File",
+                    width: 100
+                },
+                {
+                    field: "filename",
+                    title: "File name",
+                    width: 80
+                },
+                {
+                    field: "document",
+                    title: "Document",
+                    width: 80
+                },
+                {
+                    field: "description",
+                    title: "description",
+                    width: 80
+                },
+                {
+                    field: "userId",
+                    title: "Attached By",
+                    width: 80
+                },
+                {
+
+                },], editable: true
+        });
+    }
+
+
+    function irrigationPrint() {
+        debugger;
+        $.ajax({
+            type: "POST",
+            data: JSON.stringify({}),
+            url: "/IrrigationWaterTest/downloadpdf",
+            dataType: "json",
+            contentType: 'application/json; charset=utf-8',
+            success: function (response) {
+                debugger;
+                if (response != null) {
+                    debugger;
+                    var url_path = (response);
+                    $("#downloadpath").attr("href", url_path);
+                    document.getElementById("downloadpath").click();
+
+                }
+
+            },
+            error: function (er) {
+                alert(er)
+                console.log(er)
+            }
+
+
+        });
+    }
+</script>
